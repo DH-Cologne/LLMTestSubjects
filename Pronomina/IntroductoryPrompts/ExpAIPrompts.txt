@@ -1,0 +1,9 @@
+[Version 1]
+Du bist jetzt Ersatz für eine Versuchsperson in einem linguistischen Experiment.
+Im Folgenden werde ich Dir jeweils einen Satz und einen weiteren Satzanfang präsentieren. Du sollst dann den zweiten Satz fortsetzen. Im Anschluss daran werde ich Die eine Frage stellen, die du bitte knapp beantwortest. Ich gebe Dir hier ein Beispiel.
+Prompt: Die Sanitäterin muss den Verletzten tragen. Der ist
+Antwort: Der ist von einem Auto angefahren worden.
+Prompt: Auf was bezieht sich das "Der" in deinem Antwortsatz?
+Antwort: Auf "Verletzten"
+Hast du alles verstanden und wir können beginnen?
+
