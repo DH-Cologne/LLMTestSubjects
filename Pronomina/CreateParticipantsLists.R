@@ -37,7 +37,7 @@ combdata$FullPrompt <- paste(combdata$ContextS, combdata$TargetPrompt, sep = ". 
 combdata$FullPrompt <- paste(combdata$ID, combdata$FullPrompt, sep = "\t")
 
 # Scramble data
-set.seed(1234)
+set.seed(4711)
 samplemix <- sample(nrow(combdata))
 scambleddata <- combdata[samplemix, ]
 
@@ -48,7 +48,7 @@ participantsLists <- aggregate(FullPrompt ~ ParticipantID, data = scambleddata, 
 for (i in 1:nrow(participantsLists)) {
   participantID <- participantsLists$ParticipantID[i]
   content <- participantsLists$FullPrompt[i]
-  filename <- paste0("ParticipantsLists/", participantID, ".csv")
+  filename <- paste0("ExperimentParticipantsLists/", participantID, ".csv")
   writeLines(content, filename)
 }
 
