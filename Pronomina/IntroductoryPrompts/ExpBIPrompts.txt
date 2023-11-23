@@ -1,3 +1,15 @@
+[Abgeänderte Orignal-Version mit Workaround zu der Stern-Vergabe]
+Sie sind jetzt Versuchsperson in einem linguistischen Experiment.
+Im Folgenden werden Ihnen kurze Texte präsentiert; die Texte werden meistens aus zwei Sätzen gebildet. Lesen Sie bitte jeden Text sorgfältig durch. Sie sollen mit Sternen bewerten, wie der Text für Sie klingt. Sie können zwischen einem (Sehr seltsam) bis zu sieben (Perfekt) Sternen vergeben. Bitte antworten Sie jeweils nur mit einer Zahl von 1 bis 7, weitere Erläuterungen sind nicht nötig.  
+Haben Sie alles verstanden, können wir beginnen?
+
+________________________________________________________________________________
+
+[Original-Version aus Patterson 2021]
+Im Folgenden werden Ihnen kleine Texte präsentiert; die Texte werden meistens aus zwei Sätzen gebildet. Lesen Sie bitte jeden Text sorgfältig durch. Bitte bewerten Sie dann von 1 (Sehr seltsam) bis 7 (Perfekt), wie der Text für Sie klingt, indem Sie auf die Sterne klicken.
+[Nach jedem Text]
+Wie klingt der Text? (1=sehr seltsam, 7=perfekt)
+
 [Version 1 mit ausgesuchten Beispielen]
 Du bist jetzt Ersatz für eine Versuchsperson in einem linguistischen Experiment.
 Im Folgenden werde ich Dir jeweils zwei Sätze auf einmal präsentieren, die du nach ihrer Akzeptabilität beurteilen sollst. In der Linguistik bezeichnet Akzeptabilität den Grad der Angemessenheit und Verständlichkeit einer Äußerung, beurteilt durch einen sprachkundigen Sprecher/Hörer in einem bestimmten Kontext. Die Skala reicht von 1 (sehr seltsam) bis 7 (perfekt). Bitte antworte immer nur mit einer Zahl, es ist keine weitere Erklärung notwendig. 
@@ -14,3 +26,4 @@ Hast du alles verstanden? Dann präsentiere ich dir gleich immer ein Satzpaar.
 Du bist jetzt Ersatz für eine Versuchsperson in einem linguistischen Experiment.
 Im Folgenden werde ich Dir jeweils zwei Sätze auf einmal präsentieren, die du nach ihrer Akzeptabilität beurteilen sollst. In der Linguistik bezeichnet Akzeptabilität den Grad der Angemessenheit und Verständlichkeit einer Äußerung, beurteilt durch einen sprachkundigen Sprecher/Hörer in einem bestimmten Kontext. Die Skala reicht von 1 (sehr seltsam) bis 7 (perfekt). Bitte antworte immer nur mit einer Zahl, es ist keine weitere Erklärung notwendig. 
 Hast du alles verstanden? Dann präsentiere ich dir gleich immer ein Satzpaar.
+

@@ -28,6 +28,7 @@ replaceFunction <- function(target, rep) {
   return(target)
 }
 expBData$TargetPrompt <- mapply(replaceFunction, expBData$TargetPrompt, expBData$REP)
+expBData$TargetPrompt <- paste0(expBData$TargetPrompt, " \\nWie klingt der Text? (1=sehr seltsam, 7=perfekt)")
 
 # recombine Data
 combdata <- rbind(expAData, expBData)

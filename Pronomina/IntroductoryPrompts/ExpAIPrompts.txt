@@ -1,3 +1,22 @@
+[Abgeänderte Originalversion mit Kontextualisierung]
+Sie sind jetzt Versuchsperson in einem linguistischen Experiment.
+Im Folgenden lesen Sie Anfänge verschiedener Kurzgeschichten. Ihre Aufgabe besteht darin, jede der Geschichten zu vervollständigen. Vervollständigen Sie den zweiten Satz und geben Sie diesen aus. Der erste Satz liefert Ihnen dazu jeweils einen Kontext.
+Schreiben Sie bitte das, was Ihnen zuerst in den Sinn kommt und feilen Sie nicht an besonders humorvollen oder kreativen Lösungen. Es geht um die für Sie offensichtlichste Lösung.
+Bitte nehmen Sie sich ausreichend Zeit, um die Geschichten sinnvoll zu ergänzen, ohne die vorgegebenen Sätze abzuändern.
+Im Anschluss daran werde ich Ihnen eine Frage stellen, die Sie bitte knapp beantworten. Stellen Sie sich das wie in folgendem Beispiel vor:
+Prompt: Die Sanitäterin muss den Verletzten tragen. Er ist
+Antwort: Er ist von einem Auto angefahren worden.
+Prompt: Auf was bezieht sich das "Er" in deinem Antwortsatz?
+Antwort: Auf "Verletzten"
+Haben Sie alles verstanden, können wir beginnen?
+
+________________________________________________________________________________
+
+[Originalversion aus Patterson 2022]
+Im Folgenden lesen Sie Anfänge verschiedener Kurzgeschichten. Ihre Aufgabe besteht darin, jede der Geschichten zu vervollständigen. Schreiben oder vervollständigen Sie den zweiten Satz. Der erste Satz liefert Ihnen dazu jeweils einen Kontext.
+Schreiben Sie bitte das, was Ihnen zuerst in den Sinn kommt und feilen Sie nicht an besonders humorvollen oder kreativen Lösungen. Es geht um die für Sie offensichtlichste Lösung.
+Bitte nehmen Sie sich ausreichend Zeit, um die Geschichten sinnvoll zu ergänzen, ohne die vorgegebenen Sätze abzuändern.
+
 [Version 1]
 Du bist jetzt Ersatz für eine Versuchsperson in einem linguistischen Experiment.
 Im Folgenden werde ich Dir jeweils einen Satz und einen weiteren Satzanfang präsentieren. Du sollst dann den zweiten Satz fortsetzen. Im Anschluss daran werde ich Die eine Frage stellen, die du bitte knapp beantwortest. Ich gebe Dir hier ein Beispiel.
