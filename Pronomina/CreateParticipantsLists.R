@@ -56,7 +56,7 @@ expBData <- combdata[grepl("^B", combdata$ExperimentID),]
 ## preprocess expAData
 
 # add annotation question to prompt
-extendedPrompt <- paste0("\tAuf was bezieht sich das \"", expAData$REP, "\" in deinem Antwortsatz?")
+extendedPrompt <- paste0("\tAuf was bezieht sich das \"", expAData$REP, "\" in dem Satz, den Sie ergänzt haben?")
 expAData$TargetPrompt <- paste0(expAData$TargetPrompt, extendedPrompt) 
 expAData$TargetPrompt
 
