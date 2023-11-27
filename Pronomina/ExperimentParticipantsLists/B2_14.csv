@@ -1,36 +1,36 @@
-ID_106100	Der Käufer schuldete der Händlerin den Kaufpreis. Sie/die/diese war telefonisch nicht erreichbar.
-ID_107095	Der Lehrer kündigte der Rektorin die Pensionierung. Er/der/dieser war dabei etwas traurig.
-ID_106153	Der Unternehmer stellte der Bankangestellten den Kostenplan. Sie/die/diese war dabei sehr konzentriert.
-ID_107502	Der Regisseur empfahl dem Schauspieler die Fernsehserie. Sie/die/diese handelte von einer lustigen Verwechslung.
-ID_105841	Die Künstlerin vererbte dem Musiker den Besitz. Sie/die/diese war sehr reich.
-ID_106894	Der Gastgeber organisierte dem Redner die Hotelsuite. Sie/die/diese war frisch renoviert.
-ID_106245	Die Mitarbeiterin nahm der Opernsängerin den Mantel. Er/der/dieser war erfreulicherweise aus Kunstpelz.
-ID_106354	Die Friseurin erzählte der Neukundin den Sonntagswitz. Er/der/dieser handelte von drei Waschbären und einem Anwalt.
-ID_107037	Der Hotelmanager beschaffte der Urlauberin die Massage. Er/der/dieser machte danach einen gestressten Eindruck.
-ID_107658	Der Türsteher verweigerte der Besucherin den Zutritt. Sie/die/diese war etwas unhöflich.
-ID_106973	Der Lieferant baute der Kundin die Kommode. Er/der/dieser war dabei etwas ungeschickt.
-ID_105958	Die Archäologin präsentierte dem Museumsdirektor den Fund. Sie/die/diese war sehr aufgeregt.
-ID_105895	Die Teenagerin verkaufte dem Freund den Ausweis. Sie/die/diese war bereits vorbestraft.
-ID_106707	Die Therapeutin gewöhnte dem Patienten die Marotte. Er/der/dieser war sehr dankbar.
-ID_107721	Der Verkäufer lieh der Interessentin den Autoschlüssel. Sie/die/diese war voller Hoffnung.
-ID_107176	Der Onkel leitete der Nichte den Videoclip. Sie/die/diese mochte witzige Katzenvideos.
-ID_107911	Die Studentin stahl der Dozentin den Laptop. Er/der/dieser war allerdings ohnehin defekt.
-ID_107242	Die Chirurgin besorgte dem Arzt die Stelle. Er/der/dieser brachte nützliche Kontakte mit.
-ID_106638	Die Eigentümerin vermietete dem Anwohner die Parkfläche. Er/der/dieser war froh über den langfristigen Vertrag.
-ID_107947	Die Arbeitgeberin zeigte dem Bewerber den Arbeitsvertrag. Sie/die/diese wirkte dabei sehr sympathisch.
-ID_106380	Die Krankenpflegerin wusch dem Patienten den Rücken. Sie/die/diese kannte die Routine mittlerweile.
-ID_107442	Der Schneider nähte dem Klienten die Jacke. Sie/die/diese fiel größer aus als gewollt.
-ID_107353	Die Kollegin führte dem Neuen die Prozedur. Er/der/dieser war sehr konzentriert.
-ID_106958	Der Vater kaufte dem Sohn die Zuckerwatte. Sie/die/diese schmeckte nach Erdbeeren.
-ID_106832	Der Anwalt erklärte dem Mandanten die Beweislage. Sie/die/diese war uneindeutig.
-ID_106046	Der Enkel malte der Großmutter den Garten. Sie/die/diese wurde schon am frühen Abend langsam müde.
-ID_106766	Die Betrügerin raubte dem König die Krone. Er/der/dieser war leider unvorsichtig.
-ID_107566	Der Chef garantierte dem Angestellten die Gehaltserhöhung. Sie/die/diese war längst überfällig.
-ID_107299	Die Diebin entwendete dem Touristen die Handtasche. Er/der/dieser war danach sehr aggressiv.
-ID_106567	Der Schüler zeigte der Sitznachbarin die Formel. Er/der/dieser war schon immer sehr nett.
-ID_107584	Der Lieferant reichte der Floristin die Rechnung. Er/der/dieser war sehr gutaussehend.
-ID_106307	Die Klientin überwies der Detektivin den Betrag. Sie/die/diese war großzügig aufgerundet.
-ID_107809	Die Wächterin hat der Schwägerin den Geheimcode. Er/der/dieser war allerdings lang und schwer zu merken.
-ID_106436	Der Autor widmete der Verlobten die Novelle. Er/der/dieser war nämlich sehr dankbar.
-ID_106500	Die Inhaberin bot dem Mitarbeiter den Umzugswagen. Sie/die/diese wollte sich das Wochenende ohnehin frei nehmen.
-ID_107866	Die Vermieterin schickte der Mieterin den Mietvertrag. Er/der/dieser war präzise formuliert.
+ID_106100	Der Käufer schuldete der Händlerin den Kaufpreis. Sie war telefonisch nicht erreichbar. \nWie klingt der Text? (1=sehr seltsam, 7=perfekt)
+ID_107095	Der Lehrer kündigte der Rektorin die Pensionierung. Der war dabei etwas traurig. \nWie klingt der Text? (1=sehr seltsam, 7=perfekt)
+ID_106153	Der Unternehmer stellte der Bankangestellten den Kostenplan. Die war dabei sehr konzentriert. \nWie klingt der Text? (1=sehr seltsam, 7=perfekt)
+ID_107502	Der Regisseur empfahl dem Schauspieler die Fernsehserie. Sie handelte von einer lustigen Verwechslung. \nWie klingt der Text? (1=sehr seltsam, 7=perfekt)
+ID_105841	Die Künstlerin vererbte dem Musiker den Besitz. Sie war sehr reich. \nWie klingt der Text? (1=sehr seltsam, 7=perfekt)
+ID_106894	Der Gastgeber organisierte dem Redner die Hotelsuite. Sie war frisch renoviert. \nWie klingt der Text? (1=sehr seltsam, 7=perfekt)
+ID_106245	Die Mitarbeiterin nahm der Opernsängerin den Mantel. Dieser war erfreulicherweise aus Kunstpelz. \nWie klingt der Text? (1=sehr seltsam, 7=perfekt)
+ID_106354	Die Friseurin erzählte der Neukundin den Sonntagswitz. Der handelte von drei Waschbären und einem Anwalt. \nWie klingt der Text? (1=sehr seltsam, 7=perfekt)
+ID_107037	Der Hotelmanager beschaffte der Urlauberin die Massage. Er machte danach einen gestressten Eindruck. \nWie klingt der Text? (1=sehr seltsam, 7=perfekt)
+ID_107658	Der Türsteher verweigerte der Besucherin den Zutritt. Sie war etwas unhöflich. \nWie klingt der Text? (1=sehr seltsam, 7=perfekt)
+ID_106973	Der Lieferant baute der Kundin die Kommode. Dieser war dabei etwas ungeschickt. \nWie klingt der Text? (1=sehr seltsam, 7=perfekt)
+ID_105958	Die Archäologin präsentierte dem Museumsdirektor den Fund. Die war sehr aufgeregt. \nWie klingt der Text? (1=sehr seltsam, 7=perfekt)
+ID_105895	Die Teenagerin verkaufte dem Freund den Ausweis. Sie war bereits vorbestraft. \nWie klingt der Text? (1=sehr seltsam, 7=perfekt)
+ID_107721	Der Verkäufer lieh der Interessentin den Autoschlüssel. Die war voller Hoffnung. \nWie klingt der Text? (1=sehr seltsam, 7=perfekt)
+ID_106707	Die Therapeutin gewöhnte dem Patienten die Marotte. Er war sehr dankbar. \nWie klingt der Text? (1=sehr seltsam, 7=perfekt)
+ID_107176	Der Onkel leitete der Nichte den Videoclip. Diese mochte witzige Katzenvideos. \nWie klingt der Text? (1=sehr seltsam, 7=perfekt)
+ID_106567	Der Schüler zeigte der Sitznachbarin die Formel. Der war schon immer sehr nett. \nWie klingt der Text? (1=sehr seltsam, 7=perfekt)
+ID_106766	Die Betrügerin raubte dem König die Krone. Der war leider unvorsichtig. \nWie klingt der Text? (1=sehr seltsam, 7=perfekt)
+ID_107353	Die Kollegin führte dem Neuen die Prozedur. Der war sehr konzentriert. \nWie klingt der Text? (1=sehr seltsam, 7=perfekt)
+ID_106958	Der Vater kaufte dem Sohn die Zuckerwatte. Die schmeckte nach Erdbeeren. \nWie klingt der Text? (1=sehr seltsam, 7=perfekt)
+ID_106380	Die Krankenpflegerin wusch dem Patienten den Rücken. Diese kannte die Routine mittlerweile. \nWie klingt der Text? (1=sehr seltsam, 7=perfekt)
+ID_106500	Die Inhaberin bot dem Mitarbeiter den Umzugswagen. Die wollte sich das Wochenende ohnehin frei nehmen. \nWie klingt der Text? (1=sehr seltsam, 7=perfekt)
+ID_106436	Der Autor widmete der Verlobten die Novelle. Er war nämlich sehr dankbar. \nWie klingt der Text? (1=sehr seltsam, 7=perfekt)
+ID_107866	Die Vermieterin schickte der Mieterin den Mietvertrag. Er war präzise formuliert. \nWie klingt der Text? (1=sehr seltsam, 7=perfekt)
+ID_106307	Die Klientin überwies der Detektivin den Betrag. Sie war großzügig aufgerundet. \nWie klingt der Text? (1=sehr seltsam, 7=perfekt)
+ID_107242	Die Chirurgin besorgte dem Arzt die Stelle. Dieser brachte nützliche Kontakte mit. \nWie klingt der Text? (1=sehr seltsam, 7=perfekt)
+ID_107442	Der Schneider nähte dem Klienten die Jacke. Diese fiel größer aus als gewollt. \nWie klingt der Text? (1=sehr seltsam, 7=perfekt)
+ID_107911	Die Studentin stahl der Dozentin den Laptop. Der war allerdings ohnehin defekt. \nWie klingt der Text? (1=sehr seltsam, 7=perfekt)
+ID_106832	Der Anwalt erklärte dem Mandanten die Beweislage. Diese war uneindeutig. \nWie klingt der Text? (1=sehr seltsam, 7=perfekt)
+ID_107809	Die Wächterin hat der Schwägerin den Geheimcode. Dieser war allerdings lang und schwer zu merken. \nWie klingt der Text? (1=sehr seltsam, 7=perfekt)
+ID_106046	Der Enkel malte der Großmutter den Garten. Diese wurde schon am frühen Abend langsam müde. \nWie klingt der Text? (1=sehr seltsam, 7=perfekt)
+ID_107947	Die Arbeitgeberin zeigte dem Bewerber den Arbeitsvertrag. Diese wirkte dabei sehr sympathisch. \nWie klingt der Text? (1=sehr seltsam, 7=perfekt)
+ID_106638	Die Eigentümerin vermietete dem Anwohner die Parkfläche. Dieser war froh über den langfristigen Vertrag. \nWie klingt der Text? (1=sehr seltsam, 7=perfekt)
+ID_107584	Der Lieferant reichte der Floristin die Rechnung. Dieser war sehr gutaussehend. \nWie klingt der Text? (1=sehr seltsam, 7=perfekt)
+ID_107299	Die Diebin entwendete dem Touristen die Handtasche. Er war danach sehr aggressiv. \nWie klingt der Text? (1=sehr seltsam, 7=perfekt)
+ID_107566	Der Chef garantierte dem Angestellten die Gehaltserhöhung. Die war längst überfällig. \nWie klingt der Text? (1=sehr seltsam, 7=perfekt)

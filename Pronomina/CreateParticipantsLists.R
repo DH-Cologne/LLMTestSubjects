@@ -57,11 +57,8 @@ expBData <- combdata[grepl("^B", combdata$ExperimentID),]
 
 # add annotation question to prompt
 extendedPrompt <- paste0("\tAuf was bezieht sich das \"", expAData$REP, "\" in deinem Antwortsatz?")
-expAData$TargetPrompt <- paste(expAData$TargetPrompt, extendedPrompt) 
-
-# delete empty columns
-expAData <- expAData[, colSums(is.na(expAData)) != nrow(expAData)]
-summary(expAData)
+expAData$TargetPrompt <- paste0(expAData$TargetPrompt, extendedPrompt) 
+expAData$TargetPrompt
 
 
 ## preprocess expBData
@@ -69,8 +66,7 @@ summary(expAData)
 # delete empty rows
 expBData <- expBData[!is.na(expBData$ContextS), ]
 expBData <- expBData[!is.na(expBData$TargetPrompt), ]
-# delete empty columns
-expBData <- expBData[, colSums(is.na(expBData)) != nrow(expBData)]
+
 
 # Replace "Er/der/dieser" bzw. "Sie/die/diese" with Value of REP
 replaceFunction <- function(target, rep) {
@@ -80,8 +76,6 @@ replaceFunction <- function(target, rep) {
 }
 expBData$TargetPrompt <- mapply(replaceFunction, expBData$TargetPrompt, expBData$REP)
 expBData$TargetPrompt <- paste0(expBData$TargetPrompt, " \\nWie klingt der Text? (1=sehr seltsam, 7=perfekt)")
-summary(expBData)
-
 
 ## recombine Data to generate prompts and participants lists
 
@@ -107,6 +101,14 @@ for (i in 1:nrow(participantsLists)) {
   writeLines(content, filename)
 }
 
-write.csv(combdata, "CombinedData.csv", row.names = FALSE)
+#write.csv(combdata, "CombinedData.csv", row.names = FALSE)
+
+# delete empty columns
+expAData <- expAData[, colSums(is.na(expAData)) != nrow(expAData)]
+saveRDS(expAData, file="ExpAData.rds")
+
+# delete empty columns
+expBData <- expBData[, colSums(is.na(expBData)) != nrow(expBData)]
+saveRDS(expBData, file="ExpBData.rds")
 
 
