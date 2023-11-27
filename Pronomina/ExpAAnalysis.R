@@ -1,1 +1,0 @@
-ExperimentData <- readRDS("expAData.rds")

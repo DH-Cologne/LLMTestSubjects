@@ -1,5 +1,6 @@
+rm(list=ls())
 # Read and preprocess RDS data
-combdata <- readRDS("CombinedData.rds")
+combdata <- readRDS("Data/CombinedData.rds")
 combdata$ItemNumber <- factor(combdata$ItemNumber)
 combdata$ArgumentOrder <- factor(combdata$ArgumentOrder)
 combdata$ExperimentID <- factor(combdata$ExperimentID)
@@ -105,10 +106,10 @@ for (i in 1:nrow(participantsLists)) {
 
 # delete empty columns
 expAData <- expAData[, colSums(is.na(expAData)) != nrow(expAData)]
-saveRDS(expAData, file="ExpAData.rds")
+saveRDS(expAData, file="Data/ExpAData.rds")
 
 # delete empty columns
 expBData <- expBData[, colSums(is.na(expBData)) != nrow(expBData)]
-saveRDS(expBData, file="ExpBData.rds")
+saveRDS(expBData, file="Data/ExpBData.rds")
 
 
