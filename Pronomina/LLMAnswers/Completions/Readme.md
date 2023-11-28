@@ -6,8 +6,8 @@ This folder contains folders with the replies from different LLMs to our linguis
 
 * LLaMAntltComp Sentence completions of LLaMA 2, **n**ot **t**rained (= zero-shot), **l**ow **t**emperature
 
-* LLaMAnthtComp Sentence completions of LLaMA 2, **p**rompt-**t**rained (= few-shot), **h**igh **t**emperature
+* LLaMApthtComp Sentence completions of LLaMA 2, **p**rompt-**t**rained (= few-shot), **h**igh **t**emperature
 
-* LLaMAntltComp Sentence completions of LLaMA 2, **p**rompt-**t**rained (= few-shot), **l**ow **t**emperature
+* LLaMAptltComp Sentence completions of LLaMA 2, **p**rompt-**t**rained (= few-shot), **l**ow **t**emperature
 
 * TestComp Only for workflow tests, will be deleted before publication 
