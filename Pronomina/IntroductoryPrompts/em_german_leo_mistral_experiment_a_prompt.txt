@@ -1,0 +1,7 @@
+ Sie sind jetzt Versuchsperson in einem linguistischen Experiment.
+ Im Folgenden lesen Sie Anfänge verschiedener Kurzgeschichten. Ihre Aufgabe besteht darin, den unvollständigen Satz zu vervollständigen. Es geht um die für Sie offensichtlichste Lösung. Dabei sollen Sie nicht die vorgegebenen Sätze verändern.
+ Im Anschluss daran werde ich Ihnen eine Frage stellen, die Sie bitte knapp beantworten. Stellen Sie sich das wie in folgendem Beispiel vor:
+ USER: Die Sanitäterin muss den Verletzten tragen. Er ist
+ ASSISTANT: Er ist von einem Auto angefahren worden.
+ USER: Auf was bezieht sich das "Er" in deinem Antwortsatz?
+ ASSISTANT: Auf "Verletzten"

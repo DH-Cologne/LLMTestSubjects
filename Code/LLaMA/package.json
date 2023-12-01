@@ -1,0 +1,23 @@
+{
+  "name": "openai-api-client",
+  "module": "index.old.ts",
+  "type": "module",
+  "devDependencies": {
+    "@swc/core": "^1.3.99",
+    "@swc/helpers": "^0.5.3",
+    "@types/minimist": "^1.2.5",
+    "bun-types": "latest",
+    "regenerator-runtime": "^0.14.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5.0.0"
+  },
+  "dependencies": {
+    "csv": "^6.3.5",
+    "fets": "^0.6.3",
+    "minimist": "^1.2.8",
+    "node-llama-cpp": "^2.8.0",
+    "openapi-fetch": "^0.8.1",
+    "openapi-typescript": "^6.7.1"
+  }
+}
