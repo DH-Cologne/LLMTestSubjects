@@ -19,7 +19,7 @@ const args = minimist(process.argv.slice(2)) as unknown as Arguments;
 if (!args.model) {
     throw new Error("No model provided");
 }
-if (!args.temperature) {
+if (args.temperature === undefined || Number.isNaN(args.temperature)) {
     throw new Error("No temperature provided");
 }
 if (!args['experiment-file']) {
