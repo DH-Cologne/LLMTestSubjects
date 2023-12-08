@@ -16,26 +16,39 @@ folderList <- list.files(path = answerfolders, full.names = TRUE, recursive = FA
 # Filter folders from files
 folderList <- folderList[sapply(folderList, function(x) file.info(x)$isdir)]
 
-# ToDo loop over all answerfolders
-for (folderPath in folderList) {
-  modellfolder <- basename(folderPath)
+# Dataframe to collect all answers from all files
+allanswers <- data.frame(ID=integer())
 
+# Loop through all folders
+for (folderPath in folderList){
+  
+  # Dataframe to collect answers from actual file
+  mergeData <- data.frame(ID=integer())
+  
+  # Navigate to every file in every file in actual folder
+  modellfolder <- basename(folderPath)
   directory <- paste0(answerfolders,modellfolder)
   tsv_files <- list.files(path = directory, pattern = "\\.csv$", full.names = TRUE)
+  # Collect all answers from files
   expAAnswers_list <- lapply(tsv_files, function(x) read.delim(x, header = FALSE))
   
+  # Extract relevant information from answers into target structure
   for (answerList in expAAnswers_list) {
     toMergeList <- data.frame(
       ID = answerList$V1, 
-      V4 = answerList$V4
+      V3 = answerList$V3
     )
-    names(toMergeList)[names(toMergeList) == "V4"] <- paste0(modellfolder,"_Completion")
+    names(toMergeList)[names(toMergeList) == "V3"] <- paste0(modellfolder,"_Completion")
     toMergeList$V5 <- extractLastWord(answerList$V5)
     names(toMergeList)[names(toMergeList) == "V5"] <- paste0(modellfolder,"_Antecedens")
-    
-    # Zusammenführen der DataFrames basierend auf der ID
-    expAData <- merge(expAData, toMergeList, by = "ID", all.x = TRUE)
+    mergeData <- rbind(mergeData, toMergeList)
   }
+  # Aggregate all information from all answers
+  allanswers <- merge(allanswers, mergeData, by="ID", all=TRUE)
 }
-#saveRDS(expAData, file="Data/ExpADataAnswers.rds")
+# Merge answers into experiment data
+expAData <- merge(expAData, allanswers, by = "ID", all = TRUE)
 
+write.table(allanswers, file="temp/expA.csv", sep="\t")
+
+# ToDo: Export experiment data
