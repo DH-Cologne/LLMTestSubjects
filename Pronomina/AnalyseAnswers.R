@@ -46,7 +46,7 @@ replace_values <- function(row) {
     if (value == row[["RE1"]] || value == row[["RE2"]]) {
       row[[col]] <- ifelse(value == row[["RE1"]], "RE1", "RE2")
     } else {
-      row[[col]] <- NA
+      #row[[col]] <- NA
     }
   }
   return(row)
