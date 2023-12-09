@@ -51,4 +51,5 @@ expAData <- merge(expAData, allanswers, by = "ID", all = TRUE)
 
 write.table(allanswers, file="temp/expA.csv", sep="\t")
 
-# ToDo: Export experiment data
+saveRDS(expAData, file="Data/ExpADataAnswers.rds")
+
