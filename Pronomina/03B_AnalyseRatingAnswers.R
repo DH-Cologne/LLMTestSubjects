@@ -37,8 +37,11 @@ summary(condensedData)
 
 # inter rater library
 library(irr)
+expBAnswers$TargetPrompt
 
-condensedData$PromptID = paste(expBAnswers$ContextS, expBAnswers$REP)
+
+condensedData$PromptID = paste(expBAnswers$ContextS, substr(expBAnswers$TargetPrompt, 1, nchar(expBAnswers$TargetPrompt)-51))
+
 
 # Calculate mean for each PromptID for each model
 average_ratings <- aggregate(condensedData[rating_columns], by = list(condensedData$PromptID), FUN = function(x) mean(x, na.rm = TRUE))

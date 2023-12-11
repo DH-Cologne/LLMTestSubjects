@@ -134,5 +134,5 @@ for (col in antecedens_columns) {
   }
 }
 
-print(head(aggregated_df))
+summary(aggregated_df)
 
