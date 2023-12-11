@@ -13,6 +13,7 @@ type Arguments = {
     'experiment-file': string;
     'no-output': string | undefined;
     'max-tokens': number | undefined;
+    'out-dir': string | undefined;
 }
 
 const args = minimist(process.argv.slice(2)) as unknown as Arguments;
@@ -101,7 +102,7 @@ for (const data of experiment) {
     while (prompts.length > 0) {
         const prompt = prompts.splice(0, 1)[0];
         const answer = await getAnswser({prompt, session, context});
-        const cleanAnswer = answer.split('\n')[0].trim();
+        const cleanAnswer = answer.trim().split('\n')[0].trim();
         history.push(prompt, cleanAnswer);
     }
     fullHistory.push([data[0], ...history]);
@@ -124,7 +125,7 @@ if (!noOutput) {
 
     const __dirname = dirname(fileURLToPath(import.meta.url));
     const modelname = basename(args.model).replaceAll('.gguf', '');
-    const answersDir = join(__dirname, 'answers', modelname, `temperature-${args.temperature}`);
+    const answersDir = args["out-dir"] ? args["out-dir"] : join(__dirname, 'answers', modelname, `temperature-${args.temperature}`);
     await mkdir(answersDir, {recursive: true});
 
     const filename = basename(args["experiment-file"]);
