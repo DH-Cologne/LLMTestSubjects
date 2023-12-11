@@ -19,59 +19,43 @@ condensedData <- data.frame(ID = expBAnswers$ID,
 
 #TODO Delete when EXP2 is performed
 # Delete experiments not needes for the analysis
-condensedData <- subset(condensedData, !ExperimentID %in% c("B2"))
+# condensedData <- subset(condensedData, !ExperimentID %in% c("B2"))
 
 # grep all columns that end with "Antecedens"
 rating_columns <- grep("_Rating$", names(condensedData), value = TRUE)
 
-# Funktion, um Werte, die nicht zwischen 1 und 7 liegen, durch NA zu ersetzen
+# Replace all values outside 0<x<8 by NA
 replace_out_of_range <- function(column) {
   column[!(column %in% 1:7)] <- NA
   return(column)
 }
+condensedData[rating_columns] <-lapply(condensedData[rating_columns], replace_out_of_range)
+condensedData[rating_columns] <- lapply(condensedData[rating_columns], as.numeric)
 
-# Wenden Sie diese Funktion auf alle Rating-Spalten an
-condensedData[rating_columns] <- lapply(condensedData[rating_columns], replace_out_of_range)
 
-
-# replace Antecedences
-condensedData <- as.data.frame(t(apply(condensedData, 1, replace_values)))
-
-# Antecedences to factors
-condensedData[antecedens_columns] <- lapply(condensedData[antecedens_columns], factor)
-condensedData$Expected_Antecedens = expAAnswers$AntecedentAnswer
-# Replace: NP1 -> RE1, NP2 -> RE2, other -> NA
-condensedData$Expected_Antecedens <- ifelse(condensedData$Expected_Antecedens == "NP1", "RE1",
-                                            ifelse(condensedData$Expected_Antecedens == "NP2", "RE2", NA))
-
-antecedens_columns <- grep("Antecedens$", names(condensedData), value = TRUE)
 summary(condensedData)
 
 # inter rater library
 library(irr)
 
-# Calculate pairwise Cohen's kappa
-# and - if de-commented - Krippendorff's alpha, which takes a little longer...
-results_kappa <- data.frame()
-#results_alpha <- data.frame()
-for (i in 1:(length(antecedens_columns) - 1)) {
-  for (j in (i + 1):length(antecedens_columns)) {
-    column1 <- antecedens_columns[i]
-    column2 <- antecedens_columns[j]
-    print(paste("Processing columns:", column1, "and", column2))
-    
-    kappa_value <- kappa2(condensedData[, c(column1, column2)])$value
-    results_kappa <- rbind(results_kappa, data.frame(Column1 = column1, Column2 = column2, Kappa = kappa_value))
-    
-    #matrix_for_alpha <- as.matrix(condensedData[, c(column1, column2)])
-    #alpha_value <- kripp.alpha(matrix_for_alpha, method="nominal")$value
-    #results_alpha <- rbind(results_alpha, data.frame(Column1 = column1, Column2 = column2, Alpha = alpha_value))
-  }
-}
-print(results_kappa)
-#print(results_alpha)
+condensedData$PromptID = paste(expBAnswers$ContextS, expBAnswers$REP)
 
-condensedData$PromptID = paste0(expAAnswers$ItemNumber,expAAnswers$ArgumentOrder,expAAnswers$REP)
+# Berechnen der Durchschnittswerte für jede PromptID in den rating_columns
+average_ratings <- aggregate(. ~ PromptID, data = condensedData[rating_columns], FUN = function(x) mean(x, na.rm = TRUE))
+
+# Berechnen der Durchschnittswerte für jede PromptID in den rating_columns
+average_ratings <- aggregate(condensedData[rating_columns], by = list(condensedData$PromptID), FUN = function(x) mean(x, na.rm = TRUE))
+
+# Umbenennen der Gruppenspalte für Klarheit
+colnames(average_ratings)[1] <- "PromptID"
+
+# Anzeigen der Ergebnisse
+print(head(average_ratings))
+
+
+# Anzeigen der Ergebnisse
+print(head(average_ratings))
+
 
 
 # Calculate a 3-dim-vector (RE1-RE2-NA) for each PromptID
