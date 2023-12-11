@@ -8,7 +8,7 @@ extractLastWord <- function(s) {
 
 
 # Read original Dataframe
-expBData <- readRDS("Data/expBData.rds")
+expBData <- readRDS("Data/ExpBData.rds")
 
 answerfolders = "LLMAnswers/Ratings/"
 
@@ -51,5 +51,5 @@ expBData <- merge(expBData, allanswers, by = "ID", all = TRUE)
 
 write.table(allanswers, file="temp/expB.csv", sep="\t")
 
-# ToDo: Export experiment data
+saveRDS(expBData, file="Data/ExpBDataAnswers.rds")
 

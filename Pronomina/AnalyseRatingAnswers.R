@@ -7,50 +7,32 @@ extractLastWord <- function(s) {
   return(lastWord)
 }
 
-# function to shorten words to 5 letters (to treat german dative inflection)
-shorten_words <- function(x) {
-  sapply(x, function(cell) {
-    if (nzchar(cell)) { # check if cell is empty
-      words <- strsplit(cell, " ")[[1]]
-      short_words <- sapply(words, function(word) substr(word, 1, 5))
-      paste(short_words, collapse=" ")
-    } else {
-      "" # for empty cells
-    }
-  })
-}
-
 # Read original Dataframe
-expAAnswers <- readRDS("Data/ExpADataAnswers.rds")
-columns <- grep("Antecedens$", names(expAAnswers), value = TRUE)
+expBAnswers <- readRDS("Data/ExpBDataAnswers.rds")
+columns <- grep("_Rating$", names(expBAnswers), value = TRUE)
 
 # Build analysis data
-condensedData <- data.frame(ID = expAAnswers$ID, 
-                            RE1 = extractLastWord(expAAnswers$RE1), 
-                            RE2 = extractLastWord(expAAnswers$RE2),
-                            expAAnswers[, columns])
+condensedData <- data.frame(ID = expBAnswers$ID, 
+                            ExperimentID = expBAnswers$ExperimentID,
+                            Human_Rating = expBAnswers$Rating7,
+                            expBAnswers[, columns])
 
-cols_to_modify <- setdiff(names(condensedData), "ID")
-
-for (col in cols_to_modify) {
-  condensedData[[col]] <- shorten_words(condensedData[[col]])
-}
+#TODO Delete when EXP2 is performed
+# Delete experiments not needes for the analysis
+condensedData <- subset(condensedData, !ExperimentID %in% c("B2"))
 
 # grep all columns that end with "Antecedens"
-antecedens_columns <- grep("Antecedens$", names(condensedData), value = TRUE)
+rating_columns <- grep("_Rating$", names(condensedData), value = TRUE)
 
-# function to replace Antecedences with pre-defined role from original file
-replace_values <- function(row) {
-  for (col in antecedens_columns) {
-    value <- row[[col]]
-    if (value == row[["RE1"]] || value == row[["RE2"]]) {
-      row[[col]] <- ifelse(value == row[["RE1"]], "RE1", "RE2")
-    } else {
-      row[[col]] <- NA
-    }
-  }
-  return(row)
+# Funktion, um Werte, die nicht zwischen 1 und 7 liegen, durch NA zu ersetzen
+replace_out_of_range <- function(column) {
+  column[!(column %in% 1:7)] <- NA
+  return(column)
 }
+
+# Wenden Sie diese Funktion auf alle Rating-Spalten an
+condensedData[rating_columns] <- lapply(condensedData[rating_columns], replace_out_of_range)
+
 
 # replace Antecedences
 condensedData <- as.data.frame(t(apply(condensedData, 1, replace_values)))
