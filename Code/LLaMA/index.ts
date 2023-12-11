@@ -3,7 +3,7 @@ import {dirname, join} from 'path';
 import {fileURLToPath} from "url";
 import minimist from "minimist";
 import {basename, extname} from "path/posix";
-import {mkdir, readFile, writeFile} from "fs/promises";
+import {access, mkdir, readFile, writeFile} from "fs/promises";
 import {stringify} from 'csv-stringify/sync';
 
 type Arguments = {
@@ -33,6 +33,27 @@ const maxTokens = args['max-tokens'] ? args['max-tokens'] : 64;
 
 const experiment = (await readFile(args['experiment-file'], 'utf-8')).split('\n').filter(_ => _).map(line => line.split('\t'));
 
+const { outfile } = await (async () => {
+    const __dirname = dirname(fileURLToPath(import.meta.url));
+    const modelname = basename(args.model).replaceAll('.gguf', '');
+    const answersDir = args["out-dir"] ? args["out-dir"] : join(__dirname, 'answers', modelname, `temperature-${args.temperature}`);
+    await mkdir(answersDir, {recursive: true});
+
+    const filename = basename(args["experiment-file"]);
+    const ext = extname(filename);
+    const finalname = filename.replace(ext, `_answers.csv`);
+
+    const outfile = join(answersDir, finalname);
+
+    return { outfile };
+})();
+
+if (!noOutput && await access(outfile).then(() => true, () => false)) {
+    console.log(`Answer file already exists: ${outfile}`);
+    process.exit(0);
+}
+
+// Model setup
 const safeGpuLayers = {
     '7b': 80,
     '13b': 40,
@@ -114,23 +135,10 @@ console.log(fullHistory.map(_ => _.join('\t')).join('\n'));
 
 console.timeEnd('experiment');
 
-
-
 if (!noOutput) {
-    const csv = stringify(fullHistory,
+    await writeFile(outfile, stringify(fullHistory,
         {
             delimiter: '\t',
             quote: '\'',
-        });
-
-    const __dirname = dirname(fileURLToPath(import.meta.url));
-    const modelname = basename(args.model).replaceAll('.gguf', '');
-    const answersDir = args["out-dir"] ? args["out-dir"] : join(__dirname, 'answers', modelname, `temperature-${args.temperature}`);
-    await mkdir(answersDir, {recursive: true});
-
-    const filename = basename(args["experiment-file"]);
-    const ext = extname(filename);
-    const finalname = filename.replace(ext, `_answers.csv`);
-
-    await writeFile(join(answersDir, finalname), csv);
+        }));
 }
