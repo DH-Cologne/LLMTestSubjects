@@ -1,6 +1,6 @@
 import OpenAI from 'openai';
 import minimist from "minimist";
-import {readFile, mkdir, writeFile} from "fs/promises";
+import {readFile, mkdir, writeFile, access} from "fs/promises";
 import {stringify} from "csv";
 import {fileURLToPath} from "url";
 import {basename, dirname, join, extname} from 'path';
@@ -35,7 +35,28 @@ const systemPrompt = await readFile(args.system, 'utf-8');
 const maxTokens = args['max-tokens'] ? args['max-tokens'] : 64;
 const model = 'gpt-4-1106-preview';
 
+const { outfile } = await (async () => {
+    const answersDir = args["out-dir"];
+    if (!answersDir) {
+        return { outfile: undefined };
+    }
+    await mkdir(answersDir, {recursive: true});
+
+    const filename = basename(args["experiment-file"]);
+    const ext = extname(filename);
+    const finalname = filename.replace(ext, `_answers.csv`);
+
+    const outfile = join(answersDir, finalname);
+
+    return { outfile };
+})();
+
 const experiment = (await readFile(args['experiment-file'], 'utf-8')).split('\n').filter(_ => _).map(line => line.split('\t'));
+
+if (outfile && await access(outfile).then(() => true, () => false)) {
+    console.log(`Answer file already exists: ${outfile}`);
+    process.exit(0);
+}
 
 type HistoryElement = OpenAI.Chat.Completions.ChatCompletionMessageParam;
 type History = HistoryElement[];
@@ -88,15 +109,7 @@ for (const data of experiment) {
     fullHistory.push([data[0], ...cleanedHistory]);
 }
 
-if (args['out-dir']) {
-    const answersDir = args["out-dir"];
-    await mkdir(answersDir, {recursive: true});
-
-    const filename = basename(args["experiment-file"]);
-    const ext = extname(filename);
-    const finalname = filename.replace(ext, `_answers.csv`);
-
-    const outfile = join(answersDir, finalname);
+if (outfile) {
     const csv = stringify(fullHistory,
         {
             delimiter: '\t',

@@ -1,4 +1,3 @@
-import {LlamaChatSession, LlamaContext, LlamaModel, Token} from "node-llama-cpp";
 import {dirname, join} from 'path';
 import {fileURLToPath} from "url";
 import minimist from "minimist";
@@ -68,6 +67,8 @@ if (!modelParams || !safeGpuLayers[modelParams]) {
 }
 
 const seed = Math.round(Math.random() * 1000000);
+
+const {LlamaChatSession, LlamaContext, LlamaModel, Token} = await import("node-llama-cpp");
 
 const model = new LlamaModel({
     modelPath: args.model!,
