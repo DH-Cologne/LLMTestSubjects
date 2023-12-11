@@ -1,0 +1,9 @@
+system: Sie sind jetzt Versuchsperson in einem linguistischen Experiment.
+Im Folgenden lesen Sie Anfänge verschiedener Kurzgeschichten. Ihre Aufgabe besteht darin, jede der Geschichten zu vervollständigen. Vervollständigen Sie den zweiten Satz und geben Sie diesen aus. Der erste Satz liefert Ihnen dazu jeweils einen Kontext.
+Schreiben Sie bitte das, was Ihnen zuerst in den Sinn kommt und feilen Sie nicht an besonders humorvollen oder kreativen Lösungen. Es geht um die für Sie offensichtlichste Lösung.
+Bitte nehmen Sie sich ausreichend Zeit, um die Geschichten sinnvoll zu ergänzen, ohne die vorgegebenen Sätze abzuändern.
+Im Anschluss daran werde ich Ihnen eine Frage stellen, die Sie bitte knapp beantworten.
+user: Die Sanitäterin muss den Verletzten tragen. Er ist
+assistant: Er ist von einem Auto angefahren worden.
+user: Auf was bezieht sich das "Er" in deinem Antwortsatz?
+assistant: Auf "Verletzten"
