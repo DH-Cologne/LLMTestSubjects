@@ -37,8 +37,6 @@ summary(condensedData)
 
 # inter rater library
 library(irr)
-expBAnswers$TargetPrompt
-
 
 condensedData$PromptID = paste(expBAnswers$ContextS, substr(expBAnswers$TargetPrompt, 1, nchar(expBAnswers$TargetPrompt)-51))
 
