@@ -21,7 +21,7 @@ shorten_words <- function(x) {
 }
 
 # Read original Dataframe (replace with "Data/ExpA2DataAnswers.rds" to analyse A2 data)
-expAAnswers <- readRDS("Data/ExpA1DataAnswers.rds")
+expAAnswers <- readRDS("Data/ExpA2DataAnswers.rds")
 columns <- grep("Antecedens$", names(expAAnswers), value = TRUE)
 
 # Build analysis data

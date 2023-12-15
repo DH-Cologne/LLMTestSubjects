@@ -52,5 +52,5 @@ expA1Data <- subset(expAData, ExperimentID != "A2")
 expA2Data <- subset(expAData, ExperimentID != "A1")
 
 saveRDS(expA1Data, file="Data/ExpA1DataAnswers.rds")
-saveRDS(expA1Data, file="Data/ExpA2DataAnswers.rds")
+saveRDS(expA2Data, file="Data/ExpA2DataAnswers.rds")
 
