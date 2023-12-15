@@ -52,6 +52,9 @@ numeric_columns <- rating_columns[sapply(average_ratings[rating_columns], is.num
 grouped_average_ratings <- aggregate(average_ratings[, numeric_columns], 
                                      by = list(REP = average_ratings$REP, AntecedentE = average_ratings$AntecedentE), 
                                      FUN = mean, na.rm = TRUE)
+
+#grouped_average_ratings <- grouped_average_ratings[, -c(4:7)]
+
 summary(grouped_average_ratings)
 
 # zTransformation of average ratings
