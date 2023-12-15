@@ -48,8 +48,9 @@ for (folderPath in folderList){
 }
 # Merge answers into experiment data
 expAData <- merge(expAData, allanswers, by = "ID", all = TRUE)
+expA1Data <- subset(expAData, ExperimentID != "A2")
+expA2Data <- subset(expAData, ExperimentID != "A1")
 
-write.table(allanswers, file="temp/expA.csv", sep="\t")
-
-saveRDS(expAData, file="Data/ExpADataAnswers.rds")
+saveRDS(expA1Data, file="Data/ExpA1DataAnswers.rds")
+saveRDS(expA1Data, file="Data/ExpA2DataAnswers.rds")
 

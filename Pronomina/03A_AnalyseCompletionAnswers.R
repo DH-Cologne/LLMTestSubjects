@@ -20,8 +20,8 @@ shorten_words <- function(x) {
   })
 }
 
-# Read original Dataframe
-expAAnswers <- readRDS("Data/ExpADataAnswers.rds")
+# Read original Dataframe (replace with "Data/ExpA2DataAnswers.rds" to analyse A2 data)
+expAAnswers <- readRDS("Data/ExpA1DataAnswers.rds")
 columns <- grep("Antecedens$", names(expAAnswers), value = TRUE)
 
 # Build analysis data
@@ -74,66 +74,51 @@ names(condensedData)
 
 
 
-# Funktion zur Zählung der Häufigkeiten von RE1, RE2 und NA
+# fuction to count RE1 and RE2 as Antecedences
 count_frequencies <- function(x) {
   c(RE1 = sum(x == "RE1", na.rm = TRUE),
     RE2 = sum(x == "RE2", na.rm = TRUE),
     NA_count = sum(is.na(x)))
 }
 
-# Aggregieren der Daten
+# Aggregate data by ArgumentOrder (OS vs. SO) and Replacement-String (der vs. dieser vs. er)
 aggregated_data <- aggregate(condensedData[, antecedens_columns], 
                              by = list(AO = condensedData$AO, REP = condensedData$REP), #ItemNumber = condensedData$ItemNumber), 
                              FUN = count_frequencies)
-
-# Umwandeln des Ergebnisses in ein geeignetes Format
 result <- do.call(data.frame, aggregated_data)
 
-# Ausgabe des resultierenden DataFrames
-result
 
-# Funktion zur Berechnung der Differenz zwischen den Häufigkeiten von RE1 und RE2
+# Calculate differences between counts of RE1 and RE2
 calculate_difference <- function(x) {
   sum(x == "RE1", na.rm = TRUE) - sum(x == "RE2", na.rm = TRUE)
 }
 
+# Calculate relative differences between counts of RE1 and RE2
 calculate_relative_difference <- function(x) {
   re1_count <- sum(x == "RE1", na.rm = TRUE)
   re2_count <- sum(x == "RE2", na.rm = TRUE)
   if (re1_count + re2_count > 0) {
     (re1_count - re2_count) / (re1_count + re2_count)
   } else {
-    NA  # Setzen von NA, wenn keine RE1 oder RE2 Werte vorhanden sind
+    NA  # if no RE1 and RE2 are found
   }
 }
 
-# Aggregieren der Daten
+# Aggregate data by ArgumentOrder (OS vs. SO) and Replacement-String (der vs. dieser vs. er)
 preferences_data <- aggregate(condensedData[, antecedens_columns], 
                              by = list(AO = condensedData$AO, REP = condensedData$REP), 
                              FUN = calculate_difference)
-
-# Umwandeln des Ergebnisses in ein geeignetes Format
 result <- do.call(data.frame, preferences_data)
 
-# Ausgabe des resultierenden DataFrames
-result
-
+# plot preferences
 par(mfrow = c(3, 3))
-
-# Anpassen der Spaltennamen für die Balkendiagramme (wenn nötig)
-# Hinweis: Die ersten drei Spalten von result sind AO, REP und ItemNumber
 plot_columns <- names(result)[4:length(result)]
 
-# Erstellen von Balkendiagrammen für jede Antecedens-Spalte
+
 for (col in plot_columns) {
-  # Extrahieren der Daten für das Balkendiagramm
-  barplot_data <- result[[col]]
-  
-  # Überprüfen, ob die Daten vorhanden sind, bevor das Balkendiagramm erstellt wird
-  if (!is.null(barplot_data)) {
-    # Erstellen des Balkendiagramms für die aktuelle Spalte
-    barplot(barplot_data, main = col, xlab = "Gruppen", ylab = "Relative Differenz", col = "blue")
-  }
+  bar_colors <- ifelse(result$AO == "OS", "lightblue", "darkblue")
+  barplot(result[[col]], main = col, xlab = "Groups", ylab = "Rel.Diff", col = bar_colors)
+  legend("bottomright", legend = c("OS", "SO"), fill = c("lightblue", "darkblue"), bty = "n")
 }
 
 
@@ -207,4 +192,9 @@ for (col in antecedens_columns) {
 }
 
 summary(aggregated_df)
+
+par(mfrow = c(3, 3))
+
+# Erstellen von Balkendiagrammen für jede Antecedens-Spalte
+
 
