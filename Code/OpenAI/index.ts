@@ -53,9 +53,17 @@ const { outfile } = await (async () => {
 
 const experiment = (await readFile(args['experiment-file'], 'utf-8')).split('\n').filter(_ => _).map(line => line.split('\t'));
 
+const fullHistory: string[][] = []
 if (outfile && await access(outfile).then(() => true, () => false)) {
-    console.log(`Answer file already exists: ${outfile}`);
-    process.exit(0);
+    const answers = (await readFile(outfile, 'utf-8')).split('\n').filter(_ => _).map(line => line.split('\t'));
+    if (answers.length === experiment.length) {
+        console.log(`Answer file already exists: ${outfile}`);
+        process.exit(0);
+    } else {
+        console.log(`Continuing from existing state. ${answers.length} of ${experiment.length} answers found in ${outfile}`);
+        experiment.splice(0, answers.length);
+        fullHistory.push(...answers);
+    }
 }
 
 type HistoryElement = OpenAI.Chat.Completions.ChatCompletionMessageParam;
@@ -82,11 +90,14 @@ const getAnswer = async (history: History) => {
     return choices[0]!.message.content ?? '';
 }
 
-const fullHistory: string[][] = []
-
 console.log('Starting history', systemPromptAsHistory);
 
-for (const data of experiment) {
+for (let i = 0; i < experiment.length; i++) {
+    console.time('experiment');
+    const data = experiment[i];
+
+    console.log(`Experiment ${i + 1} of ${experiment.length} in file ${basename(args['experiment-file'])}`);
+
     const prompts = data.slice(1);
     const history: History = [
         ...systemPromptAsHistory,
@@ -107,13 +118,22 @@ for (const data of experiment) {
     const cleanedHistory = history.slice(systemPromptAsHistory.length).map(({content}) => content as string);
     console.log([data[0], ...cleanedHistory]);
     fullHistory.push([data[0], ...cleanedHistory]);
+
+    console.timeEnd('experiment');
+
+    if (outfile) {
+        await writeFile(outfile, stringify(fullHistory,
+            {
+                delimiter: '\t',
+                quote: '\'',
+            }));
+    }
 }
 
 if (outfile) {
-    const csv = stringify(fullHistory,
+    await writeFile(outfile, stringify(fullHistory,
         {
             delimiter: '\t',
             quote: '\'',
-        });
-    await writeFile(outfile, csv);
+        }));
 }

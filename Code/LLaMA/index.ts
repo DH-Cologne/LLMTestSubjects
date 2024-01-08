@@ -4,11 +4,12 @@ import minimist from "minimist";
 import {basename, extname} from "path/posix";
 import {access, mkdir, readFile, writeFile} from "fs/promises";
 import {stringify} from 'csv-stringify/sync';
+import {ConversationInteraction} from "node-llama-cpp";
 
 type Arguments = {
     model: string;
     temperature: number;
-    system: string | undefined;
+    system: string;
     'experiment-file': string;
     'no-output': string | undefined;
     'max-tokens': number | undefined;
@@ -25,8 +26,11 @@ if (args.temperature === undefined || Number.isNaN(args.temperature)) {
 if (!args['experiment-file']) {
     throw new Error("No experiment file provided");
 }
+if (!args.system) {
+    throw new Error("No system prompt provided");
+}
 
-const systemPrompt = args.system ? await readFile(args.system, 'utf-8') : undefined;
+const baseSystemPrompt = await readFile(args.system, 'utf-8');
 const noOutput = args['no-output'] !== undefined;
 const maxTokens = args['max-tokens'] ? args['max-tokens'] : 64;
 
@@ -47,33 +51,58 @@ const { outfile } = await (async () => {
     return { outfile };
 })();
 
+const fullHistory: string[][] = [];
+
 if (!noOutput && await access(outfile).then(() => true, () => false)) {
-    console.log(`Answer file already exists: ${outfile}`);
-    process.exit(0);
+    const answers = (await readFile(outfile, 'utf-8')).split('\n').filter(_ => _).map(line => line.split('\t'));
+    if (answers.length === experiment.length) {
+        console.log(`Answer file already exists: ${outfile}`);
+        process.exit(0);
+    } else {
+        console.log(`Continuing from existing state. ${answers.length} of ${experiment.length} answers found in ${outfile}`);
+        experiment.splice(0, answers.length);
+        fullHistory.push(...answers);
+    }
 }
 
 // Model setup
 const safeGpuLayers = {
+	'8x7b': 10,
     '7b': 80,
     '13b': 40,
     '34b': 24,
     '70b': 14,
 }
 
-const modelParams = Array.from(basename(args.model).match(/\d{1,2}b/gi) || [])[0] as keyof typeof safeGpuLayers | undefined;
+const gpuLayers = (() => {
+	for (const [params, layers] of Object.entries(safeGpuLayers)) {
+		if (basename(args.model).includes(params)) {
+			return layers;
+		}
+	}
+	return undefined;
+})();
 
-if (!modelParams || !safeGpuLayers[modelParams]) {
+if (!gpuLayers) {
     throw new Error("Could not determine model params from model name, or no gpu layer information available");
 }
 
 const seed = Math.round(Math.random() * 1000000);
 
+function* chunks<T>(arr: T[], n: number): Generator<T[], void> {
+    for (let i = 0; i < arr.length; i += n) {
+        yield arr.slice(i, i + n);
+    }
+}
+const [[_, systemPrompt], ...history] = [...chunks(baseSystemPrompt.split(/(SYSTEM|USER|ASSISTANT):\s+/gmi).map(v => v.trim()).filter(_ => _), 2)] as [string, string][];
+const conversationHistory: ConversationInteraction[] = [...chunks(history, 2)].map(([[_, prompt], [__, response]]) => ({ prompt, response }));
+
 const {LlamaChatSession, LlamaContext, LlamaModel, Token} = await import("node-llama-cpp");
 
 const model = new LlamaModel({
     modelPath: args.model!,
-    gpuLayers: safeGpuLayers[modelParams!],
-    seed: seed,
+    gpuLayers,
+    seed,
     temperature: args.temperature,
 });
 
@@ -88,26 +117,26 @@ const getAnswser = async ({prompt, session, context}: {
     context: LlamaContext
 }) => {
     const chunks: string[] = [];
-    // console.log(`>>> ${prompt}`);
+    console.log(`>>> ${prompt}`);
     await session.prompt(prompt, {
         maxTokens,
         onToken(chunk: Token[]) {
             const decoded = context.decode(chunk);
-            // process.stdout.write(decoded);
+            process.stdout.write(decoded);
             chunks.push(decoded);
+            if (decoded.includes('\n')) {
+            }
         },
         temperature: args.temperature,
     })
-    // process.stdout.write('\n');
+    console.log();
     return chunks.join('');
 };
 
+for (let i = 0; i < experiment.length; i++) {
+	console.time('experiment');
 
-const fullHistory: string[][] = [];
-
-console.time('experiment');
-
-for (const data of experiment) {
+	const data = experiment[i];
     const context = new LlamaContext({
         model,
         seed: seed,
@@ -116,8 +145,11 @@ for (const data of experiment) {
     const session = new LlamaChatSession({
         context,
         systemPrompt,
+        conversationHistory,
     });
     await session.init();
+
+    console.log(`Experiment ${i + 1} of ${experiment.length} in file ${basename(args['experiment-file'])}`);
 
     const prompts = data.slice(1);
     const history: string[] = [];
@@ -129,12 +161,18 @@ for (const data of experiment) {
     }
     fullHistory.push([data[0], ...history]);
     console.log([data[0], ...history]);
+    console.timeEnd('experiment');
+
+    if (!noOutput) {
+        await writeFile(outfile, stringify(fullHistory,
+            {
+                delimiter: '\t',
+                quote: '\'',
+            }));
+    }
 }
 
-
 console.log(fullHistory.map(_ => _.join('\t')).join('\n'));
-
-console.timeEnd('experiment');
 
 if (!noOutput) {
     await writeFile(outfile, stringify(fullHistory,
