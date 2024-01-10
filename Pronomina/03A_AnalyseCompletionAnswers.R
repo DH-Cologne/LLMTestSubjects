@@ -111,7 +111,7 @@ preferences_data <- aggregate(condensedData[, antecedens_columns],
 result <- do.call(data.frame, preferences_data)
 
 # plot preferences
-par(mfrow = c(3, 3))
+par(mfrow = c(4, 4))
 plot_columns <- names(result)[4:length(result)]
 
 
