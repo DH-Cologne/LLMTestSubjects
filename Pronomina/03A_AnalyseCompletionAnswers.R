@@ -21,7 +21,7 @@ shorten_words <- function(x) {
 }
 
 # Read original Dataframe (replace with "Data/ExpA2DataAnswers.rds" to analyse A2 data)
-expAAnswers <- readRDS("Data/ExpA1DataAnswers.rds")
+expAAnswers <- readRDS("Data/ExpA2DataAnswers.rds")
 columns <- grep("Antecedens$", names(expAAnswers), value = TRUE)
 
 # Build analysis data
@@ -174,7 +174,7 @@ aggregated_df <- data.frame()
 # Iterieren through antecedens_column
 for (col in antecedens_columns) {
   # Aggregieren Data for each PromptID
-  for (prompt_id in unique(condensedData$PromptID)) {
+ for (prompt_id in unique(condensedData$PromptID)) {
     specific_data <- condensedData[condensedData$PromptID == prompt_id, col]
     
     # Count RE1, RE2 und NA
