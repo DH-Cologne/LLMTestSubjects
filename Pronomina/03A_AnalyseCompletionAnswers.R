@@ -21,7 +21,7 @@ shorten_words <- function(x) {
 }
 
 # Read original Dataframe (replace with "Data/ExpA2DataAnswers.rds" to analyse A2 data)
-expAAnswers <- readRDS("Data/ExpA2DataAnswers.rds")
+expAAnswers <- readRDS("Data/ExpA1DataAnswers.rds")
 columns <- grep("Antecedens$", names(expAAnswers), value = TRUE)
 
 # Build analysis data
@@ -118,7 +118,7 @@ plot_columns <- names(result)[4:length(result)]
 for (col in plot_columns) {
   bar_colors <- ifelse(result$AO == "OS", "lightblue", "darkblue")
   barplot(result[[col]], main = col, xlab = "Groups", ylab = "Rel.Diff", col = bar_colors)
-  legend("bottomright", legend = c("OS", "SO"), fill = c("lightblue", "darkblue"), bty = "n")
+  #legend("bottomright", legend = c("OS", "SO"), fill = c("lightblue", "darkblue"), bty = "n")
 }
 
 
