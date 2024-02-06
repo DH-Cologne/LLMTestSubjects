@@ -1,4 +1,8 @@
+# This code can be used to read out the answers given by the LLMs and aggregate 
+# them together with the experiment data (ExpBData) within a new data frame (ExpBDataAnswers). 
+
 rm(list=ls())
+
 # Function to extract the last word of a string
 extractLastWord <- function(s) {
   # Regular expression that removes everything except the last word
@@ -6,10 +10,8 @@ extractLastWord <- function(s) {
   return(lastWord)
 }
 
-
 # Read original Dataframe
 expBData <- readRDS("Data/ExpBData.rds")
-
 answerfolders = "LLMAnswers/Ratings/"
 
 # List files in destination folder 
@@ -49,7 +51,8 @@ for (folderPath in folderList) {
 # Merge answers into experiment data
 expBData <- merge(expBData, allanswers, by = "ID", all = TRUE)
 
-write.table(allanswers, file="temp/expB.csv", sep="\t")
+#write.table(allanswers, file="temp/expB.csv", sep="\t")
 
+# Save data with all answers from the llms
 saveRDS(expBData, file="Data/ExpBDataAnswers.rds")
 

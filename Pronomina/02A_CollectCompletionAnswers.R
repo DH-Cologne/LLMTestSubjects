@@ -1,3 +1,8 @@
+# This code can be used to read out the answers given by the LLMs and aggregate 
+# them together with the experiment data (ExpAData) within two a new data frames 
+# (ExpA1DataAnswers and ExpA2DataAnswers). 
+# TODO: Explain differences between A1 and A2 verbs 
+
 rm(list=ls())
 # Function to extract the last word of a string
 extractLastWord <- function(s) {
@@ -51,6 +56,7 @@ expAData <- merge(expAData, allanswers, by = "ID", all = TRUE)
 expA1Data <- subset(expAData, ExperimentID != "A2")
 expA2Data <- subset(expAData, ExperimentID != "A1")
 
+# Save data with all answers from the llms
 saveRDS(expA1Data, file="Data/ExpA1DataAnswers.rds")
 saveRDS(expA2Data, file="Data/ExpA2DataAnswers.rds")
 

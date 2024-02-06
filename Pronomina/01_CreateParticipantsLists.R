@@ -1,10 +1,20 @@
+# The code in this file reads the data obtained in the experiments of 
+# Patterson and Schumacher (2021, further [ExpB]) and Patterson et al. (2022, further [ExpA]). 
+# [You can find the weblinks in our Github repository]     
+# The code generates two data frames (ExpADate, ExpBDate) that we use to generate 
+# our prompts for the large language models (folder ExperimentParticipantsLists) 
+# and exports them to RDS files.
+# These files allow you to feed the LLMs and use our code 
+# (02/03 A/B) to analyse your results without having to rely on the original data.   
+
 rm(list=ls())
 # Read and preprocess RDS data
 combdata <- readRDS("Data/CombinedData.rds")
 
-# Delete experiments not needes for the analysis
+# Delete experiments not needed for the analysis
 combdata <- subset(combdata, !ExperimentID %in% c("B3", "B4", "B5"))
 
+# Factorize suitable variables
 combdata$ItemNumber <- factor(combdata$ItemNumber)
 combdata$ArgumentOrder <- factor(combdata$ArgumentOrder)
 combdata$ExperimentID <- factor(combdata$ExperimentID)
@@ -83,7 +93,6 @@ expBData$TargetPrompt <- mapply(replaceFunction, expBData$TargetPrompt, expBData
 expBData$TargetPrompt <- paste0(expBData$TargetPrompt, " \\nWie klingt der Text? (1=sehr seltsam, 7=perfekt)")
 
 ## recombine Data to generate prompts and participants lists
-
 combdata <- rbind(expAData, expBData)
 
 # Generate full prompts
@@ -106,14 +115,10 @@ for (i in 1:nrow(participantsLists)) {
   writeLines(content, filename)
 }
 
-#write.csv(combdata, "CombinedData.csv", row.names = FALSE)
-
 # delete empty columns
 expAData <- expAData[, colSums(is.na(expAData)) != nrow(expAData)]
-saveRDS(expAData, file="Data/ExpAData.rds")
-
-# delete empty columns
 expBData <- expBData[, colSums(is.na(expBData)) != nrow(expBData)]
+
+# export data
+saveRDS(expAData, file="Data/ExpAData.rds")
 saveRDS(expBData, file="Data/ExpBData.rds")
-
-
