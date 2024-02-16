@@ -3,5 +3,6 @@
 .RData
 .Ruserdata
 .DS_Store
-Pronomina/ExperimentParticipantsLists/*
+Pronomina/Data/CombinedData.csv
+Pronomina/Data/CombinedData.rds
 .idea

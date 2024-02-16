@@ -7,9 +7,19 @@ Based on the two papers ([Patterson and Schumacher 2021](https://www.cambridge.o
 * prefer the same R-expressions for pronouns as human subjects.
 * can be used reliably in anaphora resolution.
 
-# Answers directory structure
+### Step 1: Collect data from experiments, generate lists for participants/llms
 
-The LLMAnswers directory splits the answers based on experiment, model & temperature.
+The data of the experiments from the two papers is available online, references can be found on the linked pages. We received the combined data from the authors in a file that we pre-processed with the script 01_CreateParticipantsList.R
+
+The code generates two data frames (ExpADate, ExpBDate) that we use to generate 
+our prompts for the large language models (folder ExperimentParticipantsLists) 
+and exports them to RDS files.
+These files allow us (and you) to feed the LLMs and use our code 
+(02/03 A/B) to analyse our/your results without having to rely on the original data.  
+
+### Step 2: Use LLMs as simulated participants
+
+We used the generated participants lists to generate the prompts for the various LLMs (that we used as simulated participants). 
 
 The notation for LLaMA-based models is as follows:
 
@@ -25,3 +35,9 @@ The following models were used:
 | EMG          | 70B        | [EM German 70b v01](https://huggingface.co/jphme/em_german_70b_v01)                |
 | SKLM         | 7B         | [SauerkrautLM Her0](https://huggingface.co/VAGOsolutions/SauerkrautLM-7b-HerO)     |
 | GPT4         | NA         | [OpenAI GPT4 Turbo](https://platform.openai.com/docs/models/gpt-4-and-gpt-4-turbo) |
+
+### Step 3: Collect answers from LLMs
+See 02A_CollectCompletionAnswers.R and 02B_CollectRatingAnswers.R
+
+### Step 4: Analyse behaviour of LLMs compared to behaviour of participants of the original experiments
+See 02A_AnalyseCompletionAnswers.R and 03B_AnalyseRatingAnswers.R
