@@ -3,6 +3,5 @@
 .RData
 .Ruserdata
 .DS_Store
-Pronomina/Data/CombinedData.csv
-Pronomina/Data/CombinedData.rds
+Pronomina/Data/OriginalData/*
 .idea
