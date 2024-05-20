@@ -2,7 +2,7 @@
 Series of experiments to evaluate whether LLMs can be used to replace participants in linguistic experiments.
 
 ## Pronomina
-Based on the two papers ([Patterson and Schumacher 2021](https://www.cambridge.org/core/journals/applied-psycholinguistics/article/interpretation-preferences-in-contexts-with-three-antecedents-examining-the-role-of-prominence-in-german-pronouns/E8F581347980C5A0A3D3D938B8F8F30A) and [Patterson et al. 2022](https://www.frontiersin.org/articles/10.3389/fpsyg.2021.672927/full) - further ExpA and ExpB), we analyse whether LLMs 
+Based on the two papers ([Patterson and Schumacher 2021](https://www.cambridge.org/core/journals/applied-psycholinguistics/article/interpretation-preferences-in-contexts-with-three-antecedents-examining-the-role-of-prominence-in-german-pronouns/E8F581347980C5A0A3D3D938B8F8F30A) and [Patterson et al. 2022](https://www.frontiersin.org/articles/10.3389/fpsyg.2021.672927/full) - further ExpB and ExpA), we analyse whether LLMs 
 * could make similar judgements about the acceptability of pronoun references as human subjects.
 * prefer the same R-expressions for pronouns as human subjects.
 * can be used reliably in anaphora resolution.
@@ -38,9 +38,9 @@ The following models were used:
 
 ### Step 3: Read out the answers given by the LLMs and aggregate them together with the experiment data.
 
-Since ExpA (rating) examined ditransitive verbs (ExpA1) and benefactive verbs (ExpA2), we've generated two a new data frames for ExpA 
+Since ExpA (completion) examined ditransitive verbs (ExpA1) and benefactive verbs (ExpA2), we've generated two a new data frames for ExpA 
 (ExpA1DataAnswers and ExpA2DataAnswers). 
-Data from ExpB and completion-answers from LLMs were collected within a one data frame (ExpBDataAnswers). 
+Data from ExpB and rating-answers from LLMs were collected within a one data frame (ExpBDataAnswers). 
 See 02A_CollectCompletionAnswers.R and 02B_CollectRatingAnswers.R
 
 ### Step 4: Analyse behaviour of LLMs compared to behaviour of participants of the original experiments
