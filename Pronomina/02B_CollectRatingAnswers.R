@@ -1,5 +1,13 @@
-# This code can be used to read out the answers given by the LLMs and aggregate 
-# them together with the experiment data (ExpBData) within a new data frame (ExpBDataAnswers). 
+# This code can be used to read out the answers given by the LLMs and aggregates 
+# them together with the experiment data (ExpBData) within two a new data frames 
+# (ExpB1DataAnswers and ExpB2DataAnswers).
+
+# The study examined ditransitive verbs (ExpB1) and benefactive verbs (ExpB2). 
+# Ditransitive verbs involve three arguments (agent, recipient, and patient), 
+# such as "give" or "send," where a possession is transferred. 
+# Benefactive verbs involve actions performed for the benefit of a third party, 
+# like "buy" in "buy a gift for someone," involving an agent, benefactive 
+# recipient, and patient.
 
 rm(list=ls())
 
@@ -50,9 +58,16 @@ for (folderPath in folderList) {
 
 # Merge answers into experiment data
 expBData <- merge(expBData, allanswers, by = "ID", all = TRUE)
+expB1Data <- subset(expBData, ExperimentID != "B2")
+expB2Data <- subset(expBData, ExperimentID != "B1")
+
+# Save data with all answers from the llms
+saveRDS(expB1Data, file="Data/ExpB1DataAnswers.rds")
+saveRDS(expB2Data, file="Data/ExpB2DataAnswers.rds")
+
 
 #write.table(allanswers, file="temp/expB.csv", sep="\t")
 
 # Save data with all answers from the llms
-saveRDS(expBData, file="Data/ExpBDataAnswers.rds")
+# saveRDS(expBData, file="Data/ExpBDataAnswers.rds")
 

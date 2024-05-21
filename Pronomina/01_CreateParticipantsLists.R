@@ -9,7 +9,7 @@
 
 rm(list=ls())
 # Read and preprocess RDS data
-combdata <- readRDS("Data/CombinedData.rds")
+combdata <- readRDS("Data/OriginalData/CombinedData.rds")
 
 # Delete experiments not needed for the analysis
 combdata <- subset(combdata, !ExperimentID %in% c("B3", "B4", "B5"))

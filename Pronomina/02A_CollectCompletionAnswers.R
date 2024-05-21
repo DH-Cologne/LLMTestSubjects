@@ -1,7 +1,12 @@
-# This code can be used to read out the answers given by the LLMs and aggregate 
+# This code can be used to read out the answers given by the LLMs and aggregates 
 # them together with the experiment data (ExpAData) within two a new data frames 
-# (ExpA1DataAnswers and ExpA2DataAnswers). 
-# TODO: Explain differences between A1 and A2 verbs 
+# (ExpA1DataAnswers and ExpA2DataAnswers).
+#
+# In ExpA1, the study focuses on action verbs, which describe dynamic activities 
+# and often imply a direct relationship between the subject and the action performed.
+# In ExpA2, state verbs are examined, which describe more static conditions or 
+# states of being and do not typically involve dynamic action.
+
 
 rm(list=ls())
 # Function to extract the last word of a string
@@ -9,6 +14,21 @@ extractLastWord <- function(s) {
   # Regular expression that removes everything except the last word
   lastWord <- sub(".*\\s(\\w+)[^\\w]*$", "\\1", s)
   return(lastWord)
+}
+
+# Function to check conditions and return according to your rules
+check_and_return <- function(string1, string2, string3) {
+  word1 <- extractLastWord(string1)
+  word2 <- extractLastWord(string2)
+  words3 <- unlist(strsplit(string3, "\\s+"))
+  
+  if (word1 %in% words3) {
+    return(word1)
+  } else if (word2 %in% words3) {
+    return(word2)
+  } else {
+    return(extractLastWord(string3))
+  }
 }
 
 # Read original Dataframe
@@ -44,7 +64,7 @@ for (folderPath in folderList){
       V3 = answerList$V3
     )
     names(toMergeList)[names(toMergeList) == "V3"] <- paste0(modellfolder,"_Completion")
-    toMergeList$V5 <- extractLastWord(answerList$V5)
+    toMergeList$V5 <- answerList$V5 #check_and_return(extractLastWord(expAData[expAData$ID==toMergeList$ID,"RE1"]), extractLastWord(expAData[expAData$ID==toMergeList$ID,"RE2"]), answerList$V5)
     names(toMergeList)[names(toMergeList) == "V5"] <- paste0(modellfolder,"_Antecedens")
     mergeData <- rbind(mergeData, toMergeList)
   }
@@ -53,6 +73,15 @@ for (folderPath in folderList){
 }
 # Merge answers into experiment data
 expAData <- merge(expAData, allanswers, by = "ID", all = TRUE)
+
+# Try to identify antecedences within the answers
+antecedens_columns <- grep("Antecedens$", names(expAData), value = TRUE)
+for (col in antecedens_columns) {
+  expAData[[col]] <- gsub('"', '', expAData[[col]])
+  expAData[[col]] <- mapply(check_and_return, expAData$RE1, expAData$RE2, expAData[[col]])
+}
+
+# Split by verb classes
 expA1Data <- subset(expAData, ExperimentID != "A2")
 expA2Data <- subset(expAData, ExperimentID != "A1")
 
