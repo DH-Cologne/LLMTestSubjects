@@ -29,12 +29,27 @@ The OpenAI GPT notation is similar, but without the Parameters.
 
 The following models were used:
 
-| Abbreviation | Parameters | Link to model                                                                      |
-|--------------|------------|------------------------------------------------------------------------------------|
-| EGLM         | 7B         | [EM German Leo Mistral](https://huggingface.co/jphme/em_german_leo_mistral)        |
-| EMG          | 70B        | [EM German 70b v01](https://huggingface.co/jphme/em_german_70b_v01)                |
-| SKLM         | 7B         | [SauerkrautLM Her0](https://huggingface.co/VAGOsolutions/SauerkrautLM-7b-HerO)     |
-| GPT4         | NA         | [OpenAI GPT4 Turbo](https://platform.openai.com/docs/models/gpt-4-and-gpt-4-turbo) |
+| Round | Abbreviation | Parameters | Link to model                                                                                                      |
+|-------|--------------|------------|--------------------------------------------------------------------------------------------------------------------|
+| 1     | EGLM         | 7B         | [EM German Leo Mistral](https://huggingface.co/jphme/em_german_leo_mistral)                                        |
+| 1     | EMG          | 70B        | [EM German 70b v01](https://huggingface.co/jphme/em_german_70b_v01)                                                |
+| 1     | SKLM         | 7B         | [SauerkrautLM Her0](https://huggingface.co/VAGOsolutions/SauerkrautLM-7b-HerO)                                     |
+| 1     | GPT4         | NA         | [OpenAI GPT4 Turbo](https://platform.openai.com/docs/models/gpt-4-and-gpt-4-turbo)                                 |
+|       |              |            |                                                                                                                    |
+| 2     | ML3          | 8B         | [Meta-Llama-3-8B-Instruct](https://huggingface.co/meta-llama/Meta-Llama-3-8B-Instruct)                             |
+| 2     | ML3          | 70B        | [Meta-Llama-3-70B-Instruct](https://huggingface.co/meta-llama/Meta-Llama-3-70B-Instruct)                           |
+| 2     | DL3          | 8B         | [Llama3-DiscoLeo-Instruct 8B (version 0.1)](https://huggingface.co/DiscoResearch/Llama3-DiscoLeo-Instruct-8B-v0.1) |
+| 2     | SK3          | 8B         | [Llama-3-SauerkrautLM-8b-Instruct](https://huggingface.co/VAGOsolutions/Llama-3-SauerkrautLM-8b-Instruct)          |
+| 2     | SK3          | 70B        | [Llama-3-SauerkrautLM-70b-Instruct](https://huggingface.co/VAGOsolutions/Llama-3-SauerkrautLM-70b-Instruct)        |
+| 2     | KFK3         | 8B         | [Llama-3-KafkaLM-8B-v0.1](https://huggingface.co/seedboxai/Llama-3-KafkaLM-8B-v0.1)                                |
+| 2     | PHI3         | 8B         | [Phi-3-medium-4k-instruct](https://huggingface.co/microsoft/Phi-3-medium-4k-instruct)                              |
+
+#### Differences between Round 1 and Round 2
+
+Since Round 1 was made prior to the release of Meta Llama 3, some differences exist between the two rounds:
+
+- Round 1 experiments were run using different Quanizations (Q4 and Q5), while Round 2 experiments were run using Q6.
+- Round 2 models had some issues adhering to the Experiment B question, thus we had to use a 1-shot prompt.
 
 ### Step 3: Read out the answers given by the LLMs and aggregate them together with the experiment data.
 

@@ -1,0 +1,36 @@
+ID_107029	Der Lieferant baute dem Kunden die Kommode. Sie war sehr geräumig. \nWie klingt der Text? (1=sehr seltsam, 7=perfekt)	6
+ID_106356	Die Friseurin erzählte der Neukundin den Sonntagswitz. Dieser handelte von drei Waschbären und einem Anwalt. \nWie klingt der Text? (1=sehr seltsam, 7=perfekt)	4
+ID_107430	Die Schneiderin nähte dem Klienten die Jacke. Er investierte viel Geld. \nWie klingt der Text? (1=sehr seltsam, 7=perfekt)	6
+ID_106813	Die Anwältin erklärte dem Mandanten die Beweislage. Er war nun perfekt vorbereitet. \nWie klingt der Text? (1=sehr seltsam, 7=perfekt)	6
+ID_107471	Die Regisseurin empfahl dem Schauspieler die Fernsehserie. Der sah gern Komödien. \nWie klingt der Text? (1=sehr seltsam, 7=perfekt)	6
+ID_107628	Der Lieferant reichte dem Floristen die Rechnung. Sie war ganz zerknittert. \nWie klingt der Text? (1=sehr seltsam, 7=perfekt)	6
+ID_107949	Die Arbeitgeberin zeigte der Bewerberin den Arbeitsvertrag. Er war ohne Zweifel rechtsgültig. \nWie klingt der Text? (1=sehr seltsam, 7=perfekt)	6
+ID_107285	Der Dieb entwendete der Touristin die Handtasche. Der war dabei sehr aggressiv. \nWie klingt der Text? (1=sehr seltsam, 7=perfekt)	4
+ID_106164	Der Unternehmer stellte der Bankangestellten den Kostenplan. Diese war dabei sehr konzentriert. \nWie klingt der Text? (1=sehr seltsam, 7=perfekt)	6
+ID_106286	Der Klient überwies der Detektivin den Betrag. Die war bekanntlich sehr diskret. \nWie klingt der Text? (1=sehr seltsam, 7=perfekt)	6
+ID_107224	Der Chirurg besorgte der Ärztin die Stelle. Er hatte nämlich nützliche Kontakte. \nWie klingt der Text? (1=sehr seltsam, 7=perfekt)	6 (gut, aber nicht perfekt, da der Satzbau leicht ungewöhnlich ist, aber die Grammatik stimmt)
+ID_106426	Die Krankenpflegerin wusch der Patientin den Rücken. Er war etwas schuppig. \nWie klingt der Text? (1=sehr seltsam, 7=perfekt)	6 (Der Text klingt gut, aber es gibt einen kleinen Fehler: Es sollte "Er war etwas schuppig" stattdessen "Sein Rücken war etwas schuppig", da es um den Rücken des Patienten geht und nicht um den Rücken der Aussage.)
+ID_107631	Die Türsteherin verweigerte dem Besucher den Zutritt. Die war etwas unhöflich. \nWie klingt der Text? (1=sehr seltsam, 7=perfekt)	6
+ID_106753	Die Betrügerin raubte dem König die Krone. Dieser war leider unvorsichtig. \nWie klingt der Text? (1=sehr seltsam, 7=perfekt)	6
+ID_106555	Der Schüler zeigte der Sitznachbarin die Formel. Dieser war schon immer sehr nett. \nWie klingt der Text? (1=sehr seltsam, 7=perfekt)	2 (der Text hat eine Grammatikfehler, "Dieser" sollte "Der Sitznachbar" sein)
+ID_107565	Der Chef garantierte dem Angestellten die Gehaltserhöhung. Diese war längst überfällig. \nWie klingt der Text? (1=sehr seltsam, 7=perfekt)	6
+ID_105941	Die Teenagerin verkaufte der Freundin den Ausweis. Der war gefälscht. \nWie klingt der Text? (1=sehr seltsam, 7=perfekt)	2 (sehr ungewöhnlich, weil "verkaufte" und "Freundin" nicht so gut zusammenpassen)
+ID_106025	Die Enkelin malte dem Großvater den Garten. Sie wurde erst am späten Abend langsam müde. \nWie klingt der Text? (1=sehr seltsam, 7=perfekt)	6
+ID_106629	Der Eigentümer vermietete der Anwohnerin die Parkfläche. Er war froh über den langfristigen Vertrag. \nWie klingt der Text? (1=sehr seltsam, 7=perfekt)	6
+ID_107366	Die Kollegin führte dem Neuen die Prozedur. Dieser war sehr konzentriert. \nWie klingt der Text? (1=sehr seltsam, 7=perfekt)	6
+ID_105882	Die Künstlerin vererbte der Musikerin den Besitz. Der bestand aus Geldwerten und Grundstücken. \nWie klingt der Text? (1=sehr seltsam, 7=perfekt)	6 (fast perfekt, nur ein kleiner Fehler: "der Musikerin" sollte vermutlich "dem Musiker" lauten, da es sich um einen männlichen Empfänger handelt)
+ID_105953	Die Archäologin präsentierte dem Museumsdirektor den Fund. Diese war sehr aufgeregt. \nWie klingt der Text? (1=sehr seltsam, 7=perfekt)	6
+ID_106226	Der Mitarbeiter nahm der Opernsängerin den Mantel. Sie fand das angemessen. \nWie klingt der Text? (1=sehr seltsam, 7=perfekt)	6
+ID_106475	Der Autor widmete dem Verlobten die Novelle. Die war ein Verkaufshit. \nWie klingt der Text? (1=sehr seltsam, 7=perfekt)	'6 (gut, aber nicht perfekt; die Überraschung in der Wendung ""Die war ein Verkaufshit"" ist positiv, aber man erwartet normalerweise eine literaturkritische Bewertung wie z.B. "'sei ein Klassiker"' anstatt "'sei ein'
+ID_106966	Der Vater kaufte dem Sohn die Zuckerwatte. Diese schmeckte nach Erdbeeren. \nWie klingt der Text? (1=sehr seltsam, 7=perfekt)	6
+ID_107850	Der Vermieter schickte der Mieterin den Mietvertrag. Die hat nämlich vergessen, zu unterschreiben. \nWie klingt der Text? (1=sehr seltsam, 7=perfekt)	6
+ID_107715	Der Verkäufer lieh der Interessentin den Autoschlüssel. Diese war voller Hoffnung. \nWie klingt der Text? (1=sehr seltsam, 7=perfekt)	4 (Die Grammatik ist korrekt, aber die Bedeutung von "lieh" in diesem Kontext ist ungewöhnlich. In Deutschland würde man eher sagen "Der Verkäufer gab der Interessentin den Autoschlüssel aus." Es handelt sich um eine F
+ID_107927	Die Studentin stahl der Dozentin den Laptop. Dieser war allerdings ohnehin defekt. \nWie klingt der Text? (1=sehr seltsam, 7=perfekt)	6
+ID_106507	Die Inhaberin bot dem Mitarbeiter den Umzugswagen. Diese wollte sich das Wochenende ohnehin frei nehmen. \nWie klingt der Text? (1=sehr seltsam, 7=perfekt)	6
+ID_106677	Der Therapeut gewöhnte der Patientin die Marotte. Der war sehr bemüht. \nWie klingt der Text? (1=sehr seltsam, 7=perfekt)	2 (Die Grammatik ist fehlerhaft, "der" vor "war sehr bemüht" sollte "er" sein)
+ID_107070	Der Hotelmanager beschaffte dem Urlauber die Massage. Die war sogar ermäßigt. \nWie klingt der Text? (1=sehr seltsam, 7=perfekt)	6
+ID_107789	Der Wächter hat der Schwägerin den Geheimcode. Sie war glücklicherweise schon betrunken. \nWie klingt der Text? (1=sehr seltsam, 7=perfekt)	2 (sehr ungewöhnlich, fast unpassend)
+ID_106872	Die Gastgeberin organisierte dem Redner die Hotelsuite. Der freute sich über die Einladung. \nWie klingt der Text? (1=sehr seltsam, 7=perfekt)	6
+ID_107090	Der Lehrer kündigte der Rektorin die Pensionierung. Dieser war dabei etwas traurig. \nWie klingt der Text? (1=sehr seltsam, 7=perfekt)	2 (Das Subjekt-Objekt-Verhältnis ist durcheinandergebracht. Es sollte "Der Lehrer war dabei etwas traurig, weil er die Pensionierung kündigte." sein)
+ID_106085	Die Käuferin schuldete dem Händler den Kaufpreis. Die war telefonisch nicht erreichbar. \nWie klingt der Text? (1=sehr seltsam, 7=perfekt)	6 (fast perfekt, nur ein kleiner Fehler: "Die Käuferin" sollte "Die Käuferin" heißen, da es sich um eine weibliche Person handelt)
+ID_107169	Die Tante leitete dem Neffen den Videoclip. Sie mochte witzige Katzenvideos. \nWie klingt der Text? (1=sehr seltsam, 7=perfekt)	6 (fast perfekt, nur ein kleiner Fehler in der Grammatik: "leitete dem" sollte "zeigte dem" sein, da Tante nicht Videoclips leiht, sondern zeigt)
