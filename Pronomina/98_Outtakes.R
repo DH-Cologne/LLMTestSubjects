@@ -1,81 +1,36 @@
-rm(list=ls())
+# From 03B1
 
-# Function to extract the last word of a string
-extractLastWord <- function(s) {
-  # Regular expression that removes everything except the last word
-  lastWord <- sub(".*\\s(\\w+)[^\\w]*$", "\\1", s)
-  return(lastWord)
-}
-
-# Read original Dataframe
-expBAnswers <- readRDS("Data/ExpBDataAnswers.rds")
-columns <- grep("_Rating$", names(expBAnswers), value = TRUE)
-
-# Build analysis data
-condensedData <- data.frame(ID = expBAnswers$ID, 
-                            ExperimentID = expBAnswers$ExperimentID,
-                            AntecedentE = expBAnswers$AntecedentE,
-                            REP = expBAnswers$REP,
-                            Human_Rating = expBAnswers$Rating7,
-                            expBAnswers[, columns])
-
-# grep all columns that end with "Rating"
-rating_columns <- grep("_Rating$", names(condensedData), value = TRUE)
-
-# Replace all values outside 0<x<8 by NA
-replace_out_of_range <- function(column) {
-  column[!(column %in% 1:7)] <- NA
-  return(column)
-}
-condensedData[rating_columns] <-lapply(condensedData[rating_columns], replace_out_of_range)
-condensedData[rating_columns] <- lapply(condensedData[rating_columns], as.numeric)
-
-# Add PromptID to condensedData
-condensedData$PromptID = paste(expBAnswers$ContextS, substr(expBAnswers$TargetPrompt, 1, nchar(expBAnswers$TargetPrompt)-51))
+# Mapping AntecedentE to roles
+data <- grouped_scaled_average_ratings
+data$Role <- recode(data$AntecedentE, "NP1" = "AGENT", "NP2" = "RECIPIENT", "NP3" = "PATIENT")
 
 
-# Calculate mean for each PromptID for each model and build a DataFrame for average_ratings
-average_ratings <- aggregate(condensedData[rating_columns], by = list(condensedData$PromptID), FUN = function(x) mean(x, na.rm = TRUE))
-colnames(average_ratings)[1] <- "PromptID"
-REP_data <- unique(condensedData[, c("PromptID", "REP")])
-average_ratings <- merge(average_ratings, REP_data, by = "PromptID")
-AntecedentE_data <- unique(condensedData[, c("PromptID", "AntecedentE")])
-average_ratings <- merge(average_ratings, AntecedentE_data, by = "PromptID")
-summary(average_ratings)
 
+# Berechnung der Mittelwerte und Standardabweichungen
+summary_data <- data %>%
+  group_by("average_ratings$AntecedentE", "average_ratings$REP") %>%
+  summarize(mean_rating = mean(Human_Rating, na.rm = TRUE), sd_rating = sd(Human_Rating, na.rm = TRUE)) %>%
+  filter("average_ratings$REP" %in% c("Er", "Der", "Dieser", "Die", "Diese", "Sie"))
 
-# Build REPType/AntecedentE tuples
-grouped_average_ratings <- aggregate(. ~ REP + AntecedentE, data = average_ratings[2:13], FUN = mean, na.rm = TRUE)
-numeric_columns <- rating_columns[sapply(average_ratings[rating_columns], is.numeric)]
+# Erstellen des Barplots
+ggplot(summary_data, aes(x = "average_ratings$AntecedentE", y = mean_rating, fill = "average_ratings$REP")) +
+  geom_bar(stat = "identity", position = position_dodge(width = 0.8), width = 0.7) +
+  geom_errorbar(aes(ymin = mean_rating - sd_rating, ymax = mean_rating + sd_rating), 
+                position = position_dodge(width = 0.8), width = 0.25) +
+  labs(title = "Human Ratings by Antecedent and Pronoun", x = "Antecedent", y = "Mean zScore") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1)) +
+  scale_fill_brewer(palette = "Set3", name = "Pronoun")
+
+# grouped_scaled_ratings <- aggregate(. ~ scaled_average_ratings$REP + scaled_average_ratings$AntecedentE, data = scaled_average_ratings[rating_columns], FUN = mean, na.rm = TRUE)
+#numeric_columns <- rating_columns[sapply(average_ratings[rating_columns], is.numeric)]
 
 # Calculate mean relative to each REPType/AntecedentE tuple
 grouped_average_ratings <- aggregate(average_ratings[, numeric_columns], 
                                      by = list(REP = average_ratings$REP, AntecedentE = average_ratings$AntecedentE), 
                                      FUN = mean, na.rm = TRUE)
 
-#grouped_average_ratings <- grouped_average_ratings[, -c(4:7)]
 
-summary(grouped_average_ratings)
-
-# zTransformation of average ratings
-scaled_average_ratings <- average_ratings
-scaled_average_ratings[rating_columns] <- scale(average_ratings[rating_columns])
-summary(scaled_average_ratings)
-
-# Plot average ratings
-# Needs more space on the left side
-old_par <- par()
-par(mar = c(5, 12, 4, 2) + 0.1)
-
-# boxplot average ratings
-boxplot(average_ratings[rating_columns], horizontal = TRUE, yaxt ="n")
-axis(2, at = 1:length(average_ratings[rating_columns]), labels = colnames(average_ratings[rating_columns]), las = 1)
-
-# boxplot scaled average ratings
-boxplot(scaled_average_ratings[rating_columns], horizontal = TRUE, yaxt ="n")
-axis(2, at = 1:length(scaled_average_ratings[rating_columns]), labels = colnames(scaled_average_ratings[rating_columns]), las = 1)
-
-par(old_par)
 
 
 
@@ -91,7 +46,7 @@ colnames(distance_matrix) <- rating_columns
 
 for (i in 1:(n-1)) {
   for (j in (i+1):n) {
-   
+    
     valid_rows <- complete.cases(average_ratings[[rating_columns[i]]], average_ratings[[rating_columns[j]]])
     sum_of_squares <- sum((average_ratings[valid_rows, rating_columns[i]] - average_ratings[valid_rows, rating_columns[j]])^2)
     num_valid_rows <- sum(valid_rows)
@@ -129,12 +84,12 @@ for (i in 1){#:(n-1)) {
     if(i==1 & j==7){
       print(cosine_distance_matrix[i,j])
     }
-      
-   
+    
+    
     vec_a <- average_ratings[valid_rows, rating_columns[i]]
     vec_b <- average_ratings[valid_rows, rating_columns[j]]
     
-  
+    
     if (length(vec_a) > 0 && length(vec_b) > 0) {
       cosine_similarity <- sum(vec_a * vec_b) / (sqrt(sum(vec_a^2)) * sqrt(sum(vec_b^2)))
       cosine_distance <- 1 - cosine_similarity
@@ -292,3 +247,80 @@ for (j in 2:n) {
 # Ausgabe der Kosinus-Distanzmatrix und der größten Abweichungsdaten
 list(CosineDistanceMatrix = cosine_distance_matrix, MaxDeviationData = max_deviation_data)
 
+
+# From 03A AnalyseCompletion Answers
+
+# inter rater library
+library(irr)
+
+# Calculate pairwise Cohen's kappa
+# and - if de-commented - Krippendorff's alpha, which takes a little longer...
+results_kappa <- data.frame()
+#results_alpha <- data.frame()
+for (i in 1:(length(antecedens_columns) - 1)) {
+  for (j in (i + 1):length(antecedens_columns)) {
+    column1 <- antecedens_columns[i]
+    column2 <- antecedens_columns[j]
+    print(paste("Processing columns:", column1, "and", column2))
+    
+    kappa_value <- kappa2(condensedData[, c(column1, column2)])$value
+    results_kappa <- rbind(results_kappa, data.frame(Column1 = column1, Column2 = column2, Kappa = kappa_value))
+    
+    #matrix_for_alpha <- as.matrix(condensedData[, c(column1, column2)])
+    #alpha_value <- kripp.alpha(matrix_for_alpha, method="nominal")$value
+    #results_alpha <- rbind(results_alpha, data.frame(Column1 = column1, Column2 = column2, Alpha = alpha_value))
+  }
+}
+print(results_kappa)
+#print(results_alpha)
+
+condensedData$PromptID = paste0(expAAnswers$ItemNumber,expAAnswers$ArgumentOrder,expAAnswers$REP)
+
+
+# Calculate a 3-dim-vector (RE1-RE2-NA) for each PromptID
+result_vector <- lapply(unique(condensedData$PromptID), function(prompt_id) {
+  # filter specific PromptID 
+  specific_data <- condensedData[condensedData$PromptID == prompt_id, antecedens_columns]
+  
+  # Count RE1, RE2 und NA within each antecedens_columns
+  re1_count <- sum(specific_data == "RE1", na.rm = TRUE)
+  re2_count <- sum(specific_data == "RE2", na.rm = TRUE)
+  na_count <- sum(is.na(specific_data))
+  
+  # Generate Vector
+  c(RE1_count = re1_count, RE2_count = re2_count, NA_count = na_count)
+})
+
+# Vector -> DF
+result_df <- do.call(rbind, result_vector)
+rownames(result_df) <- unique(condensedData$PromptID)
+print(result_df)
+
+# DF for aggregated values
+aggregated_df <- data.frame()
+
+# Iterieren through antecedens_column
+for (col in antecedens_columns) {
+  # Aggregieren Data for each PromptID
+  for (prompt_id in unique(condensedData$PromptID)) {
+    specific_data <- condensedData[condensedData$PromptID == prompt_id, col]
+    
+    # Count RE1, RE2 und NA
+    re1_count <- sum(specific_data == "RE1", na.rm = TRUE)
+    re2_count <- sum(specific_data == "RE2", na.rm = TRUE)
+    na_count <- sum(is.na(specific_data))
+    
+    # New DF
+    aggregated_df <- rbind(aggregated_df, data.frame(PromptID = prompt_id, 
+                                                     Column = col, 
+                                                     RE1_count = re1_count, 
+                                                     RE2_count = re2_count, 
+                                                     NA_count = na_count))
+  }
+}
+
+summary(aggregated_df)
+
+par(mfrow = c(3, 3))
+
+# TODO: Barplots 

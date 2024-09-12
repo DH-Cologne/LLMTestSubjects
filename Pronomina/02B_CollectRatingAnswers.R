@@ -11,12 +11,7 @@
 
 rm(list=ls())
 
-# Function to extract the last word of a string
-extractLastWord <- function(s) {
-  # Regular expression that removes everything except the last word
-  lastWord <- sub(".*\\s(\\w+)[^\\w]*$", "\\1", s)
-  return(lastWord)
-}
+source("99_Utils.R")
 
 # Read original Dataframe
 expBData <- readRDS("Data/ExpBData.rds")

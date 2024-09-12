@@ -9,24 +9,19 @@
 
 
 rm(list=ls())
-# Function to extract the last word of a string
-extractLastWord <- function(s) {
-  # Regular expression that removes everything except the last word
-  lastWord <- sub(".*\\s(\\w+)[^\\w]*$", "\\1", s)
-  return(lastWord)
-}
+source("99_Utils.R")
 
 # Function to check conditions and return according to your rules
 check_and_return <- function(string1, string2, string3) {
   word1 <- extractLastWord(string1)
   word2 <- extractLastWord(string2)
   words3 <- unlist(strsplit(string3, "\\s+"))
-  
   if (word1 %in% words3) {
     return(word1)
   } else if (word2 %in% words3) {
     return(word2)
   } else {
+    notfound <- notfound+1
     return(extractLastWord(string3))
   }
 }
@@ -46,6 +41,7 @@ allanswers <- data.frame(ID=integer())
 
 # Loop through all folders
 for (folderPath in folderList){
+  notfound <- 0
   
   # Dataframe to collect answers from actual file
   mergeData <- data.frame(ID=integer())
@@ -64,12 +60,13 @@ for (folderPath in folderList){
       V3 = answerList$V3
     )
     names(toMergeList)[names(toMergeList) == "V3"] <- paste0(modellfolder,"_Completion")
-    toMergeList$V5 <- answerList$V5 #check_and_return(extractLastWord(expAData[expAData$ID==toMergeList$ID,"RE1"]), extractLastWord(expAData[expAData$ID==toMergeList$ID,"RE2"]), answerList$V5)
+    toMergeList$V5 <- answerList$V5 
     names(toMergeList)[names(toMergeList) == "V5"] <- paste0(modellfolder,"_Antecedens")
     mergeData <- rbind(mergeData, toMergeList)
   }
   # Aggregate all information from all answers
   allanswers <- merge(allanswers, mergeData, by="ID", all=TRUE)
+  print(paste(modellfolder, ":", notfound ))
 }
 # Merge answers into experiment data
 expAData <- merge(expAData, allanswers, by = "ID", all = TRUE)
