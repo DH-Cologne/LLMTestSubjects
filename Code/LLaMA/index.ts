@@ -1,17 +1,22 @@
-import { dirname, join } from "path";
-import { fileURLToPath } from "url";
+import { dirname, join } from "node:path";
+import { fileURLToPath } from "node:url";
 import minimist from "minimist";
-import { basename, extname } from "path/posix";
-import { access, mkdir, readFile, writeFile } from "fs/promises";
+import { basename, extname } from "node:path/posix";
+import { access, mkdir, readFile, writeFile } from "node:fs/promises";
 import { stringify } from "csv-stringify/sync";
-import { getLlama, ChatHistoryItem, LlamaContext, LlamaChatSession } from "node-llama-cpp";
+import {
+  getLlama,
+  ChatHistoryItem,
+  LlamaContext,
+  LlamaChatSession,
+} from "node-llama-cpp";
 
 type Arguments = {
   model: string;
   temperature: number;
   system: string;
   "experiment-file": string;
-  "no-output": string | undefined;
+  "skip-output": string | undefined;
   "max-tokens": number | undefined;
   "out-dir": string | undefined;
 };
@@ -31,7 +36,7 @@ if (!args.system) {
 }
 
 const baseSystemPrompt = await readFile(args.system, "utf-8");
-const noOutput = args["no-output"] !== undefined;
+const skipOutput = args["skip-output"] !== undefined;
 const maxTokens = args["max-tokens"] ? args["max-tokens"] : 64;
 
 const experiment = (await readFile(args["experiment-file"], "utf-8"))
@@ -59,7 +64,7 @@ const { outfile } = await (async () => {
 const fullHistory: string[][] = [];
 
 if (
-  !noOutput &&
+  !skipOutput &&
   (await access(outfile).then(
     () => true,
     () => false,
@@ -81,33 +86,6 @@ if (
   }
 }
 
-// Model setup
-/*const safeGpuLayers = {
-  "8x7b": 10,
-  "7b": 80,
-  "8b": 40,
-  "13b": 32,
-  "14b": 34,
-  "Phi-3-medium": 34,
-  "34b": 24,
-  "70b": 10,
-};
-
-const gpuLayers = (() => {
-  for (const [params, layers] of Object.entries(safeGpuLayers)) {
-    if (basename(args.model).toLocaleLowerCase().includes(params.toLocaleLowerCase())) {
-      return layers;
-    }
-  }
-  return undefined;
-})();
-
-if (!gpuLayers) {
-  throw new Error(
-    "Could not determine model params from model name, or no gpu layer information available",
-  );
-}*/
-
 const seed = Math.round(Math.random() * 1000000);
 
 function* chunks<T>(arr: T[], n: number): Generator<T[], void> {
@@ -123,18 +101,20 @@ const [[_, systemPrompt], ...history] = [
       .filter((_) => _),
     2,
   ),
-] as ['user' | 'assistant', string][];
-const typeMap = {  'user': 'user',  'assistant': 'model',} as const;
+] as ["user" | "assistant", string][];
+const typeMap = { user: "user", assistant: "model" } as const;
 const conversationHistory: ChatHistoryItem[] = history.map(([from, text]) => {
   const type = typeMap[from];
-  return type === 'user' ? { type, text } : { type, response: [text] };
+  return type === "user" ? { type, text } : { type, response: [text] };
 });
 
-const llama = await getLlama("lastBuild");
+const llama = await getLlama({
+  gpu: "cuda",
+});
 
 const model = await llama.loadModel({
   modelPath: args.model!,
-  // gpuLayers,
+  gpuLayers: "auto",
 });
 
 console.log(`Using model:\t${basename(args.model)}`);
@@ -150,7 +130,7 @@ const getAnswser = async ({
 }) => {
   const chunks: string[] = [];
   console.log(`>>> ${prompt}`);
-  
+
   await session.prompt(prompt, {
     maxTokens,
     customStopTriggers: ["<|begin_of_text|>", "\n"],
@@ -162,6 +142,7 @@ const getAnswser = async ({
       }
     },
     temperature: args.temperature,
+    seed,
   });
   console.log();
   return chunks.join("");
@@ -171,9 +152,7 @@ for (let i = 0; i < experiment.length; i++) {
   console.time("experiment");
 
   const data = experiment[i];
-  const context = await model.createContext({
-    seed,
-  });
+  const context = await model.createContext();
 
   const session = new LlamaChatSession({
     contextSequence: context.getSequence(),
@@ -200,7 +179,7 @@ for (let i = 0; i < experiment.length; i++) {
 
   await context.dispose();
 
-  if (!noOutput) {
+  if (!skipOutput) {
     await writeFile(
       outfile,
       stringify(fullHistory, {
@@ -213,7 +192,7 @@ for (let i = 0; i < experiment.length; i++) {
 
 console.log(fullHistory.map((_) => _.join("\t")).join("\n"));
 
-if (!noOutput) {
+if (!skipOutput) {
   await writeFile(
     outfile,
     stringify(fullHistory, {

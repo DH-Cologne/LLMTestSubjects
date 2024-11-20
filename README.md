@@ -2,7 +2,7 @@
 Series of experiments to evaluate whether LLMs can be used to replace participants in linguistic experiments.
 
 ## Pronomina
-Based on the two papers ([Patterson and Schumacher 2021](https://www.cambridge.org/core/journals/applied-psycholinguistics/article/interpretation-preferences-in-contexts-with-three-antecedents-examining-the-role-of-prominence-in-german-pronouns/E8F581347980C5A0A3D3D938B8F8F30A) and [Patterson et al. 2022](https://www.frontiersin.org/articles/10.3389/fpsyg.2021.672927/full) - further ExpB and ExpA), we analyse whether LLMs 
+Based on the two papers ([Patterson and Schumacher 2021](https://www.cambridge.org/core/journals/applied-psycholinguistics/article/interpretation-preferences-in-contexts-with-three-antecedents-examining-the-role-of-prominence-in-german-pronouns/E8F581347980C5A0A3D3D938B8F8F30A) and [Patterson et al. 2022](https://www.frontiersin.org/articles/10.3389/fpsyg.2021.672927/full) - further ExpB and ExpA), we analyse whether LLMs
 * could make similar judgements about the acceptability of pronoun references as human subjects.
 * prefer the same R-expressions for pronouns as human subjects.
 * can be used reliably in anaphora resolution.
@@ -11,15 +11,15 @@ Based on the two papers ([Patterson and Schumacher 2021](https://www.cambridge.o
 
 The data of the experiments from the two papers is available online, references can be found on the linked pages. We received the combined data from the authors in a file that we pre-processed with the script 01_CreateParticipantsList.R
 
-The code generates two data frames (ExpAData, ExpBData) that we use to generate 
-our prompts for the large language models (folder ExperimentParticipantsLists) 
+The code generates two data frames (ExpAData, ExpBData) that we use to generate
+our prompts for the large language models (folder ExperimentParticipantsLists)
 and exports them to RDS files.
-These files allow us (and you) to feed the LLMs and use our code 
-(02/03 A/B) to analyse our/your results without having to rely on the original data.  
+These files allow us (and you) to feed the LLMs and use our code
+(02/03 A/B) to analyse our/your results without having to rely on the original data.
 
 ### Step 2: Use LLMs as simulated participants
 
-We used the generated participants lists to generate the prompts for the various LLMs (that we used as simulated participants). 
+We used the generated participants lists to generate the prompts for the various LLMs (that we used as simulated participants).
 
 The notation for LLaMA-based models is as follows:
 
@@ -43,6 +43,18 @@ The following models were used:
 | 2     | SK3          | 70B        | [Llama-3-SauerkrautLM-70b-Instruct](https://huggingface.co/VAGOsolutions/Llama-3-SauerkrautLM-70b-Instruct)        |
 | 2     | KFK3         | 8B         | [Llama-3-KafkaLM-8B-v0.1](https://huggingface.co/seedboxai/Llama-3-KafkaLM-8B-v0.1)                                |
 | 2     | PHI3         | 8B         | [Phi-3-medium-4k-instruct](https://huggingface.co/microsoft/Phi-3-medium-4k-instruct)                              |
+|       |              |            |                                                                                                                    |
+| 3     | GEMMA2       | 9B         | [Google Gemma 2](https://huggingface.co/google/gemma-2-9b-it)                                                      |
+| 3     | GRAN         | 8B         | [IBM Granite 8b](https://huggingface.co/ibm-granite/granite-3.0-8b-instruct)                                       |
+| 3     | GRAN_MoE     | 3B MoE     | [IBM Granite 3b a800m MoE](https://huggingface.co/ibm-granite/granite-3.0-3b-a800m-instruct)                       |
+| 3     | MISTRALNEMO  | 12B        | [Mistral Nemo](https://huggingface.co/mistralai/Mistral-Nemo-Instruct-2407)                                        |
+| 3     | ML3.1        | 8B         | [Meta Llama 3.1 8B Instruct](https://huggingface.co/meta-llama/Llama-3.1-8B-Instruct)                              |
+| 3     | ML3.2        | 3B         | [Meta Llama 3.2 3B Instruct](https://huggingface.co/meta-llama/Llama-3.2-3B-Instruct)                              |
+| 3     | Ministral    | 8B         | [Ministral 8B Instruct 2410](https://huggingface.co/mistralai/Ministral-8B-Instruct-2410)                          |
+| 3     | OC3.6        | 8B         | [OpenChat 3.6 8B](https://huggingface.co/openchat/openchat-3.6-8b-20240522)                                        |
+| 3     | QWEN2.5      | 14B        | [Qwen 2.5 14B Instruct](https://huggingface.co/Qwen/Qwen2.5-14B-Instruct)                                          |
+| 3     | SKGEMMA2     | 9B         | [Sauerkraut Gemma 2](https://huggingface.co/VAGOsolutions/SauerkrautLM-gemma-2-9b-it)                              |
+| 3     | SKv2         | 14B        | [Sauerkraut v2 14B DPO](https://huggingface.co/VAGOsolutions/SauerkrautLM-v2-14b-DPO)                              |
 
 #### Differences between Round 1 and Round 2
 
@@ -53,9 +65,9 @@ Since Round 1 was made prior to the release of Meta Llama 3, some differences ex
 
 ### Step 3: Read out the answers given by the LLMs and aggregate them together with the experiment data.
 
-Since ExpA (completion) examined ditransitive verbs (ExpA1) and benefactive verbs (ExpA2), we've generated two a new data frames for ExpA 
-(ExpA1DataAnswers and ExpA2DataAnswers). 
-Data from ExpB and rating-answers from LLMs were collected within a one data frame (ExpBDataAnswers). 
+Since ExpA (completion) examined ditransitive verbs (ExpA1) and benefactive verbs (ExpA2), we've generated two a new data frames for ExpA
+(ExpA1DataAnswers and ExpA2DataAnswers).
+Data from ExpB and rating-answers from LLMs were collected within a one data frame (ExpBDataAnswers).
 See 02A_CollectCompletionAnswers.R and 02B_CollectRatingAnswers.R
 
 ### Step 4: Analyse behaviour of LLMs compared to behaviour of participants of the original experiments
