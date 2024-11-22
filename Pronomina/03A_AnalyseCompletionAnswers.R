@@ -92,7 +92,68 @@ for (col in plot_columns) {
   #legend("bottomright", legend = c("OS", "SO"), fill = c("lightblue", "darkblue"), bty = "n")
 }
 
-# TODO IRR measures
+# ChiSquare
+
+# Export data
+write.table(aggregated_data, file = "temp/subset_data_ExpA2.tsv", sep = "\t", row.names = FALSE, quote = FALSE)
+
+# Reimport data
+data <- read.table("temp/subset_data_ExpA2.tsv", sep = "\t", header = TRUE)
 
 
+# Extract: RE1 / RE2 columns from data
+model_columns <- grep("RE1$|RE2$", names(data), value = TRUE)  # Spalten mit RE1 und RE2 suchen
 
+# Extract model names from data
+models <- unique(sub("\\.RE1$|\\.RE2$", "", model_columns))   
+
+# ChiSquare for all models
+for (model in models) {
+  cat("Examination of model:", model, "\n")
+  re1_col <- paste0(model, ".RE1")
+  re2_col <- paste0(model, ".RE2")
+  
+  for (pronoun in unique(data$REP)) {
+    cat("  Pronoun:", pronoun, "\n")
+    subset_data <- data[data$REP == pronoun, ]
+    
+    contingency_table <- matrix(
+      c(
+        sum(subset_data[subset_data$AO == "OS", re1_col], na.rm = TRUE),
+        sum(subset_data[subset_data$AO == "OS", re2_col], na.rm = TRUE),
+        sum(subset_data[subset_data$AO == "SO", re1_col], na.rm = TRUE),
+        sum(subset_data[subset_data$AO == "SO", re2_col], na.rm = TRUE)
+      ),
+      nrow = 2,
+      byrow = TRUE,
+      dimnames = list(c("OS", "SO"), c("RE1", "RE2"))
+    )
+    chi_result <- chisq.test(contingency_table)
+    
+    # save results
+    results[[paste0(model, "_", pronoun)]] <- list(
+      model = model,
+      pronoun = pronoun,
+      contingency_table = contingency_table,
+      p_value = chi_result$p.value,
+      chi_sq = chi_result$statistic
+    )
+    
+    # print results
+    print(contingency_table)
+    cat("    Chi-Square:", chi_result$statistic, "\n")
+    cat("    p-Wert:", chi_result$p.value, "\n")
+  }
+}
+
+# export results
+results_df <- do.call(rbind, lapply(names(results), function(x) {
+  cbind(Model = results[[x]]$model,
+        Pronoun = results[[x]]$pronoun,
+        Chi_Square = results[[x]]$chi_sq,
+        P_Value = results[[x]]$p_value)
+}))
+results_df <- as.data.frame(results_df)
+write.table(results_df, "temp/ChiSquare_Results_ExpA2.tsv", sep = "\t", row.names = FALSE, quote = FALSE)
+
+    

@@ -1,0 +1,7 @@
+AO	REP	DL3_8b_t00_comp_Antecedens.RE1	DL3_8b_t00_comp_Antecedens.RE2	DL3_8b_t00_comp_Antecedens.NA_count	DL3_8b_t02_comp_Antecedens.RE1	DL3_8b_t02_comp_Antecedens.RE2	DL3_8b_t02_comp_Antecedens.NA_count	DL3_8b_t05_comp_Antecedens.RE1	DL3_8b_t05_comp_Antecedens.RE2	DL3_8b_t05_comp_Antecedens.NA_count	EGLM_7b_t00_comp_Antecedens.RE1	EGLM_7b_t00_comp_Antecedens.RE2	EGLM_7b_t00_comp_Antecedens.NA_count	EGLM_7b_t02_comp_Antecedens.RE1	EGLM_7b_t02_comp_Antecedens.RE2	EGLM_7b_t02_comp_Antecedens.NA_count	EGLM_7b_t05_comp_Antecedens.RE1	EGLM_7b_t05_comp_Antecedens.RE2	EGLM_7b_t05_comp_Antecedens.NA_count
+OS	Der	 96	256	 16	 84	264	 20	 84	268	 16	 80	272	 16	 80	272	 16	 64	284	 20
+SO	Der	128	256	  0	144	224	 16	156	196	 32	 32	352	  0	 32	352	  0	 40	336	  8
+OS	Dieser	 64	288	 32	 44	324	 16	 68	280	 36	 16	352	 16	 20	360	  4	 16	360	  8
+SO	Dieser	  0	352	 32	  8	364	 12	 28	332	 24	  0	384	  0	  0	384	  0	  0	384	  0
+OS	Er	176	208	 16	180	216	  4	196	196	  8	224	176	  0	216	176	  8	168	216	 16
+SO	Er	336	 48	  0	344	 40	  0	324	 36	 24	240	144	  0	236	136	 12	240	136	  8
