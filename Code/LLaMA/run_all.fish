@@ -24,6 +24,8 @@ for temp in 0 0.2 0.5
         "gemma-2-9b-it-Q6_K.gguf|GEMMA2_9b" \
         "Mistral-Nemo-Instruct-2407-Q6_K.gguf|MISTRALNEMO_12b" \
         "qwen2.5-14b-instruct-q6_k.gguf|QWEN2.5_14b" \
+        "eurollm-9b-instruct-q6_k.gguf|EUROLLM_9b" \
+        "openGPT-X.Teuken-7B-instruct-research-v0.4.Q6_K.gguf|Teuken-7b" \
         ;
         set TEMPSTRING (string replace "." "" $temp)
         set TEMPSTRING (string pad -w 2 -c '0' -r $TEMPSTRING)
