@@ -1,0 +1,8 @@
+GEMMA2_9b_ppx Min: 19.6815 Max: 4142.6212
+GRAN_8b_ppx Min: 6.9170 Max: 460.9090
+GRAN_MoE_3b_ppx Min: 7.3722 Max: 3868.2262
+KFK3_8b_ppx Min: 18.1305 Max: 4897.4622
+ML3.1_8b_ppx Min: 33.4559 Max: 4560.8887
+PHI3_14b_ppx Min: 4.0198 Max: 489.3580
+SKGEMMA2_9b_ppx Min: 20.9504 Max: 4347.3428
+SKv2_14b_ppx Min: 11.8176 Max: 1161.2722
