@@ -4,8 +4,9 @@ source("99_Utils.R")
 
 # Define the datasets to process
 datasets <- list(
-  "ExpB1" = "Data/ExpB1DataAnswers.rds", # File with data for ditransitive verbs
-  "ExpB2" = "Data/ExpB2DataAnswers.rds"  # File with data for benefatorial verbs
+  "ExpB2" = "Data/ExpB2DataAnswers.rds",  # File with data for benefatorial verbs
+  "ExpB1" = "Data/ExpB1DataAnswers.rds" # File with data for ditransitive verbs
+  
 )
 
 

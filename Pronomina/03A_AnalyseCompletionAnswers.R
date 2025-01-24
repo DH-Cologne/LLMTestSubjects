@@ -182,6 +182,40 @@ for (dataset_name in names(datasets)) {
           P_Value = results[[x]]$p_value)
   }))
   results_df <- as.data.frame(results_df)
-  write.table(results_df, paste0("temp/", dataset_name, "_ChiSquare_Results.tsv"), sep = "\t", row.names = FALSE, quote = FALSE)
+  write.table(results_df, paste0("temp/", dataset_name, "_ChiSquare_Results_per_Pronoun.tsv"), sep = "\t", row.names = FALSE, quote = FALSE)
+  write.table(preferences_data, paste0("temp/", dataset_name, "_AntecedensPreferences.tsv"), sep = "\t", row.names = FALSE, quote = FALSE)
+  
+  
+  # Spaltennamen extrahieren
+  columns <- colnames(preferences_data)
+  
+  # Letzte Spalte als erwartete Werte
+  expected <- preferences_data[[columns[length(columns)]]]
+  
+  # Ergebnisliste für Chi-Square-Werte
+  chi_square_results <- list()
+  
+  # Für jede Spalte (außer der letzten) den Chi-Square-Wert berechnen
+  for (col in columns[3:(length(columns) - 1)]) {
+    observed <- preferences_data[[col]]
+    
+    # Chi-Square-Test durchführen
+    chi_square <- sum((observed - expected)^2 / expected, na.rm = TRUE)
+    
+    # Ergebnis speichern
+    chi_square_results[[col]] <- chi_square
+  }
+  
+  chi_square_results <- chi_square_results[order(unlist(chi_square_results))]
+  chi2_df <- data.frame(Value = unlist(chi_square_results), stringsAsFactors = FALSE)
+  
+  # Ergebnisse ausgeben
+  print(chi2_df)
+  
+  
+  
+  # Optional: Ergebnisse in einer Datei speichern
+  write.table(chi2_df, paste0("temp/", dataset_name,"_ChiSquareResults_allInOne.tsv"), sep = "\t", quote = FALSE, col.names = NA)
+  
 }
     
