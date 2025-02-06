@@ -1,0 +1,322 @@
+PromptID	Human_Rating	EUROLLM_9b_t02_rtgs_Rating	GEMMA2_9b_t02_rtgs_Rating	GPT4_t05_rtgs_Rating	GRAN_8b_t02_rtgs_Rating	GRAN_MoE_3b_t02_rtgs_Rating	KFK3_8b_t02_rtgs_Rating	MIX_8x7b_t02_rtgs_Rating	ML3.1_8b_t02_rtgs_Rating	OC3.6_8b_t02_rtgs_Rating	PHI3_14b_t02_rtgs_Rating	SKGEMMA2_9b_t02_rtgs_Rating	SKv2_14b_t02_rtgs_Rating	Teuken.7b_t02_rtgs_Rating	REP	AntecedentE
+Der Anwalt erklärte der Mandantin die Beweislage. Die war nun perfekt vorbereitet.	5.428571428571429	5	4.857142857142857	6.857142857142857	5	6.285714285714286	5.857142857142857	7	6	6	6	6	5.166666666666667	6	Die	NP2
+Der Anwalt erklärte der Mandantin die Beweislage. Diese war nun perfekt vorbereitet.	5.571428571428571	4.8	6	7	5	5.857142857142857	6	7	6	6	6	6	5.285714285714286	6	Diese	NP2
+Der Anwalt erklärte der Mandantin die Beweislage. Sie war nun perfekt vorbereitet.	5.571428571428571	5.25	6	7	7	6	6	7	6	6	6	6	6.571428571428571	6	Sie	NP2
+Der Arbeitgeber zeigte dem Bewerber den Arbeitsvertrag. Der war ohne Zweifel rechtsgültig.	6.571428571428571	4.333333333333333	4	7	6.142857142857143	6.857142857142857	4.428571428571429	7	6	4	6	4	5.333333333333333	6	Der	NP3
+Der Arbeitgeber zeigte dem Bewerber den Arbeitsvertrag. Dieser war ohne Zweifel rechtsgültig.	5.857142857142857	5.2	4	7	6.428571428571429	6.857142857142857	6	7	6	4	6	4	5.285714285714286	6	Dieser	NP3
+Der Arbeitgeber zeigte dem Bewerber den Arbeitsvertrag. Er war ohne Zweifel rechtsgültig.	5.857142857142857	5	4	7	7	7	6	7	6	4	6	4	5.857142857142857	6	Er	NP3
+Der Arbeitgeber zeigte der Bewerberin den Arbeitsvertrag. Der wirkte dabei sehr sympathisch.	4.333333333333333	4	3	6.5	5	6	6	7	6	4	6	1.8333333333333333	5	6	Der	NP1
+Der Arbeitgeber zeigte der Bewerberin den Arbeitsvertrag. Dieser wirkte dabei sehr sympathisch.	6.142857142857143	4	2.4285714285714284	6.142857142857143	3.857142857142857	6.285714285714286	6	6.714285714285714	6	4	5.428571428571429	1	5	6	Dieser	NP1
+Der Arbeitgeber zeigte der Bewerberin den Arbeitsvertrag. Er wirkte dabei sehr sympathisch.	4.75	4	4	7	5	6.125	6	7	6	4.25	6	4	5.625	6	Er	NP1
+Der Archäologe präsentierte dem Museumsdirektor den Fund. Der war sensationell.	6.142857142857143	5.2	5.571428571428571	7	6.142857142857143	6.142857142857143	6	7	6	6	6	6	5	6	Der	NP3
+Der Archäologe präsentierte dem Museumsdirektor den Fund. Dieser war sensationell.	6.5	5.4	6	7	6.666666666666667	6	6	7	6	6	6	6	6.333333333333333	6	Dieser	NP3
+Der Archäologe präsentierte dem Museumsdirektor den Fund. Er war sensationell.	6.333333333333333	4.75	6	7	5	6	6	7	6	6	6	6	6.333333333333333	6	Er	NP3
+Der Archäologe präsentierte der Museumsdirektorin den Fund. Der war sehr aufgeregt.	3.857142857142857	4	4	4.571428571428571	5.571428571428571	6	6	7	6	4	6	6	5	6	Der	NP1
+Der Archäologe präsentierte der Museumsdirektorin den Fund. Dieser war sehr aufgeregt.	6.285714285714286	3.75	4.142857142857143	4	5.285714285714286	6	6	7	6	4.285714285714286	6	5.571428571428571	6.142857142857143	6	Dieser	NP1
+Der Archäologe präsentierte der Museumsdirektorin den Fund. Er war sehr aufgeregt.	4	4	6	7	5	5.428571428571429	6	7	6	4	6	6	5.714285714285714	6	Er	NP1
+Der Autor widmete der Verlobten die Novelle. Die war dafür sehr dankbar.	5.333333333333333	3.8	6	5	5	6	4.666666666666667	7	6	4	6	6	5.166666666666667	6	Die	NP2
+Der Autor widmete der Verlobten die Novelle. Diese war dafür sehr dankbar.	6.333333333333333	3.5	6	7	5	6	5	7	6	4.666666666666667	6	6	5.4	6	Diese	NP2
+Der Autor widmete der Verlobten die Novelle. Sie war dafür sehr dankbar.	5.166666666666667	4	6	7	5	6	6	7	6	6	6	6	6.166666666666667	6	Sie	NP2
+Der Betrüger raubte der Königin die Krone. Die war leider unvorsichtig.	4	4	4	5.142857142857143	1	2	1	6	2	4	2.2857142857142856	4	5	6	Die	NP2
+Der Betrüger raubte der Königin die Krone. Diese war leider unvorsichtig.	4.857142857142857	3.75	4	6	1	2	1.7142857142857142	6	2	4	2	4	5	6	Diese	NP2
+Der Betrüger raubte der Königin die Krone. Sie war leider unvorsichtig.	4	3.75	4	6.571428571428571	1	2	1.8571428571428572	6	3.857142857142857	4	2.5714285714285716	4	4.833333333333333	6	Sie	NP2
+Der Chef garantierte der Angestellten die Gehaltserhöhung. Die war daraufhin sehr zufrieden.	5.857142857142857	4	4.428571428571429	7	6.142857142857143	6.142857142857143	6	7	6	5.714285714285714	6	6	5	6	Die	NP2
+Der Chef garantierte der Angestellten die Gehaltserhöhung. Diese war daraufhin sehr zufrieden.	6.666666666666667	4.2	6	7	5.666666666666667	6	6	7	6	6	6	6	5.5	6	Diese	NP2
+Der Chef garantierte der Angestellten die Gehaltserhöhung. Sie war daraufhin sehr zufrieden.	5.5	3.5	6	7	7	6.666666666666667	6	7	6	6	6	6	6.666666666666667	6	Sie	NP2
+Der Chirurg besorgte der Ärztin die Stelle. Die brachte nützliche Kontakte mit.	4.833333333333333	3.3333333333333335	3	4.333333333333333	1	6	2	6	4	3.6666666666666665	2.5	4	5	6	Die	NP2
+Der Chirurg besorgte der Ärztin die Stelle. Diese brachte nützliche Kontakte mit.	5	3.7142857142857144	3	4.142857142857143	1.2857142857142858	6.285714285714286	3.857142857142857	6	6	4	3.142857142857143	3.857142857142857	5	6	Diese	NP2
+Der Chirurg besorgte der Ärztin die Stelle. Sie brachte nützliche Kontakte mit.	5.25	3.5	3	4.625	1.25	6.375	2.125	6	5.75	3.875	3.5	3.875	4.5	6	Sie	NP2
+Der Dieb entwendete der Touristin die Handtasche. Die war danach sehr aggressiv.	5	4	4	3.875	1	3.75	2	5	1.875	3.5	4	4	5	6	Die	NP2
+Der Dieb entwendete der Touristin die Handtasche. Diese war danach sehr aggressiv.	5.714285714285714	3.5	3.4285714285714284	4.142857142857143	1	5	1	5	1	3.142857142857143	3.142857142857143	3.2857142857142856	5	6	Diese	NP2
+Der Dieb entwendete der Touristin die Handtasche. Sie war danach sehr aggressiv.	4.285714285714286	4	4	4.571428571428571	1	3.142857142857143	4	6	4	3.857142857142857	4.571428571428571	6	5	6	Sie	NP2
+Der Eigentümer vermietete der Anwohnerin die Parkfläche. Die war froh über den langfristigen Vertrag.	5.166666666666667	4.333333333333333	6	6.166666666666667	1	6	6	7	4	4.333333333333333	6	6	5.4	6	Die	NP2
+Der Eigentümer vermietete der Anwohnerin die Parkfläche. Diese war froh über den langfristigen Vertrag.	6.571428571428571	4.285714285714286	6	6.428571428571429	2.142857142857143	6	6	7	6	5	6	6	5.285714285714286	6	Diese	NP2
+Der Eigentümer vermietete der Anwohnerin die Parkfläche. Sie war froh über den langfristigen Vertrag.	6.375	4	6	6.5	1	6.25	6	7	5.75	5.125	6	6	6	6	Sie	NP2
+Der Enkel malte dem Großvater den Garten. Der enthielt viele bunte Pflanzen.	4.666666666666667	3.3333333333333335	4	4.333333333333333	5	5.833333333333333	6	7	4.333333333333333	4	3.3333333333333335	4	5.833333333333333	6	Der	NP3
+Der Enkel malte dem Großvater den Garten. Dieser enthielt viele bunte Pflanzen.	5.333333333333333	3.5	4	4.5	5.666666666666667	6	6	7	6	4	3.6666666666666665	4	6	6	Dieser	NP3
+Der Enkel malte dem Großvater den Garten. Er enthielt viele bunte Pflanzen.	5	4	4	3.8333333333333335	5.333333333333333	6	6	6.666666666666667	5.666666666666667	4	3.6666666666666665	4	5.833333333333333	6	Er	NP3
+Der Enkel malte der Großmutter den Garten. Der wurde erst am späten Abend langsam müde.	3	3.5714285714285716	3.5714285714285716	3.2857142857142856	5.142857142857143	6	1.8571428571428572	6	2	4	4.571428571428571	3.5714285714285716	1.3333333333333333	6	Der	NP1
+Der Enkel malte der Großmutter den Garten. Dieser wurde erst am späten Abend langsam müde.	3.2857142857142856	2.8333333333333335	3	3	2.7142857142857144	5.857142857142857	1	6	1.5	4	3.7142857142857144	1	1	6	Dieser	NP1
+Der Enkel malte der Großmutter den Garten. Er wurde erst am späten Abend langsam müde.	3	3.4	4	4.857142857142857	5	6	6	7	2	4	6	6	5.857142857142857	6	Er	NP1
+Der Friseur erzählte dem Neukunden den Sonntagswitz. Der handelte von drei Waschbären und einem Anwalt.	6.714285714285714	4	4	4.571428571428571	1.2857142857142858	5.285714285714286	2	6	2	3.5714285714285716	3.5714285714285716	3.142857142857143	5	6	Der	NP3
+Der Friseur erzählte dem Neukunden den Sonntagswitz. Dieser handelte von drei Waschbären und einem Anwalt.	6.571428571428571	3.857142857142857	4	4.571428571428571	1	5.857142857142857	2.2857142857142856	6	2	3.857142857142857	3.4285714285714284	3.5714285714285716	4.857142857142857	6	Dieser	NP3
+Der Friseur erzählte dem Neukunden den Sonntagswitz. Er handelte von drei Waschbären und einem Anwalt.	6	3.75	3.857142857142857	4.857142857142857	1	5.857142857142857	2.2857142857142856	6.285714285714286	2	3.5714285714285716	3.4285714285714284	3.4285714285714284	4.833333333333333	6	Er	NP3
+Der Friseur erzählte der Neukundin den Sonntagswitz. Der konnte dabei nicht aufhören, zu lachen.	3.1666666666666665	4.666666666666667	4	4.833333333333333	1	5.833333333333333	4	6	2	4	4	4	4.666666666666667	6	Der	NP1
+Der Friseur erzählte der Neukundin den Sonntagswitz. Dieser konnte dabei nicht aufhören, zu lachen.	6.375	4	4	4.625	3.5	5.5	6	6	2.5	4	4	4	5.25	6	Dieser	NP1
+Der Friseur erzählte der Neukundin den Sonntagswitz. Er konnte dabei nicht aufhören, zu lachen.	4.833333333333333	3.6	4	6.5	1	6	4	7	2	4	4	4	5	6	Er	NP1
+Der Gastgeber organisierte der Rednerin die Hotelsuite. Die freute sich über die Einladung.	5.428571428571429	3.5	4	4.428571428571429	5	6.142857142857143	4.142857142857143	6	4.285714285714286	4	3.857142857142857	6	5	6	Die	NP2
+Der Gastgeber organisierte der Rednerin die Hotelsuite. Diese freute sich über die Einladung.	5.5	4.5	4	4.5	5	6.333333333333333	4	6	3	4	4	6	4.333333333333333	6	Diese	NP2
+Der Gastgeber organisierte der Rednerin die Hotelsuite. Sie freute sich über die Einladung.	4.571428571428571	4	6	4.857142857142857	5	5.857142857142857	4	6.428571428571429	3.142857142857143	4	3.4285714285714284	6	4.333333333333333	6	Sie	NP2
+Der Hotelmanager beschaffte der Urlauberin die Massage. Die machte nämlich einen gestressten Eindruck.	5.833333333333333	4	4	5	3	6	2.3333333333333335	6	2.1666666666666665	4	3.8333333333333335	4.333333333333333	5	6	Die	NP2
+Der Hotelmanager beschaffte der Urlauberin die Massage. Diese machte nämlich einen gestressten Eindruck.	5.666666666666667	4	6	5	2.3333333333333335	6	2.5	6	2	4	4	6	5	6	Diese	NP2
+Der Hotelmanager beschaffte der Urlauberin die Massage. Sie machte nämlich einen gestressten Eindruck.	5	3.6666666666666665	6	5.666666666666667	5.333333333333333	6	2.5	6	2	4	4	6	5.333333333333333	6	Sie	NP2
+Der Inhaber bot dem Mitarbeiter den Umzugswagen. Der war geräumig genug für alle Möbel.	5.714285714285714	5.2	6	6.285714285714286	6.142857142857143	6.857142857142857	6	7	6	4	6	6	5	6	Der	NP3
+Der Inhaber bot dem Mitarbeiter den Umzugswagen. Dieser war geräumig genug für alle Möbel.	5.833333333333333	5	5.666666666666667	6.333333333333333	6.333333333333333	7	6	7	6	4	6	6	5	6	Dieser	NP3
+Der Inhaber bot dem Mitarbeiter den Umzugswagen. Er war geräumig genug für alle Möbel.	5.833333333333333	5	6	6.5	5	6.166666666666667	6	7	6	4	6	6	5	6	Er	NP3
+Der Inhaber bot der Mitarbeiterin den Umzugswagen. Der wollte sich das Wochenende ohnehin frei nehmen.	3.4285714285714284	4	4	3.5714285714285716	1.8571428571428572	6.714285714285714	4	6	4.857142857142857	4	5.428571428571429	4	4.142857142857143	6	Der	NP1
+Der Inhaber bot der Mitarbeiterin den Umzugswagen. Dieser wollte sich das Wochenende ohnehin frei nehmen.	5.571428571428571	3.6	4	3.5714285714285716	1	6.142857142857143	6	6	5.714285714285714	4	6	4	4.714285714285714	6	Dieser	NP1
+Der Inhaber bot der Mitarbeiterin den Umzugswagen. Er wollte sich das Wochenende ohnehin frei nehmen.	3.7142857142857144	3.75	4	5.142857142857143	1	6.142857142857143	6	7	4.285714285714286	4	6	5.142857142857143	4.5	6	Er	NP1
+Der Käufer schuldete dem Händler den Kaufpreis. Der lag im fünfstelligen Bereich.	6.666666666666667	4.333333333333333	4	7	3	4	6	7	6	4	6	6	7	6	Der	NP3
+Der Käufer schuldete dem Händler den Kaufpreis. Dieser lag im fünfstelligen Bereich.	6.333333333333333	4	4	7	5.333333333333333	6.333333333333333	6	7	6	4	6	6	7	6	Dieser	NP3
+Der Käufer schuldete dem Händler den Kaufpreis. Er lag im fünfstelligen Bereich.	5.833333333333333	4.5	5	7	2.3333333333333335	5.666666666666667	6	7	6	4	6	6	6.833333333333333	6	Er	NP3
+Der Käufer schuldete der Händlerin den Kaufpreis. Der war telefonisch nicht erreichbar.	2.7142857142857144	4	4	4	1.2857142857142858	5.714285714285714	6	7	6	4	6	4	5	5.714285714285714	Der	NP1
+Der Käufer schuldete der Händlerin den Kaufpreis. Dieser war telefonisch nicht erreichbar.	5.666666666666667	3.5	4	4	1	4.666666666666667	6	7	6	4	6	4	5	6	Dieser	NP1
+Der Käufer schuldete der Händlerin den Kaufpreis. Er war telefonisch nicht erreichbar.	3.857142857142857	4	6	5.857142857142857	3.2857142857142856	3.7142857142857144	6	7	6	4	6	6	5.285714285714286	6	Er	NP1
+Der Klient überwies dem Detektiv den Betrag. Der war großzügig aufgerundet.	5.625	4	4	7	1	6.5	6	7	6	4	4	6	5.125	6	Der	NP3
+Der Klient überwies dem Detektiv den Betrag. Dieser war großzügig aufgerundet.	6.571428571428571	4	4.285714285714286	7	1	6.714285714285714	6	7	6	4	5.714285714285714	6	5.333333333333333	6	Dieser	NP3
+Der Klient überwies dem Detektiv den Betrag. Er war großzügig aufgerundet.	5.285714285714286	4	4.285714285714286	6.857142857142857	1	6.714285714285714	6	7	6	4.571428571428571	5.714285714285714	6	6.142857142857143	6	Er	NP3
+Der Klient überwies der Detektivin den Betrag. Der war dabei sehr diskret.	4.833333333333333	4	4	5.833333333333333	1	6.666666666666667	2.6666666666666665	6	5.666666666666667	4	4	4	5	6	Der	NP1
+Der Klient überwies der Detektivin den Betrag. Dieser war dabei sehr diskret.	5.833333333333333	4	4	5.166666666666667	1	7	4.333333333333333	6	6	4	5	4	5	6	Dieser	NP1
+Der Klient überwies der Detektivin den Betrag. Er war dabei sehr diskret.	3.1666666666666665	4	5	7	1	6.166666666666667	4	6	6	4	4.666666666666667	6	5.333333333333333	6	Er	NP1
+Der Kollege führte der Neuen die Prozedur. Die war sehr konzentriert.	4.428571428571429	4	4	3	5	6	6	6	6	4	4	4	5	6	Die	NP2
+Der Kollege führte der Neuen die Prozedur. Diese war sehr konzentriert.	4.571428571428571	4	4	3	5	6	4	7	6	4	4	4	5.142857142857143	6	Diese	NP2
+Der Kollege führte der Neuen die Prozedur. Sie war sehr konzentriert.	4.428571428571429	4	4	3	5	6	6	7	6	4	5.428571428571429	5.428571428571429	5.166666666666667	6	Sie	NP2
+Der Krankenpfleger wusch dem Patienten den Rücken. Der war etwas schuppig.	5.714285714285714	3.75	3	6.857142857142857	1.5714285714285714	5.571428571428571	3	7	4	4	4.571428571428571	3	4.666666666666667	6	Der	NP3
+Der Krankenpfleger wusch dem Patienten den Rücken. Dieser war etwas schuppig.	4.571428571428571	3.6666666666666665	3	6.857142857142857	2.7142857142857144	5.428571428571429	5	7	3.7142857142857144	4	5.142857142857143	3	5	6	Dieser	NP3
+Der Krankenpfleger wusch dem Patienten den Rücken. Er war etwas schuppig.	5.857142857142857	3.6666666666666665	3	6.857142857142857	1	2.142857142857143	4	7	2	4	4.857142857142857	3	5	6	Er	NP3
+Der Krankenpfleger wusch der Patientin den Rücken. Der kannte die Routine mittlerweile.	5.166666666666667	4	4	4.833333333333333	3.6666666666666665	6	4.666666666666667	7	4	4	6	4	5	6	Der	NP1
+Der Krankenpfleger wusch der Patientin den Rücken. Dieser kannte die Routine mittlerweile.	6.571428571428571	4	4	6.142857142857143	1.5714285714285714	6.428571428571429	5.285714285714286	7	3.7142857142857144	4	6	4	5	6	Dieser	NP1
+Der Krankenpfleger wusch der Patientin den Rücken. Er kannte die Routine mittlerweile.	5.25	NA	4	7	2.5	6	5.875	7	4.125	3.875	6	4	6.625	6	Er	NP1
+Der Künstler vererbte dem Musiker den Besitz. Der bestand aus Geldwerten und Grundstücken.	6	3.8	4.285714285714286	5.142857142857143	1	6	2.142857142857143	7	4	4	4	6	6.142857142857143	6	Der	NP3
+Der Künstler vererbte dem Musiker den Besitz. Dieser bestand aus Geldwerten und Grundstücken.	6.166666666666667	4.333333333333333	4	6.666666666666667	1	5.833333333333333	2.5	7	3.5	4	4.333333333333333	6	5.666666666666667	6	Dieser	NP3
+Der Künstler vererbte dem Musiker den Besitz. Er bestand aus Geldwerten und Grundstücken.	6.142857142857143	3.5	4.857142857142857	5.714285714285714	1.7142857142857142	6.142857142857143	2	7	3.5714285714285716	4	4	6	5.571428571428571	6	Er	NP3
+Der Künstler vererbte der Musikerin den Besitz. Der war sehr reich.	4.25	4	4	4.25	1	6	2	6	2.125	3.875	3.75	4	4.75	6	Der	NP1
+Der Künstler vererbte der Musikerin den Besitz. Dieser war sehr reich.	6	3.6666666666666665	4	4.571428571428571	1	6	2.142857142857143	6	2	4	3.7142857142857144	4.142857142857143	4.333333333333333	6	Dieser	NP1
+Der Künstler vererbte der Musikerin den Besitz. Er war sehr reich.	2.7142857142857144	4	4	5	1	6.142857142857143	2	7	2	4	4	6	5	6	Er	NP1
+Der Lehrer kündigte der Rektorin die Pensionierung. Die war darüber etwas traurig.	5	3.3333333333333335	4	3.1666666666666665	2.3333333333333335	6	2	7	6	4	4.666666666666667	6	5.166666666666667	6	Die	NP2
+Der Lehrer kündigte der Rektorin die Pensionierung. Diese war darüber etwas traurig.	6	4	4	3	4.5	4.875	3.75	7	5.75	4	5.5	6	5.125	6	Diese	NP2
+Der Lehrer kündigte der Rektorin die Pensionierung. Sie war darüber etwas traurig.	5.166666666666667	3.3333333333333335	6	3	3.6666666666666665	6	2.5	7	6	4	5	6	5.833333333333333	6	Sie	NP2
+Der Lieferant baute der Kundin die Kommode. Die war nämlich etwas ungeschickt.	4.666666666666667	2.6666666666666665	3	4.5	1	5.166666666666667	2	6	3.8333333333333335	3.6666666666666665	2	3	5	6	Die	NP2
+Der Lieferant baute der Kundin die Kommode. Diese war nämlich etwas ungeschickt.	5.666666666666667	3.8	3	4.333333333333333	1	5.5	2	6	4.333333333333333	3.8333333333333335	2	3	4.333333333333333	6	Diese	NP2
+Der Lieferant baute der Kundin die Kommode. Sie war nämlich etwas ungeschickt.	5.5	3.3333333333333335	3	5	1	4.666666666666667	2	6.166666666666667	4.333333333333333	4	2	3	4.333333333333333	6	Sie	NP2
+Der Lieferant reichte der Floristin die Rechnung. Die war sehr gutaussehend.	4.166666666666667	3.4	2.5	4	1	6.166666666666667	2	5	2	3.3333333333333335	2	1	3.4	6	Die	NP2
+Der Lieferant reichte der Floristin die Rechnung. Diese war sehr gutaussehend.	4.166666666666667	3.3333333333333335	1.3333333333333333	4	1	5.833333333333333	1.8333333333333333	6	2	3.1666666666666665	1.3333333333333333	1	4	6	Diese	NP2
+Der Lieferant reichte der Floristin die Rechnung. Sie war sehr gutaussehend.	3.5	3.6666666666666665	1	4.166666666666667	1	6	2.3333333333333335	6.333333333333333	1.8333333333333333	4	2	1	2.3333333333333335	6	Sie	NP2
+Der Mitarbeiter nahm dem Opernsänger den Mantel. Der war erfreulicherweise aus Kunstpelz.	5.166666666666667	3.6666666666666665	4	5	2.6666666666666665	6	6	7	4	4	4	4	5	6	Der	NP3
+Der Mitarbeiter nahm dem Opernsänger den Mantel. Dieser war erfreulicherweise aus Kunstpelz.	5.142857142857143	4	4	5.714285714285714	2.142857142857143	6.285714285714286	6	7	4	4	4	4	5	6	Dieser	NP3
+Der Mitarbeiter nahm dem Opernsänger den Mantel. Er war erfreulicherweise aus Kunstpelz.	5.5	4	4	5.125	3.25	6.375	6	7	3.75	4	4	4	4.75	6	Er	NP3
+Der Mitarbeiter nahm der Opernsängerin den Mantel. Der fand das angemessen.	4.333333333333333	3.6	3	3.5	1	5.833333333333333	2.8333333333333335	7	4.666666666666667	4	2.5	3	4.666666666666667	6	Der	NP1
+Der Mitarbeiter nahm der Opernsängerin den Mantel. Dieser fand das angemessen.	6.166666666666667	3.25	2.5	3.75	1	6.166666666666667	3.8333333333333335	7	6	4	2.5	3	4.333333333333333	6	Dieser	NP1
+Der Mitarbeiter nahm der Opernsängerin den Mantel. Er fand das angemessen.	4.666666666666667	3.75	4	5.416666666666667	1	6	6	7	6	4	2.8333333333333335	3.8333333333333335	5	6	Er	NP1
+Der Onkel leitete dem Neffen den Videoclip. Der zeigte eine Katze und eine Gurke.	6	3.3333333333333335	4	3	1	5.666666666666667	4	6	2.8333333333333335	3.8333333333333335	3	3	4.666666666666667	6	Der	NP3
+Der Onkel leitete dem Neffen den Videoclip. Dieser zeigte eine Katze und eine Gurke.	6	3.4	4	3	2	5.333333333333333	4	6.333333333333333	2.3333333333333335	4	3.8333333333333335	3	3.1666666666666665	6	Dieser	NP3
+Der Onkel leitete dem Neffen den Videoclip. Er zeigte eine Katze und eine Gurke.	5.333333333333333	3.6	3.8333333333333335	3	1.3333333333333333	5.333333333333333	4	6	2.3333333333333335	4	2.3333333333333335	3	4.666666666666667	6	Er	NP3
+Der Onkel leitete der Nichte den Videoclip. Der mochte witzige Katzenvideos.	4.714285714285714	3.6	3.4285714285714284	2.7142857142857144	2.4285714285714284	5.428571428571429	3.857142857142857	6	2.142857142857143	4	1.8571428571428572	3.857142857142857	1.1666666666666667	6	Der	NP1
+Der Onkel leitete der Nichte den Videoclip. Dieser mochte witzige Katzenvideos.	5.714285714285714	4	3	3	2.4285714285714284	5.714285714285714	6	6	3.7142857142857144	4	2	4	3.857142857142857	6	Dieser	NP1
+Der Onkel leitete der Nichte den Videoclip. Er mochte witzige Katzenvideos.	3.857142857142857	3.8	3.2857142857142856	3	3	5.428571428571429	6	6	4	4	2	4	1.5714285714285714	6	Er	NP1
+Der Regisseur empfahl der Schauspielerin die Fernsehserie. Die sah gern Komödien.	5.714285714285714	3.6666666666666665	4.714285714285714	5.285714285714286	5	6	6	6	6	4	4.285714285714286	6	5	6	Die	NP2
+Der Regisseur empfahl der Schauspielerin die Fernsehserie. Diese sah gern Komödien.	6.166666666666667	4	4	6.833333333333333	5	5.666666666666667	6	7	6	4	4.666666666666667	4	5.166666666666667	6	Diese	NP2
+Der Regisseur empfahl der Schauspielerin die Fernsehserie. Sie sah gern Komödien.	4.714285714285714	4.2	4.714285714285714	7	5.142857142857143	5.714285714285714	6	6.714285714285714	6	4	6	6	5	6	Sie	NP2
+Der Schneider nähte der Klientin die Jacke. Die investierte viel Geld.	5.714285714285714	4	4	3.857142857142857	1	5.714285714285714	6	6	6	4	4	5.428571428571429	4.666666666666667	6	Die	NP2
+Der Schneider nähte der Klientin die Jacke. Diese investierte viel Geld.	5	4	4	5	1	6.142857142857143	6	6	6	4	6	4	5	6	Diese	NP2
+Der Schneider nähte der Klientin die Jacke. Sie investierte viel Geld.	5	4	4	6.142857142857143	1	6.142857142857143	6	6	6	4	5.714285714285714	4	5.142857142857143	6	Sie	NP2
+Der Schüler zeigte der Sitznachbarin die Formel. Die war nämlich immer sehr nett.	5.333333333333333	3.5	4	4.666666666666667	1.3333333333333333	6	6	7	3	4	4	4	4.666666666666667	6	Die	NP2
+Der Schüler zeigte der Sitznachbarin die Formel. Diese war nämlich immer sehr nett.	5	4	4	4.875	1.25	5.5	4.5	7	3.75	3.875	4	4	5	6	Diese	NP2
+Der Schüler zeigte der Sitznachbarin die Formel. Sie war nämlich immer sehr nett.	5.166666666666667	4	4	5	2.3333333333333335	6	6	6.666666666666667	6	4	4	4	5	6	Sie	NP2
+Der Student stahl dem Dozenten den Laptop. Der war allerdings ohnehin defekt.	5.857142857142857	4	4	5.714285714285714	1	1.4285714285714286	4	7	5.714285714285714	4	4	4	5	6	Der	NP3
+Der Student stahl dem Dozenten den Laptop. Dieser war allerdings ohnehin defekt.	4.857142857142857	3.6666666666666665	4	6.285714285714286	1	1.8571428571428572	4	7	5.714285714285714	4	3.857142857142857	4	5	6	Dieser	NP3
+Der Student stahl dem Dozenten den Laptop. Er war allerdings ohnehin defekt.	5.714285714285714	3.6666666666666665	4	6.142857142857143	1	1.7142857142857142	3.857142857142857	6	5.714285714285714	4	3.857142857142857	4	4.666666666666667	6	Er	NP3
+Der Student stahl der Dozentin den Laptop. Der hatte nämlich ernste Schwierigkeiten.	2.5	3.2	4	3.6666666666666665	1	2	1	5.333333333333333	2	3.8333333333333335	1.8333333333333333	4	1.8333333333333333	6	Der	NP1
+Der Student stahl der Dozentin den Laptop. Dieser hatte nämlich ernste Schwierigkeiten.	4.375	4	4	3.375	1	2	1	6	1.875	3.875	1.25	3.125	1.5	6	Dieser	NP1
+Der Student stahl der Dozentin den Laptop. Er hatte nämlich ernste Schwierigkeiten.	4.333333333333333	3.75	4	4.833333333333333	1	2	1	5.166666666666667	2	4	1.5	4	1	6	Er	NP1
+Der Teenager verkaufte dem Freund den Ausweis. Der war gefälscht.	6.428571428571429	3	3.857142857142857	5.714285714285714	1	2	2.7142857142857144	6.285714285714286	4	4	2	4	5	6	Der	NP3
+Der Teenager verkaufte dem Freund den Ausweis. Dieser war gefälscht.	5.666666666666667	3.5	4	5.666666666666667	1	4.833333333333333	3.8333333333333335	7	4.333333333333333	4	2	4	5	6	Dieser	NP3
+Der Teenager verkaufte dem Freund den Ausweis. Er war gefälscht.	4.857142857142857	3.3333333333333335	4	5.142857142857143	1	3.7142857142857144	4	7	5.142857142857143	4	2	5.714285714285714	5	6	Er	NP3
+Der Teenager verkaufte der Freundin den Ausweis. Der war bereits vorbestraft.	2.75	3.3333333333333335	3	4	1	3.75	1.125	6	2	3.5	2	2.75	5	6	Der	NP1
+Der Teenager verkaufte der Freundin den Ausweis. Dieser war bereits vorbestraft.	4.428571428571429	3.4285714285714284	2.2857142857142856	3.142857142857143	1	2.857142857142857	1.1428571428571428	6	2	3.142857142857143	2	1.2857142857142858	2	6	Dieser	NP1
+Der Teenager verkaufte der Freundin den Ausweis. Er war bereits vorbestraft.	1.8571428571428572	3.7142857142857144	4	3.857142857142857	1	3.4285714285714284	2	6	2	3.4285714285714284	2	4.285714285714286	1.5714285714285714	6	Er	NP1
+Der Therapeut gewöhnte der Patientin die Marotte. Die war sehr dankbar.	5	4	3	3	1	6.125	1	6	1.125	2.875	2.25	3	4.75	6	Die	NP2
+Der Therapeut gewöhnte der Patientin die Marotte. Diese war sehr dankbar.	6.142857142857143	3.5	3	3	1	5.857142857142857	1	6	1.1428571428571428	3	2.857142857142857	3.2857142857142856	4.333333333333333	6	Diese	NP2
+Der Therapeut gewöhnte der Patientin die Marotte. Sie war sehr dankbar.	4	4	3	3	1	6.285714285714286	1	6	1	3.142857142857143	2.2857142857142856	3.142857142857143	5	6	Sie	NP2
+Der Türsteher verweigerte dem Besucher den Zutritt. Der war leider nicht gestattet.	3.8333333333333335	4	4	4.166666666666667	5.333333333333333	2	6	7	6	4	6	5.666666666666667	5.666666666666667	6	Der	NP3
+Der Türsteher verweigerte dem Besucher den Zutritt. Dieser war leider nicht gestattet.	3.1666666666666665	4	4	5	5.333333333333333	2	6	7	6	4	6	4	6	6	Dieser	NP3
+Der Türsteher verweigerte dem Besucher den Zutritt. Er war leider nicht gestattet.	4.166666666666667	4	4	3.3333333333333335	5.666666666666667	2.1666666666666665	6	7	6	4	6	6	6.166666666666667	6	Er	NP3
+Der Türsteher verweigerte der Besucherin den Zutritt. Der war etwas unhöflich.	4.714285714285714	3.4	4	5	1.2857142857142858	2	5.571428571428571	7	6	4	5.142857142857143	4.714285714285714	5	5.714285714285714	Der	NP1
+Der Türsteher verweigerte der Besucherin den Zutritt. Dieser war etwas unhöflich.	6.833333333333333	3.6666666666666665	4	5.333333333333333	1.6666666666666667	2.1666666666666665	6	7	6	4	6	4	4.666666666666667	6	Dieser	NP1
+Der Türsteher verweigerte der Besucherin den Zutritt. Er war etwas unhöflich.	2.857142857142857	3.8333333333333335	4	6.285714285714286	2.142857142857143	2.142857142857143	6	7	6	4	5.428571428571429	6	5.285714285714286	5.428571428571429	Er	NP1
+Der Unternehmer stellte dem Bankangestellten den Kostenplan. Der war sorgfältig berechnet worden.	6.833333333333333	4.25	6	4.833333333333333	5.5	6.166666666666667	6	7	6	4	6	6	5.666666666666667	6	Der	NP3
+Der Unternehmer stellte dem Bankangestellten den Kostenplan. Dieser war sorgfältig berechnet worden.	6.5	5	6	5.75	6	6.375	6	7	6	4	6	6	6.375	6	Dieser	NP3
+Der Unternehmer stellte dem Bankangestellten den Kostenplan. Er war sorgfältig berechnet worden.	5.166666666666667	4	6	4.666666666666667	6.333333333333333	6	6	7	6	4	6	6	6.6	6	Er	NP3
+Der Unternehmer stellte der Bankangestellten den Kostenplan. Der war dabei sehr konzentriert.	3.857142857142857	3.75	4	3.7142857142857144	5.142857142857143	5.714285714285714	6	7	6	4	4	4	5	6	Der	NP1
+Der Unternehmer stellte der Bankangestellten den Kostenplan. Dieser war dabei sehr konzentriert.	5.666666666666667	4	4	3.1666666666666665	5.166666666666667	6	6	7	6	4	4.333333333333333	4	6.5	6	Dieser	NP1
+Der Unternehmer stellte der Bankangestellten den Kostenplan. Er war dabei sehr konzentriert.	5.166666666666667	4	4.333333333333333	3.8333333333333335	5	5.666666666666667	6	7	6	4	6	4	6.333333333333333	6	Er	NP1
+Der Vater kaufte dem Sohn die Zuckerwatte. Die schmeckte nach Erdbeeren.	7	4	4	7	1	6	6	7	6	4	3.5714285714285716	4	7	6	Die	NP3
+Der Vater kaufte dem Sohn die Zuckerwatte. Diese schmeckte nach Erdbeeren.	6.285714285714286	5.666666666666667	3.857142857142857	7	1	6	6	7	6	4	3.7142857142857144	4	6.285714285714286	6	Diese	NP3
+Der Vater kaufte dem Sohn die Zuckerwatte. Sie schmeckte nach Erdbeeren.	6.714285714285714	4.6	3.7142857142857144	7	1	6	4.142857142857143	7	4.285714285714286	4	3.2857142857142856	4	5.833333333333333	6	Sie	NP3
+Der Vater kaufte der Tochter die Zuckerwatte. Die war umgehend gut gelaunt.	5.714285714285714	3.6666666666666665	4.571428571428571	7	1.8571428571428572	5.571428571428571	4	7	3.4285714285714284	4	2.4285714285714284	6	6.285714285714286	6	Die	NP2
+Der Vater kaufte der Tochter die Zuckerwatte. Diese war umgehend gut gelaunt.	6.333333333333333	3.6666666666666665	4.333333333333333	7	1	6	3	7	4.333333333333333	4	2	6	6.333333333333333	6	Diese	NP2
+Der Vater kaufte der Tochter die Zuckerwatte. Sie war umgehend gut gelaunt.	5	4	6	7	1	5.5	6	7	6	4	2.6666666666666665	6	6.833333333333333	6	Sie	NP2
+Der Verkäufer lieh dem Interessenten den Autoschlüssel. Der war defekt.	5.333333333333333	3.3333333333333335	4	4.833333333333333	1.3333333333333333	1.8333333333333333	2	6	2.6666666666666665	3.8333333333333335	4	4	5.166666666666667	6	Der	NP3
+Der Verkäufer lieh dem Interessenten den Autoschlüssel. Dieser war defekt.	4.5	4	4	4.5	1	2.375	2.75	5.125	4.25	3.875	5.25	4	5.125	6	Dieser	NP3
+Der Verkäufer lieh dem Interessenten den Autoschlüssel. Er war defekt.	4.166666666666667	3.6666666666666665	4	3.6666666666666665	1	1.3333333333333333	2	5	2	3.8333333333333335	4.333333333333333	4	5.166666666666667	6	Er	NP3
+Der Verkäufer lieh der Interessentin den Autoschlüssel. Der war voller Hoffnung.	2.857142857142857	3.5	3.5714285714285716	5	1	5.857142857142857	1.8571428571428572	6	2	4	2.2857142857142856	1.2857142857142858	3.857142857142857	6	Der	NP1
+Der Verkäufer lieh der Interessentin den Autoschlüssel. Dieser war voller Hoffnung.	5.166666666666667	3.6666666666666665	1	3.3333333333333335	1	6	1.5	6	2.1666666666666665	4	2	1	2.3333333333333335	6	Dieser	NP1
+Der Verkäufer lieh der Interessentin den Autoschlüssel. Er war voller Hoffnung.	2.8333333333333335	3.6666666666666665	4	7	3.6666666666666665	6.166666666666667	2	7	3.3333333333333335	4	4	4	5.166666666666667	6	Er	NP1
+Der Vermieter schickte dem Mieter den Mietvertrag. Der war präzise formuliert.	6.625	4.714285714285714	4	7	6	6.875	6	7	6	5.75	6	5.5	5.5	6	Der	NP3
+Der Vermieter schickte dem Mieter den Mietvertrag. Dieser war präzise formuliert.	6.714285714285714	4.833333333333333	4	7	6.714285714285714	6.857142857142857	6	7	6	6	6	5.428571428571429	6.166666666666667	6	Dieser	NP3
+Der Vermieter schickte dem Mieter den Mietvertrag. Er war präzise formuliert.	4.857142857142857	4.714285714285714	4	7	6.428571428571429	7	6	7	6	6	6	6	6.857142857142857	6	Er	NP3
+Der Vermieter schickte der Mieterin den Mietvertrag. Der hat aber vergessen, zu unterschreiben.	3.5	3.6666666666666665	6	4	5	4.666666666666667	6	6	5.666666666666667	4	4.333333333333333	6	5.333333333333333	6	Der	NP1
+Der Vermieter schickte der Mieterin den Mietvertrag. Dieser hat aber vergessen, zu unterschreiben.	6.5	3.25	4	4	5	2	6	6	6	4	6	4	5.4	6	Dieser	NP1
+Der Vermieter schickte der Mieterin den Mietvertrag. Er hat aber vergessen, zu unterschreiben.	3.5	3.3333333333333335	4	4.5	4.333333333333333	2.6666666666666665	6	4.833333333333333	6	4	4.333333333333333	4.333333333333333	5.333333333333333	6	Er	NP1
+Der Wächter hat dem Schwager den Geheimcode. Der war allerdings lang und schwer zu merken.	6.166666666666667	4	4	3.5	3.5	6	6	6	4	3.6666666666666665	4	4	5	6	Der	NP3
+Der Wächter hat dem Schwager den Geheimcode. Dieser war allerdings lang und schwer zu merken.	6	NA	4	3.5714285714285716	4.428571428571429	5.428571428571429	6	6	4	3.857142857142857	4.571428571428571	4	5	6	Dieser	NP3
+Der Wächter hat dem Schwager den Geheimcode. Er war allerdings lang und schwer zu merken.	6.625	NA	4	3.125	3.5	5.25	5.75	6	2.625	3.5	4	4	5.125	6	Er	NP3
+Der Wächter hat der Schwägerin den Geheimcode. Der war nämlich schon betrunken.	4.333333333333333	3	3.5	3	1	4.833333333333333	2.6666666666666665	5.333333333333333	2.1666666666666665	3.1666666666666665	2	3	1	6	Der	NP1
+Der Wächter hat der Schwägerin den Geheimcode. Dieser war nämlich schon betrunken.	5.666666666666667	3.8333333333333335	3	2.5	1.3333333333333333	3	2	5.333333333333333	2	3	2	3	1	6	Dieser	NP1
+Der Wächter hat der Schwägerin den Geheimcode. Er war nämlich schon betrunken.	3.3333333333333335	3.3333333333333335	4	3	1.6666666666666667	2.6666666666666665	2.1666666666666665	6	2	3	2.3333333333333335	4	1.6666666666666667	6	Er	NP1
+Die Anwältin erklärte dem Mandanten die Beweislage. Die war wie immer perfekt vorbereitet.	4.833333333333333	4.5	5	5.833333333333333	5	6.833333333333333	6	7	6	6	6	6	5.5	6	Die	NP1
+Die Anwältin erklärte dem Mandanten die Beweislage. Diese war wie immer perfekt vorbereitet.	6.5	5.166666666666667	4.666666666666667	6.666666666666667	5	7	6	7	6	6	6	6	6	6	Diese	NP1
+Die Anwältin erklärte dem Mandanten die Beweislage. Sie war wie immer perfekt vorbereitet.	4.666666666666667	5.666666666666667	6	7	6.333333333333333	7	6	7	6	6	6	6	6.333333333333333	6	Sie	NP1
+Die Anwältin erklärte der Mandantin die Beweislage. Die war uneindeutig.	6.333333333333333	4.25	4	7	5	5.666666666666667	6	6.666666666666667	6	4	6	6	5	6	Die	NP3
+Die Anwältin erklärte der Mandantin die Beweislage. Diese war uneindeutig.	4.857142857142857	4	6	7	5.285714285714286	5	6	7	6	4	6	6	5	6	Diese	NP3
+Die Anwältin erklärte der Mandantin die Beweislage. Sie war uneindeutig.	5.75	4	6	7	5	5.25	6	5	6	4	6	6	5.125	6	Sie	NP3
+Die Arbeitgeberin zeigte dem Bewerber den Arbeitsvertrag. Der wirkte dabei sehr sympathisch.	4.5	3.3333333333333335	3	6.666666666666667	5	5.833333333333333	6	7	6	4	6	3	5	6	Der	NP2
+Die Arbeitgeberin zeigte dem Bewerber den Arbeitsvertrag. Dieser wirkte dabei sehr sympathisch.	4.166666666666667	4.5	4	6.333333333333333	3.6666666666666665	6.166666666666667	6	7	6	4	6	3	5	6	Dieser	NP2
+Die Arbeitgeberin zeigte dem Bewerber den Arbeitsvertrag. Er wirkte dabei sehr sympathisch.	5.166666666666667	4	4	6.5	5	6	6	7	6	4	6	3.8333333333333335	5.166666666666667	6	Er	NP2
+Die Archäologin präsentierte dem Museumsdirektor den Fund. Der war sehr aufgeregt.	4.833333333333333	4	6	7	6.166666666666667	6.166666666666667	6	7	6	5.666666666666667	6	6	6	6	Der	NP2
+Die Archäologin präsentierte dem Museumsdirektor den Fund. Dieser war sehr aufgeregt.	6.375	4	6	7	6	5.75	6	7	6	6	6	6	6.375	6	Dieser	NP2
+Die Archäologin präsentierte dem Museumsdirektor den Fund. Er war sehr aufgeregt.	5.333333333333333	4	6	7	5.333333333333333	6	6	7	6	6	6	6	6.8	6	Er	NP2
+Die Autorin widmete dem Verlobten die Novelle. Die war nämlich sehr dankbar.	4.125	3	3.375	3.125	1	6.125	1.25	5	2.125	3.625	4	3	4.75	6	Die	NP1
+Die Autorin widmete dem Verlobten die Novelle. Diese war nämlich sehr dankbar.	5.714285714285714	3.5	2.5714285714285716	3.142857142857143	1.5714285714285714	6	1	3	2	3	4	1	4.5	6	Diese	NP1
+Die Autorin widmete dem Verlobten die Novelle. Sie war nämlich sehr dankbar.	2.142857142857143	3.7142857142857144	4	7	3.857142857142857	6.285714285714286	5.428571428571429	7	6	4	4.571428571428571	5.714285714285714	5	6	Sie	NP1
+Die Autorin widmete der Verlobten die Novelle. Die war ein Verkaufshit.	4.571428571428571	3.5714285714285716	4	4.142857142857143	1	6	4.857142857142857	6.714285714285714	4	4	4	4.428571428571429	5	6	Die	NP3
+Die Autorin widmete der Verlobten die Novelle. Diese war ein Verkaufshit.	5.166666666666667	3.5	4	5	5	5.5	5.166666666666667	6.333333333333333	4.666666666666667	4	4	5.333333333333333	4.666666666666667	6	Diese	NP3
+Die Autorin widmete der Verlobten die Novelle. Sie war ein Verkaufshit.	5.142857142857143	3.8	4	4.428571428571429	1.8571428571428572	6	6	7	6	4	4	6	5	6	Sie	NP3
+Die Betrügerin raubte dem König die Krone. Die war allerdings unvorsichtig.	3.142857142857143	3.5	4	5.142857142857143	1	1.8571428571428572	6	6	2.857142857142857	4	4	4	2.142857142857143	6	Die	NP1
+Die Betrügerin raubte dem König die Krone. Diese war allerdings unvorsichtig.	5.666666666666667	3.5	4	4.833333333333333	1	2	4	6	3.6666666666666665	4	4	4	2.8	6	Diese	NP1
+Die Betrügerin raubte dem König die Krone. Sie war allerdings unvorsichtig.	3.6666666666666665	3.5	6	6.333333333333333	1	2.1666666666666665	6	6	6	4	4	6	5	6	Sie	NP1
+Die Betrügerin raubte der Königin die Krone. Die war unfassbar wertvoll.	6.166666666666667	3.3333333333333335	5.666666666666667	5.5	1	1.8333333333333333	2	6.333333333333333	2.6666666666666665	4	4	6	5	6	Die	NP3
+Die Betrügerin raubte der Königin die Krone. Diese war unfassbar wertvoll.	5.25	4	5.875	7	1	1.625	2	7	3.375	4	4	5.125	5	6	Diese	NP3
+Die Betrügerin raubte der Königin die Krone. Sie war unfassbar wertvoll.	6	3.75	6	7	1	2	2	7	4	4	4	6	5	6	Sie	NP3
+Die Chefin garantierte dem Angestellten die Gehaltserhöhung. Die war nämlich sehr zufrieden.	3.6666666666666665	3.5	4	6.333333333333333	3.6666666666666665	6.166666666666667	6	6.666666666666667	6	4	4	4	5.166666666666667	6	Die	NP1
+Die Chefin garantierte dem Angestellten die Gehaltserhöhung. Diese war nämlich sehr zufrieden.	6.625	4	4	5.75	5.25	6.625	5.5	6	5.75	4.875	3.5	4	5.125	6	Diese	NP1
+Die Chefin garantierte dem Angestellten die Gehaltserhöhung. Sie war nämlich sehr zufrieden.	4.5	4	6	7	5.333333333333333	7	6	7	6	6	6	6	6.5	6	Sie	NP1
+Die Chefin garantierte der Angestellten die Gehaltserhöhung. Die war längst überfällig.	6.571428571428571	4	4	7	3.2857142857142856	5.857142857142857	6	7	6	4.857142857142857	6	4.714285714285714	5	6	Die	NP3
+Die Chefin garantierte der Angestellten die Gehaltserhöhung. Diese war längst überfällig.	5.571428571428571	4.25	4	7	5	6.142857142857143	6	7	6	6	6	5.428571428571429	5.142857142857143	6	Diese	NP3
+Die Chefin garantierte der Angestellten die Gehaltserhöhung. Sie war längst überfällig.	5.857142857142857	4.333333333333333	6	7	5.285714285714286	6.285714285714286	6	7	6	4	6	6	6.666666666666667	6	Sie	NP3
+Die Chirurgin besorgte dem Arzt die Stelle. Die hatte nämlich nützliche Kontakte.	5.571428571428571	3.5	3	4.142857142857143	1	6.142857142857143	1.8571428571428572	6	2	3.4285714285714284	2.142857142857143	3	4.666666666666667	6	Die	NP1
+Die Chirurgin besorgte dem Arzt die Stelle. Diese hatte nämlich nützliche Kontakte.	5.428571428571429	3.6	2.857142857142857	4.571428571428571	1.1428571428571428	6.285714285714286	2	6	2.5714285714285716	4	2	3	5	6	Diese	NP1
+Die Chirurgin besorgte dem Arzt die Stelle. Sie hatte nämlich nützliche Kontakte.	4.571428571428571	3.25	3	5.285714285714286	1	6.142857142857143	2	6	4	4	2	3	5	6	Sie	NP1
+Die Chirurgin besorgte der Ärztin die Stelle. Die war sehr abwechslungsreich.	5.166666666666667	3.25	2	3.1666666666666665	1	5.833333333333333	1.1666666666666667	6	3	3.1666666666666665	2	2	3	6	Die	NP3
+Die Chirurgin besorgte der Ärztin die Stelle. Diese war sehr abwechslungsreich.	6.5	3.1666666666666665	2.5	4	1	5.833333333333333	2	6	4.333333333333333	3.1666666666666665	2	2	2.5	6	Diese	NP3
+Die Chirurgin besorgte der Ärztin die Stelle. Sie war sehr abwechslungsreich.	5	3.5	2	3.5	1	6	1	6	2.1666666666666665	3	1.6666666666666667	1	1.6666666666666667	6	Sie	NP3
+Die Diebin entwendete dem Touristen die Handtasche. Die war dabei sehr aggressiv.	5	3.5	4	5.571428571428571	1	2.142857142857143	2	6	2	4	6	4	4.714285714285714	6	Die	NP1
+Die Diebin entwendete dem Touristen die Handtasche. Diese war dabei sehr aggressiv.	6.5	3.3333333333333335	1	5.5	1	2.8333333333333335	1	5	2	3.6666666666666665	4.333333333333333	1	4.5	6	Diese	NP1
+Die Diebin entwendete dem Touristen die Handtasche. Sie war dabei sehr aggressiv.	2.857142857142857	4	6	6.714285714285714	1	2.142857142857143	6	6	6	4	5.714285714285714	6	5	5.142857142857143	Sie	NP1
+Die Diebin entwendete der Touristin die Handtasche. Die enthielt alle Wertsachen.	6.5	4	4	6.166666666666667	1	2	6	7	3.6666666666666665	4	6	6	5.166666666666667	6	Die	NP3
+Die Diebin entwendete der Touristin die Handtasche. Diese enthielt alle Wertsachen.	5.166666666666667	3.3333333333333335	4	7	1	1.6666666666666667	6	7	4	4	6	6	5	6	Diese	NP3
+Die Diebin entwendete der Touristin die Handtasche. Sie enthielt alle Wertsachen.	5.5	3.75	5.333333333333333	7	1	1.8333333333333333	6	7	4	4	6	6	5.166666666666667	6	Sie	NP3
+Die Eigentümerin vermietete dem Anwohner die Parkfläche. Die war froh über den langfristigen Vertrag.	4.571428571428571	4	5.571428571428571	5.142857142857143	1.5714285714285714	6.285714285714286	5.857142857142857	7	6	4	4.571428571428571	6	4.666666666666667	6	Die	NP1
+Die Eigentümerin vermietete dem Anwohner die Parkfläche. Diese war froh über den langfristigen Vertrag.	5.571428571428571	3.8333333333333335	5.285714285714286	5.428571428571429	2.7142857142857144	6.285714285714286	6	7	6	5.142857142857143	6	6	5.714285714285714	6	Diese	NP1
+Die Eigentümerin vermietete dem Anwohner die Parkfläche. Sie war froh über den langfristigen Vertrag.	4.714285714285714	4.4	6	7	1.5714285714285714	6	6	7	6	4.285714285714286	6	6	6.285714285714286	6	Sie	NP1
+Die Eigentümerin vermietete der Anwohnerin die Parkfläche. Die war glücklicherweise schattig.	5.333333333333333	3.5	4	6.833333333333333	1	5.833333333333333	4.5	7	4	4	4.333333333333333	4	5.166666666666667	6	Die	NP3
+Die Eigentümerin vermietete der Anwohnerin die Parkfläche. Diese war glücklicherweise schattig.	6.166666666666667	4.75	4	7	1	6.166666666666667	5.666666666666667	7	5	4	6	4	6	6	Diese	NP3
+Die Eigentümerin vermietete der Anwohnerin die Parkfläche. Sie war glücklicherweise schattig.	5.5	4.2	4	7	1	6	4	7	4.333333333333333	4	6	6	6	6	Sie	NP3
+Die Enkelin malte dem Großvater den Garten. Der wurde schon am frühen Abend langsam müde.	3.1666666666666665	3.3333333333333335	4	3.5	5	6	6	6	4	4	4	4	4.333333333333333	6	Der	NP2
+Die Enkelin malte dem Großvater den Garten. Dieser wurde schon am frühen Abend langsam müde.	3.5714285714285716	3.8333333333333335	4	3.857142857142857	3.857142857142857	5.857142857142857	4	6	4	4	4	4	5	6	Dieser	NP2
+Die Enkelin malte dem Großvater den Garten. Er wurde schon am frühen Abend langsam müde.	3.875	3.6666666666666665	4	3.875	5.125	5.875	6	6	4.5	4	4	4	5.125	6	Er	NP2
+Die Friseurin erzählte dem Neukunden den Sonntagswitz. Der konnte danach nicht aufhören, zu lachen.	4.714285714285714	4.4	4	6.428571428571429	1.5714285714285714	5.714285714285714	6	7	6	4	4.571428571428571	4.285714285714286	5.285714285714286	6	Der	NP2
+Die Friseurin erzählte dem Neukunden den Sonntagswitz. Dieser konnte danach nicht aufhören, zu lachen.	6.166666666666667	4	4	6	1	5.666666666666667	6	6	5.666666666666667	4	4	4	5.833333333333333	6	Dieser	NP2
+Die Friseurin erzählte dem Neukunden den Sonntagswitz. Er konnte danach nicht aufhören, zu lachen.	6.333333333333333	3.6666666666666665	4	6.5	1	6	6	7	6	4	4	6	6.166666666666667	6	Er	NP2
+Die Gastgeberin organisierte dem Redner die Hotelsuite. Die freute sich über den Besuch.	4.5	3.6666666666666665	4	3	4.333333333333333	7	6	6	6	4	2	4	5	6	Die	NP1
+Die Gastgeberin organisierte dem Redner die Hotelsuite. Diese freute sich über den Besuch.	5.5	3.8	4	3	5	6.666666666666667	6	6.166666666666667	6	4.666666666666667	2	4	5	6	Diese	NP1
+Die Gastgeberin organisierte dem Redner die Hotelsuite. Sie freute sich über den Besuch.	3	3.5	4	4.5	5	7	6	7	6	5.666666666666667	2	6	5	6	Sie	NP1
+Die Gastgeberin organisierte der Rednerin die Hotelsuite. Die war frisch renoviert.	6.375	4	4	4.625	5	6.25	6	7	5.875	4	2	6	4.75	6	Die	NP3
+Die Gastgeberin organisierte der Rednerin die Hotelsuite. Diese war frisch renoviert.	5.714285714285714	4	4	5.142857142857143	5	6.714285714285714	5.571428571428571	7	6	4	2.2857142857142856	4.857142857142857	4.666666666666667	6	Diese	NP3
+Die Gastgeberin organisierte der Rednerin die Hotelsuite. Sie war frisch renoviert.	3.857142857142857	4	4	3.7142857142857144	5	6.285714285714286	6	6.714285714285714	6	4	2	6	5	6	Sie	NP3
+Die Hotelmanagerin beschaffte dem Urlauber die Massage. Die machte danach einen gestressten Eindruck.	3.875	4	4	3.125	3	5.625	6	5	3.625	3.875	3.75	3	1	6	Die	NP1
+Die Hotelmanagerin beschaffte dem Urlauber die Massage. Diese machte danach einen gestressten Eindruck.	4	3.7142857142857144	3.857142857142857	3.142857142857143	4.428571428571429	5.714285714285714	5.857142857142857	5	3.7142857142857144	4	1.7142857142857142	3	1	6	Diese	NP1
+Die Hotelmanagerin beschaffte dem Urlauber die Massage. Sie machte danach einen gestressten Eindruck.	2.7142857142857144	4	4	4.714285714285714	3.857142857142857	4.285714285714286	6	6	4.285714285714286	4	3.5714285714285716	4	1	6	Sie	NP1
+Die Hotelmanagerin beschaffte der Urlauberin die Massage. Die war sogar ermäßigt.	5.714285714285714	3.6666666666666665	4.142857142857143	5.428571428571429	1	6	4	6	2.142857142857143	4	3.857142857142857	6	5	6	Die	NP3
+Die Hotelmanagerin beschaffte der Urlauberin die Massage. Diese war sogar ermäßigt.	6	3.6	4	7	1	5.666666666666667	3.8333333333333335	6	3.1666666666666665	4	4	6	5	6	Diese	NP3
+Die Hotelmanagerin beschaffte der Urlauberin die Massage. Sie war sogar ermäßigt.	5.142857142857143	4	4.428571428571429	6.142857142857143	1	5.857142857142857	4	6	3	4	3.857142857142857	6	5	6	Sie	NP3
+Die Inhaberin bot dem Mitarbeiter den Umzugswagen. Der wollte sich außerdem das Wochenende frei nehmen.	3.1666666666666665	3.2	4	4.666666666666667	1.3333333333333333	6.166666666666667	6	6.166666666666667	4	4	6	4	1.5	6	Der	NP2
+Die Inhaberin bot dem Mitarbeiter den Umzugswagen. Dieser wollte sich außerdem das Wochenende frei nehmen.	6	4	4	5	1	6.375	6	6.25	5.25	4	6	4	1.5	6	Dieser	NP2
+Die Inhaberin bot dem Mitarbeiter den Umzugswagen. Er wollte sich außerdem das Wochenende frei nehmen.	3.8333333333333335	3.4	4	4	1	6.166666666666667	6	7	6	4	6	4	1	6	Er	NP2
+Die Käuferin schuldete dem Händler den Kaufpreis. Der war telefonisch nicht erreichbar.	4.25	4	5.25	5.75	4.5	5.375	5.875	7	5.75	4	6	6	5	6	Der	NP2
+Die Käuferin schuldete dem Händler den Kaufpreis. Dieser war telefonisch nicht erreichbar.	3.857142857142857	3.5714285714285716	4	6.857142857142857	3.5714285714285716	6.142857142857143	5.857142857142857	7	6	4	6	4.857142857142857	4.666666666666667	6	Dieser	NP2
+Die Käuferin schuldete dem Händler den Kaufpreis. Er war telefonisch nicht erreichbar.	3.7142857142857144	3.857142857142857	6	6.142857142857143	4.428571428571429	5.142857142857143	6	7	6	4	6	6	5	6	Er	NP2
+Die Klientin überwies dem Detektiv den Betrag. Der war bekanntlich sehr diskret.	6	3.6666666666666665	4	6.142857142857143	4.428571428571429	6.142857142857143	6	6	6	4	6	6	5.142857142857143	6	Der	NP2
+Die Klientin überwies dem Detektiv den Betrag. Dieser war bekanntlich sehr diskret.	6	4	4	7	1	6.166666666666667	6	6	6	4	6	6	5.666666666666667	6	Dieser	NP2
+Die Klientin überwies dem Detektiv den Betrag. Er war bekanntlich sehr diskret.	4.285714285714286	3.75	5.142857142857143	7	2.7142857142857144	6.857142857142857	6	6	6	4	6	6	5.714285714285714	6	Er	NP2
+Die Kollegin führte dem Neuen die Prozedur. Die war dabei sehr sorgfältig.	4	4	4	3	5	5.857142857142857	6	7	6	4	6	6	5.285714285714286	6	Die	NP1
+Die Kollegin führte dem Neuen die Prozedur. Diese war dabei sehr sorgfältig.	6.166666666666667	4	4	3	5	6	6	7	6	4	6	4.333333333333333	5.666666666666667	6	Diese	NP1
+Die Kollegin führte dem Neuen die Prozedur. Sie war dabei sehr sorgfältig.	3.1666666666666665	4	5.833333333333333	3.3333333333333335	5	6.166666666666667	6	7	6	5.333333333333333	6	6	6.166666666666667	6	Sie	NP1
+Die Kollegin führte der Neuen die Prozedur. Die war ziemlich komplex.	6.166666666666667	3.6666666666666665	4	3	5	5	6	6	6	4	4	4	4.666666666666667	6	Die	NP3
+Die Kollegin führte der Neuen die Prozedur. Diese war ziemlich komplex.	5.25	4	4	3.125	5	4.5	6	6	6	4	4.5	4	5.125	6	Diese	NP3
+Die Kollegin führte der Neuen die Prozedur. Sie war ziemlich komplex.	5.5	4	4	3	5	5.333333333333333	6	6	6	4	5	6	5.4	6	Sie	NP3
+Die Krankenpflegerin wusch dem Patienten den Rücken. Der kannte die Routine mittlerweile.	6.666666666666667	3.6666666666666665	4	7	5	5.666666666666667	6	7	6	4	6	4	5.166666666666667	6	Der	NP2
+Die Krankenpflegerin wusch dem Patienten den Rücken. Dieser kannte die Routine mittlerweile.	6.666666666666667	3.3333333333333335	4	7	3.6666666666666665	6.166666666666667	6	7	6	4	6	4	5.5	6	Dieser	NP2
+Die Krankenpflegerin wusch dem Patienten den Rücken. Er kannte die Routine mittlerweile.	6.333333333333333	4	4	7	4.333333333333333	6	6	7	6	4	6	4	5.666666666666667	6	Er	NP2
+Die Künstlerin vererbte dem Musiker den Besitz. Der war jetzt sehr reich.	5.666666666666667	3.5	4	6.5	1	6	2	6.333333333333333	2	4	3.8333333333333335	6	5	6	Der	NP2
+Die Künstlerin vererbte dem Musiker den Besitz. Dieser war jetzt sehr reich.	6	3.5	4	7	1	6	2	7	2	4	4	5.833333333333333	5	6	Dieser	NP2
+Die Künstlerin vererbte dem Musiker den Besitz. Er war jetzt sehr reich.	5.333333333333333	3.3333333333333335	5.333333333333333	7	1.3333333333333333	5.666666666666667	2	7	2	4	4	6	4.5	6	Er	NP2
+Die Lehrerin kündigte dem Rektor die Pensionierung. Die war dabei etwas traurig.	3.5714285714285716	4	4	3.857142857142857	2.142857142857143	5.428571428571429	1	6	4	4	4	4	5	6	Die	NP1
+Die Lehrerin kündigte dem Rektor die Pensionierung. Diese war dabei etwas traurig.	5.857142857142857	3.6	4	3.5714285714285716	1.5714285714285714	6	1.7142857142857142	6	4	4	4.285714285714286	4	5.142857142857143	6	Diese	NP1
+Die Lehrerin kündigte dem Rektor die Pensionierung. Sie war dabei etwas traurig.	4.285714285714286	3.75	6	4.428571428571429	4.428571428571429	5.714285714285714	1	7	4.571428571428571	4	5.142857142857143	6	6.666666666666667	6	Sie	NP1
+Die Lehrerin kündigte der Rektorin die Pensionierung. Die war schon lange geplant.	5.714285714285714	4.666666666666667	6	4.857142857142857	1	6.857142857142857	2	7	5.428571428571429	4	4	6	5.285714285714286	6	Die	NP3
+Die Lehrerin kündigte der Rektorin die Pensionierung. Diese war schon lange geplant.	5.333333333333333	4.2	6	5	1	7	2	7	5.666666666666667	4	4	6	5.666666666666667	6	Diese	NP3
+Die Lehrerin kündigte der Rektorin die Pensionierung. Sie war schon lange geplant.	6	3.5	6	5.166666666666667	1	6.833333333333333	1.8333333333333333	6	5.666666666666667	4	4	6	6.333333333333333	6	Sie	NP3
+Die Lieferantin baute dem Kunden die Kommode. Die war dabei etwas ungeschickt.	4.833333333333333	3.3333333333333335	4	3	1	5.333333333333333	2	6	4	3.6666666666666665	2	4	1	5.333333333333333	Die	NP1
+Die Lieferantin baute dem Kunden die Kommode. Diese war dabei etwas ungeschickt.	6.571428571428571	3.7142857142857144	4	3.2857142857142856	1.5714285714285714	3.4285714285714284	2	6	4.857142857142857	3.4285714285714284	2	3.142857142857143	1	5.142857142857143	Diese	NP1
+Die Lieferantin baute dem Kunden die Kommode. Sie war dabei etwas ungeschickt.	5.125	3.8333333333333335	4	3.75	1.75	3.75	2	6	5.625	3.875	2	4	1.125	5	Sie	NP1
+Die Lieferantin baute der Kundin die Kommode. Die war sehr geräumig.	6	3.4285714285714284	4	4.857142857142857	1	6	2.7142857142857144	6	4	4	1.8571428571428572	4	4.142857142857143	6	Die	NP3
+Die Lieferantin baute der Kundin die Kommode. Diese war sehr geräumig.	4.857142857142857	3.142857142857143	4	5.571428571428571	1	5.714285714285714	2.5714285714285716	6.571428571428571	5.142857142857143	4	1.8571428571428572	4	5	6	Diese	NP3
+Die Lieferantin baute der Kundin die Kommode. Sie war sehr geräumig.	5.571428571428571	3.5	4	5.571428571428571	1	5.857142857142857	2	6	4.571428571428571	4	2	4	4.428571428571429	6	Sie	NP3
+Die Lieferantin reichte dem Floristen die Rechnung. Die war sehr gutaussehend.	3.3333333333333335	3.5	2.6666666666666665	4.166666666666667	1	6	2	5	2	2.3333333333333335	2	1	1	6	Die	NP1
+Die Lieferantin reichte dem Floristen die Rechnung. Diese war sehr gutaussehend.	3.5714285714285716	4	1.8571428571428572	3.4285714285714284	1	5.571428571428571	1	5	2.857142857142857	2.7142857142857144	1.1428571428571428	1	1	6	Diese	NP1
+Die Lieferantin reichte dem Floristen die Rechnung. Sie war sehr gutaussehend.	2.75	4	3	6.875	1	6	2.625	7	2.375	3.625	2	1	1.5	6	Sie	NP1
+Die Lieferantin reichte der Floristin die Rechnung. Die war ganz zerknittert.	6.571428571428571	3.7142857142857144	4	6.857142857142857	1	5.857142857142857	4.142857142857143	7	6	3.142857142857143	4	4	4.666666666666667	6	Die	NP3
+Die Lieferantin reichte der Floristin die Rechnung. Diese war ganz zerknittert.	5.857142857142857	3.6666666666666665	4	7	1	5.571428571428571	4.714285714285714	7	6	3	4	4	5	6	Diese	NP3
+Die Lieferantin reichte der Floristin die Rechnung. Sie war ganz zerknittert.	5.714285714285714	3.5	4	6.857142857142857	1	2.857142857142857	3.857142857142857	7	6	3.142857142857143	4	4	5	6	Sie	NP3
+Die Mutter kaufte dem Sohn die Zuckerwatte. Die war heute gut gelaunt.	2	3.3333333333333335	2.5	5.833333333333333	1	6	2	7	2	4	2	1	4.666666666666667	6	Die	NP1
+Die Mutter kaufte dem Sohn die Zuckerwatte. Diese war heute gut gelaunt.	6.5	3	1	3.75	1	4.75	1.75	5	2.125	4	2	1	5	6	Diese	NP1
+Die Mutter kaufte dem Sohn die Zuckerwatte. Sie war heute gut gelaunt.	4.333333333333333	3.5	4	7	1	6	6	7	6	4	3	4	6.5	6	Sie	NP1
+Die Regisseurin empfahl dem Schauspieler die Fernsehserie. Die sah gern Komödien.	3	4	4	3.8333333333333335	5	6	6	6	6	4	4.666666666666667	4.5	4.666666666666667	6	Die	NP1
+Die Regisseurin empfahl dem Schauspieler die Fernsehserie. Diese sah gern Komödien.	5.666666666666667	4	4	3.5	5	6	6	6	6	4	5	4.5	5	6	Diese	NP1
+Die Regisseurin empfahl dem Schauspieler die Fernsehserie. Sie sah gern Komödien.	2.6666666666666665	4	4	5	5.333333333333333	6.166666666666667	6	6.666666666666667	6	4	5.333333333333333	4.666666666666667	4.666666666666667	6	Sie	NP1
+Die Regisseurin empfahl der Schauspielerin die Fernsehserie. Die handelte von einer lustigen Verwechslung.	6.125	4	4.875	6.375	5.25	5.875	6	7	6	4	6	6	4.75	6	Die	NP3
+Die Regisseurin empfahl der Schauspielerin die Fernsehserie. Diese handelte von einer lustigen Verwechslung.	6.571428571428571	4.5	4.857142857142857	7	5	6	6	7	6	4	6	6	5.857142857142857	6	Diese	NP3
+Die Regisseurin empfahl der Schauspielerin die Fernsehserie. Sie handelte von einer lustigen Verwechslung.	5.285714285714286	4.285714285714286	6	7	5	6.428571428571429	6	7	6	4	6	6	5.714285714285714	6	Sie	NP3
+Die Schneiderin nähte dem Klienten die Jacke. Die investierte viel Mühe.	4.5	4	4	5.666666666666667	2.3333333333333335	6.166666666666667	6	7	6	4	6	6	5.166666666666667	6	Die	NP1
+Die Schneiderin nähte dem Klienten die Jacke. Diese investierte viel Mühe.	5.333333333333333	4	4	6	3.6666666666666665	6.166666666666667	6	6.666666666666667	6	4	6	4	5.333333333333333	6	Diese	NP1
+Die Schneiderin nähte dem Klienten die Jacke. Sie investierte viel Mühe.	3.3333333333333335	4	6	7	5.333333333333333	6	6	7	6	4	6	6	6.166666666666667	6	Sie	NP1
+Die Schneiderin nähte der Klientin die Jacke. Die fiel größer aus als gewollt.	6.333333333333333	4	6	6	5	4.666666666666667	6	6	6	4	5	6	5	6	Die	NP3
+Die Schneiderin nähte der Klientin die Jacke. Diese fiel größer aus als gewollt.	6.428571428571429	4	6	7	4.428571428571429	3.7142857142857144	6	6	6	4	6	5.857142857142857	5	6	Diese	NP3
+Die Schneiderin nähte der Klientin die Jacke. Sie fiel größer aus als gewollt.	5.875	4	6	7	4.5	4.5	6	6	5.75	4	4.5	6	5.125	6	Sie	NP3
+Die Schülerin zeigte dem Sitznachbarn die Formel. Die war schon immer sehr nett.	2.4285714285714284	4	4	5	1.2857142857142858	6	5.857142857142857	7	3.2857142857142856	4	4	4	5	6	Die	NP1
+Die Schülerin zeigte dem Sitznachbarn die Formel. Diese war schon immer sehr nett.	6.142857142857143	3.5	3.7142857142857144	3.857142857142857	1	6	2.142857142857143	6	4	4	4	3.4285714285714284	5	6	Diese	NP1
+Die Schülerin zeigte dem Sitznachbarn die Formel. Sie war schon immer sehr nett.	4	4	4	7	4.428571428571429	5.428571428571429	6	7	6	4	6	5	4.666666666666667	6	Sie	NP1
+Die Schülerin zeigte der Sitznachbarin die Formel. Die war ziemlich kompliziert.	6.142857142857143	3.75	4.571428571428571	5.857142857142857	5	5.714285714285714	6	7	6	4	6	6	5.285714285714286	6	Die	NP3
+Die Schülerin zeigte der Sitznachbarin die Formel. Diese war ziemlich kompliziert.	6.5	4	5	6.666666666666667	5	6	6	7	6	4	6	6	5.166666666666667	6	Diese	NP3
+Die Schülerin zeigte der Sitznachbarin die Formel. Sie war ziemlich kompliziert.	6	3.75	6	7	5	5.666666666666667	6	7	6	4	6	6	6.166666666666667	6	Sie	NP3
+Die Studentin stahl dem Dozenten den Laptop. Der hatte dadurch ernste Schwierigkeiten.	6.142857142857143	3.8	6	5.571428571428571	1	2.142857142857143	2	7	5.142857142857143	4	1.7142857142857142	6	5	6	Der	NP2
+Die Studentin stahl dem Dozenten den Laptop. Dieser hatte dadurch ernste Schwierigkeiten.	6.666666666666667	3.6666666666666665	6	6	1	2	2	7	5.666666666666667	4	1.6666666666666667	6	1.8	6	Dieser	NP2
+Die Studentin stahl dem Dozenten den Laptop. Er hatte dadurch ernste Schwierigkeiten.	6.333333333333333	3.6666666666666665	6	6.666666666666667	1	2.1666666666666665	2	7	4.333333333333333	4	1.8333333333333333	6	1	6	Er	NP2
+Die Tante leitete dem Neffen den Videoclip. Der mochte witzige Katzenvideos.	6.166666666666667	3.6	4	3	3.3333333333333335	6	6	7	6	4	3.5	4	4.2	6	Der	NP2
+Die Tante leitete dem Neffen den Videoclip. Dieser mochte witzige Katzenvideos.	6.285714285714286	4	4	3	4.571428571428571	3.7142857142857144	6	7	6	4	3.4285714285714284	4	5	6	Dieser	NP2
+Die Tante leitete dem Neffen den Videoclip. Er mochte witzige Katzenvideos.	5.875	4	4	3	5.125	5.25	6	7	5.75	4	3.75	4	3.25	6	Er	NP2
+Die Teenagerin verkaufte dem Freund den Ausweis. Der war bereits vorbestraft.	4.166666666666667	3.5	3	4.5	1	2.3333333333333335	2	6	2.1666666666666665	4	2	4	4.2	6	Der	NP2
+Die Teenagerin verkaufte dem Freund den Ausweis. Dieser war bereits vorbestraft.	5.166666666666667	3.25	3.6666666666666665	3.8333333333333335	1	1.6666666666666667	2	6	2	3.8333333333333335	2	4	3.4	6	Dieser	NP2
+Die Teenagerin verkaufte dem Freund den Ausweis. Er war bereits vorbestraft.	4.166666666666667	3.2	3.1666666666666665	4.333333333333333	1	1.3333333333333333	2	6	2	4	2	4	3.1666666666666665	6	Er	NP2
+Die Therapeutin gewöhnte dem Patienten die Marotte. Die war sehr bemüht.	3.4285714285714284	3.5	3	3	1	6.142857142857143	1.1428571428571428	6	1	3.142857142857143	2.4285714285714284	3	2.142857142857143	6	Die	NP1
+Die Therapeutin gewöhnte dem Patienten die Marotte. Diese war sehr bemüht.	5.5	3.5	3	3.1666666666666665	1	5.666666666666667	1.3333333333333333	6	1.3333333333333333	3.1666666666666665	3.5	3	3	6	Diese	NP1
+Die Therapeutin gewöhnte dem Patienten die Marotte. Sie war sehr bemüht.	3.142857142857143	3.6666666666666665	3	3.142857142857143	1	6.142857142857143	1	6	1.2857142857142858	4	2.857142857142857	3	2.142857142857143	6	Sie	NP1
+Die Therapeutin gewöhnte der Patientin die Marotte. Die hatte bereits gefährliche Folgen.	4.833333333333333	3.6666666666666665	3	3.6666666666666665	1	3.3333333333333335	1	6	2	2	3.8333333333333335	3	4.5	6	Die	NP3
+Die Therapeutin gewöhnte der Patientin die Marotte. Diese hatte bereits gefährliche Folgen.	4.833333333333333	3.2	3	4.166666666666667	1	4.666666666666667	1	6	2	2.3333333333333335	4	3	1.6666666666666667	6	Diese	NP3
+Die Therapeutin gewöhnte der Patientin die Marotte. Sie hatte bereits gefährliche Folgen.	5.166666666666667	3.3333333333333335	3	3.1666666666666665	1	5.666666666666667	1	6	2	2.1666666666666665	3.8333333333333335	3	2	6	Sie	NP3
+Die Türsteherin verweigerte dem Besucher den Zutritt. Der war etwas unhöflich.	5.75	4	6	6.25	2.25	2.375	6	7	6	4	6	6	5.375	6	Der	NP2
+Die Türsteherin verweigerte dem Besucher den Zutritt. Dieser war etwas unhöflich.	6.428571428571429	3.8	5.571428571428571	6.857142857142857	2.142857142857143	2.142857142857143	6	7	6	4	6	6	5.333333333333333	6	Dieser	NP2
+Die Türsteherin verweigerte dem Besucher den Zutritt. Er war etwas unhöflich.	3.857142857142857	4	6	6.714285714285714	3.2857142857142856	2.4285714285714284	6	7	6	4	6	6	7	6	Er	NP2
+Die Unternehmerin stellte dem Bankangestellten den Kostenplan. Der war dabei sehr konzentriert.	5.285714285714286	4	4	4.142857142857143	5.285714285714286	6.571428571428571	6	7	6	4	6	4	5.166666666666667	6	Der	NP2
+Die Unternehmerin stellte dem Bankangestellten den Kostenplan. Dieser war dabei sehr konzentriert.	5.428571428571429	4	4	5.428571428571429	5	6.142857142857143	6	7	6	4	6	4	6.428571428571429	6	Dieser	NP2
+Die Unternehmerin stellte dem Bankangestellten den Kostenplan. Er war dabei sehr konzentriert.	5.714285714285714	4	4.571428571428571	5	5.285714285714286	6.285714285714286	6	7	6	4	6	5.428571428571429	5.833333333333333	6	Er	NP2
+Die Verkäuferin lieh dem Interessenten den Autoschlüssel. Der war voller Hoffnung.	4.285714285714286	4	4	6.142857142857143	4.428571428571429	6.285714285714286	2	6	2.2857142857142856	4	4	4.285714285714286	5	6	Der	NP2
+Die Verkäuferin lieh dem Interessenten den Autoschlüssel. Dieser war voller Hoffnung.	5.142857142857143	3.75	3.857142857142857	7	5	6.142857142857143	2.142857142857143	7	4	4	2.2857142857142856	4	5	6	Dieser	NP2
+Die Verkäuferin lieh dem Interessenten den Autoschlüssel. Er war voller Hoffnung.	4.285714285714286	4	4.428571428571429	6.714285714285714	5.285714285714286	6.285714285714286	2.142857142857143	7	4	4	4.857142857142857	6	5.428571428571429	6	Er	NP2
+Die Vermieterin schickte dem Mieter den Mietvertrag. Der hat nämlich vergessen, zu unterschreiben.	5.285714285714286	3.75	4	5.857142857142857	5	5.285714285714286	6	7	6	4	6	5.142857142857143	6.142857142857143	6	Der	NP2
+Die Vermieterin schickte dem Mieter den Mietvertrag. Dieser hat nämlich vergessen, zu unterschreiben.	5.666666666666667	3.3333333333333335	4	6.5	5	3	6	7	6	4	6	4	5.166666666666667	6	Dieser	NP2
+Die Vermieterin schickte dem Mieter den Mietvertrag. Er hat nämlich vergessen, zu unterschreiben.	4.857142857142857	4.25	4	6.714285714285714	4.428571428571429	5.714285714285714	6	7	6	4	6	4	6	6	Er	NP2
+Die Wächterin hat dem Schwager den Geheimcode. Der war glücklicherweise schon betrunken.	5	3.4	4	3	1.2857142857142858	4.857142857142857	2.142857142857143	5.142857142857143	2	3.142857142857143	3	4	1.3333333333333333	6	Der	NP2
+Die Wächterin hat dem Schwager den Geheimcode. Dieser war glücklicherweise schon betrunken.	4.857142857142857	3.25	4	3	1.8571428571428572	3.2857142857142856	2.5714285714285716	6	2	3	2.7142857142857144	4	1.5714285714285714	6	Dieser	NP2
+Die Wächterin hat dem Schwager den Geheimcode. Er war glücklicherweise schon betrunken.	4.571428571428571	3.4	4	3	1.2857142857142858	5.428571428571429	2.2857142857142856	5.285714285714286	2	3.142857142857143	3.142857142857143	4	3.7142857142857144	6	Er	NP2

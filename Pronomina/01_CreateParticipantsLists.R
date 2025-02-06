@@ -70,6 +70,9 @@ expBData <- combdata[grepl("^B", combdata$ExperimentID),]
 
 ## preprocess expAData
 
+# add fullstop to context sentence 
+expBData$ContextS <- paste0(expBData$ContextS, ".")
+
 # add annotation question to prompt
 extendedPrompt <- paste0("\tAuf was bezieht sich das \"", expAData$REP, "\" in dem Satz, den Sie ergänzt haben?")
 expAData$TargetPrompt <- paste0(expAData$TargetPrompt, extendedPrompt) 
@@ -122,3 +125,4 @@ expBData <- expBData[, colSums(is.na(expBData)) != nrow(expBData)]
 # export data
 saveRDS(expAData, file="Data/ExpAData.rds")
 saveRDS(expBData, file="Data/ExpBData.rds")
+
