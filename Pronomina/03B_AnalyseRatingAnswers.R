@@ -138,6 +138,9 @@ for (dataset_name in names(datasets)) {
   grouped_scaled_average_ratings[rating_columns] <- scale(grouped_average_ratings[rating_columns])
   summary(grouped_scaled_average_ratings)
   
+  saveRDS(condensedData, file = "Data/condensedData.rds")
+  
+  
   ## TODO: Visualize grouped_scaled_average_ratings 
 
 }
