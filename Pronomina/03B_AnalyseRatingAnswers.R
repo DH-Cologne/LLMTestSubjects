@@ -79,7 +79,41 @@ for (dataset_name in names(datasets)) {
   AntecedentE_data <- unique(condensedData[, c("PromptID", "AntecedentE")])
   average_ratings <- merge(average_ratings, AntecedentE_data, by = "PromptID")
   summary(average_ratings)
+  write_tsv(average_ratings, paste0("Data/average_ratings_", dataset_name, ".tsv"))
   
+  # Identify all columns that end with _Ratings
+  rating_columns <- grep("_Rating$", names(average_ratings), value = TRUE)
+#  rating_columns <- setdiff(rating_columns, "Human_Rating")  # Remove "Human_Rating" itself
+  
+  #Calculate Correlation between ratings of humans and all models
+  # Convert Human_Ratings to numeric
+  human_ratings <- as.numeric(average_ratings$Human_Rating)
+  # Create a data frame to store correlation results
+  cor_results <- data.frame(Column = character(), Correlation = numeric(), stringsAsFactors = FALSE)
+  for (colu in rating_columns) {
+      rating_values <- as.numeric(average_ratings[[colu]])
+      # Compute Pearson correlation, handling missing values
+      cor_value <- cor(human_ratings, rating_values, use = "pairwise.complete.obs", method = "pearson")
+      cor_results <- rbind(cor_results, data.frame(Column = colu, Correlation = cor_value, stringsAsFactors = FALSE))
+      # Create scatter plot with smaller points
+     
+      plot(average_ratings$Human_Rating, average_ratings[[colu]], 
+           xlab = "Human_Rating", 
+           ylab = colu, 
+           pch = 19, cex = 0.6)  # Smaller points
+      
+      # Add regression line
+      abline(lm(average_ratings[[colu]] ~ average_ratings$Human_Rating), col = "red", lwd = 2)
+  }
+  
+
+  
+  # Sort results by absolute correlation value (descending)
+  cor_results <- cor_results[order(-abs(cor_results$Correlation)), ]
+  print(cor_results)
+  
+  
+
   # count NAs of each model, visualize
   na_counts <- sapply(average_ratings[rating_columns], function(x) sum(is.na(x)))
   na_table <- data.frame(Column = names(na_counts), NA_Count = na_counts)
@@ -140,6 +174,30 @@ for (dataset_name in names(datasets)) {
   
   saveRDS(condensedData, file = "Data/condensedData.rds")
   
+  
+  # Calculate Correlation between grouped ratings of humans and all models
+  # Convert Human_Ratings to numeric
+  human_ratings <- as.numeric(grouped_average_ratings$Human_Rating)
+  
+  # Create a data frame to store correlation results
+  cor_results <- data.frame(Column = character(), Correlation = numeric(), stringsAsFactors = FALSE)
+  
+  for (colu in rating_columns) {
+    rating_values <- as.numeric(grouped_average_ratings[[colu]])
+    
+    # Compute Pearson correlation, handling missing values
+    cor_value <- cor(human_ratings, rating_values, use = "pairwise.complete.obs", method = "pearson")
+    cor_results <- rbind(cor_results, data.frame(Column = colu, Correlation = cor_value, stringsAsFactors = FALSE))
+    
+    # Create scatter plot with smaller points
+    plot(grouped_average_ratings$Human_Rating, grouped_average_ratings[[colu]], 
+         xlab = "Human_Rating", 
+         ylab = colu, 
+         pch = 19, cex = 0.6)  # Smaller points
+    
+    # Add regression line
+    abline(lm(grouped_average_ratings[[colu]] ~ grouped_average_ratings$Human_Rating), col = "red", lwd = 2)
+  }
   
   ## TODO: Visualize grouped_scaled_average_ratings 
 
