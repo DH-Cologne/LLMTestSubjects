@@ -110,6 +110,7 @@ const conversationHistory: ChatHistoryItem[] = history.map(([from, text]) => {
 
 const llama = await getLlama({
   gpu: "cuda",
+  usePrebuiltBinaries: false,
 });
 
 const model = await llama.loadModel({

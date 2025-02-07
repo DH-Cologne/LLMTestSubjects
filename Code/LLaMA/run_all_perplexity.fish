@@ -4,6 +4,35 @@ set MODEL_DIR "/home/kniebes/HuggingFace/out"
 set LLAMA_CLI "/home/kniebes/llama.cpp/build/bin/llama-perplexity"
 set TAB (echo -e "\t")
 
+# Function for running the llama-perplexity with a too large context size
+# This way we can find out how many tokens the prompt tokenizes to
+function get_prompt_tokens
+    set -l model_path $argv[1]
+    set -l prompt $argv[2]
+
+    set -l temp_file (mktemp)
+    $LLAMA_CLI --gpu-layers 30 --ctx-size 1024 --model $model_path --prompt $prompt > $temp_file 2>&1
+    set -l tokens (cat $temp_file | awk '/tokenizes to only/ {print $10}')
+    rm $temp_file
+
+    echo $tokens
+end
+
+# Function for running the llama-perplexity and extracting the perplexity
+function get_perplexity
+    set -l model_path $argv[1]
+    set -l prompt $argv[2]
+    set -l prompt_tokens $argv[3]
+    set -l ctx_size (math floor (math $prompt_tokens / 2))
+
+    set -l temp_file (mktemp)
+    $LLAMA_CLI --gpu-layers 30 --ctx-size $ctx_size --model $model_path --prompt $prompt > $temp_file 2>&1
+    set -l ppl (cat $temp_file | awk '/Final estimate/ {print $5}')
+    rm $temp_file
+
+    echo $ppl
+end
+
 for model in \
     # "mixtral-8x7b-instruct-v0.1.Q6_K.gguf|MIX_8x7b" \
     "gemma-2-9b-it-Q6_K.gguf|GEMMA2_9b" \
@@ -31,29 +60,26 @@ for model in \
 
     mkdir -p $PERPLEXITY
 
-   	for file in (find ~/LLMTestSubjects/Pronomina/ExperimentParticipantsLists/B*)
-        set EXP_FILE_NAME (basename $file | string replace ".csv" "")
-        set ANSWER_FILE (string join '' $PERPLEXITY '/' $EXP_FILE_NAME '_answers.csv')
-        if test -e $ANSWER_FILE
-            set LINE_COUNT_ANSWER (cat $ANSWER_FILE | wc -l)
-            set LINE_COUNT_FILE (cat $file | wc -l)
-            if [ $LINE_COUNT_ANSWER -eq $LINE_COUNT_FILE ]
-                echo "Answer File already exists: $ANSWER_FILE"
-                continue
-            end
-        end
+   	for file in (find ~/LLMTestSubjects/Pronomina/Data/average_ratings*.tsv)
+        set EXP_FILE_NAME (basename $file | string replace "average_ratings_" "" | string replace ".tsv" "")
+        set ANSWER_FILE (string join '' $PERPLEXITY '/' $EXP_FILE_NAME '_answers.tsv')
 
         echo "Processing $file"
+        set first_line true
   		while read -l line
-            set EXP_ID (string split $TAB $line | head -1)
-            set EXP_PROMPT (string split $TAB $line | tail -1 | string split "\n" | head -1)
+            if $first_line # Skip first line
+                set first_line false
+                continue
+            end
 
-            set temp_file (mktemp)
-            $LLAMA_CLI --gpu-layers 30 --ctx-size 4 --model $MODEL_PATH --prompt $EXP_PROMPT > $temp_file 2>&1
-            set ppl (cat $temp_file | awk '/Final estimate/ {print $5}')
-            rm $temp_file
-            echo -e "$EXP_ID\t$EXP_PROMPT\t$ppl" >> $ANSWER_FILE
+            set EXP_PROMPT (string split $TAB $line | head -1)
+            set PROMPT_TOKENS (get_prompt_tokens $MODEL_PATH $EXP_PROMPT)
+
+            set ppl (get_perplexity $MODEL_PATH $EXP_PROMPT $PROMPT_TOKENS)
+            echo -e "Model: $MODEL_PATH\nPrompt: $EXP_PROMPT\nTokens: $PROMPT_TOKENS\tPerplexity: $ppl"
+            echo -e "$EXP_PROMPT\t$ppl" >> $ANSWER_FILE
         end < $file
         break # only one file is needed for perplexity, since lines are the same over files just shuffled
     end
+    break
 end # model iterator
