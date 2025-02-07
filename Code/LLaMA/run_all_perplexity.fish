@@ -63,6 +63,14 @@ for model in \
    	for file in (find ~/LLMTestSubjects/Pronomina/Data/average_ratings*.tsv)
         set EXP_FILE_NAME (basename $file | string replace "average_ratings_" "" | string replace ".tsv" "")
         set ANSWER_FILE (string join '' $PERPLEXITY '/' $EXP_FILE_NAME '_answers.tsv')
+        if test -e $ANSWER_FILE
+            set LINE_COUNT_ANSWER (cat $ANSWER_FILE | wc -l)
+            set LINE_COUNT_FILE (math (cat $file | wc -l) - 1)
+            if [ $LINE_COUNT_ANSWER -eq $LINE_COUNT_FILE ]
+                echo "Answer File already exists: $ANSWER_FILE"
+                continue
+            end
+        end
 
         echo "Processing $file"
         set first_line true
@@ -79,7 +87,5 @@ for model in \
             echo -e "Model: $MODEL_PATH\nPrompt: $EXP_PROMPT\nTokens: $PROMPT_TOKENS\tPerplexity: $ppl"
             echo -e "$EXP_PROMPT\t$ppl" >> $ANSWER_FILE
         end < $file
-        break # only one file is needed for perplexity, since lines are the same over files just shuffled
     end
-    break
 end # model iterator
