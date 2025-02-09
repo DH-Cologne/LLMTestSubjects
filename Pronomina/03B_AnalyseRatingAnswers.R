@@ -8,7 +8,7 @@ datasets <- list(
   "ExpB1" = "Data/ExpB1DataAnswers.rds" # File with data for ditransitive verbs
   
 )
-#dataset_name = "ExpB2"
+#dataset_name = "ExpB1"
 
 # Process each dataset
 for (dataset_name in names(datasets)) {
@@ -47,7 +47,7 @@ for (dataset_name in names(datasets)) {
   print(ggplot(na_table, aes(x = Column, y = NA_Count)) +
     geom_bar(stat = "identity", fill = "grey", color = "black") +
     labs(
-      title = "Number of NA Values (log scale)",
+      title = paste0("Number of NA Values (log scale), ", dataset_name),
       x = "Model",
       y = "Number of NA Values"
     ) +
@@ -61,7 +61,7 @@ for (dataset_name in names(datasets)) {
   print(ggplot(long_data, aes(x = Model, y = Rating_Value)) +
     geom_boxplot(fill = "grey", color = "black", alpha = 0.7) +
     labs(
-      title = "Distribution of ratings",
+      title = paste0("Distribution of ratings, ", dataset_name),
       x = "Model",
       y = "Rating Value"
     ) +
@@ -78,6 +78,7 @@ for (dataset_name in names(datasets)) {
   average_ratings <- merge(average_ratings, REP_data, by = "PromptID")
   AntecedentE_data <- unique(condensedData[, c("PromptID", "AntecedentE")])
   average_ratings <- merge(average_ratings, AntecedentE_data, by = "PromptID")
+  
   summary(average_ratings)
   write_tsv(average_ratings, paste0("Data/average_ratings_", dataset_name, ".tsv"))
   
@@ -98,6 +99,7 @@ for (dataset_name in names(datasets)) {
       # Create scatter plot with smaller points
      
       plot(average_ratings$Human_Rating, average_ratings[[colu]], 
+           title = dataset_name,
            xlab = "Human_Rating", 
            ylab = colu, 
            pch = 19, cex = 0.6)  # Smaller points
@@ -117,10 +119,11 @@ for (dataset_name in names(datasets)) {
   # count NAs of each model, visualize
   na_counts <- sapply(average_ratings[rating_columns], function(x) sum(is.na(x)))
   na_table <- data.frame(Column = names(na_counts), NA_Count = na_counts)
+  #names(average_ratings) <- sub("^([^_]+_[^_]+).*", "\\1", names(average_ratings))
   print(ggplot(na_table, aes(x = Column, y = NA_Count)) +
     geom_bar(stat = "identity", fill = "grey", color = "black") +
     labs(
-      title = "Number of NA Values (average ratings)",
+      title = paste0("Number of NA Values (average ratings), ", dataset_name),
       x = "Model",
       y = "Number of NA Values"
     ) +
@@ -128,20 +131,31 @@ for (dataset_name in names(datasets)) {
     coord_flip()
   )
   
+  print(names(average_ratings))
+  print(rating_columns)
+  
   # Visualize rating distribution of models
   long_data <- pivot_longer(average_ratings, cols = all_of(rating_columns), names_to = "Model", values_to = "Rating_Value")
-  print(ggplot(long_data, aes(x = Model, y = Rating_Value)) +
-    geom_boxplot(fill = "grey", color = "black", alpha = 0.7) +
-    labs(
-      title = "Distribution of average ratings",
-      x = "Model",
-      y = "Rating Value"
-    ) +
-    theme_minimal() +
-    theme(plot.title = element_text(hjust = 0.5)) +
-    coord_flip() +
-    scale_y_continuous(breaks = seq(1, 7, by = 1))  # Ensure all y-axis labels (original x-axis) are displayed
+  # Shorten Model names (cut after the second underscore) for visualization only
+  long_data$Model <- sub("^([^_]+_[^_]+).*", "\\1", long_data$Model)
+  print(ggplot(long_data, aes(x = Rating_Value, y = Model)) +
+          geom_boxplot(fill = "grey", color = "black", alpha = 0.7) +
+          labs(
+            title = paste0("Distribution of average ratings, ", dataset_name),
+            y = "Model",
+            x = "Rating Value"
+          ) +
+          theme_minimal() +
+          theme(
+            plot.title = element_text(hjust = 0.5),
+            axis.text.x = element_text(angle = 90, hjust = 1)  # X-Achsen-Beschriftung hochkant
+          ) +
+          coord_flip() +
+          
+          scale_x_continuous(breaks = seq(1, 7, by = 1))  # Ensure all y-axis labels (original x-axis) are displayed
   )
+
+  
     
   # zTransformation of average ratings
   scaled_average_ratings <- average_ratings
@@ -154,7 +168,7 @@ for (dataset_name in names(datasets)) {
   print(ggplot(long_data, aes(x = Model, y = Rating_Value)) +
     geom_boxplot(fill = "grey", color = "black", alpha = 0.7) +
     labs(
-      title = "Distribution of average ratings (scaled)",
+      title = paste0("Distribution of average ratings (scaled), ", dataset_name),
       x = "Model",
       y = "Z Value of Ratings"
     ) +
@@ -191,6 +205,7 @@ for (dataset_name in names(datasets)) {
     
     # Create scatter plot with smaller points
     plot(grouped_average_ratings$Human_Rating, grouped_average_ratings[[colu]], 
+         title = dataset_name,
          xlab = "Human_Rating", 
          ylab = colu, 
          pch = 19, cex = 0.6)  # Smaller points

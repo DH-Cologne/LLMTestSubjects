@@ -1,0 +1,643 @@
+ID	ExpID	Value.GEMMA2_9b	Value.GRAN_8b	Value.GRAN_MoE	Value.KFK3_8b	Value.ML3.1_8b	Value.PHI3_14b	Value.SKGEMMA2_9b	Value.SKv2_14b
+Der Anwalt erklärte der Mandantin die Beweislage. Die war nun perfekt vorbereitet.	ExpB1	55.4709	14.1833	10.206	14.8143	12.9952	12.0519	56.2264	16.7775
+Der Anwalt erklärte der Mandantin die Beweislage. Diese war nun perfekt vorbereitet.	ExpB1	49.838	14.768	9.2531	15.5831	13.9333	12.7053	57.019	16.8352
+Der Anwalt erklärte der Mandantin die Beweislage. Sie war nun perfekt vorbereitet.	ExpB1	62.245	13.8246	9.1311	17.6804	13.6558	12.7631	63.7798	16.7544
+Der Arbeitgeber zeigte dem Bewerber den Arbeitsvertrag. Der war ohne Zweifel rechtsgültig.	ExpB1	27.3471	5.94	3.9764	19.6257	11.8431	9.5808	30.0894	10.4224
+Der Arbeitgeber zeigte dem Bewerber den Arbeitsvertrag. Dieser war ohne Zweifel rechtsgültig.	ExpB1	29.4181	5.6668	3.3717	14.1547	9.9301	8.5803	33.0388	8.5952
+Der Arbeitgeber zeigte dem Bewerber den Arbeitsvertrag. Er war ohne Zweifel rechtsgültig.	ExpB1	30.4152	8.1004	4.4113	18.0241	12.2159	9.8539	30.0941	10.3693
+Der Arbeitgeber zeigte der Bewerberin den Arbeitsvertrag. Der wirkte dabei sehr sympathisch.	ExpB1	6.2957	6.7136	4.5464	22.6585	17.4434	28.1448	7.7896	16.677
+Der Arbeitgeber zeigte der Bewerberin den Arbeitsvertrag. Dieser wirkte dabei sehr sympathisch.	ExpB1	7.35	9.1548	6.7588	24.7933	16.7384	29.9476	9.1249	12.6635
+Der Arbeitgeber zeigte der Bewerberin den Arbeitsvertrag. Er wirkte dabei sehr sympathisch.	ExpB1	7.2279	5.9829	4.3939	18.4727	20.5015	27.5926	9.7605	9.0649
+Der Archäologe präsentierte dem Museumsdirektor den Fund. Der war sensationell.	ExpB1	215.4238	31.6976	29.502	44.8668	56.8505	31.9504	224.9291	20.7412
+Der Archäologe präsentierte dem Museumsdirektor den Fund. Dieser war sensationell.	ExpB1	83.0576	11.2407	11.5228	20.0654	19.6428	18.5104	80.1375	17.3267
+Der Archäologe präsentierte dem Museumsdirektor den Fund. Er war sensationell.	ExpB1	99.0248	33.2045	22.7963	32.9484	42.6749	20.6258	92.847	15.9023
+Der Archäologe präsentierte der Museumsdirektorin den Fund. Der war sehr aufgeregt.	ExpB1	16.9527	7.3552	8.8313	23.3822	19.554	8.9789	17.9585	12.6611
+Der Archäologe präsentierte der Museumsdirektorin den Fund. Dieser war sehr aufgeregt.	ExpB1	23.4796	7.1643	10.2382	12.5649	12.5022	9.6206	24.9394	8.7083
+Der Archäologe präsentierte der Museumsdirektorin den Fund. Er war sehr aufgeregt.	ExpB1	16.2953	8.2685	7.2781	12.4404	12.586	9.4402	17.2209	8.3681
+Der Autor widmete der Verlobten die Novelle. Die war dafür sehr dankbar.	ExpB1	296.5793	16.0827	14.8547	80.3076	59.3216	9.33	398.4936	12.6939
+Der Autor widmete der Verlobten die Novelle. Diese war dafür sehr dankbar.	ExpB1	245.723	17.9093	22.3332	90.9218	53.5726	10.77	361.7361	16.8983
+Der Autor widmete der Verlobten die Novelle. Sie war dafür sehr dankbar.	ExpB1	197.8428	12.0658	15.8497	49.8612	55.6747	11.0732	213.6348	15.5039
+Der Betrüger raubte der Königin die Krone. Die war leider unvorsichtig.	ExpB1	36.0625	12.8037	16.4049	29.2914	27.31	11.8962	36.0141	22.1156
+Der Betrüger raubte der Königin die Krone. Diese war leider unvorsichtig.	ExpB1	44.2238	17.0187	23.9012	31.4917	26.8975	14.2487	38.3719	21.7382
+Der Betrüger raubte der Königin die Krone. Sie war leider unvorsichtig.	ExpB1	27.6888	13.4787	15.8058	29.9467	26.8034	9.4548	25.5316	16.633
+Der Chef garantierte der Angestellten die Gehaltserhöhung. Die war daraufhin sehr zufrieden.	ExpB1	50.3997	4.0761	3.9881	6.1738	7.5999	4.1535	53.3638	5.3627
+Der Chef garantierte der Angestellten die Gehaltserhöhung. Diese war daraufhin sehr zufrieden.	ExpB1	57.6803	4.6511	5.5134	7.7422	8.3046	4.369	53.7484	5.5506
+Der Chef garantierte der Angestellten die Gehaltserhöhung. Sie war daraufhin sehr zufrieden.	ExpB1	56.9693	4.1609	4.6293	6.3861	8.6544	4.7076	52.8259	5.1736
+Der Chirurg besorgte der Ärztin die Stelle. Die brachte nützliche Kontakte mit.	ExpB1	8.934	7.6326	6.9142	9.037	8.0281	6.4602	8.5968	5.7884
+Der Chirurg besorgte der Ärztin die Stelle. Diese brachte nützliche Kontakte mit.	ExpB1	11.3513	10.0822	7.316	10.5497	8.5472	6.0338	11.9587	6.4787
+Der Chirurg besorgte der Ärztin die Stelle. Sie brachte nützliche Kontakte mit.	ExpB1	9.8161	8.4691	6.9558	8.5768	7.4593	6.006	9.1363	7.0118
+Der Dieb entwendete der Touristin die Handtasche. Die war danach sehr aggressiv.	ExpB1	35.3841	18.9173	12.7252	24.9245	18.8149	17.906	39.1354	53.0318
+Der Dieb entwendete der Touristin die Handtasche. Diese war danach sehr aggressiv.	ExpB1	41.6625	17.705	12.4979	30.0432	20.7176	17.359	46.0272	57.1521
+Der Dieb entwendete der Touristin die Handtasche. Sie war danach sehr aggressiv.	ExpB1	35.1436	13.8542	11.3241	24.1846	15.3404	15.6942	42.3443	46.6049
+Der Eigentümer vermietete der Anwohnerin die Parkfläche. Die war froh über den langfristigen Vertrag.	ExpB1	25.003	13.3295	17.1622	10.9135	9.7253	22.2195	21.6588	14.3342
+Der Eigentümer vermietete der Anwohnerin die Parkfläche. Diese war froh über den langfristigen Vertrag.	ExpB1	25.9352	13.8168	18.3167	11.0162	9.3329	20.3087	21.004	13.5541
+Der Eigentümer vermietete der Anwohnerin die Parkfläche. Sie war froh über den langfristigen Vertrag.	ExpB1	25.6116	14.8172	17.0459	11.0321	10.0409	21.9003	21.5278	14.5763
+Der Enkel malte dem Großvater den Garten. Der enthielt viele bunte Pflanzen.	ExpB1	44.2773	6.7866	3.8992	5.2395	4.9492	22.1997	42.0353	8.472
+Der Enkel malte dem Großvater den Garten. Dieser enthielt viele bunte Pflanzen.	ExpB1	48.1624	8.6927	5.7555	7.017	7.8057	21.6105	47.8379	7.235
+Der Enkel malte dem Großvater den Garten. Er enthielt viele bunte Pflanzen.	ExpB1	35.9521	7.0903	3.9355	4.5217	4.9248	21.1599	35.886	8.4499
+Der Enkel malte der Großmutter den Garten. Der wurde erst am späten Abend langsam müde.	ExpB1	17.3288	26.133	10.7849	9.4725	12.4832	16.8783	22.9557	14.9113
+Der Enkel malte der Großmutter den Garten. Dieser wurde erst am späten Abend langsam müde.	ExpB1	17.3288	26.5306	11.9134	7.8448	11.5411	19.4642	22.9557	17.1355
+Der Enkel malte der Großmutter den Garten. Er wurde erst am späten Abend langsam müde.	ExpB1	17.3288	25.6147	10.5198	9.4725	12.4832	17.5489	22.9557	15.1756
+Der Friseur erzählte dem Neukunden den Sonntagswitz. Der handelte von drei Waschbären und einem Anwalt.	ExpB1	55.6703	39.1989	28.103	30.8461	24.5337	38.9566	61.3098	15.8575
+Der Friseur erzählte dem Neukunden den Sonntagswitz. Dieser handelte von drei Waschbären und einem Anwalt.	ExpB1	55.6472	31.3061	25.0738	27.7413	22.4981	40.2991	60.5839	15.5996
+Der Friseur erzählte dem Neukunden den Sonntagswitz. Er handelte von drei Waschbären und einem Anwalt.	ExpB1	56.4344	38.5451	32.7246	29.491	23.5079	38.6081	63.5041	15.9671
+Der Friseur erzählte der Neukundin den Sonntagswitz. Der konnte dabei nicht aufhören, zu lachen.	ExpB1	79.5153	17.6692	17.4309	30.4329	28.8233	40.6976	94.3566	20.1103
+Der Friseur erzählte der Neukundin den Sonntagswitz. Dieser konnte dabei nicht aufhören, zu lachen.	ExpB1	83.0893	21.3948	20.6382	25.6561	21.0193	42.4545	93.2709	11.843
+Der Friseur erzählte der Neukundin den Sonntagswitz. Er konnte dabei nicht aufhören, zu lachen.	ExpB1	80.7603	18.8367	15.8937	32.7797	28.0813	39.909	91.87	19.9695
+Der Gastgeber organisierte der Rednerin die Hotelsuite. Die freute sich über die Einladung.	ExpB1	30.8948	14.8884	19.4881	22.3567	22.8403	17.24	31.9087	17.8392
+Der Gastgeber organisierte der Rednerin die Hotelsuite. Diese freute sich über die Einladung.	ExpB1	24.484	31.5375	47.6965	22.0956	22.3881	15.7829	23.7941	18.568
+Der Gastgeber organisierte der Rednerin die Hotelsuite. Sie freute sich über die Einladung.	ExpB1	16.9689	15.8166	19.0843	21.5211	22.7204	15.5519	17.5977	17.9753
+Der Hotelmanager beschaffte der Urlauberin die Massage. Die machte nämlich einen gestressten Eindruck.	ExpB1	25.8837	13.0446	19.9507	25.0739	19.554	10.3355	37.5217	10.7762
+Der Hotelmanager beschaffte der Urlauberin die Massage. Diese machte nämlich einen gestressten Eindruck.	ExpB1	27.9966	11.3667	16.109	23.268	21.4063	11.8735	38.6865	11.6874
+Der Hotelmanager beschaffte der Urlauberin die Massage. Sie machte nämlich einen gestressten Eindruck.	ExpB1	24.7931	11.6219	18.9662	22.3831	19.2676	10.9891	38.4622	10.3263
+Der Inhaber bot dem Mitarbeiter den Umzugswagen. Der war geräumig genug für alle Möbel.	ExpB1	41.1958	17.4109	10.6994	102.5877	62.6345	9.8401	37.8412	29.924
+Der Inhaber bot dem Mitarbeiter den Umzugswagen. Dieser war geräumig genug für alle Möbel.	ExpB1	43.7977	15.5504	12.643	96.5355	63.1073	10.6401	40.89	28.3976
+Der Inhaber bot dem Mitarbeiter den Umzugswagen. Er war geräumig genug für alle Möbel.	ExpB1	44.1944	20.6177	12.4085	102.5877	62.6345	10.1145	38.1995	31.1342
+Der Inhaber bot der Mitarbeiterin den Umzugswagen. Der wollte sich das Wochenende ohnehin frei nehmen.	ExpB1	59.2189	15.7465	11.2311	53.1753	50.6592	9.0164	60.7888	14.1146
+Der Inhaber bot der Mitarbeiterin den Umzugswagen. Dieser wollte sich das Wochenende ohnehin frei nehmen.	ExpB1	60.0788	22.0231	15.1551	43.8991	41.2009	9.3935	59.8398	14.1077
+Der Inhaber bot der Mitarbeiterin den Umzugswagen. Er wollte sich das Wochenende ohnehin frei nehmen.	ExpB1	59.2718	16.3376	10.164	52.5614	46.0627	9.0391	62.5751	14.6977
+Der Käufer schuldete dem Händler den Kaufpreis. Der lag im fünfstelligen Bereich.	ExpB1	3.3727	8.0954	4.7702	9.6398	5.7136	6.5244	3.1944	5.6637
+Der Käufer schuldete dem Händler den Kaufpreis. Dieser lag im fünfstelligen Bereich.	ExpB1	3.2954	7.6862	4.301	8.9917	5.6561	6.9722	3.111	8.329
+Der Käufer schuldete dem Händler den Kaufpreis. Er lag im fünfstelligen Bereich.	ExpB1	3.49	8.9755	4.31	7.4862	5.9765	6.4334	3.3796	9.6468
+Der Käufer schuldete der Händlerin den Kaufpreis. Der war telefonisch nicht erreichbar.	ExpB1	36.0181	7.6633	5.9399	13.9067	12.2996	3.9718	37.8266	5.3594
+Der Käufer schuldete der Händlerin den Kaufpreis. Dieser war telefonisch nicht erreichbar.	ExpB1	44.4533	8.6066	6.4948	5.0483	5.0361	4.9501	46.503	13.4928
+Der Käufer schuldete der Händlerin den Kaufpreis. Er war telefonisch nicht erreichbar.	ExpB1	40.4168	6.9116	4.7586	9.8656	9.6174	3.9535	38.4504	3.7767
+Der Klient überwies dem Detektiv den Betrag. Der war großzügig aufgerundet.	ExpB1	24.2716	5.1772	3.2374	22.5839	17.312	23.9456	22.6708	10.3955
+Der Klient überwies dem Detektiv den Betrag. Dieser war großzügig aufgerundet.	ExpB1	23.3229	4.2276	3.6373	18.0271	14.7897	20.1361	21.8625	7.8427
+Der Klient überwies dem Detektiv den Betrag. Er war großzügig aufgerundet.	ExpB1	41.6787	5.7108	4.1371	30.2142	20.1576	34.4072	39.8418	10.9063
+Der Klient überwies der Detektivin den Betrag. Der war dabei sehr diskret.	ExpB1	136.2186	24.0156	17.6239	65.0918	63.2548	38.2071	106.2223	26.7327
+Der Klient überwies der Detektivin den Betrag. Dieser war dabei sehr diskret.	ExpB1	146.3258	25.0029	31.5877	93.0815	106.2094	42.1826	125.6035	35.3314
+Der Klient überwies der Detektivin den Betrag. Er war dabei sehr diskret.	ExpB1	74.2998	21.9317	16.1072	55.1313	52.8073	30.8109	61.9864	20.68
+Der Kollege führte der Neuen die Prozedur. Die war sehr konzentriert.	ExpB1	152.0196	33.0033	33.3176	34.9731	27.6209	12.9954	176.3289	29.6342
+Der Kollege führte der Neuen die Prozedur. Diese war sehr konzentriert.	ExpB1	201.2271	34.8104	32.8967	38.8532	28.9794	13.3067	226.359	33.2513
+Der Kollege führte der Neuen die Prozedur. Sie war sehr konzentriert.	ExpB1	156.281	33.1144	28.7828	33.848	31.6902	13.0944	168.3095	27.8425
+Der Krankenpfleger wusch dem Patienten den Rücken. Der war etwas schuppig.	ExpB1	38.5158	39.3637	42.2992	78.7154	59.4964	21.0482	32.3204	19.11
+Der Krankenpfleger wusch dem Patienten den Rücken. Dieser war etwas schuppig.	ExpB1	42.8722	54.0437	44.5262	65.661	34.8769	24.7939	35.983	21.8591
+Der Krankenpfleger wusch dem Patienten den Rücken. Er war etwas schuppig.	ExpB1	53.5211	38.6062	39.8179	63.0574	47.4878	40.3991	44.2428	23.2609
+Der Krankenpfleger wusch der Patientin den Rücken. Der kannte die Routine mittlerweile.	ExpB1	37.533	19.6473	28.3047	43.0159	37.2804	12.9492	30.3966	11.9863
+Der Krankenpfleger wusch der Patientin den Rücken. Dieser kannte die Routine mittlerweile.	ExpB1	57.8208	30.1557	35.3215	44.574	34.8256	13.1967	46.3536	12.2753
+Der Krankenpfleger wusch der Patientin den Rücken. Er kannte die Routine mittlerweile.	ExpB1	35.009	20.8675	26.002	41.1625	36.5821	14.2688	28.2101	11.3481
+Der Künstler vererbte dem Musiker den Besitz. Der bestand aus Geldwerten und Grundstücken.	ExpB1	33.5282	8.2421	7.1313	27.7685	23.2301	11.1453	39.9532	10.1585
+Der Künstler vererbte dem Musiker den Besitz. Dieser bestand aus Geldwerten und Grundstücken.	ExpB1	31.5566	9.6824	7.8053	21.3956	16.5067	10.7294	36.7044	13.7709
+Der Künstler vererbte dem Musiker den Besitz. Er bestand aus Geldwerten und Grundstücken.	ExpB1	33.7671	8.0358	7.5603	32.4628	24.589	11.078	40.3009	9.8056
+Der Künstler vererbte der Musikerin den Besitz. Der war sehr reich.	ExpB1	282.5719	15.946	8.519	88.7323	99.0662	42.7708	366.9173	28.7104
+Der Künstler vererbte der Musikerin den Besitz. Dieser war sehr reich.	ExpB1	116.8938	20.0328	10.7798	54.2093	49.0937	20.8137	135.6476	15.6734
+Der Künstler vererbte der Musikerin den Besitz. Er war sehr reich.	ExpB1	86.2661	13.0801	8.2557	44.0796	47.288	23.792	101.96	16.4236
+Der Lehrer kündigte der Rektorin die Pensionierung. Die war darüber etwas traurig.	ExpB1	96.3082	44.2066	24.6328	84.2775	43.718	23.2678	101.6968	28.4216
+Der Lehrer kündigte der Rektorin die Pensionierung. Diese war darüber etwas traurig.	ExpB1	276.2386	41.0502	35.585	111.5002	51.5434	35.9524	254.9908	32.7329
+Der Lehrer kündigte der Rektorin die Pensionierung. Sie war darüber etwas traurig.	ExpB1	141.8665	31.4276	28.4794	81.6546	30.8623	25.3249	135.253	23.5429
+Der Lieferant baute der Kundin die Kommode. Die war nämlich etwas ungeschickt.	ExpB1	27.6611	22.2288	9.065	77.1183	49.0056	37.7421	32.6128	34.4863
+Der Lieferant baute der Kundin die Kommode. Diese war nämlich etwas ungeschickt.	ExpB1	32.8727	20.2957	8.9995	77.9596	52.3109	42.8359	38.1998	34.0971
+Der Lieferant baute der Kundin die Kommode. Sie war nämlich etwas ungeschickt.	ExpB1	34.3724	18.6453	9.7921	64.9055	51.7821	39.2513	41.0094	26.4773
+Der Lieferant reichte der Floristin die Rechnung. Die war sehr gutaussehend.	ExpB1	14.4467	24.6636	15.6521	37.2725	35.2241	64.4882	14.3982	18.9463
+Der Lieferant reichte der Floristin die Rechnung. Diese war sehr gutaussehend.	ExpB1	15.6232	31.2383	14.0186	49.3446	39.7398	72.7757	15.3216	24.545
+Der Lieferant reichte der Floristin die Rechnung. Sie war sehr gutaussehend.	ExpB1	16.4462	21.226	14.049	31.1338	34.0429	47.9145	16.3432	14.1055
+Der Mitarbeiter nahm dem Opernsänger den Mantel. Der war erfreulicherweise aus Kunstpelz.	ExpB1	40.6005	34.4212	19.9171	40.7905	34.3088	42.391	42.9515	37.455
+Der Mitarbeiter nahm dem Opernsänger den Mantel. Dieser war erfreulicherweise aus Kunstpelz.	ExpB1	40.6005	23.8098	16.3267	47.9827	44.3196	52.8657	42.9515	21.7278
+Der Mitarbeiter nahm dem Opernsänger den Mantel. Er war erfreulicherweise aus Kunstpelz.	ExpB1	40.6005	44.3719	29.5516	46.1329	37.4272	57.2319	42.9515	43.3867
+Der Mitarbeiter nahm der Opernsängerin den Mantel. Der fand das angemessen.	ExpB1	88.8321	46.7676	25.5007	38.1626	43.5231	33.5784	108.8351	13.1328
+Der Mitarbeiter nahm der Opernsängerin den Mantel. Dieser fand das angemessen.	ExpB1	212.1434	56.982	26.7767	50.0282	36.8929	57.6007	243.7804	16.0003
+Der Mitarbeiter nahm der Opernsängerin den Mantel. Er fand das angemessen.	ExpB1	82.194	40.0161	19.3361	38.8244	41.9116	35.2122	118.6719	16.44
+Der Onkel leitete dem Neffen den Videoclip. Der zeigte eine Katze und eine Gurke.	ExpB1	130.2743	10.4498	15.6565	37.0259	33.8914	20.5517	106.9623	21.9717
+Der Onkel leitete dem Neffen den Videoclip. Dieser zeigte eine Katze und eine Gurke.	ExpB1	143.8972	14.4731	19.9953	78.555	59.5769	20.5944	124.4182	16.9545
+Der Onkel leitete dem Neffen den Videoclip. Er zeigte eine Katze und eine Gurke.	ExpB1	127.1212	10.7488	15.1632	38.6173	32.281	20.3474	102.7329	20.4316
+Der Onkel leitete der Nichte den Videoclip. Der mochte witzige Katzenvideos.	ExpB1	211.7598	27.9466	24.144	169.3437	157.3485	37.7253	178.9887	50.4849
+Der Onkel leitete der Nichte den Videoclip. Dieser mochte witzige Katzenvideos.	ExpB1	140.8543	16.7682	22.5046	83.4201	95.8537	40.7614	125.074	77.656
+Der Onkel leitete der Nichte den Videoclip. Er mochte witzige Katzenvideos.	ExpB1	133.6605	30.3357	31.9305	122.4362	103.4864	33.3901	114.5863	40.0399
+Der Regisseur empfahl der Schauspielerin die Fernsehserie. Die sah gern Komödien.	ExpB1	20.4199	14.6327	12.6463	14.6201	14.3799	11.5981	19.919	6.3116
+Der Regisseur empfahl der Schauspielerin die Fernsehserie. Diese sah gern Komödien.	ExpB1	25.8248	11.4137	10.4977	17.9416	16.6425	12.2595	26.8224	8.2575
+Der Regisseur empfahl der Schauspielerin die Fernsehserie. Sie sah gern Komödien.	ExpB1	14.7218	6.4441	7.4172	10.6991	10.8288	9.976	14.2987	6.4102
+Der Schneider nähte der Klientin die Jacke. Die investierte viel Geld.	ExpB1	208.8552	56.6224	39.7801	154.0566	136.0963	50.3094	176.8059	26.9153
+Der Schneider nähte der Klientin die Jacke. Diese investierte viel Geld.	ExpB1	89.1021	39.4425	25.6826	77.9947	91.9845	24.1545	78.7905	27.4823
+Der Schneider nähte der Klientin die Jacke. Sie investierte viel Geld.	ExpB1	63.5924	42.991	30.0896	61.3806	60.0121	19.5901	57.0889	24.8993
+Der Schüler zeigte der Sitznachbarin die Formel. Die war nämlich immer sehr nett.	ExpB1	79.6125	22.1565	5.9897	21.3677	17.101	32.4026	74.9487	22.5637
+Der Schüler zeigte der Sitznachbarin die Formel. Diese war nämlich immer sehr nett.	ExpB1	177.8915	23.4973	7.7852	27.3796	21.5568	40.982	152.3535	31.2947
+Der Schüler zeigte der Sitznachbarin die Formel. Sie war nämlich immer sehr nett.	ExpB1	86.5343	15.3718	6.1076	18.8105	18.5437	30.4419	95.1386	27.0923
+Der Student stahl dem Dozenten den Laptop. Der war allerdings ohnehin defekt.	ExpB1	229.2815	8.318	11.9555	6.7633	10.2368	6.2892	287.2142	8.5343
+Der Student stahl dem Dozenten den Laptop. Dieser war allerdings ohnehin defekt.	ExpB1	175.5964	10.6969	8.891	8.3638	9.5337	6.0275	268.7374	6.146
+Der Student stahl dem Dozenten den Laptop. Er war allerdings ohnehin defekt.	ExpB1	877.0557	12.54	12.3895	13.2987	12.0746	10.3708	1091.379	9.6807
+Der Student stahl der Dozentin den Laptop. Der hatte nämlich ernste Schwierigkeiten.	ExpB1	94.1246	6.6578	7.6201	3.6785	4.8341	10.0393	97.062	2.8446
+Der Student stahl der Dozentin den Laptop. Dieser hatte nämlich ernste Schwierigkeiten.	ExpB1	134.1923	5.4317	5.4204	3.4101	4.8987	10.9299	144.7136	3.6438
+Der Student stahl der Dozentin den Laptop. Er hatte nämlich ernste Schwierigkeiten.	ExpB1	125.3159	4.5433	4.6652	3.6785	4.8341	9.6651	120.2672	2.9508
+Der Teenager verkaufte dem Freund den Ausweis. Der war gefälscht.	ExpB1	38.5021	9.6516	9.4628	9.4722	10.4846	9.2621	48.5127	7.1561
+Der Teenager verkaufte dem Freund den Ausweis. Dieser war gefälscht.	ExpB1	21.7766	5.9626	8.0072	20.9872	18.5539	9.32	24.7615	13.4374
+Der Teenager verkaufte dem Freund den Ausweis. Er war gefälscht.	ExpB1	33.0116	15.2063	18.3222	16.9781	18.3433	11.8041	37.9531	9.7612
+Der Teenager verkaufte der Freundin den Ausweis. Der war bereits vorbestraft.	ExpB1	48.2712	13.9372	9.841	29.2592	16.0641	27.2433	50.6046	35.6491
+Der Teenager verkaufte der Freundin den Ausweis. Dieser war bereits vorbestraft.	ExpB1	61.6912	19.6267	17.2589	60.626	33.0728	26.5742	62.25	27.6427
+Der Teenager verkaufte der Freundin den Ausweis. Er war bereits vorbestraft.	ExpB1	58.6691	14.6493	9.9724	20.6744	20.2781	30.3537	58.7083	27.6245
+Der Therapeut gewöhnte der Patientin die Marotte. Die war sehr dankbar.	ExpB1	278.3978	12.8599	7.9905	23.5729	26.9848	12.0216	262.9285	30.4772
+Der Therapeut gewöhnte der Patientin die Marotte. Diese war sehr dankbar.	ExpB1	328.4323	14.7091	10.3725	38.2888	31.6833	13.1612	308.8671	29.6735
+Der Therapeut gewöhnte der Patientin die Marotte. Sie war sehr dankbar.	ExpB1	181.2937	10.085	7.3438	19.0236	20.2096	11.5774	156.9372	16.6303
+Der Türsteher verweigerte dem Besucher den Zutritt. Der war leider nicht gestattet.	ExpB1	19.8696	11.1852	6.4029	12.0261	8.6872	4.665	20.7268	5.3222
+Der Türsteher verweigerte dem Besucher den Zutritt. Dieser war leider nicht gestattet.	ExpB1	16.656	5.52	4.3867	11.8872	11.5608	5.0328	17.1053	9.73
+Der Türsteher verweigerte dem Besucher den Zutritt. Er war leider nicht gestattet.	ExpB1	34.5184	12.9924	7.5682	21.3803	15.4849	6.5755	31.8846	8.1377
+Der Türsteher verweigerte der Besucherin den Zutritt. Der war etwas unhöflich.	ExpB1	13.3044	7.1981	13.2212	10.1534	6.7187	7.4415	12.5916	11.0499
+Der Türsteher verweigerte der Besucherin den Zutritt. Dieser war etwas unhöflich.	ExpB1	18.6828	13.2085	17.3101	13.1086	10.7091	8.6603	16.8826	9.7294
+Der Türsteher verweigerte der Besucherin den Zutritt. Er war etwas unhöflich.	ExpB1	17.8836	8.1698	15.5084	12.1929	8.8054	9.1649	15.7324	11.5238
+Der Unternehmer stellte dem Bankangestellten den Kostenplan. Der war sorgfältig berechnet worden.	ExpB1	71.0657	13.2416	8.2026	5.8344	6.0369	6.524	92.2913	10.1119
+Der Unternehmer stellte dem Bankangestellten den Kostenplan. Dieser war sorgfältig berechnet worden.	ExpB1	61.5164	11.0676	6.6849	12.3535	10.3612	6.6043	87.5251	8.8612
+Der Unternehmer stellte dem Bankangestellten den Kostenplan. Er war sorgfältig berechnet worden.	ExpB1	79.8783	16.1506	8.0896	5.6548	6.3413	7.6756	102.1519	9.8513
+Der Unternehmer stellte der Bankangestellten den Kostenplan. Der war dabei sehr konzentriert.	ExpB1	103.8261	18.8342	12.7135	17.1997	12.5608	9.6873	120.0791	7.1127
+Der Unternehmer stellte der Bankangestellten den Kostenplan. Dieser war dabei sehr konzentriert.	ExpB1	133.4293	17.4558	13.9642	34.1246	23.1594	10.273	163.7281	9.6344
+Der Unternehmer stellte der Bankangestellten den Kostenplan. Er war dabei sehr konzentriert.	ExpB1	75.398	16.5811	11.0478	19.5282	13.4908	9.0774	86.7272	6.0363
+Der Vater kaufte dem Sohn die Zuckerwatte. Die schmeckte nach Erdbeeren.	ExpB1	29.117	14.2443	9.3094	18.2039	21.4698	15.6061	32.5546	19.7461
+Der Vater kaufte dem Sohn die Zuckerwatte. Diese schmeckte nach Erdbeeren.	ExpB1	34.9992	16.004	9.811	20.7699	17.8723	17.1402	37.5057	18.2649
+Der Vater kaufte dem Sohn die Zuckerwatte. Sie schmeckte nach Erdbeeren.	ExpB1	30.4738	13.0618	8.3916	18.0127	17.1025	12.887	33.5218	17.3224
+Der Vater kaufte der Tochter die Zuckerwatte. Die war umgehend gut gelaunt.	ExpB1	66.6183	14.2856	10.4573	64.2795	29.7845	18.0384	75.9672	23.8657
+Der Vater kaufte der Tochter die Zuckerwatte. Diese war umgehend gut gelaunt.	ExpB1	62.9889	13.6025	10.7847	63.4066	32.6005	20.0424	73.8881	26.1805
+Der Vater kaufte der Tochter die Zuckerwatte. Sie war umgehend gut gelaunt.	ExpB1	53.5436	15.3922	11.3999	42.1051	29.962	19.324	73.0712	23.1608
+Der Verkäufer lieh dem Interessenten den Autoschlüssel. Der war defekt.	ExpB1	227.8771	46.0573	37.8671	130.9411	119.3089	33.7933	241.0237	27.5442
+Der Verkäufer lieh dem Interessenten den Autoschlüssel. Dieser war defekt.	ExpB1	98.9743	17.4141	10.8485	57.4714	35.3675	41.8267	91.8254	8.3755
+Der Verkäufer lieh dem Interessenten den Autoschlüssel. Er war defekt.	ExpB1	328.6184	39.4707	32.424	101.821	89.0165	36.3836	389.1452	25.3283
+Der Verkäufer lieh der Interessentin den Autoschlüssel. Der war voller Hoffnung.	ExpB1	169.67	68.3968	35.8411	87.6111	95.8414	53.6471	163.3412	34.5401
+Der Verkäufer lieh der Interessentin den Autoschlüssel. Dieser war voller Hoffnung.	ExpB1	110.027	32.8578	21.2689	62.4606	60.3349	50.6473	96.7605	38.5932
+Der Verkäufer lieh der Interessentin den Autoschlüssel. Er war voller Hoffnung.	ExpB1	73.8773	32.9637	17.5468	37.4422	39.4472	30.5144	65.7373	23.2907
+Der Vermieter schickte dem Mieter den Mietvertrag. Der war präzise formuliert.	ExpB1	6.955	7.3766	3.5488	3.8546	3.4417	4.1112	8.8827	3.625
+Der Vermieter schickte dem Mieter den Mietvertrag. Dieser war präzise formuliert.	ExpB1	8.7231	6.6001	2.8437	5.9573	5.2535	4.723	10.3375	3.8202
+Der Vermieter schickte dem Mieter den Mietvertrag. Er war präzise formuliert.	ExpB1	11.4894	14.0289	4.2042	8.0694	6.0697	5.5417	13.4928	3.9972
+Der Vermieter schickte der Mieterin den Mietvertrag. Der hat aber vergessen, zu unterschreiben.	ExpB1	17.6782	4.7429	2.6665	5.0068	5.4559	4.4458	17.0372	2.9902
+Der Vermieter schickte der Mieterin den Mietvertrag. Dieser hat aber vergessen, zu unterschreiben.	ExpB1	25.7141	4.6287	2.504	6.643	6.9497	4.7621	22.3531	3.057
+Der Vermieter schickte der Mieterin den Mietvertrag. Er hat aber vergessen, zu unterschreiben.	ExpB1	15.819	4.5774	2.6198	5.2518	6.0028	4.6049	14.8016	2.982
+Der Wächter hat dem Schwager den Geheimcode. Der war allerdings lang und schwer zu merken.	ExpB1	126.9385	39.2336	24.92	24.6077	35.4936	20.2005	144.619	30.9641
+Der Wächter hat dem Schwager den Geheimcode. Dieser war allerdings lang und schwer zu merken.	ExpB1	134.3073	27.8129	25.3043	48.5615	53.9329	20.0538	152.3767	25.9174
+Der Wächter hat dem Schwager den Geheimcode. Er war allerdings lang und schwer zu merken.	ExpB1	193.6148	58.4355	35.2822	40.8453	44.9012	29.6059	216.6836	37.6033
+Der Wächter hat der Schwägerin den Geheimcode. Der war nämlich schon betrunken.	ExpB1	31.5129	15.6186	15.2302	29.9851	41.329	14.1546	34.6017	36.6423
+Der Wächter hat der Schwägerin den Geheimcode. Dieser war nämlich schon betrunken.	ExpB1	56.0962	12.7861	16.7304	26.1744	36.3272	16.3138	57.4495	21.3219
+Der Wächter hat der Schwägerin den Geheimcode. Er war nämlich schon betrunken.	ExpB1	35.7551	13.0582	13.9567	21.2618	30.2372	16.4607	37.9405	39.4381
+Die Anwältin erklärte dem Mandanten die Beweislage. Die war wie immer perfekt vorbereitet.	ExpB1	16.3786	10.8453	9.5122	12.4286	9.1882	14.2508	18.3431	9.002
+Die Anwältin erklärte dem Mandanten die Beweislage. Diese war wie immer perfekt vorbereitet.	ExpB1	20.477	10.3989	8.7198	13.3134	10.1227	15.8943	24.7737	10.098
+Die Anwältin erklärte dem Mandanten die Beweislage. Sie war wie immer perfekt vorbereitet.	ExpB1	14.6773	8.2173	8.4091	13.2563	9.8647	12.3296	15.578	10.1506
+Die Anwältin erklärte der Mandantin die Beweislage. Die war uneindeutig.	ExpB1	13.1287	28.6071	25.2745	27.3529	29.4377	27.5454	12.8003	23.0198
+Die Anwältin erklärte der Mandantin die Beweislage. Diese war uneindeutig.	ExpB1	13.9298	26.3678	18.1696	16.3822	18.2161	14.8672	13.4299	14.8318
+Die Anwältin erklärte der Mandantin die Beweislage. Sie war uneindeutig.	ExpB1	16.5269	24.0648	16.3922	20.1524	22.0204	22.3629	15.7279	14.9004
+Die Arbeitgeberin zeigte dem Bewerber den Arbeitsvertrag. Der wirkte dabei sehr sympathisch.	ExpB1	12.504	6.2283	5.8725	27.1999	19.2518	32.9035	16.9593	21.3721
+Die Arbeitgeberin zeigte dem Bewerber den Arbeitsvertrag. Dieser wirkte dabei sehr sympathisch.	ExpB1	14.5979	8.493	9.0022	29.7626	18.4737	35.0111	19.8666	16.511
+Die Arbeitgeberin zeigte dem Bewerber den Arbeitsvertrag. Er wirkte dabei sehr sympathisch.	ExpB1	14.3555	5.5504	5.9244	22.1751	22.6269	32.2579	21.2503	11.617
+Die Archäologin präsentierte dem Museumsdirektor den Fund. Der war sehr aufgeregt.	ExpB1	46.4466	8.5728	5.9755	17.0044	20.2316	8.4583	44.7857	5.3337
+Die Archäologin präsentierte dem Museumsdirektor den Fund. Dieser war sehr aufgeregt.	ExpB1	64.329	11.5714	6.6964	15.0525	10.965	8.4596	62.195	7.3646
+Die Archäologin präsentierte dem Museumsdirektor den Fund. Er war sehr aufgeregt.	ExpB1	44.6456	9.7224	6.1824	9.0568	11.5202	8.4226	42.9464	5.58
+Die Autorin widmete dem Verlobten die Novelle. Die war nämlich sehr dankbar.	ExpB1	246.9523	28.6407	21.4771	31.2995	31.1883	29.8519	273.4385	73.7827
+Die Autorin widmete dem Verlobten die Novelle. Diese war nämlich sehr dankbar.	ExpB1	252.435	21.1251	18.6373	31.8028	34.5573	37.8171	280.2471	112.0545
+Die Autorin widmete dem Verlobten die Novelle. Sie war nämlich sehr dankbar.	ExpB1	166.0589	22.7321	20.5839	27.2589	28.1122	33.6261	170.8317	80.9639
+Die Autorin widmete der Verlobten die Novelle. Die war ein Verkaufshit.	ExpB1	153.1494	29.359	30.7139	36.8378	33.68	22.5827	205.0954	67.7813
+Die Autorin widmete der Verlobten die Novelle. Diese war ein Verkaufshit.	ExpB1	86.9701	40.5429	51.8814	30.034	35.5929	22.1342	114.267	82.2473
+Die Autorin widmete der Verlobten die Novelle. Sie war ein Verkaufshit.	ExpB1	94.0561	44.8403	50.989	41.4161	49.2349	21.9842	132.9581	97.1184
+Die Betrügerin raubte dem König die Krone. Die war allerdings unvorsichtig.	ExpB1	39.2548	17.8372	15.7313	52.7911	49.425	12.5674	41.9282	26.637
+Die Betrügerin raubte dem König die Krone. Diese war allerdings unvorsichtig.	ExpB1	42.1228	15.9702	12.8535	74.0672	48.1301	16.7047	43.391	26.695
+Die Betrügerin raubte dem König die Krone. Sie war allerdings unvorsichtig.	ExpB1	46.1259	16.9754	12.871	63.0936	47.5522	10.6279	46.8985	21.4911
+Die Betrügerin raubte der Königin die Krone. Die war unfassbar wertvoll.	ExpB1	22.7565	7.9282	5.025	5.0051	4.9049	6.4275	21.1353	5.5788
+Die Betrügerin raubte der Königin die Krone. Diese war unfassbar wertvoll.	ExpB1	25.8203	8.4531	6.122	5.1779	4.9159	6.8654	23.6576	5.7517
+Die Betrügerin raubte der Königin die Krone. Sie war unfassbar wertvoll.	ExpB1	28.6339	8.6525	5.3702	5.4829	5.4062	8.4887	25.683	5.8664
+Die Chefin garantierte dem Angestellten die Gehaltserhöhung. Die war nämlich sehr zufrieden.	ExpB1	149.0498	4.8284	5.28	5.6324	8.7786	4.7124	142.5741	7.9108
+Die Chefin garantierte dem Angestellten die Gehaltserhöhung. Diese war nämlich sehr zufrieden.	ExpB1	222.4388	4.0228	4.7432	6.3768	9.1962	5.7873	195.8239	9.259
+Die Chefin garantierte dem Angestellten die Gehaltserhöhung. Sie war nämlich sehr zufrieden.	ExpB1	83.2619	4.7273	5.4769	4.6362	7.4415	4.2741	76.5129	6.3417
+Die Chefin garantierte der Angestellten die Gehaltserhöhung. Die war längst überfällig.	ExpB1	91.8562	4.0573	4.3419	9.68	10.1055	2.016	76.4965	14.5795
+Die Chefin garantierte der Angestellten die Gehaltserhöhung. Diese war längst überfällig.	ExpB1	63.6223	3.8629	3.6534	9.6236	10.0949	2.0258	52.1481	11.9922
+Die Chefin garantierte der Angestellten die Gehaltserhöhung. Sie war längst überfällig.	ExpB1	63.9825	4.8234	4.3311	10.9217	11.4225	2.2252	47.6908	9.7405
+Die Chirurgin besorgte dem Arzt die Stelle. Die hatte nämlich nützliche Kontakte.	ExpB1	74.4784	15.2207	12.1649	9.1545	13.0925	20.6342	67.4929	9.9143
+Die Chirurgin besorgte dem Arzt die Stelle. Diese hatte nämlich nützliche Kontakte.	ExpB1	71.2451	19.1211	18.6449	11.5438	13.5069	16.9082	60.6565	9.4732
+Die Chirurgin besorgte dem Arzt die Stelle. Sie hatte nämlich nützliche Kontakte.	ExpB1	68.6496	13.3589	12.2271	9.2349	11.9231	17.0034	60.3359	8.8905
+Die Chirurgin besorgte der Ärztin die Stelle. Die war sehr abwechslungsreich.	ExpB1	19.342	3.573	3.1807	4.0367	3.4172	5.1062	17.6108	6.6838
+Die Chirurgin besorgte der Ärztin die Stelle. Diese war sehr abwechslungsreich.	ExpB1	17.8046	5.3459	4.9994	4.641	3.5632	4.696	17.7008	6.5142
+Die Chirurgin besorgte der Ärztin die Stelle. Sie war sehr abwechslungsreich.	ExpB1	22.7521	4.0134	3.6275	4.3782	3.6929	4.9778	21.8802	7.6549
+Die Diebin entwendete dem Touristen die Handtasche. Die war dabei sehr aggressiv.	ExpB1	74.2555	10.4812	14.3939	79.8203	60.489	59.7117	84.8304	73.0991
+Die Diebin entwendete dem Touristen die Handtasche. Diese war dabei sehr aggressiv.	ExpB1	65.1209	10.0128	8.5293	73.7173	53.0846	48.5307	76.2111	72.2242
+Die Diebin entwendete dem Touristen die Handtasche. Sie war dabei sehr aggressiv.	ExpB1	54.5506	8.7417	12.4098	63.3516	36.7987	37.8725	61.1217	74.0617
+Die Diebin entwendete der Touristin die Handtasche. Die enthielt alle Wertsachen.	ExpB1	39.8818	19.126	7.665	19.7936	18.8506	11.2562	41.1569	14.6363
+Die Diebin entwendete der Touristin die Handtasche. Diese enthielt alle Wertsachen.	ExpB1	39.295	22.6184	8.4765	17.3086	15.8496	11.4239	42.4246	14.9744
+Die Diebin entwendete der Touristin die Handtasche. Sie enthielt alle Wertsachen.	ExpB1	35.8333	18.552	7.915	18.0409	17.8046	12.457	39.7343	15.1527
+Die Eigentümerin vermietete dem Anwohner die Parkfläche. Die war froh über den langfristigen Vertrag.	ExpB1	51.966	9.4286	14.0784	13.3825	11.5306	19.7752	41.4684	13.4137
+Die Eigentümerin vermietete dem Anwohner die Parkfläche. Diese war froh über den langfristigen Vertrag.	ExpB1	53.9035	9.7732	13.9768	13.5084	11.0653	18.0745	40.2145	12.6837
+Die Eigentümerin vermietete dem Anwohner die Parkfläche. Sie war froh über den langfristigen Vertrag.	ExpB1	53.2309	10.4809	14.3381	13.5279	11.9048	19.4911	41.2175	13.6402
+Die Eigentümerin vermietete der Anwohnerin die Parkfläche. Die war glücklicherweise schattig.	ExpB1	36.5304	8.5238	5.5515	14.9887	12.1624	11.692	41.1462	8.6488
+Die Eigentümerin vermietete der Anwohnerin die Parkfläche. Diese war glücklicherweise schattig.	ExpB1	44.122	12.7661	10.1391	13.4674	12.6329	12.8155	49.1376	8.4568
+Die Eigentümerin vermietete der Anwohnerin die Parkfläche. Sie war glücklicherweise schattig.	ExpB1	72.9178	10.9789	6.8301	17.2138	15.4414	17.9543	81.6725	12.2554
+Die Enkelin malte dem Großvater den Garten. Der wurde schon am frühen Abend langsam müde.	ExpB1	41.7883	13.9242	8.5719	10.7145	10.1423	14.0358	46.1085	12.6986
+Die Enkelin malte dem Großvater den Garten. Dieser wurde schon am frühen Abend langsam müde.	ExpB1	48.8768	13.7924	8.3009	12.2303	14.1409	16.5159	49.7158	19.0098
+Die Enkelin malte dem Großvater den Garten. Er wurde schon am frühen Abend langsam müde.	ExpB1	26.8472	14.2126	8.8301	8.7403	8.807	12.7952	28.0906	12.4442
+Die Friseurin erzählte dem Neukunden den Sonntagswitz. Der konnte danach nicht aufhören, zu lachen.	ExpB1	87.1118	25.0608	19.8825	15.6551	16.0527	47.8819	100.8734	13.6732
+Die Friseurin erzählte dem Neukunden den Sonntagswitz. Dieser konnte danach nicht aufhören, zu lachen.	ExpB1	108.8303	26.2879	25.9534	25.665	21.1926	59.7321	126.7449	18.779
+Die Friseurin erzählte dem Neukunden den Sonntagswitz. Er konnte danach nicht aufhören, zu lachen.	ExpB1	85.0098	23.8824	19.3371	14.0227	14.5502	52.6004	97.9641	14.8791
+Die Gastgeberin organisierte dem Redner die Hotelsuite. Die freute sich über den Besuch.	ExpB1	62.6674	10.847	11.1303	23.5789	20.9199	21.4476	59.0486	13.0001
+Die Gastgeberin organisierte dem Redner die Hotelsuite. Diese freute sich über den Besuch.	ExpB1	40.5914	19.3451	14.8239	25.368	22.5857	20.88	39.9371	12.2158
+Die Gastgeberin organisierte dem Redner die Hotelsuite. Sie freute sich über den Besuch.	ExpB1	39.4298	12.1219	14.672	23.4804	25.0056	22.2476	37.1904	13.4061
+Die Gastgeberin organisierte der Rednerin die Hotelsuite. Die war frisch renoviert.	ExpB1	78.5429	17.161	12.3951	71.3366	44.685	169.5965	63.6508	17.0449
+Die Gastgeberin organisierte der Rednerin die Hotelsuite. Diese war frisch renoviert.	ExpB1	101.9644	15.6082	11.191	32.4828	22.8245	73.4857	84.8371	18.6875
+Die Gastgeberin organisierte der Rednerin die Hotelsuite. Sie war frisch renoviert.	ExpB1	93.9532	22.4596	10.4532	43.3332	20.205	135.0157	76.5471	21.1703
+Die Hotelmanagerin beschaffte dem Urlauber die Massage. Die machte danach einen gestressten Eindruck.	ExpB1	25.1644	20.9917	20.5177	19.638	12.754	8.9813	40.1288	26.2478
+Die Hotelmanagerin beschaffte dem Urlauber die Massage. Diese machte danach einen gestressten Eindruck.	ExpB1	25.7225	10.415	7.8929	19.8081	13.3879	10.389	45.3804	28.631
+Die Hotelmanagerin beschaffte dem Urlauber die Massage. Sie machte danach einen gestressten Eindruck.	ExpB1	25.2173	22.7936	22.8932	15.7213	12.861	9.3889	45.8409	24.3864
+Die Hotelmanagerin beschaffte der Urlauberin die Massage. Die war sogar ermäßigt.	ExpB1	209.1456	19.066	38.9277	301.529	238.0907	16.9048	143.0946	49.9985
+Die Hotelmanagerin beschaffte der Urlauberin die Massage. Diese war sogar ermäßigt.	ExpB1	153.1578	17.1926	29.0357	270.8162	161.4467	13.0422	108.4082	59.5275
+Die Hotelmanagerin beschaffte der Urlauberin die Massage. Sie war sogar ermäßigt.	ExpB1	175.1151	23.7031	30.9013	205.311	193.5208	20.8302	133.2656	66.165
+Die Inhaberin bot dem Mitarbeiter den Umzugswagen. Der wollte sich außerdem das Wochenende frei nehmen.	ExpB1	74.1633	11.9001	11.4028	78.6575	79.4813	4.6103	81.6212	46.3723
+Die Inhaberin bot dem Mitarbeiter den Umzugswagen. Dieser wollte sich außerdem das Wochenende frei nehmen.	ExpB1	77.9135	11.2746	11.603	113.3547	118.0294	4.8598	80.525	24.0871
+Die Inhaberin bot dem Mitarbeiter den Umzugswagen. Er wollte sich außerdem das Wochenende frei nehmen.	ExpB1	73.1301	10.7789	11.1124	79.9728	76.9697	4.6613	75.9035	47.8734
+Die Käuferin schuldete dem Händler den Kaufpreis. Der war telefonisch nicht erreichbar.	ExpB1	22.7267	3.707	2.8107	5.1506	4.6435	3.0823	23.4651	4.5017
+Die Käuferin schuldete dem Händler den Kaufpreis. Dieser war telefonisch nicht erreichbar.	ExpB1	28.0492	3.9344	2.7756	14.8228	13.6429	3.8415	28.8473	11.3334
+Die Käuferin schuldete dem Händler den Kaufpreis. Er war telefonisch nicht erreichbar.	ExpB1	25.5022	3.3434	2.3199	3.7203	3.9333	3.0681	23.852	3.1723
+Die Klientin überwies dem Detektiv den Betrag. Der war bekanntlich sehr diskret.	ExpB1	16.2352	16.3205	24.4508	48.9143	49.8767	35.8763	17.8719	29.5442
+Die Klientin überwies dem Detektiv den Betrag. Dieser war bekanntlich sehr diskret.	ExpB1	19.6511	14.8344	21.6908	36.7143	33.5179	35.2815	21.6449	16.5231
+Die Klientin überwies dem Detektiv den Betrag. Er war bekanntlich sehr diskret.	ExpB1	27.9219	18.7966	21.4976	54.162	65.4068	46.3221	28.7597	29.2734
+Die Kollegin führte dem Neuen die Prozedur. Die war dabei sehr sorgfältig.	ExpB1	402.1527	20.6766	17.7253	20.692	16.4291	6.8086	425.0546	23.7465
+Die Kollegin führte dem Neuen die Prozedur. Diese war dabei sehr sorgfältig.	ExpB1	400.6503	16.5284	11.8286	18.2955	18.1079	6.5339	441.1461	23.6219
+Die Kollegin führte dem Neuen die Prozedur. Sie war dabei sehr sorgfältig.	ExpB1	250.9478	17.3928	14.2347	18.5635	16.888	7.7143	239.9378	22.5872
+Die Kollegin führte der Neuen die Prozedur. Die war ziemlich komplex.	ExpB1	725.4224	19.3352	20.8939	57.6437	53.5114	32.1501	793.1285	17.8662
+Die Kollegin führte der Neuen die Prozedur. Diese war ziemlich komplex.	ExpB1	520.2715	21.9934	25.3963	40.4466	37.3789	27.7294	524.3061	17.6326
+Die Kollegin führte der Neuen die Prozedur. Sie war ziemlich komplex.	ExpB1	588.987	29.9468	26.8647	44.1426	46.4395	52.1301	564.9583	18.3481
+Die Krankenpflegerin wusch dem Patienten den Rücken. Der kannte die Routine mittlerweile.	ExpB1	63.4797	13.9293	28.3853	17.6907	15.8733	14.0469	58.29	9.8743
+Die Krankenpflegerin wusch dem Patienten den Rücken. Dieser kannte die Routine mittlerweile.	ExpB1	97.7926	16.5817	16.8666	28.3492	25.8993	13.9155	88.89	10.722
+Die Krankenpflegerin wusch dem Patienten den Rücken. Er kannte die Routine mittlerweile.	ExpB1	59.2108	17.1157	29.0898	16.0235	15.6675	14.4321	54.097	9.5383
+Die Künstlerin vererbte dem Musiker den Besitz. Der war jetzt sehr reich.	ExpB1	188.8381	19.9676	14.6112	82.4325	69.1117	18.941	246.2436	22.3656
+Die Künstlerin vererbte dem Musiker den Besitz. Dieser war jetzt sehr reich.	ExpB1	288.7575	30.635	23.7082	120.554	84.6548	22.6898	358.0287	31.0865
+Die Künstlerin vererbte dem Musiker den Besitz. Er war jetzt sehr reich.	ExpB1	230.9898	14.6231	12.9224	64.6811	59.5898	22.2584	244.1449	18.4445
+Die Lehrerin kündigte dem Rektor die Pensionierung. Die war dabei etwas traurig.	ExpB1	39.4537	28.8554	22.586	27.7245	13.8882	43.8517	54.3521	29.3646
+Die Lehrerin kündigte dem Rektor die Pensionierung. Diese war dabei etwas traurig.	ExpB1	69.8822	27.1914	23.4078	42.6544	21.5369	52.1591	93.532	28.9559
+Die Lehrerin kündigte dem Rektor die Pensionierung. Sie war dabei etwas traurig.	ExpB1	74.595	21.1904	27.1932	37.0296	23.6384	50.7865	92.6092	26.3533
+Die Lehrerin kündigte der Rektorin die Pensionierung. Die war schon lange geplant.	ExpB1	18.9914	7.3358	8.6648	22.5817	8.8709	21.8371	21.522	29.1695
+Die Lehrerin kündigte der Rektorin die Pensionierung. Diese war schon lange geplant.	ExpB1	27.5009	6.9697	9.2646	20.9672	10.2533	13.0901	29.799	27.5699
+Die Lehrerin kündigte der Rektorin die Pensionierung. Sie war schon lange geplant.	ExpB1	46.828	9.197	11.0722	37.5068	16.0187	20.6204	43.6014	28.2379
+Die Lieferantin baute dem Kunden die Kommode. Die war dabei etwas ungeschickt.	ExpB1	21.8075	21.1002	11.2723	55.3676	28.6734	21.0566	32.3749	17.7859
+Die Lieferantin baute dem Kunden die Kommode. Diese war dabei etwas ungeschickt.	ExpB1	27.3837	18.9756	10.4938	51.2498	34.2624	27.7999	39.2027	16.2278
+Die Lieferantin baute dem Kunden die Kommode. Sie war dabei etwas ungeschickt.	ExpB1	18.9497	18.5257	12.917	50.675	33.6728	21.8389	27.1875	16.9418
+Die Lieferantin baute der Kundin die Kommode. Die war sehr geräumig.	ExpB1	26.8218	6.3724	5.7146	26.26	24.0015	11.3836	33.7861	8.7266
+Die Lieferantin baute der Kundin die Kommode. Diese war sehr geräumig.	ExpB1	33.3135	8.6331	6.7093	27.2543	23.6105	11.9054	42.2879	9.4031
+Die Lieferantin baute der Kundin die Kommode. Sie war sehr geräumig.	ExpB1	42.2855	9.8691	5.3811	32.3446	27.8132	11.9862	50.4335	9.5489
+Die Lieferantin reichte dem Floristen die Rechnung. Die war sehr gutaussehend.	ExpB1	16.7072	15.969	10.3877	49.1468	44.4399	35.0018	20.3526	21.9278
+Die Lieferantin reichte dem Floristen die Rechnung. Diese war sehr gutaussehend.	ExpB1	18.0676	15.5607	9.796	65.0649	50.1369	47.4546	21.6579	28.4075
+Die Lieferantin reichte dem Floristen die Rechnung. Sie war sehr gutaussehend.	ExpB1	19.0195	13.6882	9.7584	41.0525	42.9496	27.1733	23.102	16.3252
+Die Lieferantin reichte der Floristin die Rechnung. Die war ganz zerknittert.	ExpB1	39.405	18.4334	23.3928	27.7929	16.2344	14.6976	44.3	10.1492
+Die Lieferantin reichte der Floristin die Rechnung. Diese war ganz zerknittert.	ExpB1	63.1284	19.174	19.3733	37.2811	17.7546	20.1067	71.1947	11.7668
+Die Lieferantin reichte der Floristin die Rechnung. Sie war ganz zerknittert.	ExpB1	44.1443	16.0418	14.1136	25.5642	14.8426	13.6496	53.865	7.9765
+Die Mutter kaufte dem Sohn die Zuckerwatte. Die war heute gut gelaunt.	ExpB1	117.2682	11.7882	11.8691	39.8932	14.0341	52.6399	143.4481	22.659
+Die Mutter kaufte dem Sohn die Zuckerwatte. Diese war heute gut gelaunt.	ExpB1	168.3207	16.2862	8.5084	25.3701	17.5606	59.2974	182.8641	23.2564
+Die Mutter kaufte dem Sohn die Zuckerwatte. Sie war heute gut gelaunt.	ExpB1	169.3899	12.1336	9.0436	16.1823	15.4263	63.0917	193.8693	18.4631
+Die Regisseurin empfahl dem Schauspieler die Fernsehserie. Die sah gern Komödien.	ExpB1	40.8949	19.2561	15.686	8.1673	8.6355	13.9059	41.6267	6.976
+Die Regisseurin empfahl dem Schauspieler die Fernsehserie. Diese sah gern Komödien.	ExpB1	35.2405	13.8135	12.9075	10.6963	8.7233	14.6989	38.4986	9.1268
+Die Regisseurin empfahl dem Schauspieler die Fernsehserie. Sie sah gern Komödien.	ExpB1	16.4611	8.4802	9.2847	6.8527	6.2644	11.961	19.4171	7.0849
+Die Regisseurin empfahl der Schauspielerin die Fernsehserie. Die handelte von einer lustigen Verwechslung.	ExpB1	38.5909	4.6596	8.9419	9.6067	9.2892	6.8349	49.0312	7.5729
+Die Regisseurin empfahl der Schauspielerin die Fernsehserie. Diese handelte von einer lustigen Verwechslung.	ExpB1	41.8032	4.7296	6.3845	9.5195	8.8564	7.1921	52.4939	7.7297
+Die Regisseurin empfahl der Schauspielerin die Fernsehserie. Sie handelte von einer lustigen Verwechslung.	ExpB1	43.8173	5.0208	7.5683	9.9313	9.3532	7.3531	54.3305	7.514
+Die Schneiderin nähte dem Klienten die Jacke. Die investierte viel Mühe.	ExpB1	75.3884	19.8874	22.0088	35.5908	35.9381	24.007	66.931	36.5838
+Die Schneiderin nähte dem Klienten die Jacke. Diese investierte viel Mühe.	ExpB1	58.5418	16.3279	13.987	23.5889	24.3597	15.1783	50.9529	31.4571
+Die Schneiderin nähte dem Klienten die Jacke. Sie investierte viel Mühe.	ExpB1	51.7539	16.2277	14.9928	19.3641	21.2732	12.0926	47.2752	27.9239
+Die Schneiderin nähte der Klientin die Jacke. Die fiel größer aus als gewollt.	ExpB1	33.5703	29.8427	14.6152	12.7881	14.1074	21.3016	29.1151	16.836
+Die Schneiderin nähte der Klientin die Jacke. Diese fiel größer aus als gewollt.	ExpB1	37.0459	14.9955	10.976	13.468	12.0649	23.8995	29.8291	19.7921
+Die Schneiderin nähte der Klientin die Jacke. Sie fiel größer aus als gewollt.	ExpB1	40.2034	34.9241	14.1374	18.7195	13.1912	20.6793	33.4097	16.8194
+Die Schülerin zeigte dem Sitznachbarn die Formel. Die war schon immer sehr nett.	ExpB1	72.9385	14.6461	8.7263	159.2411	142.8981	31.5613	84.5859	58.0132
+Die Schülerin zeigte dem Sitznachbarn die Formel. Diese war schon immer sehr nett.	ExpB1	141.2526	14.1786	10.0291	174.172	131.6999	41.9359	135.2514	52.99
+Die Schülerin zeigte dem Sitznachbarn die Formel. Sie war schon immer sehr nett.	ExpB1	62.8092	11.0198	8.4756	96.4047	91.8327	24.3008	79.4319	35.921
+Die Schülerin zeigte der Sitznachbarin die Formel. Die war ziemlich kompliziert.	ExpB1	127.304	12.4231	6.4398	7.7591	7.8138	9.4042	114.089	2.9559
+Die Schülerin zeigte der Sitznachbarin die Formel. Diese war ziemlich kompliziert.	ExpB1	118.9271	10.252	5.8645	8.4422	8.0794	10.1723	97.3876	3.2341
+Die Schülerin zeigte der Sitznachbarin die Formel. Sie war ziemlich kompliziert.	ExpB1	106.5065	18.2657	8.1592	9.2257	9.2863	11.7173	85.9934	3.4627
+Die Studentin stahl dem Dozenten den Laptop. Der hatte dadurch ernste Schwierigkeiten.	ExpB1	134.5007	3.109	3.2538	5.9387	6.5285	4.833	154.396	4.0418
+Die Studentin stahl dem Dozenten den Laptop. Dieser hatte dadurch ernste Schwierigkeiten.	ExpB1	134.4335	5.2164	4.3387	5.0964	7.4909	4.8474	149.365	3.3196
+Die Studentin stahl dem Dozenten den Laptop. Er hatte dadurch ernste Schwierigkeiten.	ExpB1	128.5903	3.6781	3.4583	5.7263	6.0319	4.888	146.1755	4.0684
+Die Tante leitete dem Neffen den Videoclip. Der mochte witzige Katzenvideos.	ExpB1	165.8192	19.9432	15.5354	123.7033	115.5197	27.6439	165.0317	43.8475
+Die Tante leitete dem Neffen den Videoclip. Dieser mochte witzige Katzenvideos.	ExpB1	118.2301	12.423	14.5848	65.2108	73.3833	29.8687	123.0092	67.4462
+Die Tante leitete dem Neffen den Videoclip. Er mochte witzige Katzenvideos.	ExpB1	106.3598	21.6481	20.4976	89.438	75.976	24.4673	104.6885	34.7757
+Die Teenagerin verkaufte dem Freund den Ausweis. Der war bereits vorbestraft.	ExpB1	53.0323	13.1929	12.2978	45.3406	22.5098	37.0148	71.2852	33.6928
+Die Teenagerin verkaufte dem Freund den Ausweis. Dieser war bereits vorbestraft.	ExpB1	45.2239	18.5786	24.3275	93.9473	46.3432	36.1057	63.9986	30.1173
+Die Teenagerin verkaufte dem Freund den Ausweis. Er war bereits vorbestraft.	ExpB1	33.5619	13.8669	12.2857	32.0375	28.4147	41.2407	44.9796	26.1086
+Die Therapeutin gewöhnte dem Patienten die Marotte. Die war sehr bemüht.	ExpB1	219.8643	21.2414	15.2964	17.1139	18.8254	39.3845	223.178	14.3578
+Die Therapeutin gewöhnte dem Patienten die Marotte. Diese war sehr bemüht.	ExpB1	203.7878	11.6374	9.6038	30.137	25.1924	25.2993	198.3463	15.8089
+Die Therapeutin gewöhnte dem Patienten die Marotte. Sie war sehr bemüht.	ExpB1	125.5158	12.486	10.4124	18.7452	15.0675	19.4594	129.6132	11.2254
+Die Therapeutin gewöhnte der Patientin die Marotte. Die hatte bereits gefährliche Folgen.	ExpB1	78.975	15.9043	15.5792	11.2684	7.5425	16.3927	95.794	19.5325
+Die Therapeutin gewöhnte der Patientin die Marotte. Diese hatte bereits gefährliche Folgen.	ExpB1	60.8781	20.2177	17.3099	11.1679	7.3761	15.4636	79.1183	19.5438
+Die Therapeutin gewöhnte der Patientin die Marotte. Sie hatte bereits gefährliche Folgen.	ExpB1	78.7897	18.5423	18.5971	23.5784	11.0621	18.8467	96.1503	20.8356
+Die Türsteherin verweigerte dem Besucher den Zutritt. Der war etwas unhöflich.	ExpB1	13.2795	5.6201	5.0652	10.7203	7.7197	7.2587	11.5526	9.3483
+Die Türsteherin verweigerte dem Besucher den Zutritt. Dieser war etwas unhöflich.	ExpB1	20.5188	10.3128	6.784	13.8405	12.3046	8.4475	17.2881	8.5184
+Die Türsteherin verweigerte dem Besucher den Zutritt. Er war etwas unhöflich.	ExpB1	16.694	6.3787	6.1348	12.8737	10.1173	8.9398	13.8789	9.7492
+Die Unternehmerin stellte dem Bankangestellten den Kostenplan. Der war dabei sehr konzentriert.	ExpB1	31.0937	9.6918	8.7972	17.4102	14.3786	10.956	39.9922	7.5368
+Die Unternehmerin stellte dem Bankangestellten den Kostenplan. Dieser war dabei sehr konzentriert.	ExpB1	36.1185	11.1182	9.7513	11.6325	9.9718	11.8245	47.7698	14.7069
+Die Unternehmerin stellte dem Bankangestellten den Kostenplan. Er war dabei sehr konzentriert.	ExpB1	33.0972	8.9638	7.7584	12.5664	10.1511	10.6306	40.9381	6.8498
+Die Verkäuferin lieh dem Interessenten den Autoschlüssel. Der war voller Hoffnung.	ExpB1	131.6532	14.2557	19.0383	66.625	70.0459	47.697	111.2738	26.828
+Die Verkäuferin lieh dem Interessenten den Autoschlüssel. Dieser war voller Hoffnung.	ExpB1	113.7207	23.14	25.0734	41.6279	45.7804	53.3383	75.8844	21.5554
+Die Verkäuferin lieh dem Interessenten den Autoschlüssel. Er war voller Hoffnung.	ExpB1	57.9249	10.2851	14.3026	23.2825	21.186	23.7222	57.601	15.2773
+Die Vermieterin schickte dem Mieter den Mietvertrag. Der hat nämlich vergessen, zu unterschreiben.	ExpB1	28.5068	4.8539	2.8887	7.7059	8.9605	5.1598	28.3691	4.3867
+Die Vermieterin schickte dem Mieter den Mietvertrag. Dieser hat nämlich vergessen, zu unterschreiben.	ExpB1	46.7501	4.689	2.9261	7.0519	7.1835	5.1975	41.6517	4.5563
+Die Vermieterin schickte dem Mieter den Mietvertrag. Er hat nämlich vergessen, zu unterschreiben.	ExpB1	30.7575	4.7696	2.9273	8.0437	8.9699	5.1411	29.7484	4.2934
+Die Wächterin hat dem Schwager den Geheimcode. Der war glücklicherweise schon betrunken.	ExpB1	123.996	21.085	44.8854	38.2739	56.3183	31.281	140.1482	31.7111
+Die Wächterin hat dem Schwager den Geheimcode. Dieser war glücklicherweise schon betrunken.	ExpB1	210.3299	19.7674	48.6286	34.1993	49.8738	32.8722	229.4422	23.741
+Die Wächterin hat dem Schwager den Geheimcode. Er war glücklicherweise schon betrunken.	ExpB1	114.8428	19.6747	42.5272	42.6599	48.8088	33.832	125.8523	32.7481
+Der Anwalt erklärte dem Mandanten die Beweislage. Die war uneindeutig.	ExpB2	41.5742	40.7818	23.0986	14.2471	14.3303	9.4666	41.8996	18.0697
+Der Anwalt erklärte dem Mandanten die Beweislage. Diese war uneindeutig.	ExpB2	32.5205	41.2396	16.2588	19.5532	16.6934	9.5762	33.7655	12.6977
+Der Anwalt erklärte dem Mandanten die Beweislage. Sie war uneindeutig.	ExpB2	35.4351	28.5179	15.8506	23.2495	20.7034	19.7129	33.9874	11.7211
+Der Anwalt erklärte der Mandantin die Beweislage. Der war wie immer perfekt vorbereitet.	ExpB2	40.6398	11.2982	9.2354	15.9703	12.7761	9.8401	42.1363	15.1613
+Der Anwalt erklärte der Mandantin die Beweislage. Dieser war wie immer perfekt vorbereitet.	ExpB2	42.5399	10.0732	8.618	19.6931	14.1771	9.2382	46.189	10.1785
+Der Anwalt erklärte der Mandantin die Beweislage. Er war wie immer perfekt vorbereitet.	ExpB2	41.1714	8.7091	8.67	15.5879	11.2667	9.8719	38.1517	16.6833
+Der Archäologe präsentierte der Museumsdirektorin den Fund. Die war sehr aufgeregt.	ExpB2	16.6257	7.5479	6.8011	31.2167	22.2684	8.7663	17.2519	13.1912
+Der Archäologe präsentierte der Museumsdirektorin den Fund. Diese war sehr aufgeregt.	ExpB2	21.1774	7.1485	6.7205	21.112	17.3798	8.735	22.2196	13.0258
+Der Archäologe präsentierte der Museumsdirektorin den Fund. Sie war sehr aufgeregt.	ExpB2	15.6626	6.6566	7.0441	17.0188	15.1129	8.5771	16.5409	7.9378
+Der Autor widmete dem Verlobten die Novelle. Die war ein Verkaufshit.	ExpB2	170.1401	32.8512	34.8883	41.0962	51.1511	32.8571	193.3139	64.3887
+Der Autor widmete dem Verlobten die Novelle. Diese war ein Verkaufshit.	ExpB2	96.6187	48.5018	45.3193	48.0096	62.7257	51.398	107.703	78.3005
+Der Autor widmete dem Verlobten die Novelle. Sie war ein Verkaufshit.	ExpB2	104.4909	106.6473	53.185	64.516	84.0278	39.1889	125.3204	94.4826
+Der Autor widmete der Verlobten die Novelle. Der war nämlich sehr dankbar.	ExpB2	303.0014	16.8078	22.7861	24.4349	33.0456	14.6488	332.3925	32.59
+Der Autor widmete der Verlobten die Novelle. Dieser war nämlich sehr dankbar.	ExpB2	274.4834	16.9578	21.5399	34.1663	49.2187	15.2532	289.1754	62.5678
+Der Autor widmete der Verlobten die Novelle. Er war nämlich sehr dankbar.	ExpB2	173.1538	15.9594	20.8001	22.5567	26.3292	14.1942	177.4886	35.6229
+Der Betrüger raubte dem König die Krone. Die war unfassbar wertvoll.	ExpB2	16.1801	10.8841	7.1896	4.7182	5.0936	7.4413	14.5311	7.7972
+Der Betrüger raubte dem König die Krone. Diese war unfassbar wertvoll.	ExpB2	15.8663	13.283	9.0729	5.2959	5.2328	7.7351	13.9638	7.6033
+Der Betrüger raubte dem König die Krone. Sie war unfassbar wertvoll.	ExpB2	20.5609	12.2882	6.9645	6.2259	5.867	7.8625	17.6554	8.7394
+Der Betrüger raubte der Königin die Krone. Der war allerdings unvorsichtig.	ExpB2	28.5475	17.4832	16.3282	25.5559	28.6293	8.3056	29.2816	16.3273
+Der Betrüger raubte der Königin die Krone. Dieser war allerdings unvorsichtig.	ExpB2	34.9078	15.0788	15.4484	32.466	21.5981	9.1833	33.0357	22.4377
+Der Betrüger raubte der Königin die Krone. Er war allerdings unvorsichtig.	ExpB2	40.5642	18.2981	16.0319	27.2504	26.1204	8.5718	36.3771	14.2915
+Der Chef garantierte dem Angestellten die Gehaltserhöhung. Die war längst überfällig.	ExpB2	23.712	2.849	3.8648	2.7605	3.2885	2.2406	26.8844	13.2514
+Der Chef garantierte dem Angestellten die Gehaltserhöhung. Diese war längst überfällig.	ExpB2	27.3127	3.1046	3.833	2.938	3.3656	2.2515	29.9548	10.1054
+Der Chef garantierte dem Angestellten die Gehaltserhöhung. Sie war längst überfällig.	ExpB2	27.4637	3.6658	3.6426	3.0315	3.5416	2.4731	26.1559	8.0453
+Der Chef garantierte der Angestellten die Gehaltserhöhung. Der war nämlich sehr zufrieden.	ExpB2	39.0989	3.9752	4.0171	5.4592	7.1858	4.1647	44.5206	8.8848
+Der Chef garantierte der Angestellten die Gehaltserhöhung. Dieser war nämlich sehr zufrieden.	ExpB2	84.3603	5.4987	5.9419	4.8515	6.6209	4.5933	80.3351	7.4681
+Der Chef garantierte der Angestellten die Gehaltserhöhung. Er war nämlich sehr zufrieden.	ExpB2	77.615	4.2598	4.3054	5.6255	7.3587	4.4766	77.7332	9.8182
+Der Chirurg besorgte dem Arzt die Stelle. Die war sehr abwechslungsreich.	ExpB2	11.1662	6.0467	5.3394	3.8226	4.0698	5.987	10.9836	7.6739
+Der Chirurg besorgte dem Arzt die Stelle. Diese war sehr abwechslungsreich.	ExpB2	11.134	5.3181	5.5394	3.7187	3.8823	6.3626	11.1353	7.5026
+Der Chirurg besorgte dem Arzt die Stelle. Sie war sehr abwechslungsreich.	ExpB2	14.5266	6.2761	5.9534	4.3454	4.4139	6.1731	14.0915	7.9309
+Der Chirurg besorgte der Ärztin die Stelle. Der hatte nämlich nützliche Kontakte.	ExpB2	23.8017	12.119	9.4275	10.6629	14.2044	9.1608	25.1922	7.7932
+Der Chirurg besorgte der Ärztin die Stelle. Dieser hatte nämlich nützliche Kontakte.	ExpB2	29.9843	7.9146	6.866	16.1245	19.087	8.8607	30.1341	11.9438
+Der Chirurg besorgte der Ärztin die Stelle. Er hatte nämlich nützliche Kontakte.	ExpB2	29.4045	12.1576	12.0456	10.7615	13.0682	8.6255	30.2298	6.6304
+Der Dieb entwendete dem Touristen die Handtasche. Die enthielt alle Wertsachen.	ExpB2	83.6367	16.2521	8.0705	53.2742	47.6057	14.7689	95.6065	23.6789
+Der Dieb entwendete dem Touristen die Handtasche. Diese enthielt alle Wertsachen.	ExpB2	98.3257	12.6753	6.2925	58.9278	46.6061	14.8883	114.358	23.6516
+Der Dieb entwendete dem Touristen die Handtasche. Sie enthielt alle Wertsachen.	ExpB2	88.9394	17.2611	7.4134	56.6441	50.2766	15.4717	106.0835	23.084
+Der Dieb entwendete der Touristin die Handtasche. Der war dabei sehr aggressiv.	ExpB2	26.3572	12.9999	9.1642	163.1557	96.4669	17.9942	30.4735	39.689
+Der Dieb entwendete der Touristin die Handtasche. Dieser war dabei sehr aggressiv.	ExpB2	25.5409	12.5481	7.215	70.5409	39.2775	17.4055	29.607	52.7368
+Der Dieb entwendete der Touristin die Handtasche. Er war dabei sehr aggressiv.	ExpB2	25.8848	11.7315	9.2208	85.7826	51.5275	15.4099	31.5384	40.4908
+Der Eigentümer vermietete dem Anwohner die Parkfläche. Die war glücklicherweise schattig.	ExpB2	45.6045	9.3687	9.6823	13.3843	9.3018	12.9276	50.7187	11.0573
+Der Eigentümer vermietete dem Anwohner die Parkfläche. Diese war glücklicherweise schattig.	ExpB2	47.6956	9.8787	12.1935	10.4679	8.8512	14.2742	53.396	10.1699
+Der Eigentümer vermietete dem Anwohner die Parkfläche. Sie war glücklicherweise schattig.	ExpB2	65.6975	14.6465	15.5291	22.8567	13.8832	18.5425	78.5752	12.9479
+Der Eigentümer vermietete der Anwohnerin die Parkfläche. Der war froh über den langfristigen Vertrag.	ExpB2	24.9187	14.2173	17.6778	10.637	9.3762	22.5564	19.907	14.1241
+Der Eigentümer vermietete der Anwohnerin die Parkfläche. Dieser war froh über den langfristigen Vertrag.	ExpB2	24.407	13.8049	18.5005	15.5416	13.4644	20.3897	20.7788	15.6778
+Der Eigentümer vermietete der Anwohnerin die Parkfläche. Er war froh über den langfristigen Vertrag.	ExpB2	24.736	14.5467	17.242	10.7209	9.7037	20.4688	20.4318	14.938
+Der Enkel malte der Großmutter den Garten. Die wurde schon am frühen Abend langsam müde.	ExpB2	34.3075	29.8505	9.7238	9.0584	12.8602	16.6153	37.8159	16.1586
+Der Enkel malte der Großmutter den Garten. Diese wurde schon am frühen Abend langsam müde.	ExpB2	39.8933	25.4073	9.5141	9.8345	14.5238	19.0432	42.0789	19.2101
+Der Enkel malte der Großmutter den Garten. Sie wurde schon am frühen Abend langsam müde.	ExpB2	30.4002	27.3543	8.906	8.5295	12.933	15.7433	35.3292	15.1573
+Der Friseur erzählte der Neukundin den Sonntagswitz. Die konnte danach nicht aufhören, zu lachen.	ExpB2	61.8969	21.4271	16.7481	16.9368	19.9458	48.2317	74.5644	7.2464
+Der Friseur erzählte der Neukundin den Sonntagswitz. Diese konnte danach nicht aufhören, zu lachen.	ExpB2	89.3734	24.5138	28.469	26.2229	24.5208	55.5912	101.5953	10.0502
+Der Friseur erzählte der Neukundin den Sonntagswitz. Sie konnte danach nicht aufhören, zu lachen.	ExpB2	61.7609	20.31	19.3035	13.9165	16.103	44.686	67.0659	7.9063
+Der Gastgeber organisierte dem Redner die Hotelsuite. Die war frisch renoviert.	ExpB2	217.83	16.249	12.8219	40.7939	34.3318	137.0834	204.5234	17.2231
+Der Gastgeber organisierte dem Redner die Hotelsuite. Diese war frisch renoviert.	ExpB2	261.135	27.5623	35.2398	24.6494	36.7747	112.6124	253.5878	19.0802
+Der Gastgeber organisierte dem Redner die Hotelsuite. Sie war frisch renoviert.	ExpB2	235.9239	26.7014	13.7143	64.6174	36.8939	144.215	211.3455	20.4914
+Der Gastgeber organisierte der Rednerin die Hotelsuite. Der freute sich über den Besuch.	ExpB2	18.4724	15.087	21.6161	24.5919	20.9388	19.6739	19.2493	18.8403
+Der Gastgeber organisierte der Rednerin die Hotelsuite. Dieser freute sich über den Besuch.	ExpB2	17.3272	24.2461	28.3101	17.174	16.8154	20.7649	18.2872	17.2628
+Der Gastgeber organisierte der Rednerin die Hotelsuite. Er freute sich über den Besuch.	ExpB2	20.1018	16.0086	26.6518	27.7868	25.9406	22.2119	20.9577	20.0413
+Der Hotelmanager beschaffte dem Urlauber die Massage. Die war sogar ermäßigt.	ExpB2	123.6988	29.0572	44.5654	93.3864	85.8318	23.3349	91.8653	37.8536
+Der Hotelmanager beschaffte dem Urlauber die Massage. Diese war sogar ermäßigt.	ExpB2	117.8851	25.8407	32.9935	99.3324	87.1025	18.7811	80.7768	37.201
+Der Hotelmanager beschaffte dem Urlauber die Massage. Sie war sogar ermäßigt.	ExpB2	153.5575	36.2499	51.2745	114.9729	121.1028	24.1377	115.8176	46.3726
+Der Hotelmanager beschaffte der Urlauberin die Massage. Der machte danach einen gestressten Eindruck.	ExpB2	21.2701	21.1745	26.9103	13.3291	11.0031	5.5733	36.0981	20.2779
+Der Hotelmanager beschaffte der Urlauberin die Massage. Dieser machte danach einen gestressten Eindruck.	ExpB2	22.6098	8.4375	9.1081	26.3865	21.2155	5.8776	39.4503	7.2458
+Der Hotelmanager beschaffte der Urlauberin die Massage. Er machte danach einen gestressten Eindruck.	ExpB2	22.8414	22.9418	30.7334	13.9233	11.0237	6.1394	39.1177	18.7999
+Der Inhaber bot der Mitarbeiterin den Umzugswagen. Die wollte sich außerdem das Wochenende frei nehmen.	ExpB2	41.7494	15.3636	10.5919	31.6673	33.9105	5.1677	49.3009	12.2183
+Der Inhaber bot der Mitarbeiterin den Umzugswagen. Diese wollte sich außerdem das Wochenende frei nehmen.	ExpB2	49.6168	12.6348	9.5919	35.762	33.8936	5.4146	59.6765	12.6745
+Der Inhaber bot der Mitarbeiterin den Umzugswagen. Sie wollte sich außerdem das Wochenende frei nehmen.	ExpB2	43.1193	14.4898	9.9275	29.5038	29.8125	4.9988	50.7392	13.1652
+Der Käufer schuldete der Händlerin den Kaufpreis. Die war telefonisch nicht erreichbar.	ExpB2	41.4194	9.1255	6.5446	17.1433	14.9915	4.1399	46.7054	4.4836
+Der Käufer schuldete der Händlerin den Kaufpreis. Diese war telefonisch nicht erreichbar.	ExpB2	47.3617	10.8506	7.102	14.535	14.3336	4.6615	50.707	5.1909
+Der Käufer schuldete der Händlerin den Kaufpreis. Sie war telefonisch nicht erreichbar.	ExpB2	36.8977	6.6465	4.9636	10.8379	10.8592	3.9792	35.4699	3.5052
+Der Klient überwies der Detektivin den Betrag. Die war bekanntlich sehr diskret.	ExpB2	32.6053	32.5468	31.7064	55.4834	90.527	39.6051	28.5337	24.3454
+Der Klient überwies der Detektivin den Betrag. Diese war bekanntlich sehr diskret.	ExpB2	35.9719	14.0808	18.0991	50.1173	77.8341	33.6478	31.2037	26.6755
+Der Klient überwies der Detektivin den Betrag. Sie war bekanntlich sehr diskret.	ExpB2	58.3103	30.4487	24.8322	66.7978	91.6756	40.2664	47.3899	29.906
+Der Kollege führte dem Neuen die Prozedur. Die war ziemlich komplex.	ExpB2	733.9228	15.6075	13.9425	26.9167	23.9221	8.197	891.545	30.1518
+Der Kollege führte dem Neuen die Prozedur. Diese war ziemlich komplex.	ExpB2	526.368	26.2302	32.2625	29.9737	25.8647	7.548	589.3654	29.9835
+Der Kollege führte dem Neuen die Prozedur. Sie war ziemlich komplex.	ExpB2	595.8887	21.2182	18.5997	38.172	34.5248	8.5998	635.0619	34.6336
+Der Kollege führte der Neuen die Prozedur. Der war dabei sehr sorgfältig.	ExpB2	350.9672	15.9882	12.436	33.755	28.7894	5.6555	337.4639	8.5937
+Der Kollege führte der Neuen die Prozedur. Dieser war dabei sehr sorgfältig.	ExpB2	340.0918	13.7429	10.7737	27.3249	24.2963	5.4698	344.6001	10.6565
+Der Kollege führte der Neuen die Prozedur. Er war dabei sehr sorgfältig.	ExpB2	268.7858	16.2651	10.9579	34.7432	30.4526	5.4639	241.2248	8.8808
+Der Krankenpfleger wusch der Patientin den Rücken. Die kannte die Routine mittlerweile.	ExpB2	48.6782	16.9928	24.9721	39.6465	36.0567	11.6131	38.9136	11.5908
+Der Krankenpfleger wusch der Patientin den Rücken. Diese kannte die Routine mittlerweile.	ExpB2	99.1767	25.615	34.3931	47.2799	40.2273	11.2445	61.9423	12.1704
+Der Krankenpfleger wusch der Patientin den Rücken. Sie kannte die Routine mittlerweile.	ExpB2	34.377	19.3226	23.5133	43.1284	37.194	12.5385	28.9345	10.3487
+Der Künstler vererbte der Musikerin den Besitz. Die war jetzt sehr reich.	ExpB2	92.3995	11.8097	11.9876	154.0048	155.8307	15.3805	108.5523	13.4708
+Der Künstler vererbte der Musikerin den Besitz. Diese war jetzt sehr reich.	ExpB2	167.8143	19.6662	19.3196	127.0996	104.6981	18.5433	163.6664	17.0959
+Der Künstler vererbte der Musikerin den Besitz. Sie war jetzt sehr reich.	ExpB2	90.3586	9.4243	9.7437	58.2951	84.9095	17.5213	81.6465	11.5585
+Der Lehrer kündigte dem Rektor die Pensionierung. Die war schon lange geplant.	ExpB2	24.3699	7.8359	9.764	30.3599	11.9519	20.2845	35.6727	18.4381
+Der Lehrer kündigte dem Rektor die Pensionierung. Diese war schon lange geplant.	ExpB2	34.2677	11.706	13.3195	23.3821	13.3965	22.7278	46.4288	16.9844
+Der Lehrer kündigte dem Rektor die Pensionierung. Sie war schon lange geplant.	ExpB2	53.6323	11.4812	14.4078	50.3122	22.0885	45.7294	67.1431	21.1336
+Der Lehrer kündigte der Rektorin die Pensionierung. Der war dabei etwas traurig.	ExpB2	92.3921	27.2074	27.1736	76.134	39.4201	46.4282	113.4822	31.9652
+Der Lehrer kündigte der Rektorin die Pensionierung. Dieser war dabei etwas traurig.	ExpB2	138.5675	29.7835	25.0786	67.6685	29.9305	57.3088	157.1265	65.2699
+Der Lehrer kündigte der Rektorin die Pensionierung. Er war dabei etwas traurig.	ExpB2	194.3675	29.5065	32.4109	93.59	38.1893	66.7895	213.4643	31.5952
+Der Lieferant baute dem Kunden die Kommode. Die war sehr geräumig.	ExpB2	15.0233	7.7023	4.6008	11.3945	7.4158	7.6427	16.936	14.2364
+Der Lieferant baute dem Kunden die Kommode. Diese war sehr geräumig.	ExpB2	18.71	35.5192	19.1381	9.1352	7.9471	6.8572	21.3288	14.2735
+Der Lieferant baute dem Kunden die Kommode. Sie war sehr geräumig.	ExpB2	22.5638	9.5104	4.3861	13.7645	11.9215	7.7605	25.5183	17.9414
+Der Lieferant baute der Kundin die Kommode. Der war dabei etwas ungeschickt.	ExpB2	23.3153	22.8703	8.62	35.4443	21.0564	26.4205	27.8889	23.0194
+Der Lieferant baute der Kundin die Kommode. Dieser war dabei etwas ungeschickt.	ExpB2	26.1894	19.6472	7.973	56.2479	38.4305	30.1836	33.8114	28.706
+Der Lieferant baute der Kundin die Kommode. Er war dabei etwas ungeschickt.	ExpB2	23.5832	21.6178	8.8983	37.3175	25.3741	23.2097	29.5944	23.5735
+Der Lieferant reichte dem Floristen die Rechnung. Die war ganz zerknittert.	ExpB2	54.7077	24.0291	22.3272	37.4004	26.343	42.4002	56.5854	19.603
+Der Lieferant reichte dem Floristen die Rechnung. Diese war ganz zerknittert.	ExpB2	87.644	28.8833	23.9022	47.2758	25.8032	59.2765	90.9386	23.6871
+Der Lieferant reichte dem Floristen die Rechnung. Sie war ganz zerknittert.	ExpB2	61.2874	21.8485	14.9873	35.3219	21.9424	35.1426	68.8029	13.8421
+Der Lieferant reichte der Floristin die Rechnung. Der war sehr gutaussehend.	ExpB2	14.3904	20.0816	14.6485	33.9592	33.9145	52.617	15.1244	15.5272
+Der Lieferant reichte der Floristin die Rechnung. Dieser war sehr gutaussehend.	ExpB2	16.9655	30.2598	13.6432	50.9933	42.7355	55.9492	16.3013	23.8779
+Der Lieferant reichte der Floristin die Rechnung. Er war sehr gutaussehend.	ExpB2	15.8187	20.325	14.4223	29.3563	27.2333	49.6816	15.653	13.5447
+Der Mitarbeiter nahm der Opernsängerin den Mantel. Die fand das angemessen.	ExpB2	100.5822	57.8719	41.6107	44.0412	40.0181	41.6339	142.525	13.5162
+Der Mitarbeiter nahm der Opernsängerin den Mantel. Diese fand das angemessen.	ExpB2	211.8757	59.217	31.4359	57.16	40.512	55.5595	257.3865	15.7557
+Der Mitarbeiter nahm der Opernsängerin den Mantel. Sie fand das angemessen.	ExpB2	107.258	35.9956	19.1508	46.0505	45.8022	36.1547	137.7772	16.3522
+Der Onkel leitete der Nichte den Videoclip. Die mochte witzige Katzenvideos.	ExpB2	134.1099	29.9175	20.6887	235.5527	229.8794	37.8534	129.4622	63.1718
+Der Onkel leitete der Nichte den Videoclip. Diese mochte witzige Katzenvideos.	ExpB2	154.4582	20.2993	21.9637	196.9881	178.4501	39.8382	144.7017	66.157
+Der Onkel leitete der Nichte den Videoclip. Sie mochte witzige Katzenvideos.	ExpB2	98.2115	18.9851	23.9405	102.7921	89.9399	34.4778	82.6721	41.6214
+Der Regisseur empfahl dem Schauspieler die Fernsehserie. Die handelte von einer lustigen Verwechslung.	ExpB2	16.9892	4.5933	7.9871	4.8626	5.0173	8.7295	22.3059	8.4219
+Der Regisseur empfahl dem Schauspieler die Fernsehserie. Diese handelte von einer lustigen Verwechslung.	ExpB2	17.5015	3.8397	6.3477	5.3361	5.1664	10.5611	23.1462	8.7781
+Der Regisseur empfahl dem Schauspieler die Fernsehserie. Sie handelte von einer lustigen Verwechslung.	ExpB2	15.998	4.9329	7.5194	5.4942	5.1572	10.0656	20.4016	8.2765
+Der Regisseur empfahl der Schauspielerin die Fernsehserie. Der sah gern Komödien.	ExpB2	16.2446	9.2609	11.512	13.6089	14.2027	11.9468	16.5016	6.0198
+Der Regisseur empfahl der Schauspielerin die Fernsehserie. Dieser sah gern Komödien.	ExpB2	20.6509	8.7884	8.0588	11.871	11.6614	11.8919	22.5121	11.904
+Der Regisseur empfahl der Schauspielerin die Fernsehserie. Er sah gern Komödien.	ExpB2	16.1755	5.877	5.5078	10.4803	11.4893	9.2183	16.1021	6.6188
+Der Schneider nähte dem Klienten die Jacke. Die fiel größer aus als gewollt.	ExpB2	23.8939	12.1818	13.3806	8.4312	8.5068	11.4063	21.144	8.8648
+Der Schneider nähte dem Klienten die Jacke. Diese fiel größer aus als gewollt.	ExpB2	25.5519	14.7955	12.2868	9.5326	7.8278	13.1064	20.9975	9.4412
+Der Schneider nähte dem Klienten die Jacke. Sie fiel größer aus als gewollt.	ExpB2	28.8711	14.3176	15.0664	13.6747	8.8468	14.1356	24.8105	9.6139
+Der Schneider nähte der Klientin die Jacke. Der investierte viel Mühe.	ExpB2	204.0103	34.154	38.4296	62.7914	97.6028	45.6445	221.5033	17.771
+Der Schneider nähte der Klientin die Jacke. Dieser investierte viel Mühe.	ExpB2	140.2214	41.9883	37.9494	24.762	34.2702	35.094	120.6056	32.2104
+Der Schneider nähte der Klientin die Jacke. Er investierte viel Mühe.	ExpB2	68.4708	28.0485	23.4333	25.9108	32.8987	34.2856	55.8849	14.1706
+Der Schüler zeigte dem Sitznachbarn die Formel. Die war ziemlich kompliziert.	ExpB2	51.354	6.7549	4.9349	8.6912	6.7854	5.8906	58.2243	2.1613
+Der Schüler zeigte dem Sitznachbarn die Formel. Diese war ziemlich kompliziert.	ExpB2	94.0801	7.7895	5.7335	9.1913	7.4401	6.1909	90.8072	2.2414
+Der Schüler zeigte dem Sitznachbarn die Formel. Sie war ziemlich kompliziert.	ExpB2	130.1554	8.8312	5.734	11.4297	9.4833	7.4536	144.6972	2.5371
+Der Schüler zeigte der Sitznachbarin die Formel. Der war schon immer sehr nett.	ExpB2	29.013	15.1613	4.7565	60.1736	53.1451	48.5479	33.7998	12.812
+Der Schüler zeigte der Sitznachbarin die Formel. Dieser war schon immer sehr nett.	ExpB2	69.9953	21.3269	7.18	102.9737	91.8743	53.5531	67.1786	24.3364
+Der Schüler zeigte der Sitznachbarin die Formel. Er war schon immer sehr nett.	ExpB2	38.1303	15.2108	4.9793	65.9761	55.89	42.7858	40.528	15.5784
+Der Student stahl der Dozentin den Laptop. Die hatte dadurch ernste Schwierigkeiten.	ExpB2	155.8443	3.8159	3.4762	7.3638	12.9186	11.9856	145.8829	3.6103
+Der Student stahl der Dozentin den Laptop. Diese hatte dadurch ernste Schwierigkeiten.	ExpB2	139.5725	5.654	4.5915	8.5098	14.9592	11.9165	132.6134	5.5932
+Der Student stahl der Dozentin den Laptop. Sie hatte dadurch ernste Schwierigkeiten.	ExpB2	119.7954	4.7691	4.1373	8.1838	11.4643	11.2951	127.0821	3.2201
+Der Teenager verkaufte der Freundin den Ausweis. Die war bereits vorbestraft.	ExpB2	48.0828	15.0754	12.3098	25.3846	19.3201	36.3849	47.0476	30.7008
+Der Teenager verkaufte der Freundin den Ausweis. Diese war bereits vorbestraft.	ExpB2	56.8928	19.1925	15.3704	47.6357	22.6004	34.8968	56.1371	37.8612
+Der Teenager verkaufte der Freundin den Ausweis. Sie war bereits vorbestraft.	ExpB2	58.109	14.6694	9.7503	21.5259	19.3962	27.1825	59.3211	28.3521
+Der Therapeut gewöhnte dem Patienten die Marotte. Die hatte bereits gefährliche Folgen.	ExpB2	56.8627	17.1143	16.8852	18.7572	12.8008	8.6026	64.1906	21.206
+Der Therapeut gewöhnte dem Patienten die Marotte. Diese hatte bereits gefährliche Folgen.	ExpB2	62.2749	20.0256	14.2481	18.749	13.283	9.2979	77.539	19.8917
+Der Therapeut gewöhnte dem Patienten die Marotte. Sie hatte bereits gefährliche Folgen.	ExpB2	76.074	19.0395	19.3963	28.5117	17.7364	10.35	91.3691	22.1176
+Der Therapeut gewöhnte der Patientin die Marotte. Der war sehr bemüht.	ExpB2	18.1686	12.5541	7.147	14.706	12.3771	14.2868	17.3008	16.4973
+Der Therapeut gewöhnte der Patientin die Marotte. Dieser war sehr bemüht.	ExpB2	29.1921	14.9786	8.5257	22.2746	15.0456	15.1995	26.2061	16.2082
+Der Therapeut gewöhnte der Patientin die Marotte. Er war sehr bemüht.	ExpB2	23.6572	12.9353	8.2069	15.3634	12.9004	15.3132	22.4371	16.1886
+Der Türsteher verweigerte der Besucherin den Zutritt. Die war etwas unhöflich.	ExpB2	14.4096	9.2681	12.9703	10.6547	7.2533	8.1693	14.2558	11.6127
+Der Türsteher verweigerte der Besucherin den Zutritt. Diese war etwas unhöflich.	ExpB2	17.5573	15.805	18.1172	11.1978	8.2476	10.7944	16.343	10.7708
+Der Türsteher verweigerte der Besucherin den Zutritt. Sie war etwas unhöflich.	ExpB2	17.013	8.3996	13.7414	11.8213	8.2751	9.3953	14.3574	12.1335
+Der Unternehmer stellte der Bankangestellten den Kostenplan. Die war dabei sehr konzentriert.	ExpB2	143.1214	19.2937	12.3435	18.643	13.9046	9.5858	169.2535	6.6981
+Der Unternehmer stellte der Bankangestellten den Kostenplan. Diese war dabei sehr konzentriert.	ExpB2	153.1122	18.946	15.1925	18.893	13.8124	10.3075	176.5343	7.3095
+Der Unternehmer stellte der Bankangestellten den Kostenplan. Sie war dabei sehr konzentriert.	ExpB2	82.5922	17.1633	12.6974	19.4504	12.8158	9.1285	92.0993	5.3972
+Der Vater kaufte dem Sohn die Zuckerwatte. Die schmeckte nach Erdbeeren.	ExpB2	29.117	14.2443	9.3094	18.2039	21.4698	15.6061	32.5546	19.7461
+Der Vater kaufte dem Sohn die Zuckerwatte. Diese schmeckte nach Erdbeeren.	ExpB2	34.9992	16.004	9.811	20.7699	17.8723	17.1402	37.5057	18.2649
+Der Vater kaufte dem Sohn die Zuckerwatte. Sie schmeckte nach Erdbeeren.	ExpB2	30.4738	13.0618	8.3916	18.0127	17.1025	12.887	33.5218	17.3224
+Der Vater kaufte der Tochter die Zuckerwatte. Der war heute gut gelaunt.	ExpB2	122.4583	7.6669	8.1176	28.7326	17.5937	25.7071	114.8721	16.1846
+Der Vater kaufte der Tochter die Zuckerwatte. Dieser war heute gut gelaunt.	ExpB2	132.7862	7.1363	7.4744	44.4708	26.6382	30.2046	147.319	25.9911
+Der Vater kaufte der Tochter die Zuckerwatte. Er war heute gut gelaunt.	ExpB2	162.172	8.2455	7.8585	15.3849	13.6991	35.4508	148.3501	16.1487
+Der Verkäufer lieh der Interessentin den Autoschlüssel. Die war voller Hoffnung.	ExpB2	218.1893	75.5225	38.8131	92.2134	100.4368	66.8541	195.5938	28.623
+Der Verkäufer lieh der Interessentin den Autoschlüssel. Diese war voller Hoffnung.	ExpB2	146.1167	33.1645	21.3667	88.4489	72.2334	60.0198	135.5763	32.0555
+Der Verkäufer lieh der Interessentin den Autoschlüssel. Sie war voller Hoffnung.	ExpB2	92.5537	43.1609	18.8459	50.3602	49.6266	34.1833	81.5754	21.3074
+Der Vermieter schickte der Mieterin den Mietvertrag. Die hat nämlich vergessen, zu unterschreiben.	ExpB2	19.4206	3.9619	2.7702	10.9468	11.1644	4.6456	20.955	3.0729
+Der Vermieter schickte der Mieterin den Mietvertrag. Diese hat nämlich vergessen, zu unterschreiben.	ExpB2	36.0352	3.9389	2.8888	14.3606	14.3704	4.6493	31.7459	3.2584
+Der Vermieter schickte der Mieterin den Mietvertrag. Sie hat nämlich vergessen, zu unterschreiben.	ExpB2	21.9442	3.8909	2.7867	9.3207	9.9971	4.3729	19.3851	3.0684
+Der Wächter hat der Schwägerin den Geheimcode. Die war glücklicherweise schon betrunken.	ExpB2	55.8606	16.2759	24.1033	36.1378	44.5574	16.8471	49.0975	16.497
+Der Wächter hat der Schwägerin den Geheimcode. Diese war glücklicherweise schon betrunken.	ExpB2	76.9871	16.808	24.155	34.8374	46.2523	20.1108	63.6201	24.199
+Der Wächter hat der Schwägerin den Geheimcode. Sie war glücklicherweise schon betrunken.	ExpB2	41.3167	12.7386	20.2675	39.971	41.8715	17.3721	37.1465	16.7736
+Die Anwältin erklärte dem Mandanten die Beweislage. Der war nun perfekt vorbereitet.	ExpB2	290.3499	10.2501	10.9396	16.9457	19.5261	8.9227	277.8946	10.3952
+Die Anwältin erklärte dem Mandanten die Beweislage. Dieser war nun perfekt vorbereitet.	ExpB2	147.47	11.9721	10.0633	18.601	13.6334	9.2576	150.5835	15.4132
+Die Anwältin erklärte dem Mandanten die Beweislage. Er war nun perfekt vorbereitet.	ExpB2	108.8973	9.7973	8.8156	18.0373	18.211	9.3384	97.5616	10.1874
+Die Arbeitgeberin zeigte dem Bewerber den Arbeitsvertrag. Die wirkte dabei sehr sympathisch.	ExpB2	11.8089	6.5361	5.1223	24.5652	18.0869	36.3877	16.1095	26.4863
+Die Arbeitgeberin zeigte dem Bewerber den Arbeitsvertrag. Diese wirkte dabei sehr sympathisch.	ExpB2	15.2751	9.4337	8.3989	34.4754	22.0225	38.4456	21.553	16.3394
+Die Arbeitgeberin zeigte dem Bewerber den Arbeitsvertrag. Sie wirkte dabei sehr sympathisch.	ExpB2	13.5397	5.5748	5.4148	23.6925	21.8429	33.3176	18.6203	11.3081
+Die Arbeitgeberin zeigte der Bewerberin den Arbeitsvertrag. Der war ohne Zweifel rechtsgültig.	ExpB2	12.4372	5.1446	3.6465	10.507	9.7216	8.2627	14.7341	3.8671
+Die Arbeitgeberin zeigte der Bewerberin den Arbeitsvertrag. Dieser war ohne Zweifel rechtsgültig.	ExpB2	13.9306	4.8575	3.2514	8.9385	7.9164	7.6393	16.6745	7.2066
+Die Arbeitgeberin zeigte der Bewerberin den Arbeitsvertrag. Er war ohne Zweifel rechtsgültig.	ExpB2	17.1885	6.3148	4.313	10.5224	10.417	8.7151	17.6482	4.3224
+Die Archäologin präsentierte dem Museumsdirektor den Fund. Die war sehr aufgeregt.	ExpB2	45.5507	10.4696	5.5688	24.2505	25.3795	9.0142	43.0236	5.9104
+Die Archäologin präsentierte dem Museumsdirektor den Fund. Diese war sehr aufgeregt.	ExpB2	58.0213	14.1288	7.6318	17.5281	15.9452	9.0068	55.4125	7.103
+Die Archäologin präsentierte dem Museumsdirektor den Fund. Sie war sehr aufgeregt.	ExpB2	42.912	8.8695	6.1431	13.4078	15.3214	8.356	41.2505	5.143
+Die Archäologin präsentierte der Museumsdirektorin den Fund. Der war sensationell.	ExpB2	450.4286	25.6063	24.1349	48.0475	52.1839	37.6519	373.5619	39.2627
+Die Archäologin präsentierte der Museumsdirektorin den Fund. Dieser war sensationell.	ExpB2	188.7751	17.9584	15.341	38.4483	34.3535	22.4943	147.709	18.5561
+Die Archäologin präsentierte der Museumsdirektorin den Fund. Er war sensationell.	ExpB2	234.8572	26.1771	18.969	32.9367	39.9608	24.8831	194.4394	30.2007
+Die Autorin widmete dem Verlobten die Novelle. Der war dafür sehr dankbar.	ExpB2	193.4192	14.2194	15.8924	29.2159	25.1058	13.5532	223.3697	42.3293
+Die Autorin widmete dem Verlobten die Novelle. Dieser war dafür sehr dankbar.	ExpB2	144.8356	17.2805	16.411	50.974	43.4048	13.6345	195.7	47.4606
+Die Autorin widmete dem Verlobten die Novelle. Er war dafür sehr dankbar.	ExpB2	133.529	16.3928	17.8382	27.8348	26.6688	17.6729	131.8874	37.0124
+Die Betrügerin raubte dem König die Krone. Der war leider unvorsichtig.	ExpB2	47.8196	11.4111	13.0418	49.9242	36.9525	10.3657	49.3863	20.8068
+Die Betrügerin raubte dem König die Krone. Dieser war leider unvorsichtig.	ExpB2	43.5872	16.9371	19.0874	59.3837	42.3111	10.878	45.0289	31.1205
+Die Betrügerin raubte dem König die Krone. Er war leider unvorsichtig.	ExpB2	56.0122	12.299	11.3997	55.8897	39.8282	8.0943	53.5437	17.5842
+Die Chefin garantierte dem Angestellten die Gehaltserhöhung. Der war daraufhin sehr zufrieden.	ExpB2	29.8191	3.5093	4.5267	6.1447	8.3966	3.4344	30.6017	5.1572
+Die Chefin garantierte dem Angestellten die Gehaltserhöhung. Dieser war daraufhin sehr zufrieden.	ExpB2	36.9843	3.292	4.4302	9.5417	12.7567	3.638	35.7574	5.0048
+Die Chefin garantierte dem Angestellten die Gehaltserhöhung. Er war daraufhin sehr zufrieden.	ExpB2	44.5186	4.0452	5.5878	7.1	9.957	4.4157	40.7644	6.1321
+Die Chirurgin besorgte dem Arzt die Stelle. Der brachte nützliche Kontakte mit.	ExpB2	26.4724	13.5185	12.1033	11.7838	11.6837	9.6201	21.748	12.2688
+Die Chirurgin besorgte dem Arzt die Stelle. Dieser brachte nützliche Kontakte mit.	ExpB2	24.7637	9.5657	9.6852	14.9336	13.3947	8.4807	21.4701	12.2375
+Die Chirurgin besorgte dem Arzt die Stelle. Er brachte nützliche Kontakte mit.	ExpB2	24.5424	13.5944	11.8395	10.2342	9.6509	9.8833	19.2403	13.3052
+Die Diebin entwendete dem Touristen die Handtasche. Der war danach sehr aggressiv.	ExpB2	65.5499	9.2898	11.1073	32.8658	29.4044	18.9798	80.0333	19.1173
+Die Diebin entwendete dem Touristen die Handtasche. Dieser war danach sehr aggressiv.	ExpB2	76.4613	9.8271	10.2188	30.1276	27.629	20.34	93.7777	47.6611
+Die Diebin entwendete dem Touristen die Handtasche. Er war danach sehr aggressiv.	ExpB2	80.5143	8.8743	9.5429	37.607	38.2748	28.855	103.1702	19.2827
+Die Eigentümerin vermietete dem Anwohner die Parkfläche. Der war froh über den langfristigen Vertrag.	ExpB2	51.791	10.0565	15.2188	13.0435	11.1167	20.075	38.1144	13.2171
+Die Eigentümerin vermietete dem Anwohner die Parkfläche. Dieser war froh über den langfristigen Vertrag.	ExpB2	50.7274	9.7648	14.0383	16.362	14.4254	18.1467	39.7834	20.3121
+Die Eigentümerin vermietete dem Anwohner die Parkfläche. Er war froh über den langfristigen Vertrag.	ExpB2	51.4111	10.2896	14.1938	13.1463	11.5049	18.2171	39.1191	13.9787
+Die Enkelin malte dem Großvater den Garten. Die wurde erst am späten Abend langsam müde.	ExpB2	35.6029	12.8851	9.5097	10.6222	13.2172	14.2631	40.3496	15.0332
+Die Enkelin malte dem Großvater den Garten. Diese wurde erst am späten Abend langsam müde.	ExpB2	40.9867	13.7322	9.0279	13.158	14.817	15.5307	44.5332	17.5611
+Die Enkelin malte dem Großvater den Garten. Sie wurde erst am späten Abend langsam müde.	ExpB2	33.2468	11.9701	7.8515	10.6573	13.3388	13.8098	37.6065	14.8837
+Die Enkelin malte der Großmutter den Garten. Der enthielt viele bunte Pflanzen.	ExpB2	45.3193	9.1323	4.9686	10.3775	10.039	21.1849	44.5355	6.0651
+Die Enkelin malte der Großmutter den Garten. Dieser enthielt viele bunte Pflanzen.	ExpB2	51.9687	9.6375	5.782	5.1166	5.3949	19.4215	51.6837	7.3611
+Die Enkelin malte der Großmutter den Garten. Er enthielt viele bunte Pflanzen.	ExpB2	45.022	8.862	5.0534	9.5362	9.8953	21.1279	44.2593	5.9445
+Die Friseurin erzählte dem Neukunden den Sonntagswitz. Die konnte dabei nicht aufhören, zu lachen.	ExpB2	81.0304	21.2201	18.4473	28.0712	24.4822	44.5314	91.8046	25.2932
+Die Friseurin erzählte dem Neukunden den Sonntagswitz. Diese konnte dabei nicht aufhören, zu lachen.	ExpB2	90.9454	29.1822	26.6998	37.6555	31.4038	49.5558	109.572	31.4922
+Die Friseurin erzählte dem Neukunden den Sonntagswitz. Sie konnte dabei nicht aufhören, zu lachen.	ExpB2	100.15	24.4484	18.623	25.8307	24.0521	45.3145	120.0632	21.9492
+Die Friseurin erzählte der Neukundin den Sonntagswitz. Der handelte von drei Waschbären und einem Anwalt.	ExpB2	36.1235	53.6999	43.6257	18.6717	16.8788	30.7722	36.4768	15.1186
+Die Friseurin erzählte der Neukundin den Sonntagswitz. Dieser handelte von drei Waschbären und einem Anwalt.	ExpB2	35.1457	37.2292	32.1513	34.1918	29.1124	31.5405	36.8316	15.8053
+Die Friseurin erzählte der Neukundin den Sonntagswitz. Er handelte von drei Waschbären und einem Anwalt.	ExpB2	38.5173	54.9196	46.1883	18.3403	16.2995	29.658	44.1715	14.8974
+Die Gastgeberin organisierte dem Redner die Hotelsuite. Der freute sich über die Einladung.	ExpB2	37.9303	11.1537	11.8453	19.9628	23.7808	18.8362	35.0742	24.5572
+Die Gastgeberin organisierte dem Redner die Hotelsuite. Dieser freute sich über die Einladung.	ExpB2	35.658	23.0308	30.6529	38.1049	36.1993	17.4034	34.5357	22.2186
+Die Gastgeberin organisierte dem Redner die Hotelsuite. Er freute sich über die Einladung.	ExpB2	40.7272	11.8856	11.9518	21.2244	23.5453	17.9576	37.1794	24.2735
+Die Hotelmanagerin beschaffte dem Urlauber die Massage. Der machte nämlich einen gestressten Eindruck.	ExpB2	22.5218	13.5001	16.6973	33.4672	24.0335	16.5518	36.1932	13.7562
+Die Hotelmanagerin beschaffte dem Urlauber die Massage. Dieser machte nämlich einen gestressten Eindruck.	ExpB2	26.1182	13.9278	17.3131	25.3118	20.0111	18.9783	46.7083	29.0615
+Die Hotelmanagerin beschaffte dem Urlauber die Massage. Er machte nämlich einen gestressten Eindruck.	ExpB2	25.1838	13.7587	16.1968	33.1838	24.7603	17.6197	40.0682	13.852
+Die Inhaberin bot dem Mitarbeiter den Umzugswagen. Die wollte sich das Wochenende ohnehin frei nehmen.	ExpB2	100.6956	12.0168	12.5573	74.9516	93.4757	8.1743	91.1225	11.0322
+Die Inhaberin bot dem Mitarbeiter den Umzugswagen. Diese wollte sich das Wochenende ohnehin frei nehmen.	ExpB2	100.3117	16.6495	16.9139	72.1917	85.2313	8.3961	96.9962	11.7543
+Die Inhaberin bot dem Mitarbeiter den Umzugswagen. Sie wollte sich das Wochenende ohnehin frei nehmen.	ExpB2	97.1327	12.5045	11.8598	73.5244	77.6353	8.5522	91.3126	11.1162
+Die Inhaberin bot der Mitarbeiterin den Umzugswagen. Der war geräumig genug für alle Möbel.	ExpB2	20.8122	10.7728	9.7114	46.7353	41.8985	9.6462	21.2782	15.9359
+Die Inhaberin bot der Mitarbeiterin den Umzugswagen. Dieser war geräumig genug für alle Möbel.	ExpB2	22.6019	14.8919	13.8563	57.8653	36.8081	10.8457	23.5116	15.8947
+Die Inhaberin bot der Mitarbeiterin den Umzugswagen. Er war geräumig genug für alle Möbel.	ExpB2	20.9834	12.5597	9.1156	48.4201	45.5076	9.8519	20.5294	16.9288
+Die Käuferin schuldete dem Händler den Kaufpreis. Die war telefonisch nicht erreichbar.	ExpB2	26.1349	4.4143	2.9908	5.7307	5.2664	3.2128	28.9729	3.7661
+Die Käuferin schuldete dem Händler den Kaufpreis. Diese war telefonisch nicht erreichbar.	ExpB2	29.8843	4.9603	2.9788	5.3791	5.5149	3.6175	31.4552	4.3601
+Die Käuferin schuldete dem Händler den Kaufpreis. Sie war telefonisch nicht erreichbar.	ExpB2	23.2818	3.2152	2.3477	3.7751	4.099	3.088	22.0031	2.9442
+Die Käuferin schuldete der Händlerin den Kaufpreis. Der lag im fünfstelligen Bereich.	ExpB2	10.5039	6.5836	4.597	10.279	5.7213	8.0295	10.5354	4.3546
+Die Käuferin schuldete der Händlerin den Kaufpreis. Dieser lag im fünfstelligen Bereich.	ExpB2	10.8766	8.6028	4.6591	12.1298	8.9006	8.374	11.24	7.9558
+Die Käuferin schuldete der Händlerin den Kaufpreis. Er lag im fünfstelligen Bereich.	ExpB2	10.6652	7.0674	4.0349	8.5488	6.2707	7.7074	11.0327	5.6249
+Die Klientin überwies dem Detektiv den Betrag. Die war dabei sehr diskret.	ExpB2	61.2296	15.4078	20.1423	50.6789	46.6455	50.9829	64.8055	25.2723
+Die Klientin überwies dem Detektiv den Betrag. Diese war dabei sehr diskret.	ExpB2	64.9969	16.9833	30.3578	56.1527	49.6013	49.5853	66.6068	22.7674
+Die Klientin überwies dem Detektiv den Betrag. Sie war dabei sehr diskret.	ExpB2	32.7557	13.8935	16.6398	43.8976	30.4178	36.1122	34.9964	19.0313
+Die Klientin überwies der Detektivin den Betrag. Die war großzügig aufgerundet.	ExpB2	74.666	12.7961	11.6314	25.0637	23.5217	14.4477	75.5575	10.8472
+Die Klientin überwies der Detektivin den Betrag. Diese war großzügig aufgerundet.	ExpB2	73.5171	11.5691	10.6584	40.208	25.6844	14.3849	72.3705	11.5064
+Die Klientin überwies der Detektivin den Betrag. Sie war großzügig aufgerundet.	ExpB2	78.2676	15.2228	12.8744	33.9115	24.1028	24.166	70.8768	12.0549
+Die Kollegin führte dem Neuen die Prozedur. Der war sehr konzentriert.	ExpB2	110.9858	16.5879	15.2844	18.8828	16.4788	17.2333	131.2645	22.7306
+Die Kollegin führte dem Neuen die Prozedur. Dieser war sehr konzentriert.	ExpB2	164.3191	14.5587	15.1764	25.6598	22.7251	19.5148	193.7	39.7876
+Die Kollegin führte dem Neuen die Prozedur. Er war sehr konzentriert.	ExpB2	163.3689	17.53	14.8806	19.5267	16.0697	17.0562	172.708	22.0938
+Die Krankenpflegerin wusch dem Patienten den Rücken. Die kannte die Routine mittlerweile.	ExpB2	82.3296	14.8833	25.7955	20.5604	20.3161	14.5037	74.6225	9.5412
+Die Krankenpflegerin wusch dem Patienten den Rücken. Diese kannte die Routine mittlerweile.	ExpB2	167.738	13.387	13.3015	21.5432	20.3437	14.4342	118.7836	10.2421
+Die Krankenpflegerin wusch dem Patienten den Rücken. Sie kannte die Routine mittlerweile.	ExpB2	58.1419	16.3807	26.0212	14.4409	14.991	15.1336	55.4861	9.1304
+Die Krankenpflegerin wusch der Patientin den Rücken. Der war etwas schuppig.	ExpB2	40.926	78.1282	57.6982	43.9992	25.2299	57.6372	35.7779	40.4022
+Die Krankenpflegerin wusch der Patientin den Rücken. Dieser war etwas schuppig.	ExpB2	45.8174	60.5455	32.999	49.2585	33.1211	41.8306	39.1125	26.3163
+Die Krankenpflegerin wusch der Patientin den Rücken. Er war etwas schuppig.	ExpB2	61.6998	50.849	40.4372	73.7218	41.664	59.9427	50.0728	31.0065
+Die Künstlerin vererbte dem Musiker den Besitz. Die war sehr reich.	ExpB2	169.7407	27.8634	21.4622	105.2735	134.5868	51.6543	265.2752	88.3336
+Die Künstlerin vererbte dem Musiker den Besitz. Diese war sehr reich.	ExpB2	130.6691	44.7658	32.0442	71.3821	74.0388	23.0935	194.1491	63.6082
+Die Künstlerin vererbte dem Musiker den Besitz. Sie war sehr reich.	ExpB2	58.2332	28.2903	18.5178	39.5581	63.6968	20.9035	83.5129	35.2566
+Die Künstlerin vererbte der Musikerin den Besitz. Der bestand aus Geldwerten und Grundstücken.	ExpB2	24.454	9.2135	9.6495	18.8147	22.1114	14.3202	25.2399	12.6971
+Die Künstlerin vererbte der Musikerin den Besitz. Dieser bestand aus Geldwerten und Grundstücken.	ExpB2	21.7118	7.4583	7.261	35.28	31.8371	15.0806	23.9018	17.3932
+Die Künstlerin vererbte der Musikerin den Besitz. Er bestand aus Geldwerten und Grundstücken.	ExpB2	24.5291	8.9499	10.3874	22.7513	23.5237	14.4704	26.1526	12.6874
+Die Lehrerin kündigte dem Rektor die Pensionierung. Der war darüber etwas traurig.	ExpB2	40.4135	27.1373	19.7617	24.0007	14.2651	25.216	52.6207	23.8518
+Die Lehrerin kündigte dem Rektor die Pensionierung. Dieser war darüber etwas traurig.	ExpB2	80.3621	27.9508	26.7515	73.3637	37.147	33.3258	92.3302	39.2616
+Die Lehrerin kündigte dem Rektor die Pensionierung. Er war darüber etwas traurig.	ExpB2	75.1098	25.9419	24.1068	35.3289	19.6227	36.5773	82.6524	20.4265
+Die Lieferantin baute dem Kunden die Kommode. Der war nämlich etwas ungeschickt.	ExpB2	26.1079	20.9019	11.5796	33.1946	28.7375	16.139	37.8622	20.678
+Die Lieferantin baute dem Kunden die Kommode. Dieser war nämlich etwas ungeschickt.	ExpB2	26.7332	18.6443	11.5466	24.0917	19.505	16.5817	37.6673	27.1621
+Die Lieferantin baute dem Kunden die Kommode. Er war nämlich etwas ungeschickt.	ExpB2	21.7276	16.4689	11.1851	29.318	25.3128	15.7312	33.8719	18.1344
+Die Lieferantin reichte dem Floristen die Rechnung. Der war sehr gutaussehend.	ExpB2	16.642	13.3057	9.6459	44.7779	42.7876	28.3534	21.3791	17.9707
+Die Lieferantin reichte dem Floristen die Rechnung. Dieser war sehr gutaussehend.	ExpB2	19.62	14.4201	9.5958	67.2388	53.9165	32.8493	23.0427	27.6354
+Die Lieferantin reichte dem Floristen die Rechnung. Er war sehr gutaussehend.	ExpB2	18.2937	13.7668	9.8631	38.7086	34.3584	28.2938	22.1263	15.6762
+Die Mitarbeiterin nahm dem Opernsänger den Mantel. Die fand das angemessen.	ExpB2	103.9701	53.4425	50.5013	72.4673	67.9201	64.126	134.359	30.5193
+Die Mitarbeiterin nahm dem Opernsänger den Mantel. Diese fand das angemessen.	ExpB2	194.2227	39.1153	39.9142	94.0537	68.7584	85.5747	230.6837	35.5761
+Die Mitarbeiterin nahm dem Opernsänger den Mantel. Sie fand das angemessen.	ExpB2	121.8526	32.8492	25.7228	75.7736	77.737	55.6867	154.4623	36.9229
+Die Mitarbeiterin nahm der Opernsängerin den Mantel. Der war erfreulicherweise aus Kunstpelz.	ExpB2	75.1813	28.595	15.0863	38.7864	40.3484	42.5876	71.6772	11.0068
+Die Mitarbeiterin nahm der Opernsängerin den Mantel. Dieser war erfreulicherweise aus Kunstpelz.	ExpB2	65.1577	23.023	12.9946	18.8656	20.1047	51.8938	65.2658	8.925
+Die Mitarbeiterin nahm der Opernsängerin den Mantel. Er war erfreulicherweise aus Kunstpelz.	ExpB2	93.7131	41.1	17.1569	49.3121	43.4737	51.9303	87.7677	12.1784
+Die Mutter kaufte dem Sohn die Zuckerwatte. Der war umgehend gut gelaunt.	ExpB2	56.8015	13.548	9.0772	56.9813	38.5994	20.5462	77.3241	27.7048
+Die Mutter kaufte dem Sohn die Zuckerwatte. Dieser war umgehend gut gelaunt.	ExpB2	64.9801	15.6916	11.8276	45.8116	23.6307	23.6603	88.6108	26.2113
+Die Mutter kaufte dem Sohn die Zuckerwatte. Er war umgehend gut gelaunt.	ExpB2	59.9033	17.837	8.2603	43.0984	31.9187	23.2436	78.5739	28.8101
+Die Regisseurin empfahl dem Schauspieler die Fernsehserie. Der sah gern Komödien.	ExpB2	29.5732	12.187	15.1404	7.4396	8.1125	14.3241	31.7152	6.6535
+Die Regisseurin empfahl dem Schauspieler die Fernsehserie. Dieser sah gern Komödien.	ExpB2	28.0987	10.6362	10.4106	12.0199	14.4451	14.2582	34.3229	13.1571
+Die Regisseurin empfahl dem Schauspieler die Fernsehserie. Er sah gern Komödien.	ExpB2	16.6066	7.7339	6.4783	6.4369	6.7925	11.0525	19.141	7.3155
+Die Schneiderin nähte dem Klienten die Jacke. Der investierte viel Geld.	ExpB2	34.5469	18.4896	17.7321	28.7393	23.9086	18.8832	36.6907	125.9299
+Die Schneiderin nähte dem Klienten die Jacke. Dieser investierte viel Geld.	ExpB2	37.856	18.6975	12.3421	54.3219	51.8301	13.051	33.424	21.6988
+Die Schneiderin nähte dem Klienten die Jacke. Er investierte viel Geld.	ExpB2	32.9062	18.5898	10.6428	23.1479	13.5975	12.7437	29.8766	61.0189
+Die Schülerin zeigte dem Sitznachbarn die Formel. Der war nämlich immer sehr nett.	ExpB2	92.2477	14.551	7.6933	47.5131	38.5398	31.1826	104.2651	64.1584
+Die Schülerin zeigte dem Sitznachbarn die Formel. Dieser war nämlich immer sehr nett.	ExpB2	226.4852	14.5403	8.6629	26.6761	21.1174	38.6055	231.3206	29.7409
+Die Schülerin zeigte dem Sitznachbarn die Formel. Er war nämlich immer sehr nett.	ExpB2	165.564	13.4909	10.2177	53.8838	42.2286	32.6518	181.6008	64.7913
+Die Studentin stahl dem Dozenten den Laptop. Die hatte nämlich ernste Schwierigkeiten.	ExpB2	99.4604	3.8314	4.6355	5.5624	6.7842	5.4772	108.5645	4.458
+Die Studentin stahl dem Dozenten den Laptop. Diese hatte nämlich ernste Schwierigkeiten.	ExpB2	151.7987	5.1471	5.5536	5.7735	7.8519	6.5821	156.9768	4.445
+Die Studentin stahl dem Dozenten den Laptop. Sie hatte nämlich ernste Schwierigkeiten.	ExpB2	125.9184	4.0543	4.7313	5.6356	6.8675	6.3959	142.2396	4.4462
+Die Studentin stahl der Dozentin den Laptop. Der war allerdings ohnehin defekt.	ExpB2	260.6633	6.6614	8.3947	15.0432	16.16	10.204	333.9107	4.209
+Die Studentin stahl der Dozentin den Laptop. Dieser war allerdings ohnehin defekt.	ExpB2	154.7821	10.4788	11.9765	28.7417	24.8563	9.8608	197.4125	6.2472
+Die Studentin stahl der Dozentin den Laptop. Er war allerdings ohnehin defekt.	ExpB2	452.2395	9.5665	9.2587	27.9878	18.7137	15.384	528.9911	7.6598
+Die Tante leitete dem Neffen den Videoclip. Die mochte witzige Katzenvideos.	ExpB2	114.4907	21.3497	12.4796	172.068	168.7693	27.7379	123.39	54.8663
+Die Tante leitete dem Neffen den Videoclip. Diese mochte witzige Katzenvideos.	ExpB2	131.0847	15.0391	15.1927	143.8972	131.0117	29.1922	140.5622	57.4591
+Die Tante leitete dem Neffen den Videoclip. Sie mochte witzige Katzenvideos.	ExpB2	74.3618	13.5481	15.8741	75.0883	66.0307	25.2643	72.623	36.1492
+Die Tante leitete der Nichte den Videoclip. Der zeigte eine Katze und eine Gurke.	ExpB2	57.5313	15.3611	23.1234	41.9828	39.0049	29.3301	48.4581	19.8991
+Die Tante leitete der Nichte den Videoclip. Dieser zeigte eine Katze und eine Gurke.	ExpB2	54.134	21.2752	31.1458	89.0717	68.5658	29.391	45.3331	14.6563
+Die Tante leitete der Nichte den Videoclip. Er zeigte eine Katze und eine Gurke.	ExpB2	56.7336	15.8006	22.2292	43.7873	37.1516	29.0385	46.69	18.5043
+Die Teenagerin verkaufte dem Freund den Ausweis. Die war bereits vorbestraft.	ExpB2	55.8643	14.2703	15.095	39.3364	27.0722	49.4352	77.0276	29.0161
+Die Teenagerin verkaufte dem Freund den Ausweis. Diese war bereits vorbestraft.	ExpB2	45.8655	18.1676	20.8678	73.8173	31.6688	47.4134	64.0938	35.7835
+Die Teenagerin verkaufte dem Freund den Ausweis. Sie war bereits vorbestraft.	ExpB2	42.8763	13.886	12.8388	33.357	27.1789	36.9321	56.4839	26.7962
+Die Teenagerin verkaufte der Freundin den Ausweis. Der war gefälscht.	ExpB2	12.5376	12.2013	10.8666	30.4914	43.0386	9.3479	17.0008	6.7696
+Die Teenagerin verkaufte der Freundin den Ausweis. Dieser war gefälscht.	ExpB2	11.9998	6.8164	7.2708	11.6267	11.5321	9.7674	16.1254	9.2477
+Die Teenagerin verkaufte der Freundin den Ausweis. Er war gefälscht.	ExpB2	22.2978	16.3638	14.7965	25.9653	37.3907	13.1557	28.0668	7.0657
+Die Therapeutin gewöhnte dem Patienten die Marotte. Der war sehr dankbar.	ExpB2	360.2152	16.2854	15.0411	64.1121	57.8039	27.3751	378.5261	14.0972
+Die Therapeutin gewöhnte dem Patienten die Marotte. Dieser war sehr dankbar.	ExpB2	328.5362	9.1586	8.5166	30.7811	26.9407	17.2134	351.9863	16.863
+Die Therapeutin gewöhnte dem Patienten die Marotte. Er war sehr dankbar.	ExpB2	212.562	10.0043	9.3876	26.1241	23.4353	19.8749	218.8142	14.978
+Die Türsteherin verweigerte dem Besucher den Zutritt. Die war etwas unhöflich.	ExpB2	15.216	7.2363	5.2118	11.2496	8.3339	7.9687	14.7603	9.8244
+Die Türsteherin verweigerte dem Besucher den Zutritt. Diese war etwas unhöflich.	ExpB2	19.0656	12.3402	7.0901	11.823	9.4764	10.5292	17.4457	9.1122
+Die Türsteherin verweigerte dem Besucher den Zutritt. Sie war etwas unhöflich.	ExpB2	16.3697	6.5582	5.6623	12.4814	9.508	9.1645	13.6013	10.2651
+Die Türsteherin verweigerte der Besucherin den Zutritt. Der war leider nicht gestattet.	ExpB2	14.7581	11.4065	7.6739	26.2845	14.7593	4.3533	14.5838	7.8672
+Die Türsteherin verweigerte der Besucherin den Zutritt. Dieser war leider nicht gestattet.	ExpB2	12.5283	9.1744	5.8163	10.7411	6.7958	4.8919	12.7479	10.5294
+Die Türsteherin verweigerte der Besucherin den Zutritt. Er war leider nicht gestattet.	ExpB2	27.2433	13.2248	9.7066	20.3653	14.0817	6.5768	24.9371	13.4083
+Die Unternehmerin stellte dem Bankangestellten den Kostenplan. Die war dabei sehr konzentriert.	ExpB2	30.6368	11.1803	9.6316	16.0507	17.113	11.2191	38.7381	7.3831
+Die Unternehmerin stellte dem Bankangestellten den Kostenplan. Diese war dabei sehr konzentriert.	ExpB2	38.3575	11.2471	9.4445	17.095	13.7543	12.0987	50.7361	8.101
+Die Unternehmerin stellte dem Bankangestellten den Kostenplan. Sie war dabei sehr konzentriert.	ExpB2	34.232	9.1527	8.2903	12.2097	10.6141	10.779	40.85	6.4947
+Die Unternehmerin stellte der Bankangestellten den Kostenplan. Der war sorgfältig berechnet worden.	ExpB2	287.8645	18.136	10.0432	10.6496	9.363	5.4383	408.2045	6.069
+Die Unternehmerin stellte der Bankangestellten den Kostenplan. Dieser war sorgfältig berechnet worden.	ExpB2	179.7874	25.0232	13.8216	9.042	7.6167	5.874	241.0465	11.8813
+Die Unternehmerin stellte der Bankangestellten den Kostenplan. Er war sorgfältig berechnet worden.	ExpB2	194.8195	19.2488	9.1304	10.8553	10.1884	6.5718	248.7425	6.0352
+Die Verkäuferin lieh dem Interessenten den Autoschlüssel. Die war voller Hoffnung.	ExpB2	226.9526	14.6323	20.0407	62.1351	59.7908	54.7229	185.1048	27.9064
+Die Verkäuferin lieh dem Interessenten den Autoschlüssel. Diese war voller Hoffnung.	ExpB2	136.0983	25.7279	35.1919	45.732	45.45	62.6411	106.4618	26.558
+Die Verkäuferin lieh dem Interessenten den Autoschlüssel. Sie war voller Hoffnung.	ExpB2	73.8898	9.9571	13.5647	28.4645	27.2014	30.2615	57.3758	14.7537
+Die Verkäuferin lieh der Interessentin den Autoschlüssel. Der war defekt.	ExpB2	100.3738	52.0561	47.3811	152.0846	114.6583	32.6604	97.1474	85.0641
+Die Verkäuferin lieh der Interessentin den Autoschlüssel. Dieser war defekt.	ExpB2	56.2343	33.7519	32.4839	69.8143	39.7865	29.0333	49.8685	28.0165
+Die Verkäuferin lieh der Interessentin den Autoschlüssel. Er war defekt.	ExpB2	137.2477	46.8092	50.8994	123.3264	91.196	27.3491	140.2511	75.3441
+Die Vermieterin schickte dem Mieter den Mietvertrag. Die hat aber vergessen, zu unterschreiben.	ExpB2	30.0907	5.979	3.6636	4.4066	5.3575	5.1404	30.1334	4.5501
+Die Vermieterin schickte dem Mieter den Mietvertrag. Diese hat aber vergessen, zu unterschreiben.	ExpB2	43.6032	5.9342	3.8425	5.111	6.5618	5.4335	42.0551	4.8061
+Die Vermieterin schickte dem Mieter den Mietvertrag. Sie hat aber vergessen, zu unterschreiben.	ExpB2	29.4028	5.6719	3.7923	4.6282	6.2732	5.1184	27.0819	4.5188
+Die Vermieterin schickte der Mieterin den Mietvertrag. Der war präzise formuliert.	ExpB2	18.295	8.6478	3.3028	5.0126	4.0673	5.2337	21.3361	6.2801
+Die Vermieterin schickte der Mieterin den Mietvertrag. Dieser war präzise formuliert.	ExpB2	20.878	10.5729	4.7868	7.0829	6.2216	6.1422	21.6669	4.7021
+Die Vermieterin schickte der Mieterin den Mietvertrag. Er war präzise formuliert.	ExpB2	27.972	13.1152	3.5503	9.6456	7.1559	6.7168	32.0714	6.3624
+Die Wächterin hat dem Schwager den Geheimcode. Die war nämlich schon betrunken.	ExpB2	154.7087	17.5847	30.9272	87.4179	95.0602	37.0377	208.0403	66.9908
+Die Wächterin hat dem Schwager den Geheimcode. Diese war nämlich schon betrunken.	ExpB2	202.248	22.4825	49.5592	88.7437	117.577	48.753	259.2694	85.0956
+Die Wächterin hat dem Schwager den Geheimcode. Sie war nämlich schon betrunken.	ExpB2	140.1624	16.0874	33.0785	48.9968	76.7517	36.2035	183.4563	50.4324
+Die Wächterin hat der Schwägerin den Geheimcode. Der war allerdings lang und schwer zu merken.	ExpB2	88.7989	14.7684	9.9153	34.3284	30.0441	11.9067	78.2638	11.3429
+Die Wächterin hat der Schwägerin den Geheimcode. Dieser war allerdings lang und schwer zu merken.	ExpB2	90.5864	19.5434	16.3345	21.585	18.7643	11.3757	72.3006	18.2683
+Die Wächterin hat der Schwägerin den Geheimcode. Er war allerdings lang und schwer zu merken.	ExpB2	112.2289	16.0084	11.0107	44.4828	50.8269	16.2338	94.4216	12.0898

@@ -43,3 +43,12 @@ replace_out_of_range <- function(column) {
   column[!(column %in% 1:7)] <- NA
   return(column)
 }
+
+# Split String at n_th underscore 
+split_at_nth_underscore <- function(input_string, n) {
+  parts <- unlist(strsplit(input_string, "_"))
+  if (length(parts) < n) {
+    return(input_string) 
+  }
+  return(paste(parts[1:n], collapse="_"))
+}
