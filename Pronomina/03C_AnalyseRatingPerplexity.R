@@ -55,7 +55,7 @@ print(tail(rating_cor_df, 6))
 ## Correlation between perplexities and ratings of models
 common_cols <- intersect(colnames(model_ratings), colnames(model_ppx))
 cor_results <- sapply(common_cols, function(col) {
-  cor(model_ratings[[col]], model_ppx[[col]], use = "pairwise.complete.obs", method = "spearman")
+  cor(model_ratings[[col]], model_ppx[[col]], use = "pairwise.complete.obs")
 })
 cor_results_df <- data.frame(Model = common_cols, Correlation = cor_results)
 print(cor_results_df)
@@ -68,7 +68,7 @@ numeric_cols <- colnames(model_ppx)[-c(1,2)]  # Excludes first two columns
 
 # Compute correlation between "Human_Rating" and all other selected columns
 cor_results <- sapply(numeric_cols, function(col) {
-  cor(model_ppx[["Human_Rating"]], model_ppx[[col]], use = "pairwise.complete.obs")
+  cor(model_ppx[["Human_Rating"]], model_ppx[[col]], use = "pairwise.complete.obs", method = "pearson")
 })
 
 # Convert results to a DataFrame with column names
