@@ -3,43 +3,54 @@ source("99_Utils.R")
 
 ## Load perplexity answers to DataFrame
 model_ppx <- readRDS(file = "Data/model_perplexities.rds")
+summary(model_ppx)
+str(model_ppx)
 
 ## Load and transform Rating answers
 ratingsExp1 <- read.delim("Data/average_ratings_ExpB1.tsv", sep = "\t", stringsAsFactors = FALSE)
 ratingsExp2 <- read.delim("Data/average_ratings_ExpB2.tsv", sep = "\t", stringsAsFactors = FALSE)
 model_ratings <- rbind(ratingsExp1, ratingsExp2)
-model_ratings <- model_ratings[, -c((ncol(model_ratings)-1), ncol(model_ratings))]
+# model_ratings <- model_ratings[, -c((ncol(model_ratings)-1), ncol(model_ratings))]
 colnames(model_ratings) <- sapply(colnames(model_ratings), function(x) split_at_nth_underscore(x, 2))
+# Move last two columns to positions 3 and 4
+model_ratings <- model_ratings[, c(1, (ncol(model_ratings)-1):ncol(model_ratings), 2:(ncol(model_ratings)-2))]
+colnames(model_ratings)[colnames(model_ratings) == "PromptID"] <- "ID"
+
+# Merge both data frames by "PromptID", keeping all rows (full outer join)
+merged_df <- merge(model_ratings, model_ppx, by = "ID", all = TRUE, suffixes = c(".rat", ".ppx"))
+# Define new column order: Keep "PromptID" first, then "experimentID", then the rest
+new_order <- c("ID", "ExpID", setdiff(colnames(merged_df), c("ID", "ExpID")))
+merged_df <- merged_df[, new_order]
+
+# Print the structure of the merged DataFrame
+str(merged_df)
+
+
+
 
 
 ## Correlations between perplexity of models
 # Remove the ID column for correlation calculations
-numeric_data <- model_ppx[, -c(1,2)]
-
-numeric_data <- apply(numeric_data, 2, as.numeric)
-cor_matrix <- cor(numeric_data, use = "pairwise.complete.obs", method = "spearman")
-print(cor_matrix)
+ppx_data <- model_ppx[, -c(1,2)]
+ppx_data <- apply(ppx_data, 2, as.numeric)
+cor_matrix <- cor(ppx_data, use = "pairwise.complete.obs", method = "spearman")
+# print(cor_matrix)
 # Convert correlation matrix to a long-format data frame
-cor_df <- as.data.frame(as.table(cor_matrix))
+ppx_cor_df <- as.data.frame(as.table(cor_matrix))
 # Remove self-correlations (diagonal values where Var1 == Var2)
-cor_df <- cor_df[cor_df$Var1 != cor_df$Var2, ]
+ppx_cor_df <- ppx_cor_df[ppx_cor_df$Var1 != ppx_cor_df$Var2, ]
 # Sort by correlation value (descending), then alphabetically by variable names
-cor_df <- cor_df[order(-abs(cor_df$Freq)), ]
+ppx_cor_df <- ppx_cor_df[order(-abs(ppx_cor_df$Freq)), ]
 # Remove duplicate pairs (since correlation is symmetric, e.g., A-B and B-A)
-cor_df <- cor_df[!duplicated(apply(cor_df[, 1:2], 1, function(x) paste(sort(x), collapse = "_"))), ]
-# Select & print the top 6 correlations
-top_6 <- head(cor_df, 6)
-weak_6 <- tail(cor_df, 6)
-print(top_6)
-print(weak_6)
+ppx_cor_df <- ppx_cor_df[!duplicated(apply(ppx_cor_df[, 1:2], 1, function(x) paste(sort(x), collapse = "_"))), ]
+print("Correlation between perplexities of models")
+print(ppx_cor_df)
+summary(ppx_data)
 
 ## Correlation between ratings of models
-condensedData <- readRDS("Data/condensedData.rds")
-rating_columns <- grep("_Rating$", names(condensedData), value = TRUE)
-rating_data <- condensedData[, rating_columns, drop = FALSE]
+rating_data <- model_ratings[, -c(1:3), drop = FALSE]
 rating_data <- apply(rating_data, 2, as.numeric)
 rating_cor_matrix <- cor(rating_data, use = "pairwise.complete.obs", method = "pearson")
-print(rating_cor_matrix)
 rating_cor_df <- as.data.frame(as.table(rating_cor_matrix))
 # Remove self-correlations (diagonal values where Var1 == Var2)
 rating_cor_df <- rating_cor_df[rating_cor_df$Var1 != rating_cor_df$Var2, ]
@@ -47,20 +58,69 @@ rating_cor_df <- rating_cor_df[rating_cor_df$Var1 != rating_cor_df$Var2, ]
 rating_cor_df <- rating_cor_df[order(-abs(rating_cor_df$Freq)), ]
 # Remove duplicate pairs (since correlation is symmetric, e.g., A-B and B-A)
 rating_cor_df <- rating_cor_df[!duplicated(apply(rating_cor_df[, 1:2], 1, function(x) paste(sort(x), collapse = "_"))), ]
-# Select & print the top 6 correlations
-rat_top_6 <- head(rating_cor_df, 6)
-print(rat_top_6)
-print(tail(rating_cor_df, 6))
+print("Correlations between ratings of models")
+print(rating_cor_df)
 
 ## Correlation between perplexities and ratings of models
-common_cols <- intersect(colnames(model_ratings), colnames(model_ppx))
-cor_results <- sapply(common_cols, function(col) {
-  cor(model_ratings[[col]], model_ppx[[col]], use = "pairwise.complete.obs")
+# Identify all .ppx and .rat columns
+ppx_cols <- grep("\\.ppx$", colnames(merged_df), value = TRUE)
+rat_cols <- gsub("\\.ppx$", ".rat", ppx_cols)  # Generate corresponding .rat column names
+# Ensure only existing .rat columns are included
+rat_cols <- rat_cols[rat_cols %in% colnames(merged_df)]
+ppx_cols <- ppx_cols[ppx_cols %in% colnames(merged_df)]  # Ensure matching pairs
+# Compute correlations for matching .ppx and .rat columns
+cor_results <- sapply(seq_along(ppx_cols), function(i) {
+  cor(merged_df[[ppx_cols[i]]], merged_df[[rat_cols[i]]], use = "pairwise.complete.obs", method = "spearman")
 })
-cor_results_df <- data.frame(Model = common_cols, Correlation = cor_results)
+# Convert results into a DataFrame
+cor_results_df <- data.frame(Model = ppx_cols, Correlation = cor_results)
+cor_results_df <- cor_results_df[order(cor_results_df$Correlation, decreasing = FALSE), ]
 print(cor_results_df)
 
-#Correlation between human ratings and model perplexities
+
+##Correlation between human ratings and model perplexities
+# Identify all .ppx columns
+ppx_cols <- grep("\\.ppx$", colnames(merged_df), value = TRUE)
+# Compute correlations between each .ppx column and Human_Rating
+cor_results <- sapply(ppx_cols, function(col) {
+  cor(merged_df[[col]], merged_df[["Human_Rating"]], use = "pairwise.complete.obs", method = "spearman")
+})
+# Convert results into a DataFrame
+cor_results_df <- data.frame(Model = ppx_cols, Correlation = cor_results)
+# Sort by absolute correlation value (highest to lowest)
+cor_results_df <- cor_results_df[order(cor_results_df$Correlation, decreasing = FALSE), ]
+# Print results
+print(cor_results_df)
+
+
+# Load required library
+library(dplyr)
+
+# Compute mean for each column (excluding the first 4), grouped by REP and AntecedentE
+grouped_means <- merged_df %>%
+  group_by(REP, AntecedentE) %>%
+  summarise(across(-c(1:2), mean, na.rm = TRUE), .groups = "drop")
+
+# Print the result
+print(grouped_means)
+
+##Correlation between human ratings and model perplexities
+# Identify all .ppx columns
+ppx_cols <- grep("\\.ppx$", colnames(grouped_means), value = TRUE)
+# Compute correlations between each .ppx column and Human_Rating
+grouped_cor_results <- sapply(ppx_cols, function(col) {
+  cor(grouped_means[[col]], grouped_means[["Human_Rating"]], use = "pairwise.complete.obs", method = "spearman")
+})
+# Convert results into a DataFrame
+grouped_cor_results_df <- data.frame(Model = ppx_cols, Correlation = grouped_cor_results)
+# Sort by absolute correlation value (highest to lowest)
+grouped_cor_results_df <- grouped_cor_results_df[order(grouped_cor_results_df$Correlation, decreasing = FALSE), ]
+# Print results
+print(grouped_cor_results_df)
+
+
+### OLD STUFF:
+
 colnames(model_ppx)[colnames(model_ppx) == "ID"] <- "PromptID"
 model_ppx <- merge(model_ppx, model_ratings[, c("PromptID", "Human_Rating")], by = "PromptID", all.x = TRUE)
 # Select only the numeric columns (excluding the first two columns)
@@ -82,7 +142,7 @@ print(cor_results_df)
 
 
 
-### OLD STUFF:
+
 
 # Merge model_ppx and condensedData by "ID", keeping only IDs from model_ppx
 selected_columns <- c("ID", rating_columns)  # Include ID for merging
@@ -145,3 +205,11 @@ finalPPXResults <- merge(finalPPXResults, human_rating_cor_df, by = "Prefix", al
 print(finalPPXResults)
 write_tsv(finalPPXResults, "temp/finalppxresults.tsv")
 
+
+
+common_cols <- intersect(colnames(model_ratings), colnames(model_ppx))
+cor_results <- sapply(common_cols, function(col) {
+  cor(model_ratings[[col]], model_ppx[[col]], use = "pairwise.complete.obs")
+})
+cor_results_df <- data.frame(Model = common_cols, Correlation = cor_results)
+print(cor_results_df)

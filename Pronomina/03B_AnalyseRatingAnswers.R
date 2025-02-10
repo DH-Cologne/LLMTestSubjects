@@ -8,10 +8,10 @@ datasets <- list(
   "ExpB1" = "Data/ExpB1DataAnswers.rds" # File with data for ditransitive verbs
   
 )
-#dataset_name = "ExpB1"
+dataset_name = "ExpB1"
 
 # Process each dataset
-for (dataset_name in names(datasets)) {
+#for (dataset_name in names(datasets)) {
   cat("\nProcessing dataset:", dataset_name, "\n")
   
   # Load the data
@@ -80,7 +80,7 @@ for (dataset_name in names(datasets)) {
   average_ratings <- merge(average_ratings, AntecedentE_data, by = "PromptID")
   
   summary(average_ratings)
-  write_tsv(average_ratings, paste0("Data/average_ratings_", dataset_name, ".tsv"))
+  write.table(average_ratings, paste0("Data/average_ratings_", dataset_name, ".tsv"), sep = "\t", row.names = FALSE, quote = FALSE)
   
   # Identify all columns that end with _Ratings
   rating_columns <- grep("_Rating$", names(average_ratings), value = TRUE)
@@ -216,5 +216,5 @@ for (dataset_name in names(datasets)) {
   
   ## TODO: Visualize grouped_scaled_average_ratings 
 
-}
+#}
 
