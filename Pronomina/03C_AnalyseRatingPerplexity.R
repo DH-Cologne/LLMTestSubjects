@@ -92,17 +92,64 @@ cor_results_df <- cor_results_df[order(cor_results_df$Correlation, decreasing = 
 # Print results
 print(cor_results_df)
 
-
+## Merge genders, extract ExpB1, groupBy REP & Antecedent 
 # Load required library
 library(dplyr)
-
-# Compute mean for each column (excluding the first 4), grouped by REP and AntecedentE
+# Filter only rows where ExpID == "ExpB1"
 grouped_means <- merged_df %>%
-  group_by(REP, AntecedentE) %>%
-  summarise(across(-c(1:2), mean, na.rm = TRUE), .groups = "drop")
-
-# Print the result
+  filter(ExpID == "ExpB1") %>%
+  mutate(REP_Grouped = case_when(
+    REP %in% c("Der", "Die") ~ "Der/Die",
+    REP %in% c("Dieser", "Diese") ~ "Dieser/Diese",
+    REP %in% c("Er", "Sie") ~ "Er/Sie",
+    TRUE ~ REP  # Keep other values unchanged
+  )) %>%
+  group_by(REP_Grouped, AntecedentE) %>%
+  summarise(across(-c(1:3), mean, na.rm = TRUE), .groups = "drop")
+# Print the final grouped means
 print(grouped_means)
+
+## Add publication data
+# Read the publication data
+pub_ratings_df <- read.delim("Data/Publication_Rating.tsv", sep = "\t", stringsAsFactors = FALSE)
+# Merge the new dataset with df
+merged_final <- grouped_means %>%
+  left_join(pub_ratings_df, by = c("REP_Grouped", "AntecedentE"))
+# Print the final merged DataFrame
+print(merged_final)
+
+## Correlations!!!
+# Select only numeric columns (excluding first two)
+numeric_data <- merged_final[, -c(1,2)]
+# Compute correlation matrix
+cor_matrix <- cor(numeric_data, use = "pairwise.complete.obs", method = "spearman")
+# Extract correlations with "Publication_Rating" and sort by absolute value
+pub_correlations <- cor_matrix["Publication_Rating", ]
+pub_correlations_sorted <- pub_correlations[order(abs(pub_correlations), decreasing = TRUE)]
+# Convert to DataFrame for better readability
+pub_correlations_df <- data.frame(Variable = names(pub_correlations_sorted), Correlation = pub_correlations_sorted)
+# Print the sorted correlations
+print(pub_correlations_df)
+
+# Load required library
+library(ggplot2)
+
+# Select numeric columns (excluding the first two: REP_Grouped, AntecedentE)
+numeric_cols <- colnames(merged_final)[-c(1,2)]
+
+# Create regression plots for each numeric column against "Publication_Rating"
+for (col in numeric_cols) {
+  p <- ggplot(merged_final, aes_string(x = col, y = "Publication_Rating")) +
+    geom_point(alpha = 0.5) +          # Scatter plot with transparency
+    geom_smooth(method = "lm", color = "red") +  # Linear regression line
+    labs(title = paste("Regression Plot:", col, "vs Publication_Rating"),
+         x = col, y = "Publication_Rating") +
+    theme_minimal()
+  print(p)  # Display each plot
+}
+
+
+
 
 ##Correlation between human ratings and model perplexities
 # Identify all .ppx columns
@@ -117,6 +164,9 @@ grouped_cor_results_df <- data.frame(Model = ppx_cols, Correlation = grouped_cor
 grouped_cor_results_df <- grouped_cor_results_df[order(grouped_cor_results_df$Correlation, decreasing = FALSE), ]
 # Print results
 print(grouped_cor_results_df)
+
+
+
 
 
 ### OLD STUFF:
