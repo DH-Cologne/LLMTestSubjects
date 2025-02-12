@@ -56,3 +56,4 @@ colnames(final_df_wide) <- gsub("^Value\\.", "", colnames(final_df_wide))
 
 #write.table(final_df_wide, file = "Data/model_perplexities.tsv", sep = "\t", row.names = FALSE, quote = FALSE)
 saveRDS(final_df_wide, file = "Data/model_perplexities.rds")
+

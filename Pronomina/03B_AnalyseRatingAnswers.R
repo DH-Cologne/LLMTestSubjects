@@ -11,7 +11,7 @@ datasets <- list(
 dataset_name = "ExpB1"
 
 # Process each dataset
-#for (dataset_name in names(datasets)) {
+for (dataset_name in names(datasets)) {
   cat("\nProcessing dataset:", dataset_name, "\n")
   
   # Load the data
@@ -79,14 +79,30 @@ dataset_name = "ExpB1"
   AntecedentE_data <- unique(condensedData[, c("PromptID", "AntecedentE")])
   average_ratings <- merge(average_ratings, AntecedentE_data, by = "PromptID")
   
+  ## Correction of initial data fault
+  # Identify matching pairs
+  matching_pairs <- find_matching_pairs(average_ratings)
+  # Swap "Human_Rating" values within each pair
+  for (i in seq(1, nrow(matching_pairs), by = 2)) {
+    if (i + 1 <= nrow(matching_pairs)) {
+      temp <- matching_pairs$Human_Rating[i]
+      matching_pairs$Human_Rating[i] <- matching_pairs$Human_Rating[i + 1]
+      matching_pairs$Human_Rating[i + 1] <- temp
+    }
+  }
+  # Merge back into the original DataFrame
+  average_ratings <- average_ratings %>%
+    left_join(matching_pairs %>% select(PromptID, Human_Rating), by = "PromptID", suffix = c("", "_new")) %>%
+    mutate(Human_Rating = ifelse(!is.na(Human_Rating_new), Human_Rating_new, Human_Rating)) %>%
+    select(-Human_Rating_new)
   summary(average_ratings)
-  write.table(average_ratings, paste0("Data/average_ratings_", dataset_name, ".tsv"), sep = "\t", row.names = FALSE, quote = FALSE)
+  write.table(average_ratings, paste0("Data/corrected_average_ratings_", dataset_name, ".tsv"), sep = "\t", row.names = FALSE, quote = FALSE)
   
   # Identify all columns that end with _Ratings
   rating_columns <- grep("_Rating$", names(average_ratings), value = TRUE)
 #  rating_columns <- setdiff(rating_columns, "Human_Rating")  # Remove "Human_Rating" itself
   
-  #Calculate Correlation between ratings of humans and all models
+  ## Calculate Correlation between ratings of humans and all models
   # Convert Human_Ratings to numeric
   human_ratings <- as.numeric(average_ratings$Human_Rating)
   # Create a data frame to store correlation results
@@ -107,9 +123,6 @@ dataset_name = "ExpB1"
       # Add regression line
       abline(lm(average_ratings[[colu]] ~ average_ratings$Human_Rating), col = "red", lwd = 2)
   }
-  
-
-  
   # Sort results by absolute correlation value (descending)
   cor_results <- cor_results[order(-abs(cor_results$Correlation)), ]
   print(cor_results)
@@ -216,5 +229,5 @@ dataset_name = "ExpB1"
   
   ## TODO: Visualize grouped_scaled_average_ratings 
 
-#}
+}
 

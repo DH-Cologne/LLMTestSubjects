@@ -60,6 +60,16 @@ zeilenIDs <- startID + seq_len(nrow(combdata)) - 1
 combdata$ID <- paste("ID", zeilenIDs, sep = "_")
 combdata <- combdata[c("ID", setdiff(names(combdata), "ID"))]
 
+# fix transmission error
+# Create a temporary column to store the changes
+# combdata$REP <- gsub("^Er$", "TEMP_1", combdata$REP)
+# combdata$REP <- gsub("^Sie$", "TEMP_2", combdata$REP)
+# combdata$REP <- gsub("^diese$", "Sie", combdata$REP)
+# combdata$REP <- gsub("^dieser$", "Er", combdata$REP)
+# Replace temporary placeholders with the correct final values
+# combdata$REP <- gsub("^TEMP_1$", "dieser", combdata$REP)
+# combdata$REP <- gsub("^TEMP_2$", "diese", combdata$REP)
+
 # replace "die" with "Die" etc
 combdata$REP <- sub("^d", "D", combdata$REP)
 

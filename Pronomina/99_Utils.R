@@ -4,6 +4,7 @@
 library(ggplot2)
 library(tidyr)  # For transforming data to long format
 library(dplyr)  # For data manipulation
+library(philentropy) # For entropy measures
 
 # Function to extract the last word of a string
 extractLastWord <- function(s) {
@@ -52,3 +53,32 @@ split_at_nth_underscore <- function(input_string, n) {
   }
   return(paste(parts[1:n], collapse="_"))
 }
+
+
+## Compute Jensen-Shannon Divergence (JSD) for columns
+compute_jsd <- function(df, col1, col2) {
+  # Extract probability distributions (ensure non-negative values)
+  p1 <- df[[col1]]
+  p2 <- df[[col2]]
+  # Normalize to create probability distributions (sum to 1)
+  p1 <- p1 / sum(p1, na.rm = TRUE)
+  p2 <- p2 / sum(p2, na.rm = TRUE)
+  # Create a matrix of the two distributions
+  prob_matrix <- rbind(p1, p2)
+  # Compute Jensen-Shannon Divergence
+  jsd_value <- JSD(prob_matrix, unit = "log2")
+  return(jsd_value)
+}
+
+## Function to identify matching PromptIDs that differ by only "Dieser" vs. "Der" or "Diese" vs. "Sie"
+find_matching_pairs <- function(df) {
+  # Create a modified version of PromptID without "Dieser" and "Der", also without "Diese" and "Sie"
+  df <- df %>%
+    mutate(PromptID_modified = gsub("\\b(Dieser|Er|Diese|Sie)\\b", "", PromptID))
+  # Find duplicated modified PromptIDs (these are the pairs)
+  duplicated_ids <- df$PromptID_modified[duplicated(df$PromptID_modified) | duplicated(df$PromptID_modified, fromLast = TRUE)]
+  # Filter only rows that are part of a matching pair
+  df_pairs <- df %>% filter(PromptID_modified %in% duplicated_ids)
+  return(df_pairs)
+}
+
