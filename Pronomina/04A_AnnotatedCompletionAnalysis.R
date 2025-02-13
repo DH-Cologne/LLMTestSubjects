@@ -151,27 +151,26 @@ p2 <- ggplot(results_df_a2, aes(x = reorder(Model, Averages), y = Averages, fill
 # print(p2)
 
 # --------- ERROR ANALYSIS -----------
-# out of the models that have averge > 0.75, we want to know which errors have happened #nolint
 
-good_datasets_a1 <- list(
-  "MISTRALNEMO" = file.path(folder_path, "MISTRALNEMO_12b_t02_comp/A1_VP01_answers.csv"), # nolint
-  "GPT4" = file.path(folder_path, "GPT4_t05_comp/A1_VP01_answers.csv"), # nolint
-  "MIX" = file.path(folder_path, "MIX_8x7b_t02_comp/A1_VP01_answers.csv"), # nolint
-  "ML3.2" = file.path(folder_path, "ML3.2_3b_t02_comp/A1_VP01_answers.csv"), # nolint
-  "PHI3" = file.path(folder_path, "PHI3_14b_t02_comp/A1_VP01_answers.csv"), # nolint
-  "SKGEMMA2" = file.path(folder_path, "SKGEMMA2_9b_t02_comp/A1_VP01_answers.csv"), # nolint
-  "SKv2" = file.path(folder_path, "SKv2_14b_t02_comp/A1_VP01_answers.csv") # nolint
-)
+# good_datasets_a1 <- list(
+#  "MISTRALNEMO" = file.path(folder_path, "MISTRALNEMO_12b_t02_comp/A1_VP01_answers.csv"), # nolint
+#  "GPT4" = file.path(folder_path, "GPT4_t05_comp/A1_VP01_answers.csv"), # nolint
+# "MIX" = file.path(folder_path, "MIX_8x7b_t02_comp/A1_VP01_answers.csv"), # nolint
+#  "ML3.2" = file.path(folder_path, "ML3.2_3b_t02_comp/A1_VP01_answers.csv"), # nolint
+#  "PHI3" = file.path(folder_path, "PHI3_14b_t02_comp/A1_VP01_answers.csv"), # nolint
+#  "SKGEMMA2" = file.path(folder_path, "SKGEMMA2_9b_t02_comp/A1_VP01_answers.csv"), # nolint
+#  "SKv2" = file.path(folder_path, "SKv2_14b_t02_comp/A1_VP01_answers.csv") # nolint
+#)
 
-good_datasets_a2 <- list(
-  "GPT4_ExpA2" = file.path(folder_path,"GPT4_t05_comp/A2_1_1_answers.csv"), # nolint
-  "SKGEMMA2_ExpA2" = file.path(folder_path,"SKGEMMA2_9b_t02_comp/A2_1_1_answers.csv"), # nolint
-  "MIX_ExpA2" = file.path(folder_path,"MIX_8x7b_t02_comp/A2_1_1_answers.csv"), # nolint
-  "SKv2_ExpA2" = file.path(folder_path,"SKv2_14b_t02_comp/A2_1_1_answers.csv"), # nolint
-  "MISTRALNEMO_ExpA2" = file.path(folder_path,"MISTRALNEMO_12b_t02_comp/A2_1_1_answers.csv"), # nolint
-  "KFK3_ExpA2" = file.path(folder_path,"KFK3_8b_t02_comp/A2_1_1_answers.csv"), # nolint
-  "PHI3_ExpA2" = file.path(folder_path,"PHI3_14b_t02_comp/A2_1_1_answers.csv") # nolint
-)
+#good_datasets_a2 <- list(
+#  "GPT4_ExpA2" = file.path(folder_path,"GPT4_t05_comp/A2_1_1_answers.csv"), # nolint
+#  "SKGEMMA2_ExpA2" = file.path(folder_path,"SKGEMMA2_9b_t02_comp/A2_1_1_answers.csv"), # nolint
+#  "MIX_ExpA2" = file.path(folder_path,"MIX_8x7b_t02_comp/A2_1_1_answers.csv"), # nolint
+#  "SKv2_ExpA2" = file.path(folder_path,"SKv2_14b_t02_comp/A2_1_1_answers.csv"), # nolint
+#  "MISTRALNEMO_ExpA2" = file.path(folder_path,"MISTRALNEMO_12b_t02_comp/A2_1_1_answers.csv"), # nolint
+#  "KFK3_ExpA2" = file.path(folder_path,"KFK3_8b_t02_comp/A2_1_1_answers.csv"), # nolint
+#  "PHI3_ExpA2" = file.path(folder_path,"PHI3_14b_t02_comp/A2_1_1_answers.csv") # nolint
+#)
 
 # --------- A1 ----------
 
@@ -181,10 +180,10 @@ error_counts_a1 <- numeric()
 error1_count_a1 <- list()
 error2_count_a1 <- list()
 
-for (model_name in names(good_datasets_a1)) {
+for (model_name in names(datasets_a1)) {
 
   # get file path
-  file_path <- good_datasets_a1[[model_name]]
+  file_path <- datasets_a1[[model_name]]
 
   # read file
   raw_data <- read_lines(file_path)
@@ -256,10 +255,10 @@ error_counts_a2 <- numeric()
 error1_count_a2 <- list()
 error2_count_a2 <- list()
 
-for (model_name in names(good_datasets_a2)) {
+for (model_name in names(datasets_a2)) {
 
   # get file path
-  file_path <- good_datasets_a2[[model_name]]
+  file_path <- datasets_a2[[model_name]]
 
   # read file
   raw_data <- read_lines(file_path)
@@ -319,7 +318,6 @@ p4 <- ggplot(error_data_a2, aes(x = reorder(Model, Count), y = Count / 48 * 100,
   theme(legend.text = element_text(size = 12))
 
 print(p4)
-
 
 # ------------ ALL MODELS ------------
 
@@ -399,3 +397,6 @@ average_performance_a2 <- binary_sums_a2 / total_rows_a2
 # Write the combined cleaned file for A2
 # write_csv(combined_data_a1, "Pronomina/LLMAnswers/Completions/combined_cleaned_A1.csv") #nolint
 # write_csv(combined_data_a2, "Pronomina/LLMAnswers/Completions/combined_cleaned_A2.csv") #nolint
+
+# data <- readRDS("/Users/lea/Desktop/LLM_test_subjects/Pronomina/Data/ExpB1DataAnswers.rds") #nolint
+# write.csv(data, "/Users/lea/Desktop/EXP_LLM/output.csv", row.names = FALSE)
