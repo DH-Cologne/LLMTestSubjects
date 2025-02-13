@@ -33,18 +33,19 @@ cor_matrix <- cor(ppx_data, use = "pairwise.complete.obs", method = "spearman")
 # Convert correlation matrix to a long-format data frame
 ppx_cor_df <- as.data.frame(as.table(cor_matrix))
 # Remove self-correlations (diagonal values where Var1 == Var2)
-ppx_cor_df <- ppx_cor_df[ppx_cor_df$Var1 != ppx_cor_df$Var2, ]
+# ppx_cor_df <- ppx_cor_df[ppx_cor_df$Var1 != ppx_cor_df$Var2, ]
 # Sort by correlation value (descending), then alphabetically by variable names
 ppx_cor_df <- ppx_cor_df[order(-abs(ppx_cor_df$Freq)), ]
 # Remove duplicate pairs (since correlation is symmetric, e.g., A-B and B-A)
 ppx_cor_df <- ppx_cor_df[!duplicated(apply(ppx_cor_df[, 1:2], 1, function(x) paste(sort(x), collapse = "_"))), ]
 print("Correlation between perplexities of models")
 print(ppx_cor_df)
+
 # Define a color palette
-col_palette <- colorRampPalette(c("white", "yellow", "orange"))(100)
+col_palette <- colorRampPalette(c("white", "gray", "black"))(100)
 # Plot heatmap
 heatmap(cor_matrix, col=col_palette, scale = "none", 
-        symm = TRUE, margins = c(7,7), cexRow = 0.7, cexCol = 0.7)
+        symm = TRUE, margins = c(7,7), cexRow = 0.7, cexCol = 0.7, Colv = FALSE)
 
 
 ## Correlation between ratings of models
@@ -203,13 +204,18 @@ latex_table <- xtable(merged_latex, caption = "First 11 Columns of Merged Data",
 print(latex_table, type = "latex", include.rownames = FALSE, sanitize.text.function = identity,
       add.to.row = list(pos = list(0), command = paste0("\\hline\n", paste(colnames_rotated, collapse = " & "), " \\\\\n\\hline\n")))
 
+# Compute Spearman correlation between Publication and Data File Data
+cor_value <- cor(merged_final$Publication_Rating, merged_final$Human_Rating, 
+                 use = "pairwise.complete.obs", method = "pearson")
+# Print correlation result
+print(cor_value)
 
 
 ## Correlations with publication data
 # Select only numeric columns (excluding first two)
 numeric_data <- merged_final[, -c(1,2)]
 # Compute correlation matrix
-cor_matrix <- cor(numeric_data, use = "pairwise.complete.obs", method = "spearman")
+cor_matrix <- cor(numeric_data, use = "pairwise.complete.obs", method = "pearson")
 # Extract correlations with "Publication_Rating" and sort by absolute value
 pub_correlations <- cor_matrix["Publication_Rating", ]
 pub_correlations_sorted <- pub_correlations[order(abs(pub_correlations), decreasing = TRUE)]
@@ -217,6 +223,76 @@ pub_correlations_sorted <- pub_correlations[order(abs(pub_correlations), decreas
 pub_correlations_df <- data.frame(Variable = names(pub_correlations_sorted), Correlation = pub_correlations_sorted)
 # Print the sorted correlations
 print(pub_correlations_df)
+
+# Compute correlations for matching .ppx and .rat columns
+cor_results <- sapply(seq_along(ppx_cols), function(i) {
+  cor(merged_final[[ppx_cols[i]]], merged_final[[rat_cols[i]]], use = "pairwise.complete.obs", method = "spearman")
+})
+# Convert results into a DataFrame
+cor_results_PRdf <- data.frame(Model = gsub("\\.ppx$", "", ppx_cols), MP_MR = cor_results)
+# Sort by absolute correlation value (highest first)
+cor_results_PRdf <- cor_results_df[order(abs(cor_results_df$MP_MR), decreasing = TRUE), ]
+# Print the results
+print(cor_results_PRdf)
+
+# Compute correlations of Model PPXs with "Publication_Rating"
+cor_results <- sapply(ppx_cols, function(col) {
+  cor(merged_final[[col]], merged_final[["Publication_Rating"]], use = "pairwise.complete.obs", method = "spearman")
+})
+# Convert results into a DataFrame
+cor_results_ppub_df <- data.frame(Model = gsub("\\.ppx$", "", ppx_cols), MP_PR = cor_results)
+# Sort by absolute correlation value (highest first)
+cor_results_ppub_df <- cor_results_ppub_df[order(abs(cor_results_ppub_df$MP_PR), decreasing = TRUE), ]
+# Print the results
+print(cor_results_ppub_df)
+
+# Compute correlations of Model Ratings with "Publication_Rating"
+cor_results <- sapply(rat_cols, function(col) {
+  cor(merged_final[[col]], merged_final[["Publication_Rating"]], use = "pairwise.complete.obs", method = "spearman")
+})
+# Convert results into a DataFrame
+cor_results_rpub_df <- data.frame(Model = gsub("\\.ppx$", "", ppx_cols), MR_PR = cor_results)
+# Sort by absolute correlation value (highest first)
+cor_results_rpub_df <- cor_results_rpub_df[order(abs(cor_results_rpub_df$MR_PR), decreasing = TRUE), ]
+# Print the results
+print(cor_results_rpub_df)
+
+## Merge publication correlations into a new dataframe
+# Merge the first two DataFrames by "Model"
+merged_results <- merge(cor_results_PRdf, cor_results_ppub_df, by = "Model", all = TRUE)
+# Merge with the third DataFrame
+merged_results <- merge(merged_results, cor_results_rpub_df, by = "Model", all = TRUE)
+# Ensure "Model" is the first column and keep all others in the given order
+column_order <- c("Model", setdiff(colnames(merged_results), "Model"))
+merged_results <- merged_results[, column_order]
+# Print the final merged DataFrame
+merged_results <- merged_results[order(merged_results$MR_PR), ]
+print(merged_results)
+
+# Function to round values and bold the maximum per column
+bold_max_rounded <- function(column) {
+  max_val <- column[which.max(abs(column))]
+  rounded_vals <- round(column, 2)  # Round values to 2 decimal places
+  formatted <- ifelse(column == max_val, paste0("\\textbf{", rounded_vals, "}"), rounded_vals)  # Bold max value
+  return(formatted)
+}
+
+# Apply the formatting to numeric columns (excluding the Model column)
+merged_results_bold <- as.data.frame(lapply(merged_results[-1], bold_max_rounded))  # Exclude Model column
+merged_results_bold <- cbind(Model = merged_results$Model, merged_results_bold)  # Reattach Model column
+# Replace underscores with dashes in the Model column
+merged_results_bold$Model <- gsub("_", "-", merged_results_bold$Model)
+# Convert to LaTeX table with small font
+latex_table <- xtable(merged_results_bold, caption = "Correlation Results with Bold Max Values", label = "tab:correlations")
+# Print LaTeX table with proper formatting
+print(latex_table, type = "latex", include.rownames = FALSE, sanitize.text.function = identity,
+      floating = FALSE, tabular.environment = "tabular", add.to.row = list(
+        pos = list(0),
+        command = "\\small\n"  # Set smaller font size in LaTeX
+      ))
+
+
+### End of revision 250012
 
 
 # Load required library
