@@ -1,0 +1,358 @@
+$fillers_model
+Linear mixed model fit by REML. t-tests use Satterthwaite's method ['lmerModLmerTest']
+Formula: zscore ~ weird_filler + (1 + weird_filler | subj) + +(1 | item_nr)
+   Data: datl_f[datl_f$subj != "18" & datl_f$subj != "27" & datl_f$subj !=      "11" & datl_f$subj != "39", ]
+
+REML criterion at convergence: 4398.1
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-3.7566 -0.5462  0.0591  0.5760  3.2751 
+
+Random effects:
+ Groups   Name         Variance Std.Dev. Corr 
+ subj     (Intercept)  0.008999 0.09486       
+          weird_filler 0.073416 0.27095  -0.26
+ item_nr  (Intercept)  0.127485 0.35705       
+ Residual              0.473454 0.68808       
+Number of obs: 2016, groups:  subj, 56; item_nr, 36
+
+Fixed effects:
+             Estimate Std. Error       df t value Pr(>|t|)    
+(Intercept)   0.43121    0.07962 35.61713   5.416 4.33e-06 ***
+weird_filler -1.60612    0.13115 39.32962 -12.247 5.36e-15 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+            (Intr)
+weird_fillr -0.603
+
+$overall_with_interaction
+Linear mixed model fit by REML. t-tests use Satterthwaite's method ['lmerModLmerTest']
+Formula: zscore ~ Pronoun * Antecedent + (1 | subj)
+   Data: datl_e[datl_e$subj != "11" & datl_e$subj != "18" & datl_e$subj !=      "27" & datl_e$subj != "39", ]
+
+REML criterion at convergence: 4621
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-4.5295 -0.5330  0.2620  0.6622  3.2236 
+
+Random effects:
+ Groups   Name        Variance Std.Dev.
+ subj     (Intercept) 0.01239  0.1113  
+ Residual             0.56232  0.7499  
+Number of obs: 2016, groups:  subj, 56
+
+Fixed effects:
+                              Estimate Std. Error         df t value Pr(>|t|)    
+(Intercept)                    0.39598    0.05227 1050.87971   7.576 7.77e-14 ***
+PronounDER                    -0.80439    0.07086 1952.00000 -11.352  < 2e-16 ***
+PronounDIESER                 -0.65622    0.07086 1952.00000  -9.261  < 2e-16 ***
+AntecedentNP2                 -0.12079    0.07086 1952.00000  -1.705   0.0884 .  
+AntecedentNP3                  0.02889    0.07086 1952.00000   0.408   0.6835    
+PronounDER:AntecedentNP2       0.76034    0.10021 1952.00000   7.588 5.01e-14 ***
+PronounDIESER:AntecedentNP2    0.66555    0.10021 1952.00000   6.642 4.01e-11 ***
+PronounDER:AntecedentNP3       0.67322    0.10021 1952.00000   6.718 2.40e-11 ***
+PronounDIESER:AntecedentNP3    0.73508    0.10021 1952.00000   7.336 3.22e-13 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+             (Intr) PrnDER PrDIESER AntNP2 AntNP3 PDER:ANP2 PDIESER:ANP2 PDER:ANP3
+PronounDER   -0.678                                                               
+PronnDIESER  -0.678  0.500                                                        
+AntecdntNP2  -0.678  0.500  0.500                                                 
+AntecdntNP3  -0.678  0.500  0.500    0.500                                        
+PrnDER:ANP2   0.479 -0.707 -0.354   -0.707 -0.354                                 
+PDIESER:ANP2  0.479 -0.354 -0.707   -0.707 -0.354  0.500                          
+PrnDER:ANP3   0.479 -0.707 -0.354   -0.354 -0.707  0.500     0.250                
+PDIESER:ANP3  0.479 -0.354 -0.707   -0.354 -0.707  0.250     0.500        0.500   
+
+$overall_without_interaction
+Linear mixed model fit by REML. t-tests use Satterthwaite's method ['lmerModLmerTest']
+Formula: zscore ~ Pronoun + Antecedent + (1 | subj)
+   Data: datl_e[datl_e$subj != "11" & datl_e$subj != "18" & datl_e$subj !=      "27" & datl_e$subj != "39", ]
+
+REML criterion at convergence: 4698.3
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-4.0392 -0.5496  0.2372  0.6875  2.9342 
+
+Random effects:
+ Groups   Name        Variance Std.Dev.
+ subj     (Intercept) 0.0117   0.1081  
+ Residual             0.5874   0.7664  
+Number of obs: 2016, groups:  subj, 56
+
+Fixed effects:
+                Estimate Std. Error         df t value Pr(>|t|)    
+(Intercept)      0.08107    0.04081  529.10967   1.986   0.0475 *  
+PronounDER      -0.32653    0.04181 1956.00000  -7.809  9.3e-15 ***
+PronounDIESER   -0.18934    0.04181 1956.00000  -4.528  6.3e-06 ***
+AntecedentNP2    0.35450    0.04181 1956.00000   8.478  < 2e-16 ***
+AntecedentNP3    0.49832    0.04181 1956.00000  11.918  < 2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+            (Intr) PrnDER PDIESE AntNP2
+PronounDER  -0.512                     
+PronnDIESER -0.512  0.500              
+AntecdntNP2 -0.512  0.000  0.000       
+AntecdntNP3 -0.512  0.000  0.000  0.500
+
+$overall_model_comparison
+Data: datl_e[datl_e$subj != "11" & datl_e$subj != "18" & datl_e$subj !=  ...
+Models:
+zscore_model_all_noint: zscore ~ Pronoun + Antecedent + (1 | subj)
+zscore_model_all_withint: zscore ~ Pronoun * Antecedent + (1 | subj)
+                         Df    AIC    BIC  logLik deviance  Chisq Chi Df Pr(>Chisq)    
+zscore_model_all_noint    7 4687.9 4727.2 -2337.0   4673.9                             
+zscore_model_all_withint 11 4606.3 4668.0 -2292.1   4584.3 89.665      4  < 2.2e-16 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+$NP1_model
+Linear mixed model fit by REML. t-tests use Satterthwaite's method ['lmerModLmerTest']
+Formula: zscore ~ Pronoun + (1 + Pronoun | subj) + +(1 | item_nr)
+   Data: datl_e[datl_e$Antecedent == "NP1" & datl_e$subj != "11" & datl_e$subj !=  
+    "18" & datl_e$subj != "27" & datl_e$subj != "39", ]
+
+REML criterion at convergence: 1597.6
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-5.0552 -0.6059  0.1167  0.6432  2.2147 
+
+Random effects:
+ Groups   Name          Variance Std.Dev. Corr       
+ subj     (Intercept)   0.01874  0.1369              
+          PronounDER    0.21562  0.4643   -0.34      
+          PronounDIESER 0.25936  0.5093   -0.57  0.77
+ item_nr  (Intercept)   0.10193  0.3193              
+ Residual               0.49633  0.7045              
+Number of obs: 672, groups:  subj, 56; item_nr, 36
+
+Fixed effects:
+              Estimate Std. Error       df t value Pr(>|t|)    
+(Intercept)    0.40263    0.07345 56.45970   5.482 1.02e-06 ***
+PronounDER    -0.81261    0.09118 52.87727  -8.912 4.11e-12 ***
+PronounDIESER -0.66724    0.09539 53.11050  -6.995 4.55e-09 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+            (Intr) PrnDER
+PronounDER  -0.391       
+PronnDIESER -0.420  0.632
+
+$NP2_model
+Linear mixed model fit by REML. t-tests use Satterthwaite's method ['lmerModLmerTest']
+Formula: zscore ~ Pronoun + (1 | subj) + +(1 | item_nr)
+   Data: datl_e[datl_e$Antecedent == "NP2" & datl_e$subj != "11" & datl_e$subj !=  
+    "18" & datl_e$subj != "27" & datl_e$subj != "39", ]
+
+REML criterion at convergence: 1393.8
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-3.7530 -0.5277  0.1792  0.7137  2.5515 
+
+Random effects:
+ Groups   Name        Variance Std.Dev.
+ subj     (Intercept) 0.007857 0.08864 
+ item_nr  (Intercept) 0.088476 0.29745 
+ Residual             0.415206 0.64436 
+Number of obs: 672, groups:  subj, 56; item_nr, 36
+
+Fixed effects:
+                Estimate Std. Error         df t value Pr(>|t|)    
+(Intercept)     0.279697   0.066781  69.971662   4.188 8.06e-05 ***
+PronounDER     -0.054289   0.061053 584.201123  -0.889    0.374    
+PronounDIESER   0.009624   0.061057 584.585074   0.158    0.875    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+            (Intr) PrnDER
+PronounDER  -0.457       
+PronnDIESER -0.457  0.500
+
+$NP3_model
+Linear mixed model fit by REML. t-tests use Satterthwaite's method ['lmerModLmerTest']
+Formula: zscore ~ Pronoun + (1 | subj) + +(1 | item_nr)
+   Data: datl_e[datl_e$Antecedent == "NP3" & datl_e$subj != "11" & datl_e$subj !=  
+    "18" & datl_e$subj != "27" & datl_e$subj != "39", ]
+
+REML criterion at convergence: 1336.4
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-3.7687 -0.4106  0.1785  0.6189  2.5243 
+
+Random effects:
+ Groups   Name        Variance Std.Dev.
+ subj     (Intercept) 0.03841  0.1960  
+ item_nr  (Intercept) 0.08634  0.2938  
+ Residual             0.36082  0.6007  
+Number of obs: 672, groups:  subj, 56; item_nr, 36
+
+Fixed effects:
+               Estimate Std. Error        df t value Pr(>|t|)    
+(Intercept)     0.42950    0.06858  79.59435   6.263  1.8e-08 ***
+PronounDER     -0.13664    0.05692 582.68758  -2.400   0.0167 *  
+PronounDIESER   0.07961    0.05693 583.10435   1.398   0.1625    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+            (Intr) PrnDER
+PronounDER  -0.415       
+PronnDIESER -0.415  0.500
+
+$ER_model
+Linear mixed model fit by REML. t-tests use Satterthwaite's method ['lmerModLmerTest']
+Formula: zscore ~ Antecedent + (1 + Antecedent | subj) + +(1 + Antecedent |      item_nr)
+   Data: datl_e[datl_e$Pronoun == "ER" & datl_e$subj != "11" & datl_e$subj !=  
+    "18" & datl_e$subj != "27" & datl_e$subj != "39", ]
+
+REML criterion at convergence: 1454.2
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-4.9778 -0.4113  0.1675  0.6258  2.1708 
+
+Random effects:
+ Groups   Name          Variance Std.Dev. Corr       
+ subj     (Intercept)   0.03847  0.1961              
+          AntecedentNP2 0.01328  0.1152   -0.88      
+          AntecedentNP3 0.01566  0.1252   -0.95  0.99
+ item_nr  (Intercept)   0.10963  0.3311              
+          AntecedentNP2 0.11124  0.3335   -0.26      
+          AntecedentNP3 0.14924  0.3863   -0.53 -0.04
+ Residual               0.41417  0.6436              
+Number of obs: 672, groups:  subj, 56; item_nr, 36
+
+Fixed effects:
+              Estimate Std. Error       df t value Pr(>|t|)    
+(Intercept)    0.39908    0.07483 35.06960   5.333 5.82e-06 ***
+AntecedentNP2 -0.12025    0.08406 29.48942  -1.431    0.163    
+AntecedentNP3  0.03117    0.09034 32.78660   0.345    0.732    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+            (Intr) AntNP2
+AntecdntNP2 -0.478       
+AntecdntNP3 -0.614  0.262
+convergence code: 0
+boundary (singular) fit: see ?isSingular
+
+
+$dems_model
+Linear mixed model fit by REML. t-tests use Satterthwaite's method ['lmerModLmerTest']
+Formula: zscore ~ Pronoun * Antecedent + (1 | subj) + +(1 | item_nr)
+   Data: datl_e[datl_e$Pronoun != "ER" & datl_e$Antecedent != "NP1" &  
+    datl_e$subj != "11" & datl_e$subj != "18" & datl_e$subj !=      "27" & datl_e$subj != "39", ]
+
+REML criterion at convergence: 1813.9
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-3.9450 -0.4438  0.1982  0.6443  2.5514 
+
+Random effects:
+ Groups   Name        Variance Std.Dev.
+ subj     (Intercept) 0.02727  0.1651  
+ item_nr  (Intercept) 0.04746  0.2179  
+ Residual             0.39529  0.6287  
+Number of obs: 896, groups:  subj, 56; item_nr, 36
+
+Fixed effects:
+                          Estimate Std. Error        df t value Pr(>|t|)    
+(Intercept)                0.28224    0.05980 118.87682   4.720  6.5e-06 ***
+PronounDER                -0.05850    0.05953 805.26956  -0.983 0.326019    
+AntecedentNP3              0.22288    0.05953 805.26455   3.744 0.000194 ***
+PronounDER:AntecedentNP3  -0.15629    0.08422 805.57370  -1.856 0.063843 .  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+            (Intr) PrnDER AntNP3
+PronounDER  -0.498              
+AntecdntNP3 -0.498  0.501       
+PrnDER:ANP3  0.352 -0.707 -0.707
+
+$dieserNP3
+Linear mixed model fit by REML. t-tests use Satterthwaite's method ['lmerModLmerTest']
+Formula: zscore ~ Pronoun + (1 | subj) + +(1 | item_nr)
+   Data: datl_e[datl_e$Antecedent == "NP3" & datl_e$subj != "11" & datl_e$subj !=  
+    "18" & datl_e$subj != "27" & datl_e$subj != "39", ]
+
+REML criterion at convergence: 1336.4
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-3.7687 -0.4106  0.1785  0.6189  2.5243 
+
+Random effects:
+ Groups   Name        Variance Std.Dev.
+ subj     (Intercept) 0.03841  0.1960  
+ item_nr  (Intercept) 0.08634  0.2938  
+ Residual             0.36082  0.6007  
+Number of obs: 672, groups:  subj, 56; item_nr, 36
+
+Fixed effects:
+             Estimate Std. Error        df t value Pr(>|t|)    
+(Intercept)   0.50911    0.06858  79.59599   7.424  1.1e-10 ***
+PronounER    -0.07961    0.05693 583.10435  -1.398 0.162529    
+PronounDER   -0.21625    0.05693 582.72263  -3.799 0.000161 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+           (Intr) PrnnER
+PronounER  -0.415       
+PronounDER -0.415  0.500
+
+$dems_forward_coding
+Linear mixed model fit by REML. t-tests use Satterthwaite's method ['lmerModLmerTest']
+Formula: zscore ~ Pronoun * Antecedent + (1 | subj) + +(1 | item_nr)
+   Data: datl_dem[datl_dem$subj != "11" & datl_dem$subj != "18" & datl_dem$subj !=  
+    "27" & datl_dem$subj != "39", ]
+
+REML criterion at convergence: 3009.6
+
+Scaled residuals: 
+    Min      1Q  Median      3Q     Max 
+-3.4972 -0.5595  0.1835  0.6783  2.9401 
+
+Random effects:
+ Groups   Name        Variance Std.Dev.
+ subj     (Intercept) 0.01880  0.1371  
+ item_nr  (Intercept) 0.05921  0.2433  
+ Residual             0.50516  0.7107  
+Number of obs: 1344, groups:  subj, 56; item_nr, 36
+
+Fixed effects:
+                           Estimate Std. Error         df t value Pr(>|t|)    
+(Intercept)                 0.17373    0.05228   59.01624   3.323 0.001532 ** 
+PronounDER                 -0.13743    0.03881 1250.31682  -3.541 0.000413 ***
+Antecedent2-1               0.54075    0.06725 1250.36370   8.041 2.05e-15 ***
+Antecedent3-2               0.22746    0.06725 1250.36370   3.382 0.000741 ***
+PronounDER:Antecedent2-1    0.09742    0.09514 1250.70952   1.024 0.306035    
+PronounDER:Antecedent3-2   -0.16320    0.09514 1250.70952  -1.715 0.086512 .  
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+Correlation of Fixed Effects:
+            (Intr) PrnDER Ant2-1 Ant3-2 PDER:A2
+PronounDER  -0.371                             
+Antecdnt2-1  0.000  0.000                      
+Antecdnt3-2  0.000  0.000 -0.500               
+PrnDER:A2-1  0.000  0.000 -0.707  0.354        
+PrnDER:A3-2  0.000  0.000  0.353 -0.707 -0.500 
+
