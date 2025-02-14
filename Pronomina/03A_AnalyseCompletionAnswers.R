@@ -8,8 +8,10 @@ datasets <- list(
   "ExpA2" = "Data/ExpA2DataAnswers.rds"  # data for state verbs
 )
 
+dataset_name = "ExpA1"
 
 # Process each dataset
+#
 for (dataset_name in names(datasets)) {
   cat("\nProcessing dataset:", dataset_name, "\n")
 
@@ -23,6 +25,15 @@ for (dataset_name in names(datasets)) {
                               RE1 = extractLastWord(expAAnswers$RE1), 
                               RE2 = extractLastWord(expAAnswers$RE2),
                               expAAnswers[, columns])
+  
+
+  
+  # Remove bad models 
+  condensedData <- condensedData[, !colnames(condensedData) %in% 
+                                   c("Teuken.7b_t02_comp_Antecedens", 
+                                     "GPT4_t05_comp_Antecedens",  
+                                     "EUROLLM_9b_t02_comp_Antecedens")]
+  
   
   cols_to_modify <- setdiff(names(condensedData), "ID")
   
@@ -93,15 +104,57 @@ for (dataset_name in names(datasets)) {
   result <- do.call(data.frame, preferences_data)
   
   # plot preferences
-  par(mfrow = c(3, 4))
-  plot_columns <- names(result)[4:length(result)]
+  par(mfrow = c(3, 3))
+  plot_columns <- names(result)[3:length(result)]
   
   
   for (col in plot_columns) {
     bar_colors <- ifelse(result$AO == "OS", "lightblue", "darkblue")
-    barplot(result[[col]], main = col, xlab = "Groups", ylab = "Rel.Diff", col = bar_colors)
-    #legend("bottomright", legend = c("OS", "SO"), fill = c("lightblue", "darkblue"), bty = "n")
+    
+    # Create barplot and store bar positions
+    bar_positions <- barplot(result[[col]], 
+                             xlab = gsub("_t02_comp_Antecedens$", "", col), 
+                             #ylab = "first - second", 
+                             col = bar_colors, 
+                             yaxt = "n",
+                             cex.lab = 1.5)  # Remove y-axis numbers
+    
+    # Determine min and max x-positions (start and end of bars)
+    x_min <- min(bar_positions) - (bar_positions[2] - bar_positions[1]) / 2
+    x_max <- max(bar_positions) + (bar_positions[2] - bar_positions[1]) / 2
+    
+    # Draw thin x-axis at y = 0, limited to the width of the bars
+    segments(x0 = x_min, y0 = 0, x1 = x_max, y1 = 0, col = "black", lwd = 1)
+    
   }
+  
+  # Set up a 3x3 plotting layout and adjust margins
+  par(mfrow = c(3, 3), mar = c(4, 4, 2, 1))  # Reduces empty space around plots
+  
+  for (col in plot_columns) {
+    bar_colors <- ifelse(result$AO == "OS", "lightblue", "darkblue")
+    
+    # Create barplot with optimized spacing
+    bar_positions <- barplot(result[[col]], 
+                             xlab = gsub("_t02_comp_Antecedens$", "", col), 
+                             col = bar_colors, 
+                             yaxt = "n",  # Remove y-axis numbers
+                             cex.lab = 2,  # Increase xlab font size
+                             width = 0.8,  # Make bars slightly wider
+                             space = 0.3)  # Reduce space between bars
+    
+    # Determine min and max x-positions (start and end of bars)
+    x_min <- min(bar_positions) - (bar_positions[2] - bar_positions[1]) / 2
+    x_max <- max(bar_positions) + (bar_positions[2] - bar_positions[1]) / 2
+    
+    # Draw thin x-axis at y = 0, limited to the width of the bars
+    segments(x0 = x_min, y0 = 0, x1 = x_max, y1 = 0, col = "black", lwd = 1)
+  }
+  
+  # Reset graphical parameters to default after plotting (optional)
+  par(mfrow = c(1, 1))
+  
+  
   
   # Export data
   write.table(aggregated_data, file = "temp/subset_data_ExpA2.tsv", sep = "\t", row.names = FALSE, quote = FALSE)
@@ -186,35 +239,20 @@ for (dataset_name in names(datasets)) {
   write.table(preferences_data, paste0("temp/", dataset_name, "_AntecedensPreferences.tsv"), sep = "\t", row.names = FALSE, quote = FALSE)
   
   
-  # Spaltennamen extrahieren
+  # ChiSquare analyses
   columns <- colnames(preferences_data)
-  
-  # Letzte Spalte als erwartete Werte
   expected <- preferences_data[[columns[length(columns)]]]
-  
-  # Ergebnisliste für Chi-Square-Werte
   chi_square_results <- list()
   
-  # Für jede Spalte (außer der letzten) den Chi-Square-Wert berechnen
   for (col in columns[3:(length(columns) - 1)]) {
     observed <- preferences_data[[col]]
-    
-    # Chi-Square-Test durchführen
     chi_square <- sum((observed - expected)^2 / expected, na.rm = TRUE)
-    
-    # Ergebnis speichern
     chi_square_results[[col]] <- chi_square
   }
   
   chi_square_results <- chi_square_results[order(unlist(chi_square_results))]
   chi2_df <- data.frame(Value = unlist(chi_square_results), stringsAsFactors = FALSE)
-  
-  # Ergebnisse ausgeben
-  print(chi2_df)
-  
-  
-  
-  # Optional: Ergebnisse in einer Datei speichern
+
   write.table(chi2_df, paste0("temp/", dataset_name,"_ChiSquareResults_allInOne.tsv"), sep = "\t", quote = FALSE, col.names = NA)
   
 }

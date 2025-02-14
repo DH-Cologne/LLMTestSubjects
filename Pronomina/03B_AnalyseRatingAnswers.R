@@ -6,12 +6,12 @@ source("99_Utils.R")
 datasets <- list(
   "ExpB2" = "Data/ExpB2DataAnswers.rds",  # File with data for benefatorial verbs
   "ExpB1" = "Data/ExpB1DataAnswers.rds" # File with data for ditransitive verbs
-  
-)
-dataset_name = "ExpB1"
+  )
+
 
 # Process each dataset
-for (dataset_name in names(datasets)) {
+for(dataset_name in names(datasets)) {
+  
   cat("\nProcessing dataset:", dataset_name, "\n")
   
   # Load the data
@@ -167,14 +167,66 @@ for (dataset_name in names(datasets)) {
           
           scale_x_continuous(breaks = seq(1, 7, by = 1))  # Ensure all y-axis labels (original x-axis) are displayed
   )
-
   
-    
+  ## Print Rating distributions
+  # Visualize rating distribution of models
+  long_data <- pivot_longer(average_ratings, cols = all_of(rating_columns), names_to = "Model", values_to = "Rating_Value")
+  # Shorten Model names (cut after the second underscore) for visualization only
+  long_data$Model <- sub("^([^_]+_[^_]+).*", "\\1", long_data$Model)
+  # Rename "GPT4_t05" to "GPT4"
+  long_data$Model <- ifelse(long_data$Model == "GPT4_t05", "GPT4", long_data$Model)
+  # Define colors: "Human_Rating" in yellow, "GPT4" in light green, others in grey
+  long_data$fill_color <- ifelse(long_data$Model == "GPT4", "lightyellow",
+                                 ifelse(long_data$Model == "Human_Rating", "lightgreen", "grey"))
+  print(ggplot(long_data, aes(x = Rating_Value, y = Model, fill = fill_color)) +
+          geom_boxplot(color = "black", alpha = 0.7) +
+          scale_fill_identity() +  # Uses the manually assigned colors
+          labs(
+            x = "Rating Value",
+            y = NULL
+          ) +
+          theme_minimal() +
+          theme(
+            plot.title = element_text(hjust = 0.5),
+            axis.text.x = element_text(angle = 90, hjust = 1)  # X-Achsen-Beschriftung hochkant
+          ) +
+          coord_flip() +
+          scale_x_continuous(breaks = seq(1, 7, by = 1))  # Ensure all y-axis labels (original x-axis) are displayed
+  )
+  
   # zTransformation of average ratings
   scaled_average_ratings <- average_ratings
   scaled_average_ratings[rating_columns] <- scale(average_ratings[rating_columns])
   summary(scaled_average_ratings)
   
+  
+  ## Print scaled average rating distributions
+  # Visualize rating distribution of models
+  long_data <- pivot_longer(scaled_average_ratings, cols = all_of(rating_columns), names_to = "Model", values_to = "Rating_Value")
+  # Shorten Model names (cut after the second underscore) for visualization only
+  long_data$Model <- sub("^([^_]+_[^_]+).*", "\\1", long_data$Model)
+  # Rename "GPT4_t05" to "GPT4"
+  long_data$Model <- ifelse(long_data$Model == "GPT4_t05", "GPT4", long_data$Model)
+  # Define colors: "Human_Rating" in yellow, "GPT4" in light green, others in grey
+  long_data$fill_color <- ifelse(long_data$Model == "GPT4", "lightyellow",
+                                 ifelse(long_data$Model == "Human_Rating", "lightgreen", "grey"))
+  print(ggplot(long_data, aes(x = Rating_Value, y = Model, fill = fill_color)) +
+          geom_boxplot(color = "black", alpha = 0.7) +
+          scale_fill_identity() +  # Uses the manually assigned colors
+          labs(
+            x = "Scaled Rating Value",
+            y = NULL
+          ) +
+          theme_minimal() +
+          theme(
+            plot.title = element_text(hjust = 0.5),
+            axis.text.x = element_text(angle = 90, hjust = 1)  # X-Achsen-Beschriftung hochkant
+          ) +
+          coord_flip() +
+          scale_x_continuous(limits = c(-5, 5))  )
+  
+    
+ 
   
   # Visualize scaled rating distribution of models
   long_data <- pivot_longer(scaled_average_ratings, cols = all_of(rating_columns), names_to = "Model", values_to = "Rating_Value")
@@ -225,9 +277,7 @@ for (dataset_name in names(datasets)) {
     
     # Add regression line
     abline(lm(grouped_average_ratings[[colu]] ~ grouped_average_ratings$Human_Rating), col = "red", lwd = 2)
+
+
   }
-  
-  ## TODO: Visualize grouped_scaled_average_ratings 
-
 }
-

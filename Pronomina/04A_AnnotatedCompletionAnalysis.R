@@ -1,10 +1,14 @@
 # analyses average performence of answers from LLMs on sentences with ditransitive verbs (A1) and state verbs (A2) #nolint
+
+rm(list=ls())
+source("99_Utils.R")
+
 library(readr)
 library(dplyr)
 library(stringr)
 library(ggplot2)
 
-folder_path <- "Pronomina/LLMAnswers/Completions"
+folder_path <- "LLMAnswers/Completions"
 # iterate through subdirectories
 sub_dirs <- list.dirs(folder_path, recursive = FALSE)
 
@@ -240,12 +244,12 @@ p3 <- ggplot(error_data_a1, aes(x = reorder(Model, Count), y = Count / 36 * 100,
     labels = c("Error1" = "Incorrect Continuation in Task 1", "Error2" = "Semantic Inconsistencies in Task 2") # nolint
   ) +
   scale_y_continuous(limits = c(0, 100), expand = c(0, 0), labels = scales::percent_format(scale = 1)) + # nolint
-  theme(legend.text = element_text(size = 12))
+  theme(legend.text = element_text(size = 12)) + coord_flip()
 
 # Save plot
 # ggsave("Pronomina/Plots/Completions_Errors_A1.png", p3, width = 8, height = 5) #nolint
 
-# print(p3)
+print(p3)
 
 # ----------- A2 -----------
 
@@ -291,33 +295,49 @@ error_data_a2 <- data.frame(
   Count = error_counts_a2
 )
 
+
+# Beide DataFrames zusammenführen und Count-Werte summieren
+error_data_combined <- bind_rows(error_data_a1, error_data_a2) %>%
+  group_by(Model, ErrorType) %>%
+  summarise(Count = sum(Count), .groups = "drop")
+
+# Ergebnis anzeigen
+print(error_data_combined)
+
+
+#Kick out unused models
+error_data_combined <- error_data_combined %>% filter(Model != "GPT4_t05_comp")
+#error_data_a2 <- error_data_a2 %>% filter(Model != "EUROLLM_t02_comp")
+error_data_combined <- error_data_combined %>% mutate(Model = gsub("_t02_comp", "", Model))
+
+
 # verify result
 # print(error_data_a2)
 
-p4 <- ggplot(error_data_a2, aes(x = reorder(Model, Count), y = Count / 48 * 100, fill = ErrorType)) + #nolint
+p4 <- ggplot(error_data_combined, aes(x = reorder(Model, Count), y = Count / (36+48) * 100, fill = ErrorType)) + #nolint
   geom_bar(stat = "identity", position = "stack", width = 0.5) +
-  labs(title = "Error Analysis per Model",
-       x = "Model",
-       y = "Error Percentage (%)") +
+  labs(x = NULL, y = "Model Mistakes") + 
   theme_classic() +
   theme(
     legend.position = "top",
+    legend.direction = "vertical",  
     legend.title = element_blank(),
     plot.title = element_text(hjust = 0.5, size = 14, face = "bold"),
-    axis.text = element_text(size = 7),
-    axis.title = element_text(size = 13),
     panel.background = element_rect(fill = "white", color = NA),
     plot.background = element_rect(fill = "white", color = NA)
   ) +
   coord_fixed(ratio = 0.05) +
   scale_fill_manual(
-    values = c("Error1" = "#a249eb", "Error2" = "#05053c"),
+    values = c("Error1" = "lightblue", "Error2" = "blue"),
     labels = c("Error1" = "Incorrect Continuation in Task 1", "Error2" = "Semantic Inconsistencies in Task 2") # nolint
   ) +
   scale_y_continuous(limits = c(0, 100), expand = c(0, 0), labels = scales::percent_format(scale = 1)) + # nolint
-  theme(legend.text = element_text(size = 12))
+  theme(legend.text = element_text(size = 9)) +  
+  coord_flip()
 
 print(p4)
+
+  
 
 # ------------ ALL MODELS ------------
 
