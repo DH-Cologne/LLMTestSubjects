@@ -44,8 +44,8 @@ print(ppx_cor_df)
 # Define a color palette
 col_palette <- colorRampPalette(c("white", "gray", "black"))(100)
 # Plot heatmap
-heatmap(cor_matrix, col=col_palette, scale = "none", 
-        symm = TRUE, margins = c(7,7), cexRow = 0.7, cexCol = 0.7, Colv = FALSE)
+print(heatmap(cor_matrix, col=col_palette, scale = "none", 
+        symm = TRUE, margins = c(7,7), cexRow = 0.7, cexCol = 0.7, Colv = FALSE))
 
 
 ## Correlation between ratings of models
